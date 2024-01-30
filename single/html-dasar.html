@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dasar</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css custom link -->
+    <link rel="stylesheet" href="single-style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-single">
+            <!-- Aside box -->
+            <div class="aside">
+                <div class="aside-content">
+                    <ul class="list-unstyled">
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa Itu HTML</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">File HTML Pertama</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">Kode Editor Untuk Android</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">Heading Dan Paragraf</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">Hyperlink (Anchor)</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">Text Formating</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(7)">Image (Format Gambar)</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(8)">Video (Format Video)</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(9)">Ordered List</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(10)">Unordered List</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(11)">Definition List</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(12)">List Bersarang</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(13)">Form Dan Input</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(14)">ID Dan Class</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(15)">Tabel Pada HTML</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(16)">Marge Pada Cell Tabel</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(17)">Inline Dan Block</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(18)">Catatan</button> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main box -->
+            <div class="main">
+                <!-- Show aside box -->
+                <div class="show-aside"><i class="fas fa-bars"></i></div>
+
+                <!-- Resize font -->
+                <div class="resize-font"><i class="fas fa-font"></i></div>
+                <div class="box-size">
+                    <div class="item-size translateX" onclick="resizeFont(18)">lg</div>
+                    <div class="item-size translateX" onclick="resizeFont(16)">md</div>
+                    <div class="item-size translateX" onclick="resizeFont(14)">sm</div>
+                    <div class="item-size translateX" onclick="resizeFont(12)">xm</div>
+                </div>
+    
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="../assets/img/html.png" style="max-width: 500px;" alt="">
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu HTML</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                <p>Hypertext Markup Language (HTML) adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheet (CSS) dan bahasa scripting seperti JavaScript dan VBScript. Singkatnya HTML adalah bahasa pemrograman yang digunakan untuk merancang sebuah website.</p>
+                    
+                                <p>HTML terdiri dari beberapa bagian didalam satu halaman yang ditandai dengan tanda atau &lt;/tag/> yang disusun sesuai dengan kebutuhan.</p>
+                    
+                                <p>Dalam sebuah website ada beberapa komponen. Dalam pembuatan sebuah website ada beberapa hal dasar yang harus dipelajari, ada HTML, CSS, JavaScript, Pemrograman PHP, dan Database.</p>
+                    
+                                <p>
+                                    Dalam belajar HTML, ada beberapa kebutuhan yang bisa kita gunakan dalam mempelajari HTML, yaitu :
+                                    <ul style="list-style: circle;">
+                                        <li>Text Editor/Code Editor wadah yang digunakan untuk mengetikan kode-kode HTML dalam menyusun sebuah kerangka website</li>
+                                        <li>Web Browser untuk menampilkan kerangka website yang sudah kita ketikan di Text Editor</li>
+                                        <li>Perangkat bisa menggunakan laptop atau PC ataupun smartphone</li>
+                                    </ul>
+                                </p>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>File HTML Pertama</h2>
+                        
+                        <!-- Pendahuluan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Pendahuluan</h5>
+                            <p>
+                                <p>Struktur dasar dari HTML adalah sebuah text yang dituliskan dengan kurung lancip. Ada sebuah tag pembuka dan tag penutup, semua yang ada didalam tag pembuka dan tag penutup akan dibaca sebagai file HTML dan akan ditampilkan dibrowser.</p> 
+                                <p>Didalam tag HTML ada tag head, di-head ini berisi apa saja yang akan kita gunakan nanti kerangka HTML, atau kebutuhan yang diperlukan dalam menyusun kerangka sebuah website. Selain tag head dalam HTML juga ada tag body, di-body ini adalah semua yang akan ditampilkan di browser.</p> 
+                            </p>
+                        </div>
+                        </div>
+            
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>File HTML Pertama</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <!-- <html>
+                                                        <head>
+                                                            <title> Judul </title>
+                                                        </head>
+                                                        <body> -->
+                                                            <h1 class="display-4"> Halo Semua </h1>
+                                                        <!-- </body>
+                                                    </html> -->
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;html>
+        &lt;head>
+            &lt;title> Judul &lt;/title>
+        &lt;/head>
+        &lt;body>
+            &lt;h1> Halo Semua &lt;/h1>
+        &lt;/body>
+    &lt;/html>                      
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Kode Editor Untuk Android</h2>
+                    
+                        <!-- Pendahuluan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Pendahuluan</h5>
+                            <p>
+                                <p>Kode Editor yang bisa digunakan di smartphone adalah Acode, cara menggunakanya adalah</p> 
+                                <ul style="list-style: decimal;">
+                                    <li>Download Acode di Playstore</li>
+                                    <li>Buka aplikasi dan ikuti instruksi</li>
+                                    <li>Untuk membuat sebuah file caranya adalah pilih New</li>
+                                    <li>Setelah itu Save di penyimpanan yang diinginkan</li>
+                                    <li>Ketikan kode HTML-nya</li>
+                                    <li>Untuk menjalankanya bisa klik play button dikanan atas</li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Heading Dan Paragraf</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Tag Heading biasa digunakan untuk judul dari sebuah article. Untuk Heading ada beberapa tag yaitu ada h1 sampai h5. Sedangkan Tag Paragraf biasa digunakan untuk menuliskan atau menampilkan suatu karakter, contoh tag p.
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Heading Dan Paragraf</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <big><big><h1>Tag H1 + 2 Big</h1></big></big>
+                                                <big><H1>Tag H1 + 1 Big</H1></big>
+                                
+                                                <hr>
+                                
+                                                <h1>Tag H1</h1>
+                                                <h2>Tag H2</h2>
+                                                <h3>Tag H3</h3>
+                                                <h4>Tag H4</h4>
+                                                <h5>Tag H5</h5>
+                                
+                                                <hr>
+                                
+                                                <p>Tag Paragraf</p>
+                                                <marquee>Tag Marquee</marquee>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;big>&lt;big>&lt;h1>Tag H1 + 2 Big&lt;/h1>&lt;/big>&lt;/big>
+        &lt;big>&lt;H1>Tag H1 + 1 Big&lt;/H1>&lt;/big>
+
+        &lt;hr>
+
+        &lt;h1>Tag H1&lt;/h1>
+        &lt;h2>Tag H2&lt;/h2>
+        &lt;h3>Tag H3&lt;/h3>
+        &lt;h4>Tag H4&lt;/h4>
+        &lt;h5>Tag H5&lt;/h5>
+
+        &lt;hr>
+
+        &lt;p>Tag Paragraf&lt;/p>
+        &lt;marquee>Tag Marquee&lt;/marquee>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Hyperlink (Anchor)</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Hyperlink dapat digunakan untuk menghubungkan halaman 1 dengan halaman yang lain mengingat dalam pembuatan website kita punya beberapa halaman atau file yang saling terhubung untuk memberikan suatu informasi. Tag yang digunakan di HTML untuk Hyperlink adalah Anchor, Anchor ini menghubungkan file induk dengan file tujuan kita. 
+                                <pre class="card bg-light codeA">&lt;a href="...">...&lt;/a></pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Jenis Hyperlink -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis Hyperlink</h5>
+                            <p>
+                                Hyperlink memiliki 2 jenis, yaitu 
+                                <dl>
+                                    <dt><h5>1. Internal</h5></dt>
+                                    <dd>
+                                        <ul style="list-style: circle;">
+                                            <li><p>File berada di folder yang sama</p> <pre class="card bg-light codeA"> &lt;a href="nama_file.html"> nama_file &lt;/a> </pre></li>
+                                            <li><p>File berada di folder dari folder yang sama</p> <pre class="card bg-light codeA"> &lt;a href="nama_folder/nama_file.html">nama_file&lt;/a> </pre></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                
+                                <dl>
+                                    <dt><h5>2. Eksternal</h5></dt>
+                                    <dd>
+                                        <ul style="list-style: circle;">
+                                            <li><p>File berada diluar folder</p> <pre class="card bg-light codeA"> &lt;a href="../nama_file.html">nama_file&lt;/a> </pre></li>
+                                            <li><p>Berupa situs website browser</p> <pre class="card bg-light codeA"> &lt;a href="www.youtube.com">youtube&lt;/a> </pre></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Atribut Hyperlink -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Atribut Hyperlink</h5>
+                            <p>
+                                Ada 2 atribut Hyperlink, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><h6>href</h6> <p>menghubungkan dengan halaman lain</p> <pre class="card bg-light codeA"> &lt;a href="...">...&lt;/a></pre> </li>
+                                    <li><h6>target</h6> <p>membuka tab baru</p> <pre class="card bg-light codeA"> &lt;a href="..." target="_blank">...&lt;/a></pre> </li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Text Formating</h2>
+                    
+                        <!-- Pendahuluan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Pendahuluan</h5>
+                            <p>
+                                Ada beberapa tag dalam Text Formating, yaitu ada heading, paragraf, strong, italic / emphasis, underline / insert, strikethrought / delete, sup, sub, mark, dan sebagainya.
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Text Formating</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <h4 align="left">Text rata kiri</h4>
+                                                <h4 align="center">Text rata tengah</h4>
+                                                <h4 align="right">Text rata kanan</h4>
+                                
+                                                <hr>
+                                
+                                                <p>Text biasa</p>
+                                                <p>Text <strong>strong</strong> untuk cetak tebal</p>
+                                                <p>Text <i>italic</i> atau <em>emphasis</em> untuk cetak miring</p>
+                                                <p>Text <u>underline</u> atau <ins>insert</ins> untuk beri garis bawah</p>
+                                                <p>Text <s>strikethrought</s> atau <del>delete</del> untuk coret teks</p>
+                                                <p>Text kecil diatas A<sup>2</sup> </p>
+                                                <p>Text kecil dibawah H<sub>2</sub>O </p>
+                                                <p>Text <mark>mark</mark> untuk efek stabilo</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;h4 align="left">Text rata kiri&lt;/h4>
+        &lt;h4 align="center">Text rata tengah&lt;/h4>
+        &lt;h4 align="right">Text rata kanan&lt;/h4>
+
+        &lt;hr>
+
+        &lt;p>Text biasa&lt;/p>
+        &lt;p>Text &lt;strong>strong&lt;/strong> untuk cetak tebal&lt;/p>
+        &lt;p>Text &lt;i>italic&lt;/i> atau &lt;em>emphasis&lt;/em> untuk cetak miring&lt;/p>
+        &lt;p>Text &lt;u>underline&lt;/u> atau &lt;ins>insert&lt;/ins> untuk beri garis bawah&lt;/p>
+        &lt;p>Text &lt;s>strikethrought&lt;/s> atau &lt;del>delete&lt;/del> untuk coret teks&lt;/p>
+        &lt;p>Text kecil diatas A&lt;sup>2&lt;/sup> &lt;/p>
+        &lt;p>Text kecil dibawah H&lt;sub>2&lt;/sub>O &lt;/p>
+        &lt;p>Text &lt;mark>mark&lt;/mark> untuk efek stabilo&lt;/p>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Image (Format Gambar)</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Image (Format Gambar) digunakan untuk menampilkan gambar pada halaman web. untuk menampilkan gambar pada halaman web kita membutuhkan tag <i>img</i>.
+                                <pre class="card bg-light codeA">&lt;img src="html.jpg"></pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Atribut Image -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Atribut Image</h5>
+                            <p>
+                                Berikut beberapa atribut dalam format gambar, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><h6>width</h6> <p>untuk menentukan lebar pada gambar</p></li>
+                                    <li><h6>height</h6> <p>untuk menentukan tinggi pada gambar</p></li>
+                                    <li><h6>alt</h6> <p>alternative description digunakan untuk memberi keterangan dari gambar jika gambar tersebut gagal ditampilkan</p></li>
+                                    <li><h6>title</h6> <p>digunakan untuk memberi judul pada gambar, akan muncul saat gambar disentuh atau hover</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Image (Format Gambar)</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-4">
+                                                        <h6>width dan height</h6>
+                                                        <img class="img-thumbnail" src="../assets/img/img5.jpg" width="100%" height="100%">
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <h6>title (hover)</h6>
+                                                        <img class="img-thumbnail" src="../assets/img/img5.jpg" title="Bright Day">
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <h6>alternative description</h6>
+                                                        <img class="img-thumbnail" src="" alt="&nbsp;your text here">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-4 mb-4">
+                &lt;h6>width dan height&lt;/h6>
+                &lt;img class="img-thumbnail" src="img/img5.jpg" width="100%" height="100%">
+            &lt;/div>
+            &lt;div class="col-md-4 mb-4">
+                &lt;h6>title (hover)&lt;/h6>
+                &lt;img class="img-thumbnail" src="img/img5.jpg" title="Bright Day">
+            &lt;/div>
+            &lt;div class="col-md-4 mb-4">
+                &lt;h6>alternative description&lt;/h6>
+                &lt;img class="img-thumbnail" src="" alt="your text here">
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Video (Format Video)</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Video (Format Video) digunakan untuk menyisipkan video pada halaman web. untuk menyisipkan video pada halaman web kita membutuhkan tag <i>video</i>.  
+                                <pre class="card bg-light codeB">
+                
+    &lt;video controls="true">
+        &lt;source src="video/black.mp4" type="video/mp4">
+    &lt;/video>
+                                </pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Atribut Video -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Atribut Video</h5>
+                            <p>
+                                Berikut beberapa atribut dalam format video, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><h6>width</h6> <p>untuk menentukan lebar</p></li>
+                                    <li><h6>height</h6> <p>untuk menentukan tinggi</p></li>
+                                    <li><h6>controls</h6> <p>digunakan untuk menampilkan tombol play, volume, dan sebagainya</p></li>
+                                    <li><h6>playsinline</h6> <p>digunakan untuk memutar video secara otomatis</p></li>
+                                    <li><h6>autoplay</h6> <p>juga digunakan untuk memutar video secara otomatis</p></li>
+                                    <li><h6>muted</h6> <p>digunakan untuk mematikan suara pada video</p></li>
+                                    <li><h6>loop</h6> <p>digunakan untuk mengulang video tanpa henti</p></li>
+                                    <li><h6>poster</h6> <p>digunakan untuk menampilkan thumbnail pada video</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Tipe Video -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Tipe Video</h5>
+                            <p>
+                                Untuk menampilkan video pada halaman web kita harus menyisipkan atribut <i>type</i> pada tag <i>source</i>. Ada 3 type dalam format video, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><h6>video/mp4</h6></li>
+                                    <li><h6>video/ogg</h6></li>
+                                    <li><h6>video/webm</h6></li>
+                                </ul> 
+                            </p>
+                        </div>
+                        </div>
+                        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Video (Format Video)</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-4">
+                                                        <h6>video biasa</h6>
+                                                        <video controls="true" width="250px">
+                                                            <source src="../assets/video/black.mp4" type="video/mp4">
+                                                        </video>
+                                                    </div>
+                                
+                                                    <div class="col-md-4 mb-4">
+                                                        <h6>video dengan thumbnail</h6>
+                                                        <video controls="true" poster="../assets/img/html.png" width="250px">
+                                                            <source src="../assets/video/black.mp4" type="video/mp4">
+                                                        </video>
+                                                    </div>
+                                
+                                                    <div class="col-md-4 mb-4">
+                                                        <h6>video muted loop</h6>
+                                                        <video playsinline autoplay muted loop width="250px">
+                                                            <source src="../assets/video/black.mp4" type="video/mp4">
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-4 mb-4">
+                &lt;h6>video biasa&lt;/h6>
+                &lt;video controls="true" width="250px">
+                    &lt;source src="video/black.mp4" type="video/mp4">
+                &lt;/video>
+            &lt;/div>
+
+            &lt;div class="col-md-4 mb-4">
+                &lt;h6>video dengan thumbnail&lt;/h6>
+                &lt;video controls="true" poster="img/html.png" width="250px">
+                    &lt;source src="video/black.mp4" type="video/mp4">
+                &lt;/video>
+            &lt;/div>
+
+            &lt;div class="col-md-4 mb-4">
+                &lt;h6>video muted loop&lt;/h6>
+                &lt;video playsinline autoplay muted loop width="250px">
+                    &lt;source src="video/black.mp4" type="video/mp4">
+                &lt;/video>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Ordered List</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Ordered List adalah list yang diurutkan dengan angka. Penulisan ordered list sebagai berikut 
+                                <pre class="card bg-light codeB">
+                
+    &lt;ol>
+        &lt;li>List Content&lt;/li>
+        &lt;li>List Content&lt;/li>
+    &lt;/ol>
+                                </pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5></h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Ordered List</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p>Komponen Web Developement</p>
+                                                        <ol>
+                                                            <li>Database</li>
+                                                            <li>Interface</li>
+                                                            <li>Programming</li>
+                                                            <li>Dsb.</li>
+                                                        </ol>
+                                                    </div>
+                                
+                                                    <div class="col-md-6">
+                                                        <p>Komponen Game Developement</p>
+                                                        <ol>
+                                                            <li>Assets</li>
+                                                            <li>Story Board</li>
+                                                            <li>Level</li>
+                                                            <li>Dsb.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-6">
+                &lt;p>Komponen Web Developement&lt;/p>
+                &lt;ol>
+                    &lt;li>Database&lt;/li>
+                    &lt;li>Interface&lt;/li>
+                    &lt;li>Programming&lt;/li>
+                    &lt;li>Dsb.&lt;/li>
+                &lt;/ol>
+            &lt;/div>
+
+            &lt;div class="col-md-6">
+                &lt;p>Komponen Game Developement&lt;/p>
+                &lt;ol>
+                    &lt;li>Assets&lt;/li>
+                    &lt;li>Story Board&lt;/li>
+                    &lt;li>Level&lt;/li>
+                    &lt;li>Dsb.&lt;/li>
+                &lt;/ol>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Unordered List</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Unordered List adalah list yang tidak diurutkan dengan angka. Penulisan unordered list sebagai berikut 
+                                <pre class="card bg-light codeB">
+                
+    &lt;ul>
+        &lt;li>List Content&lt;/li>
+        &lt;li>List Content&lt;/li>
+    &lt;/ul>
+                                </pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Unordered List</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p>Komponen Web Developement</p>
+                                                        <ul>
+                                                            <li>Database</li>
+                                                            <li>Interface</li>
+                                                            <li>Programming</li>
+                                                            <li>Dsb.</li>
+                                                        </ul>
+                                                    </div>
+                                
+                                                    <div class="col-md-6">
+                                                        <p>Komponen Game Developement</p>
+                                                        <ul>
+                                                            <li>Assets</li>
+                                                            <li>Story Board</li>
+                                                            <li>Level</li>
+                                                            <li>Dsb.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-6">
+                &lt;p>Komponen Web Developement&lt;/p>
+                &lt;ul>
+                    &lt;li>Database&lt;/li>
+                    &lt;li>Interface&lt;/li>
+                    &lt;li>Programming&lt;/li>
+                    &lt;li>Dsb.&lt;/li>
+                &lt;/ul>
+            &lt;/div>
+
+            &lt;div class="col-md-6">
+                &lt;p>Komponen Game Developement&lt;/p>
+                &lt;ul>
+                    &lt;li>Assets&lt;/li>
+                    &lt;li>Story Board&lt;/li>
+                    &lt;li>Level&lt;/li>
+                    &lt;li>Dsb.&lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Definition List</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Definition List adalah jenis list yang digunakan untuk membuat struktur yang berisi deskripsi atau daftar penjelasan. Penulisan definition list sebagai berikut
+                                <pre class="card bg-light codeB">
+                
+    &lt;dl>
+        &lt;dt>Judul&lt;/dt>
+        &lt;dd>Deskripsi&lt;/dd>
+    &lt;/dl>
+                                </pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Definition List -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definition List</h5>
+                            <p>
+                                Berikut beberapa atribut dalam definition list, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><h6>dl</h6> <p>definition list sebagai parent element</p></li>
+                                    <li><h6>dt</h6> <p>definition term atau istilah</p></li>
+                                    <li><h6>dd</h6> <p>define a description atau deskripsinya</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Definition List</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <dl>
+                                                            <dt><h6>Tahu</h6></dt>
+                                                            <dd>Tahu (baca : <i>ta-hu</i>) adalah makanan yang terbuat dari ... </dd>
+                                                            <dd>Tahu pertama kali dibuat di ... </dd>
+                                                        </dl>
+                                                    </div>
+                                
+                                                    <div class="col-md-6">
+                                                        <dl>
+                                                            <dt><h6>Tempe</h6></dt>
+                                                            <dd>Tempe (baca : <i>tem-pe</i>) adalah makanan yang terbuat dari ... </dd>
+                                                            <dd>Tempe pertama kali dibuat di ... </dd>
+                                                        </dl> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-6">
+                &lt;dl>
+                    &lt;dt>&lt;h6>Tahu&lt;/h6>&lt;/dt>
+                    &lt;dd>Tahu (baca : &lt;i>ta-hu&lt;/i>) adalah makanan yang terbuat dari ... &lt;/dd>
+                    &lt;dd>Tahu pertama kali dibuat di ... &lt;/dd>
+                &lt;/dl>
+            &lt;/div>
+
+            &lt;div class="col-md-6">
+                &lt;dl>
+                    &lt;dt>&lt;h6>Tempe&lt;/h6>&lt;/dt>
+                    &lt;dd>Tempe (baca : &lt;i>tem-pe&lt;/i>) adalah makanan yang terbuat dari ... &lt;/dd>
+                    &lt;dd>Tempe pertama kali dibuat di ... &lt;/dd>
+                &lt;/dl> 
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>List Bersarang</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                List Bersarang adalah list yang berisi satu atau beberapa list. Penulisan list bersarang sebagai berikut 
+                                <pre class="card bg-light codeB">
+                
+    &lt;ul>
+        &lt;li> List Content
+            &lt;ul>
+                &lt;li>List Content&lt;/li>
+                &lt;li>List Content&lt;/li>
+            &lt;/ul>
+        &lt;/li>
+        &lt;li> List Content
+            &lt;ul>
+                &lt;li>List Content&lt;/li>
+                &lt;li>List Content&lt;/li>
+            &lt;/ul>
+        &lt;/li>
+    &lt;/ul>
+                                </pre>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>List Bersarang</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <p>Komponen Web Development</p>
+                                                <ol>
+                                                    <li>
+                                                        Database
+                                                        <ul>
+                                                            <li>
+                                                                MySQL
+                                                                <ol>
+                                                                    <li>DDL (Data Definition Language)</li>
+                                                                    <li>DML (Data Manipulation Language)</li>
+                                                                    <li>DCL (Data Control Language)</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>XAMPP</li>
+                                                            <li>CMD</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Interface
+                                                        <ul>
+                                                            <li>HTML</li>
+                                                            <li>CSS</li>
+                                                            <li>JavaScript</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Programming
+                                                        <ul>
+                                                            <li>PHP</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;p>Komponen Web Development&lt;/p>
+        &lt;ol>
+            &lt;li>
+                Database
+                &lt;ul>
+                    &lt;li>
+                        MySQL
+                        &lt;ol>
+                            &lt;li>DDL (Data Definition Language)&lt;/li>
+                            &lt;li>DML (Data Manipulation Language)&lt;/li>
+                            &lt;li>DCL (Data Control Language)&lt;/li>
+                        &lt;/ol>
+                    &lt;/li>
+                    &lt;li>XAMPP&lt;/li>
+                    &lt;li>CMD&lt;/li>
+                &lt;/ul>
+            &lt;/li>
+            &lt;li>
+                Interface
+                &lt;ul>
+                    &lt;li>HTML&lt;/li>
+                    &lt;li>CSS&lt;/li>
+                    &lt;li>JavaScript&lt;/li>
+                &lt;/ul>
+            &lt;/li>
+            &lt;li>
+                Programming
+                &lt;ul>
+                    &lt;li>PHP&lt;/li>
+                &lt;/ul>
+            &lt;/li>
+        &lt;/ol>
+    &lt;/div> 
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Form Dan Input</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                Input pada form adalah komponen yang penting pada sebuah website. 
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Atribut Pada Form -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Atribut Pada Form</h5>
+                            <p>
+                                Berikut beberapa atribut pada form, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><h6>action</h6> <p> berfungsi untuk menentukan URL tujuan di mana data dari suatu &lt;form> akan dikirimkan lalu diolah ketika ia disubmit</p></li>
+                                    <li><h6>method</h6> <p> berfungsi untuk menjelaskan cara data dibawa ke URL action pada waktu form disubmit. ada 2 value pada atribut menthod yaitu GET dan POST. keduanya berfungsi menampung data atau nilai dari sebuah form atau url sebelum dimanipulasi</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+                        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Form Dan Input</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <form action="" method="">
+                                                    <p>
+                                                        input type text 
+                                                        <input type="text" placeholder="ketikan nama anda">
+                                                    </p>
+                                                    <p>
+                                                        input type password 
+                                                        <input type="password" placeholder="ketikan password anda">
+                                                    </p>
+                                                    <p>
+                                                        input type number  
+                                                        <input type="number">
+                                                    </p>
+                                                    <p>
+                                                        input type search  
+                                                        <input type="search">
+                                                    </p>
+                                                    <p>
+                                                        input type file 
+                                                        <input type="file">
+                                                    </p>
+                                                    <p>
+                                                        input type range 
+                                                        <input type="range">
+                                                    </p>
+                                                    <p>
+                                                        input type color 
+                                                        <input type="color">
+                                                    </p>
+                                                    <p>
+                                                        input type button 
+                                                        <input type="button" value="tombol">
+                                                    </p>
+                                                    <p>
+                                                        input type radio 
+                                                        <input name="a" type="radio"> Pilihan 1 
+                                                        <input name="a" type="radio"> Pilihan 2 
+                                                    </p>
+                                                    <p>
+                                                        input type checkbox
+                                                        <input name="hobi" type="checkbox"> Sepak Bola 
+                                                        <input name="hobi" type="checkbox"> Butu Tangkis 
+                                                        <input name="hobi" type="checkbox"> Jogging 
+                                                    </p>
+                                                    <p>
+                                                        input select 
+                                                        <select>
+                                                            <option value="Laki-Laki"> Laki-Laki </option>
+                                                            <option value="Perempuan"> Perempuan </option>
+                                                        </select>
+                                                    </p>
+                                                    <p>
+                                                        Text Area 
+                                                        <textarea>Isi Dari Text Area</textarea>
+                                                    </p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;form action="" method="">
+            &lt;p>
+                input type text 
+                &lt;input type="text" placeholder="ketikan nama anda">
+            &lt;/p>
+            &lt;p>
+                input type password 
+                &lt;input type="password" placeholder="ketikan password anda">
+            &lt;/p>
+            &lt;p>
+                input type number  
+                &lt;input type="number">
+            &lt;/p>
+            &lt;p>
+                input type search  
+                &lt;input type="search">
+            &lt;/p>
+            &lt;p>
+                input type file 
+                &lt;input type="file">
+            &lt;/p>
+            &lt;p>
+                input type range 
+                &lt;input type="range">
+            &lt;/p>
+            &lt;p>
+                input type color 
+                &lt;input type="color">
+            &lt;/p>
+            &lt;p>
+                input type button 
+                &lt;input type="button" value="tombol">
+            &lt;/p>
+            &lt;p>
+                input type radio 
+                &lt;input name="a" type="radio"> Pilihan 1 
+                &lt;input name="a" type="radio"> Pilihan 2 
+            &lt;/p>
+            &lt;p>
+                input type checkbox
+                &lt;input name="hobi" type="checkbox"> Sepak Bola 
+                &lt;input name="hobi" type="checkbox"> Butu Tangkis 
+                &lt;input name="hobi" type="checkbox"> Jogging 
+            &lt;/p>
+            &lt;p>
+                input select 
+                &lt;select>
+                    &lt;option value="Laki-Laki"> Laki-Laki &lt;/option>
+                    &lt;option value="Perempuan"> Perempuan &lt;/option>
+                &lt;/select>
+            &lt;/p>
+            &lt;p>
+                Text Area 
+                &lt;textarea>Isi Dari Text Area&lt;/textarea>
+            &lt;/p>
+        &lt;/form>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>ID Dan Class</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                <ul style="list-style: circle;">
+                                    <li><p><h6 class="d-inline">ID</h6> adalah atribut global yang berfungsi sebagai “pengait” terhadap suatu elemen tertentu pada dokumen HTML</p></li>
+                                    <li><p><h6 class="d-inline">Class</h6> berfungsi memberikan CSS dan Javascript akses untuk men-target suatu elemen pada HTML, baik untuk mengubah tampilannya atau untuk menambahkan suatu aksi tertentu</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-3">
+                                        <h5>1. ID</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <p>
+                                                    <label for="nisn">nisn </label>
+                                                    <input id="nisn" type="text" placeholder="ketikan nisn anda">
+                                                </p>
+                                                <p>
+                                                    <label for="nama">nama </label>
+                                                    <input id="nama" type="text" placeholder="ketikan nama anda">
+                                                </p>
+                                        
+                                                <h4>Tahu Asli</h4>
+                                                <ol>
+                                                    <li><a href="#duabelas">sebelumnya</a></li>
+                                                    <li><a href="#empatbelas">selanjutnya</a></li>
+                                                    <li><a href="#induk">daftar isi</a></li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;p>
+            &lt;label for="nisn">nisn &lt;/label>
+            &lt;input id="nisn" type="text" placeholder="ketikan nisn anda">
+        &lt;/p>
+        &lt;p>
+            &lt;label for="nama">nama &lt;/label>
+            &lt;input id="nama" type="text" placeholder="ketikan nama anda">
+        &lt;/p>
+
+        &lt;h4>Tahu Asli&lt;/h4>
+        &lt;ol>
+            &lt;li>&lt;a href="#duabelas">sebelumnya&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#empatbelas">selanjutnya&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#induk">daftar isi&lt;/a>&lt;/li>
+        &lt;/ol>
+    &lt;/div> 
+                                        </pre>
+                                    </dd>
+                                </dl>
+                
+                                <dl>
+                                    <dt class="mb-3">
+                                        <h5>2. Class</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <style type="text/css">
+                                                    .tahu{
+                                                        color: red;
+                                                    }
+                                                </style>
+                                        
+                                                <div class="tahu">
+                                                    <p>Nama Saya</p>
+                                                    <p>Alexander Kurniawan</p>
+                                                    <p>Saya Suka Makan</p>
+                                                </div>
+                                        
+                                                <p class="tahu">Nama Saya</p>
+                                                <p class="tahu">Alexander Kurniawan</p>
+                                                <p class="tahu">Saya Suka Makan</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;stylx type="text/css">
+            .tahu{
+                color: red;
+            }
+        &lt;/style>
+
+        &lt;div class="tahu">
+            &lt;p>Nama Saya&lt;/p>
+            &lt;p>Alexander Kurniawan&lt;/p>
+            &lt;p>Saya Suka Makan&lt;/p>
+        &lt;/div>
+
+        &lt;p class="tahu">Nama Saya&lt;/p>
+        &lt;p class="tahu">Alexander Kurniawan&lt;/p>
+        &lt;p class="tahu">Saya Suka Makan&lt;/p>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Tabel Pada HTML</h2>
+                    
+                        <!-- Atribut Tabel -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Atribut Tabel</h5>
+                            <p>
+                                Berikut beberapa atribut pada tabel, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><p><h6 class="d-inline">tr</h6> untuk baris</p></li>
+                                    <li><p><h6 class="d-inline">td</h6> untuk kolom</p></li>
+                                    <li><p><h6 class="d-inline">thead</h6> untuk header tabel</p></li>
+                                    <li><p><h6 class="d-inline">th</h6> untuk tulisan header tabel</p></li>
+                                    <li><p><h6 class="d-inline">tbody</h6> untuk body tabel</p></li>
+                                    <li><p><h6 class="d-inline">border</h6> untuk membuat garis</p></li>
+                                    <li><p><h6 class="d-inline">cellspacing</h6> untuk jarak antar kotak cell</p></li>
+                                    <li><p><h6 class="d-inline">cellpadding</h6> untuk jarak antara konten dengan garis</p></li>
+                                    <li><p><h6 class="d-inline">rowspan</h6> untuk menggabungkan beberapa baris yang sudah ditentukan</p></li>
+                                    <li><p><h6 class="d-inline">colspan</h6> untuk menggabungkan beberapa kolom yang sudah ditentukan</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Tabel 1</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <table class="table table-bordered" style="max-width: 500px;">
+                                                <tr>
+                                                    <td>1, 1</td>
+                                                    <td>1, 2</td>
+                                                    <td>1, 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2, 1</td>
+                                                    <td>2, 2</td>
+                                                    <td>2, 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3, 1</td>
+                                                    <td>3, 2</td>
+                                                    <td>3, 3</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;table border="1" cellspacing="0" cellpadding="6" style="max-width: 500px;">
+        &lt;tr>
+            &lt;td>1, 1&lt;/td>
+            &lt;td>1, 2&lt;/td>
+            &lt;td>1, 3&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>2, 1&lt;/td>
+            &lt;td>2, 2&lt;/td>
+            &lt;td>2, 3&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>3, 1&lt;/td>
+            &lt;td>3, 2&lt;/td>
+            &lt;td>3, 3&lt;/td>
+        &lt;/tr>
+    &lt;/table>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Tabel 2</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <table class="table table-bordered" style="max-width: 500px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>Nama</th>
+                                                        <th>Jenis Kelamin</th>
+                                                        <th>Alamat</th>
+                                                        <th>Tanggal Lahir</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Alexander Kurniawan</td>
+                                                        <td>Laki - Laki</td>
+                                                        <td>Jl. Merdeka</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Suci Damar Rianti</td>
+                                                        <td>Perempuan</td>
+                                                        <td>Jl. Kusuma Negara</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Alicia Veronica</td>
+                                                        <td>Perempuan</td>
+                                                        <td>Jl. Anggrek</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Roby Bayu Kurnianto</td>
+                                                        <td>Laki - Laki</td>
+                                                        <td>Jl. Buntu</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;table border="1" cellspacing="0" cellpadding="6" style="max-width: 500px;">
+        &lt;thead>
+            &lt;tr>
+                &lt;th>No&lt;/th>
+                &lt;th>Nama&lt;/th>
+                &lt;th>Jenis Kelamin&lt;/th>
+                &lt;th>Alamat&lt;/th>
+                &lt;th>Tanggal Lahir&lt;/th>
+            &lt;/tr>
+        &lt;/thead>
+        &lt;tbody>
+            &lt;tr>
+                &lt;td>1&lt;/td>
+                &lt;td>Alexander Kurniawan&lt;/td>
+                &lt;td>Laki - Laki&lt;/td>
+                &lt;td>Jl. Merdeka&lt;/td>
+                &lt;td>-&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>2&lt;/td>
+                &lt;td>Suci Damar Rianti&lt;/td>
+                &lt;td>Perempuan&lt;/td>
+                &lt;td>Jl. Kusuma Negara&lt;/td>
+                &lt;td>-&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>3&lt;/td>
+                &lt;td>Alicia Veronica&lt;/td>
+                &lt;td>Perempuan&lt;/td>
+                &lt;td>Jl. Anggrek&lt;/td>
+                &lt;td>-&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>4&lt;/td>
+                &lt;td>Roby Bayu Kurnianto&lt;/td>
+                &lt;td>Laki - Laki&lt;/td>
+                &lt;td>Jl. Buntu&lt;/td>
+                &lt;td>-&lt;/td>
+            &lt;/tr>
+        &lt;/tbody>
+    &lt;/table>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Marge Pada Cell Tabel</h2>
+                    
+                        <!-- Atribut Tabel -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Atribut Tabel</h5>
+                            <p>
+                                Berikut beberapa atribut pada tabel, yaitu 
+                                <ul style="list-style: circle;">
+                                    <li><p><h6 class="d-inline">tr</h6> untuk baris</p></li>
+                                    <li><p><h6 class="d-inline">td</h6> untuk kolom</p></li>
+                                    <li><p><h6 class="d-inline">thead</h6> untuk header tabel</p></li>
+                                    <li><p><h6 class="d-inline">th</h6> untuk tulisan header tabel</p></li>
+                                    <li><p><h6 class="d-inline">tbody</h6> untuk body tabel</p></li>
+                                    <li><p><h6 class="d-inline">border</h6> untuk membuat garis</p></li>
+                                    <li><p><h6 class="d-inline">cellspacing</h6> untuk jarak antar kotak cell</p></li>
+                                    <li><p><h6 class="d-inline">cellpadding</h6> untuk jarak antara konten dengan garis</p></li>
+                                    <li><p><h6 class="d-inline">rowspan</h6> untuk menggabungkan beberapa baris yang sudah ditentukan</p></li>
+                                    <li><p><h6 class="d-inline">colspan</h6> untuk menggabungkan beberapa kolom yang sudah ditentukan</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Marge Pada Cell Tabel -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Marge Pada Cell Tabel</h5>
+                            <p>
+                                Berikut cara penggabungan cell pada tabel 
+                                <ul style="list-style: circle;">
+                                    <li>Pilih cell yang akan digabung, Tentukan dibaris dan dikolom keberapa</li>
+                                    <li>Pilih rowspan atau colspan dan tentukan jumlah cell yang akan digabung</li>
+                                    <li>Perhatikan pada kodingan, hapus cell pada tabel
+                                        <ul style="list-style: circle;">
+                                            <li>Jika rowspan maka hapus cell td di tr yang berbeda / tr bawahnya</li>
+                                            <li>Jika colspan maka hapus cell td di tr yang sama</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>1. Tabel Rowspan</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <table class="table table-bordered" style="max-width: 500px; height: 200px;">
+                                                <tr>
+                                                    <td rowspan="2"></td>
+                                                    <td rowspan="2"></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td rowspan="2"></td>
+                                                    <td rowspan="2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    
+                                                    
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;table border="1" cellspacing="0" cellpadding="6" style="max-width: 500px;">
+        &lt;tr>
+            &lt;td rowspan="2">&lt;/td>
+            &lt;td rowspan="2">&lt;/td>
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            
+            
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+            &lt;td rowspan="2">&lt;/td>
+            &lt;td rowspan="2">&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+            
+            
+        &lt;/tr>
+    &lt;/table>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>2. Tabel Colspan</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <table class="table table-bordered" style="max-width: 500px; height: 200px;">
+                                                <tr>
+                                                    <td colspan="2"></td>
+                            
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                            
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td colspan="2"></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td colspan="2"></td>
+                                                    
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;table border="1" cellspacing="0" cellpadding="6" style="max-width: 500px;">
+        &lt;tr>
+            &lt;td colspan="2">&lt;/td>
+
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td colspan="2">&lt;/td>
+
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+            &lt;td colspan="2">&lt;/td>
+            
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>&lt;/td>
+            &lt;td>&lt;/td>
+            &lt;td colspan="2">&lt;/td>
+            
+        &lt;/tr>
+    &lt;/table>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>3. Tabel Rowspan Dan Colspan</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <table class="table table-bordered" style="max-width: 500px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th rowspan="2">No</th>
+                                                        <th rowspan="2">Nama</th>
+                                                        <th colspan="4">Nilai</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>MTK</th>
+                                                        <th>Fisika</th>
+                                                        <th>B. Ind</th>
+                                                        <th>B. Ing</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>Alexander Kurniawan</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>2</th>
+                                                        <td>Alicia Veronica</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>3</th>
+                                                        <td>Robi Bayu Kurnianto</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                        <td>99</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;table border="1" cellspacing="0" cellpadding="6" style="max-width: 500px;">
+        &lt;thead>
+            &lt;tr>
+                &lt;th rowspan="2">No&lt;/th>
+                &lt;th rowspan="2">Nama&lt;/th>
+                &lt;th colspan="4">Nilai&lt;/th>
+            &lt;/tr>
+            &lt;tr>
+                &lt;th>MTK&lt;/th>
+                &lt;th>Fisika&lt;/th>
+                &lt;th>B. Ind&lt;/th>
+                &lt;th>B. Ing&lt;/th>
+            &lt;/tr>
+        &lt;/thead>
+        &lt;tbody>
+            &lt;tr>
+                &lt;th>1&lt;/th>
+                &lt;td>Alexander Kurniawan&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;th>2&lt;/th>
+                &lt;td>Alicia Veronica&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;th>3&lt;/th>
+                &lt;td>Robi Bayu Kurnianto&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+                &lt;td>99&lt;/td>
+            &lt;/tr>
+        &lt;/tbody>
+    &lt;/table>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Inline Dan Block</h2>
+                    
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <p>
+                                <ul style="list-style: circle;">
+                                    <li><p><h6 class="d-inline">Inline</h6> adalah kategori tag yang ditampilkan menyamping</p></li>
+                                    <li><p><h6 class="d-inline">Block</h6> adalah Kategori tag yang ditampilkan kebawah, Kategori block bisa digunakan sebagai wadah dari element-element inline maupun block itu sendiri</p></li>
+                                </ul>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Inline Dan Block</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <h4>Inline</h4>
+                                
+                                                <a href="">Link 1</a>
+                                                <a href="">Link 2</a>
+                                                <br>
+                                                <input type="text" placeholder="nama">
+                                                <input type="text" placeholder="alamat">
+                                                <br>
+                                                <span>Halo Semua</span>
+                                                <span>Halo Semua</span>
+                                
+                                                <hr>
+                                
+                                                <h4>Block</h4>
+                                
+                                                <p>Paragraph 1</p>
+                                                <p>Paragraph 1</p>
+                                
+                                                <h1>Ini H1</h1>
+                                                <h2>Ini H2</h2>
+                                        
+                                                <div>Halo Semua</div>
+                                                <div>Halo Semua</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;h4>Inline&lt;/h4>
+
+        &lt;a href="">Link 1&lt;/a>
+        &lt;a href="">Link 2&lt;/a>
+        &lt;br>
+        &lt;input type="text" placeholder="nama">
+        &lt;input type="text" placeholder="alamat">
+        &lt;br>
+        &lt;span>Halo Semua&lt;/span>
+        &lt;span>Halo Semua&lt;/span>
+
+        &lt;hr>
+
+        &lt;h4>Block&lt;/h4>
+
+        &lt;p>Paragraph 1&lt;/p>
+        &lt;p>Paragraph 1&lt;/p>
+
+        &lt;h1>Ini H1&lt;/h1>
+        &lt;h2>Ini H2&lt;/h2>
+
+        &lt;div>Halo Semua&lt;/div>
+        &lt;div>Halo Semua&lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Penggabungan Inline Dan Block -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Penggabungan Inline Dan Block</h5>
+                            <p>
+                                Element Block adalah sebagai pembungkus element-element Inline atau block itu sendiri. Tidak bisa sebalik-nya. 
+                            </p>
+                        </div>
+                        </div>
+        
+                        <!-- Implementasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Implementasi</h5>
+                            <p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h5>Penggabungan Inline Dan Block</h5>
+                                    </dt>
+                                    <dd>
+                                        <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="container">
+                                                <h1>
+                                                    <span>Ini H1</span>
+                                                    <span>Ini H1</span>
+                                                    <span>Ini H1</span>
+                                                </h1>
+                                        
+                                                <div>
+                                                    <input type="text" placeholder="nama">
+                                                </div>
+                                                <div>
+                                                    <input type="text" placeholder="email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                
+    &lt;div class="container">
+        &lt;h1>
+            &lt;span>Ini H1&lt;/span>
+            &lt;span>Ini H1&lt;/span>
+            &lt;span>Ini H1&lt;/span>
+        &lt;/h1>
+
+        &lt;div>
+            &lt;input type="text" placeholder="nama">
+        &lt;/div>
+        &lt;div>
+            &lt;input type="text" placeholder="email">
+        &lt;/div>
+    &lt;/div>
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Catatan</h2>
+                    
+                        <!-- Tag HTML -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Tag HTML</h5>
+                            <p>
+                                Berikut beberapa tag HTML 
+                                <table class="table table-hover" style="max-width: 500px;">
+                                    <thead>
+                                        <tr>
+                                            <th>Tag</th>
+                                            <th>Kategori</th>
+                                            <th>Fungsi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&lt;pre>...&lt;/pre></td>
+                                            <td>Block</td>
+                                            <td>Menampilkan teks dengan posisi yang sama dengan program</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;marquee>...&lt;/marquee></td>
+                                            <td>Block</td>
+                                            <td>Membuat tulisan bergerak</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;big>...&lt;/big></td>
+                                            <td>Inline</td>
+                                            <td>Membuat teks menjadi besar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;small>...&lt;/small></td>
+                                            <td>Inline</td>
+                                            <td>Membuat teks menjadi kecil</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="single-script.js"></script>
+</body>
+</html>

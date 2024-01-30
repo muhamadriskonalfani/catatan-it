@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Koding</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        :root {
+            --white: #fff;
+            --grey1: #666;
+            --grey2: #444;
+            --grey3: #222;
+            
+            /* --border: 1px solid black; */
+            --border: none;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: var(--grey3);
+        }
+        
+        video {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .container-fluid {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+            gap: 1rem;
+            
+            border: var(--border);
+        }
+        
+        .container-fluid .title {
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--white);
+        
+            border: var(--border);
+        }
+        
+        .grid-box-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+        
+        .box-links {
+            display: grid;
+            gap: 1rem;
+            width: 15rem;
+            transform: translateX(100vw);
+        
+            border: var(--border);
+        }
+        
+        .box-links .link {
+            transition: .1s;    /* kecepatan animasi */
+            transform: translateX(100vw);
+        
+            border: var(--border);
+        }
+        
+        .box-links .link .btn {
+            width: 100%;
+            text-align: left;
+            font-weight: 500;
+            background: var(--grey2);
+            color: var(--white);
+            border: none;
+            transition: .2s;
+        }
+
+        .box-links .link .btn:hover {
+            background: var(--grey1);
+        }
+
+
+        /* Responsive */
+
+        @media (max-width:768px) {
+            
+            video {
+                width: unset;
+                height: 100vh;
+            }
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="assets/video/background.mp4" type="video/mp4">
+    </video>
+
+    <div class="container-fluid">
+        <div class="title">Catatan Koding</div>
+
+        <div class="grid-box-links">
+            <div class="box-links">
+                <div class="link">
+                    <a class="btn btn-secondary" href="single/html-dasar.html">HTML</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="double/css-dasar.html">CSS</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="double/javascript-dasar.html">JavaScript</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="single/database-mysql.html">Database MySQL</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="single/crud-php-mysql.html">CRUD</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="single/bootstrap-5.html">Bootstrap 5</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="single/java-oop.html">Java OOP</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="double/command-prompt.html">Command Prompt</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="single/git-dan-github.html">Git & GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fast load animation
+        const boxLinks = document.querySelectorAll('.box-links');
+        const links = document.querySelectorAll('.link');
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                boxLinks.forEach((item) => {
+                    item.style.transform = 'translateX(0)';
+                });
+                links.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.style.transform = 'translateX(0)';
+                    }, index * 100); // kecepatan style berubah
+                });
+            }, 400);
+        });
+
+    </script>
+</body>
+</html>
