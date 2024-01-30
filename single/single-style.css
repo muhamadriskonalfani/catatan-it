@@ -50,6 +50,12 @@ body {
     display: none;
 }
 
+.grid-single .aside .aside-content {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+}
+
 .grid-single .aside .aside-content button {
     background: var(--grey3);
     text-align: left;
@@ -91,7 +97,7 @@ body {
     right: .5rem;
     font-size: 1.8rem;
     color: var(--white);
-    z-index: 999;
+    z-index: 5;
     transform: translateX(100vw);
     transition: .2s;
 }
@@ -112,6 +118,12 @@ body {
     display: none;
 }
 
+.grid-single .main .main-content {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+}
+
 .grid-single .main .main-content .logo {
     display: flex;
     justify-content: center;
@@ -119,6 +131,10 @@ body {
     min-height: calc(100vh - 2rem);
     transform: translateX(100vw);
     transition: 1s;
+}
+
+.grid-single .main .main-content .logo img {
+    width: 100%;
 }
 
 .grid-single .main .main-content .logo.hide {
@@ -131,7 +147,7 @@ body {
     right: 5rem;
     display: flex;
     gap: .5rem;
-    z-index: 999;
+    z-index: 4;
 }
 
 .grid-single .main .box-size .item-size {
@@ -179,6 +195,10 @@ p, li, pre {
     transition: .2s;
 }
 
+pre::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* Popup supports */
 
@@ -195,7 +215,7 @@ p, li, pre {
     background: rgba(0, 0, 0, .5);
     width: 100vw;
     height: 100vh;
-    z-index: 997;
+    z-index: 2;
 }
 
 .hiddenCode .hide-code {
@@ -207,7 +227,7 @@ p, li, pre {
     right: .5rem;
     font-size: 1.8rem;
     color: var(--white);
-    z-index: 1;
+    z-index: 4;
     transform: translateX(100vw);
     transition: .2s;
 }
@@ -233,18 +253,7 @@ p, li, pre {
     height: 80vh;
     background: var(--white);
     color: var(--grey3);
-    z-index: 998;
-}
-
-.code-box::-webkit-scrollbar {
-    background: var(--white);
-    width: .5rem;
-    height: .5rem;
-}
-
-.code-box::-webkit-scrollbar-thumb {
-    background: var(--grey1);
-    border-radius: 1rem;
+    z-index: 3;
 }
 
 
@@ -266,7 +275,7 @@ p, li, pre {
         width: 350px;
         transform: translateX(-100vw);
         transition: .5s;
-        z-index: 2;
+        z-index: 6;
     }
 
     .grid-single .main {

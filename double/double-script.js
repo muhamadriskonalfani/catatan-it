@@ -4,7 +4,8 @@ const showAside         = document.querySelector('.show-aside');
 const asideSubBtn       = document.querySelectorAll('.aside-content .pilih-daftar li button');
 const asideLiBtn        = document.querySelectorAll('.aside-content .daftar li button');
 const asideExitBtn      = document.querySelectorAll('.aside-content .exit');
-const mainBg            = document.querySelector('.main-content .logo');
+const mainBox           = document.querySelector('.main');
+const mainLogo          = document.querySelector('.main-content .logo');
 const hiddenCodeBox     = document.querySelectorAll('.hiddenCode');
 const hiddenCodeBtn     = document.querySelectorAll('button[name=hiddenCode]');
 const hideCode          = document.querySelectorAll('.hide-code');
@@ -25,7 +26,7 @@ function showPage(pageNumber) {
     if (window.innerWidth <= 768) {
         asideBox.style.transform = 'translateX(-100vw)';
     }
-    mainBg.classList.add('hide');
+    mainLogo.classList.add('hide');
     materi.forEach((e) => e.classList.add('hide'));
     materi[pageNumber-1].classList.remove('hide');
     asideLiBtn.forEach((e) => e.style.background = 'var(--grey3)');
@@ -42,7 +43,7 @@ window.addEventListener('load', () => {
         }, index * 100);
     });
     setTimeout(() => {
-        mainBg.style.transform = 'translateX(0)';
+        mainLogo.style.transform = 'translateX(0)';
     }, 1000);
     setTimeout(() => {
         showAside.style.transform = 'translateX(0)';
@@ -131,6 +132,16 @@ sizeOption.forEach((option, index) => {
         sizeOption.forEach((e) => e.classList.remove('active-size'));
         sizeOption[index].classList.add('active-size');
     });
+});
+
+// Animate hiding corner icon on window scroll
+mainBox.addEventListener('scroll', () => {
+    showAside.style.transform = 'translateX(-100vw)';
+    resizeIcon.style.transform = 'translateX(100vw)';
+    setTimeout(() => {
+        showAside.style.transform = 'translateX(0)';
+        resizeIcon.style.transform = 'translateX(0)';
+    }, 2000);
 });
 
 
