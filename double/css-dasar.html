@@ -2575,15 +2575,13 @@
         display: flex;
         flex-direction: row | row-reverse | column | column-reverse ;
     }
+
+    // Value
+    -> row              - dari awal ke akhir secara horizontal
+    -> row-reverse      - dari akhir ke awal secara horizontal
+    -> column           - dari awal ke akhir secara vertikal
+    -> column-reverse   - dari akhir ke awal secara vertikal
                                         </pre>
-                                    
-                                        <h6>Penjelasan Value</h6>
-                                        <ul style="list-style: circle;">
-                                            <li><h6>row</h6> <p>dari awal ke akhir secara horizontal</p></li>
-                                            <li><h6>row-reverse</h6> <p>dari akhir ke awal secara horizontal</p></li>
-                                            <li><h6>column</h6> <p>dari awal ke akhir secara vertikal</p></li>
-                                            <li><h6>column-reverse</h6> <p>dari akhir ke awal secara vertikal</p></li>
-                                        </ul>
                                     </dd>
                                 </dl>
                                 <hr>
@@ -2604,14 +2602,12 @@
         display: flex;
         flex-wrap: nowrap | wrap | wrap-reverse ;
     }
+
+    // Value
+    -> nowrap           - jika konten melebihi parent dia akan di paksa tetap dalam satu baris
+    -> wrap             - jika konten melebihi parent maka akan diturunkan ke bawahnya (baris baru)
+    -> wrap-reverse     - jika konten melebihi parent maka akan diturunkan kebawahnya tapi dari akhir ke awal
                                         </pre>
-                                        
-                                        <h6>Penjelasan Value</h6>
-                                        <ul style="list-style: circle;">
-                                            <li><h6>nowrap</h6> <p>jika konten melebihi parent dia akan di paksa tetap dalam satu baris</p></li>
-                                            <li><h6>wrap</h6> <p>jika konten melebihi parent maka akan diturunkan ke bawahnya (baris baru)</p></li>
-                                            <li><h6>wrap-reverse</h6> <p>jika konten melebihi parent maka akan diturunkan kebawahnya tapi dari akhir ke awal</p></li>
-                                        </ul>
                                     </dd>
                                 </dl>
                                 <hr>
@@ -2633,7 +2629,8 @@
         justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly ;
     }
                                         </pre>
-                                        
+                                    </dd>
+                                    <dd>
                                         <h6>Penjelasan Value</h6>
                                         <style>
                                             .kotak-justify {
@@ -2650,9 +2647,9 @@
                                                 background: #00ff00;
                                             }
                                         </style>
-                                        <ul style="display: flex; flex-wrap: wrap; list-style: none;">
+                                        <ul style="display: flex; flex-wrap: wrap; list-style: none; transform: translateX(-2rem);">
                                             <li class="mb-3">
-                                                <h5>flex-start</h5>
+                                                <h6>flex-start</h6>
                                                 <div class="kotak-justify" style="justify-content: flex-start;">
                                                     <div class="box-justify"></div>
                                                     <div class="box-justify"></div>
@@ -2660,7 +2657,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>flex-end</h5>
+                                                <h6>flex-end</h6>
                                                 <div class="kotak-justify" style="justify-content: flex-end;">
                                                     <div class="box-justify"></div>
                                                     <div class="box-justify"></div>
@@ -2668,7 +2665,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>center</h5>
+                                                <h6>center</h6>
                                                 <div class="kotak-justify" style="justify-content: center;">
                                                     <div class="box-justify"></div>
                                                     <div class="box-justify"></div>
@@ -2676,7 +2673,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>space-between</h5>
+                                                <h6>space-between</h6>
                                                 <div class="kotak-justify" style="justify-content: space-between;">
                                                     <div class="box-justify"></div>
                                                     <div class="box-justify"></div>
@@ -2684,7 +2681,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>space-around</h5>
+                                                <h6>space-around</h6>
                                                 <div class="kotak-justify" style="justify-content: space-around;">
                                                     <div class="box-justify"></div>
                                                     <div class="box-justify"></div>
@@ -2692,7 +2689,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>space-evenly</h5>
+                                                <h6>space-evenly</h6>
                                                 <div class="kotak-justify" style="justify-content: space-evenly;">
                                                     <div class="box-justify"></div>
                                                     <div class="box-justify"></div>
@@ -2721,7 +2718,8 @@
         align-items: flex-start | flex-end | center | stretch | baseline ;
     }
                                         </pre>
-                                        
+                                    </dd>
+                                    <dd>
                                         <h6>Penjelasan Value</h6> 
                                         <style>
                                             .kotak-align {
@@ -2738,9 +2736,9 @@
                                                 background: #00ff00;
                                             }
                                         </style>
-                                        <ul style="display: flex; flex-wrap: wrap; list-style: none;">
+                                        <ul style="display: flex; flex-wrap: wrap; list-style: none; transform: translateX(-2rem);">
                                             <li class="mb-3">
-                                                <h5>flex-start</h5>
+                                                <h6>flex-start</h6>
                                                 <div class="kotak-align" style="align-items: flex-start;">
                                                     <div class="box-align" style="height: 20px;"></div>
                                                     <div class="box-align" style="height: 50px;"></div>
@@ -2749,7 +2747,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>flex-end</h5>
+                                                <h6>flex-end</h6>
                                                 <div class="kotak-align" style="align-items: flex-end;">
                                                     <div class="box-align" style="height: 20px;"></div>
                                                     <div class="box-align" style="height: 50px;"></div>
@@ -2758,7 +2756,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>center</h5>
+                                                <h6>center</h6>
                                                 <div class="kotak-align" style="align-items: center;">
                                                     <div class="box-align" style="height: 20px;"></div>
                                                     <div class="box-align" style="height: 50px;"></div>
@@ -2767,7 +2765,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>stretch</h5>
+                                                <h6>stretch</h6>
                                                 <div class="kotak-align" style="align-items: stretch;">
                                                     <div class="box-align"></div>
                                                     <div class="box-align"></div>
@@ -2776,7 +2774,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>baseline</h5>
+                                                <h6>baseline</h6>
                                                 <div class="kotak-align" style="align-items: baseline;">
                                                     <div class="box-align" style="height: 20px;"></div>
                                                     <div class="box-align" style="height: 50px;"></div>
@@ -2807,7 +2805,8 @@
         align-content: flex-start | flex-end | center | stretch | space-between | space-around ;
     }
                                         </pre>
-                                        
+                                    </dd>
+                                    <dd>
                                         <h6>Penjelasan Value</h6> 
                                         <style>
                                             .kotak-align-content {
@@ -2824,9 +2823,9 @@
                                                 background: #00ff00;
                                             }
                                         </style>
-                                        <ul style="display: flex; flex-wrap: wrap; list-style: none;">
+                                        <ul style="display: flex; flex-wrap: wrap; list-style: none; transform: translateX(-2rem);">
                                             <li class="mb-3">
-                                                <h5>flex-start</h5>
+                                                <h6>flex-start</h6>
                                                 <div class="kotak-align-content" style="align-content: flex-start;">
                                                     <div class="box-align-content" style="width: 50px; height: 30px;"></div>
                                                     <div class="box-align-content" style="width: 80px; height: 30px;"></div>
@@ -2840,7 +2839,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>flex-end</h5>
+                                                <h6>flex-end</h6>
                                                 <div class="kotak-align-content" style="align-content: flex-end;">
                                                     <div class="box-align-content" style="width: 50px; height: 30px;"></div>
                                                     <div class="box-align-content" style="width: 80px; height: 30px;"></div>
@@ -2854,7 +2853,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>center</h5>
+                                                <h6>center</h6>
                                                 <div class="kotak-align-content" style="align-content: center;">
                                                     <div class="box-align-content" style="width: 50px; height: 30px;"></div>
                                                     <div class="box-align-content" style="width: 80px; height: 30px;"></div>
@@ -2868,7 +2867,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>stretch</h5>
+                                                <h6>stretch</h6>
                                                 <div class="kotak-align-content" style="align-content: stretch;">
                                                     <div class="box-align-content" style="width: 50px;"></div>
                                                     <div class="box-align-content" style="width: 80px;"></div>
@@ -2882,7 +2881,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>space-between</h5>
+                                                <h6>space-between</h6>
                                                 <div class="kotak-align-content" style="align-content: space-between;">
                                                     <div class="box-align-content" style="width: 50px; height: 30px;"></div>
                                                     <div class="box-align-content" style="width: 80px; height: 30px;"></div>
@@ -2896,7 +2895,7 @@
                                                 </div>
                                             </li>
                                             <li class="mb-3">
-                                                <h5>space-around</h5>
+                                                <h6>space-around</h6>
                                                 <div class="kotak-align-content" style="align-content: space-around;">
                                                     <div class="box-align-content" style="width: 50px; height: 30px;"></div>
                                                     <div class="box-align-content" style="width: 80px; height: 30px;"></div>
@@ -3189,6 +3188,7 @@
                                         <h6>Hasilnya</h6> 
                                         <style>
                                             .kotak-self {
+                                                transform: scale(.85) translateX(-1.7rem);
                                                 display: flex;
                                                 width: 300px;
                                                 height: 120px;
@@ -3293,7 +3293,7 @@
                                 Contoh membuat website sederhana 
                                 <p>
                                     <style>
-                                        .grid {
+                                        #apa-itu-css-grid {
                                             max-width: 500px;
                                             height: 400px;
                                             padding: 5px;
@@ -3302,48 +3302,48 @@
                                             border: 2px solid grey;
                                             box-sizing: border-box;
                                             display: grid;
-                                            grid-template-areas: 'header header'
-                                                                'aside main'
-                                                                'nav main'
-                                                                'footer footer';
+                                            grid-template-areas: 'headerX headerX'
+                                                                'asideX mainX'
+                                                                'navX mainX'
+                                                                'footerX footerX';
                                             grid-template-columns: 1fr 1.5fr;
                                             grid-template-rows: 1fr 1fr 1.3fr 0.5fr;
                                         }
                                         
-                                        .grid .header,
-                                        .grid .aside,
-                                        .grid .nav,
-                                        .grid .main,
-                                        .grid .footer {
+                                        #apa-itu-css-grid .header-x,
+                                        #apa-itu-css-grid .aside-x,
+                                        #apa-itu-css-grid .nav-x,
+                                        #apa-itu-css-grid .main-x,
+                                        #apa-itu-css-grid .footer-x {
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
                                             border: 2px solid grey;
                                             margin: 1px;
                                         }
-                                        .grid .header {
-                                            grid-area: header;
+                                        #apa-itu-css-grid .header-x {
+                                            grid-area: headerX;
                                         }
-                                        .grid .aside {
-                                            grid-area: aside;
+                                        #apa-itu-css-grid .aside-x {
+                                            grid-area: asideX;
                                         }
-                                        .grid .nav {
-                                            grid-area: nav;
+                                        #apa-itu-css-grid .nav-x {
+                                            grid-area: navX;
                                         }
-                                        .grid .main {
-                                            grid-area: main;
+                                        #apa-itu-css-grid .main-x {
+                                            grid-area: mainX;
                                         }
-                                        .grid .footer {
-                                            grid-area: footer;
+                                        #apa-itu-css-grid .footer-x {
+                                            grid-area: footerX;
                                         }
                                     </style>
                 
-                                    <div class="grid">
-                                        <div class="header">header</div>
-                                        <div class="aside">aside</div>
-                                        <div class="nav">nav</div>
-                                        <div class="main">main</div>
-                                        <div class="footer">footer</div>
+                                    <div class="grid" id="apa-itu-css-grid">
+                                        <div class="header-x">header</div>
+                                        <div class="aside-x">aside</div>
+                                        <div class="nav-x">nav</div>
+                                        <div class="main-x">main</div>
+                                        <div class="footer-x">footer</div>
                                     </div>
                                 </p>
                                 

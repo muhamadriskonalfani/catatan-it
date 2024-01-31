@@ -185,7 +185,7 @@
                                     <li><h6>.col-lg-*</h6> <p>digunakan untuk mengatur grid pada ukuran layar monitor berukuran besar (>=992px)</p></li>
                                     <li><h6>.col-xl-*</h6> <p>digunakan untuk mengatur grid pada ukuran layar monitor berukuran extra besar (>=1200px)</p></li>
                                 </ul>
-                                <i>Nb : wajib menggunakan class row jika ingin menggunakan class grid system</i>
+                                <p><i>Nb : wajib menggunakan class row jika ingin menggunakan class grid system</i></p>
                             </div>
                         </div>
                         </div>
@@ -830,36 +830,48 @@
                                     <dd>
                                         <div class="card mb-4">
                                         <div class="card-body">
-                                            <table class="table" style="max-width: 500px;">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Nama</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th>Alamat</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Alexander</td>
-                                                        <td>Laki-Laki</td>
-                                                        <td>Jl.Merdeka</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Booby</td>
-                                                        <td>Laki-Laki</td>
-                                                        <td>Jl.Pejuang</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Alicia</td>
-                                                        <td>Perempuan</td>
-                                                        <td>Jl.Anggrek</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <style>
+                                                #tabel-default {
+                                                    overflow: auto;
+                                                }
+
+                                                #tabel-default::-webkit-scrollbar {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                            <div class="container" id="tabel-default">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Nama</th>
+                                                            <th>Jenis Kelamin</th>
+                                                            <th>Alamat</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Alexander</td>
+                                                            <td>Laki-Laki</td>
+                                                            <td>Jl.Merdeka</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Booby</td>
+                                                            <td>Laki-Laki</td>
+                                                            <td>Jl.Pejuang</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Alicia</td>
+                                                            <td>Perempuan</td>
+                                                            <td>Jl.Anggrek</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                         </div>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
@@ -910,36 +922,48 @@
                                     <dd>
                                         <div class="card mb-4">
                                         <div class="card-body">
-                                            <table class="table table-bordered" style="max-width: 500px;">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Nama</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th>Alamat</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Alexander</td>
-                                                        <td>Laki-Laki</td>
-                                                        <td>Jl.Merdeka</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Booby</td>
-                                                        <td>Laki-Laki</td>
-                                                        <td>Jl.Pejuang</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Alicia</td>
-                                                        <td>Perempuan</td>
-                                                        <td>Jl.Anggrek</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <style>
+                                                #table-bordered {
+                                                    overflow: auto;
+                                                }
+
+                                                #table-bordered::-webkit-scrollbar {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                            <div class="container" id="table-bordered">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Nama</th>
+                                                            <th>Jenis Kelamin</th>
+                                                            <th>Alamat</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Alexander</td>
+                                                            <td>Laki-Laki</td>
+                                                            <td>Jl.Merdeka</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Booby</td>
+                                                            <td>Laki-Laki</td>
+                                                            <td>Jl.Pejuang</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Alicia</td>
+                                                            <td>Perempuan</td>
+                                                            <td>Jl.Anggrek</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                         </div>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
@@ -1744,7 +1768,17 @@
                                     <dd>
                                         <div class="card mb-4">
                                         <div class="card-body">
-                                            <div class="card-group" style="display: flex;">
+                                            <style>
+                                                #card-group {
+                                                    overflow: auto;
+                                                }
+
+                                                #card-group::-webkit-scrollbar {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                            <div class="card-group" style="display: flex;" id="card-group">
                                                 <div class="card me-2">
                                                     <img src="../assets/img/bootstrap-5.png" class="card-img-top">
                                                     <div class="card-body">
@@ -1864,7 +1898,17 @@
                                     <dd>
                                         <div class="card mb-4">
                                         <div class="card-body">
-                                            <div class="row-card" style="display: flex;">
+                                            <style>
+                                                #card-grid {
+                                                    overflow: auto;
+                                                }
+
+                                                #card-grid::-webkit-scrollbar {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                            <div class="row-card" style="display: flex;" id="card-grid">
                                                 <div class="col-md-4">
                                                     <div class="card me-2">
                                                         <img src="../assets/img/bootstrap-5.png" class="card-img-top">
@@ -3592,7 +3636,7 @@
                                         <div class="card-body">
                                             <div class="container">
                                                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                                    <div class="container-fluid">
+                                                    <div class="container">
                                                     <a class="navbar-brand" href="#">Navbar</a>
                                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                                         <span class="navbar-toggler-icon"></span>
@@ -3632,7 +3676,7 @@
                                 
                                                 <!-- custom navbar -->
                                                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                                                    <div class="container-fluid">
+                                                    <div class="container">
                                                     <a class="navbar-brand" href="#">Ngoding<b>pintar</b></a>
                                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
                                                         <span class="navbar-toggler-icon"></span>
@@ -3660,7 +3704,7 @@
                                 
                                                 <!-- nav dan jumbotron -->
                                                 <div class="bg-light p-5 mb-4">
-                                                    <div class="container-fluid py-4">
+                                                    <div class="container py-4">
                                                         <h1 class="display-4 fw-bold">Ngodingpintar</h1>
                                                         <p class="col-md-8 fs-4">Lorem ipsum, dolor sit amet consectetur 
                                                             adipisicing elit. Perspiciatis hic non ipsa dolore error eum laboriosam 
@@ -3793,7 +3837,17 @@
                                     <dd>
                                         <div class="card mb-4">
                                         <div class="card-body">
-                                            <div class="container">
+                                            <style>
+                                                #pagination {
+                                                    overflow: auto;
+                                                }
+
+                                                #pagination::-webkit-scrollbar {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                            <div class="container" id="pagination">
                                                 <nav aria-label="page navigation example">
                                                     <ul class="pagination">
                                                         <li class="page-item"><a href="#" class="page-link">Sebelmunya</a></li>
@@ -3867,7 +3921,17 @@
                                     <dd>
                                         <div class="card mb-4">
                                         <div class="card-body">
-                                            <div class="container">
+                                            <style>
+                                                #pagination-size {
+                                                    overflow: auto;
+                                                }
+
+                                                #pagination-size::-webkit-scrollbar {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                            <div class="container" id="pagination-size">
                                                 <!-- ukuran pagination -->
                                                 <nav aria-label="page navigation example">
                                                     <ul class="pagination pagination-lg">
@@ -4105,6 +4169,7 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="single-script.js"></script>
 </body>
 </html>

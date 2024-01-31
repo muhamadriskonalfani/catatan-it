@@ -129,8 +129,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 2rem);
-    transform: translateX(100vw);
-    transition: 1s;
+    transform: scale(0);
+    transition: .2s;
 }
 
 .grid-double .main .main-content .logo img {
@@ -191,7 +191,7 @@ body {
     border: 2px solid var(--grey1);
 }
 
-p, li, pre {
+p, li, dd, td, pre {
     transition: .2s;
 }
 

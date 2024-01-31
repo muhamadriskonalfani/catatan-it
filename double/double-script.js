@@ -23,14 +23,20 @@ window.addEventListener('resize', function() {
 
 // Show selected page
 function showPage(pageNumber) {
+    let index = pageNumber - 1;
     if (window.innerWidth <= 768) {
         asideBox.style.transform = 'translateX(-100vw)';
     }
     mainLogo.classList.add('hide');
-    materi.forEach((e) => e.classList.add('hide'));
-    materi[pageNumber-1].classList.remove('hide');
-    asideLiBtn.forEach((e) => e.style.background = 'var(--grey3)');
-    asideLiBtn[pageNumber-1].style.background = 'var(--grey1)';
+    asideLiBtn.forEach((btn) => btn.style.background = 'var(--grey3)');
+    asideLiBtn[index].style.background = 'var(--grey1)';
+    materi.forEach((box) => {
+        box.classList.add('hide');
+        box.removeAttribute('id');
+    });
+    materi[index].classList.remove('hide');
+    materi[index].setAttribute('id', index);
+    window.location.href = `#${index}`;
 }
 
 // Animate aside buttons, logo, and corner icons
@@ -43,7 +49,7 @@ window.addEventListener('load', () => {
         }, index * 100);
     });
     setTimeout(() => {
-        mainLogo.style.transform = 'translateX(0)';
+        mainLogo.style.transform = 'scale(1)';
     }, 1000);
     setTimeout(() => {
         showAside.style.transform = 'translateX(0)';
@@ -124,6 +130,8 @@ resizeIcon.addEventListener('click', () => {
 function resizeFont(size) {
     document.querySelectorAll('p').forEach((text) => text.style.fontSize = size + 'px');
     document.querySelectorAll('li').forEach((text) => text.style.fontSize = size + 'px');
+    document.querySelectorAll('dd').forEach((text) => text.style.fontSize = size + 'px');
+    document.querySelectorAll('td').forEach((text) => text.style.fontSize = size + 'px');
     document.querySelectorAll('pre').forEach((text) => text.style.fontSize = (size - 2) + 'px');
 }
 
@@ -141,7 +149,7 @@ mainBox.addEventListener('scroll', () => {
     setTimeout(() => {
         showAside.style.transform = 'translateX(0)';
         resizeIcon.style.transform = 'translateX(0)';
-    }, 2000);
+    }, 1000);
 });
 
 

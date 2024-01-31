@@ -155,7 +155,7 @@
                                     <li>Kondisional</li>
                                     <li>Typeof</li>
                                 </ul>
-                                Operator ini bisa dibagi berdasarkan jumlah operandnya, ada opertaor binary yaitu operator yang membutuhkan 2 operand, ada operator unary yaitu operator yang membutuhkan 1 operand, dan ada ternary yaitu operator yang membutuhkan 3 operand.  
+                                <p>Operator ini bisa dibagi berdasarkan jumlah operandnya, ada opertaor binary yaitu operator yang membutuhkan 2 operand, ada operator unary yaitu operator yang membutuhkan 1 operand, dan ada ternary yaitu operator yang membutuhkan 3 operand.</p>
                             </p>
                         </div>
                         </div>
@@ -258,7 +258,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                Perbedaan antara == dan === adalah jika == digunakan untuk membandingkan nilainya saja tidak dengan tipe datanya, sedangkan === digunakan untuk membandingkan nilai dan tipe datanya, contoh 10 == '10' hasilnya true dan jika 10 === '10' hasilnya false karena beda tipe datanya.
+                                <p>Perbedaan antara == dan === adalah jika == digunakan untuk membandingkan nilainya saja tidak dengan tipe datanya, sedangkan === digunakan untuk membandingkan nilai dan tipe datanya, contoh 10 == '10' hasilnya true dan jika 10 === '10' hasilnya false karena beda tipe datanya.</p>
                             </p>
                         </div>
                         </div>
@@ -327,7 +327,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                Jika angka dengan angka maka hasilnya angka, sedangkan jika salah satunya string maka tanda ( + ) ini akan berubah menjadi operator string.
+                                <p>Jika angka dengan angka maka hasilnya angka, sedangkan jika salah satunya string maka tanda ( + ) ini akan berubah menjadi operator string.</p>
                             </p>
                         </div>
                         </div>
@@ -586,7 +586,7 @@
     var namaVariabel;
                                 </pre>
                 
-                                Adapun syarat penulisan variabel
+                                <p>Adapun syarat penulisan variabel</p>
                                 <ul style="list-style: circle;">
                                     <li>Tidak boleh pakai spasi</li>
                                     <li>Jika lebih dari satu kata maka gunakan ( _ )</li>
@@ -1039,10 +1039,7 @@
                             <h5>Pemanggilan function</h5>
                             <p>
                                 <p>Setelah function dibuat selanjutnya adalah pemanggilan function</p>
-                                <pre class="card bg-light codeB">
-                                    
-    alert(jumlahDuaBilangan(2, 4));
-                                </pre>
+                                <pre class="card bg-light codeA">alert(jumlahDuaBilangan(2, 4));</pre>
                             </p>
                         </div>
                         </div>
@@ -1186,7 +1183,7 @@
 
     var coba = tambah(5, 10);
                                 </pre>
-                                <i>Dari kode diatas a dan b adalah parameter, sedangkan 5 dan 10 adalah argument.</i>
+                                <p><i>Dari kode diatas a dan b adalah parameter, sedangkan 5 dan 10 adalah argument.</i></p>
                             </p>
                         </div>
                         </div>
@@ -1244,7 +1241,7 @@
     alert(jumlahVolumeDuaKubus(8, 3));
                                 </pre>
                 
-                                kode di atas bisa diubah menjadi di bawah ini
+                                <p>kode di atas bisa diubah menjadi di bawah ini</p>
                                 <pre class="card bg-light codeB">
                 
     function jumlahVolumeDuaKubus(a, b) {
@@ -1310,7 +1307,8 @@
     }
     faktorial(5);
                                 </pre>
-                                Struktur dan hasil faktorialnya
+                                
+                                <p>Struktur dan hasil faktorialnya</p>
                                 <pre class="card bg-light codeB">
                 
     faktorial(5)
@@ -1815,7 +1813,7 @@
         }
     }
                                 </pre>
-                                <i>nama, umur, dan status diatas adalah variabel didalam object yang disebut properti, dan properti dipisahkan dengan tanda koma. sedangkan variabel sapa adalah function, dan function didalam object disebut method.</i>
+                                <p><i>nama, umur, dan status diatas adalah variabel didalam object yang disebut properti, dan properti dipisahkan dengan tanda koma. sedangkan variabel sapa adalah function, dan function didalam object disebut method.</i></p>
                             </p>
                         </div>
                         </div>
@@ -2235,36 +2233,48 @@
                         <div class="card-body">
                             <h5>DOM Selection Method</h5>
                             <p>
-                                <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                    <thead class="bg-secondary">
-                                        <tr>
-                                            <th>Method</th>
-                                            <th>Hasil</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><h6>getElementById()</h6></td>
-                                            <td>element</td>
-                                        </tr>
-                                        <tr>
-                                            <td><h6>getElementsByTagName()</h6></td>
-                                            <td>HTMLCollection</td>
-                                        </tr>
-                                        <tr>
-                                            <td><h6>getElementsByClassName()</h6></td>
-                                            <td>HTMLCollection</td>
-                                        </tr>
-                                        <tr>
-                                            <td><h6>querySelector()</h6></td>
-                                            <td>element</td>
-                                        </tr>
-                                        <tr>
-                                            <td><h6>querySelectorAll()</h6></td>
-                                            <td>nodeList</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <style>
+                                    #dom-selection {
+                                        overflow: auto;
+                                    }
+
+                                    #dom-selection::-webkit-scrollbar {
+                                        display: none;
+                                    }
+                                </style>
+
+                                <div class="container" id="dom-selection">
+                                    <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                        <thead class="bg-secondary">
+                                            <tr>
+                                                <th>Method</th>
+                                                <th>Hasil</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>getElementById()</td>
+                                                <td>element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>getElementsByTagName()</td>
+                                                <td>HTMLCollection</td>
+                                            </tr>
+                                            <tr>
+                                                <td>getElementsByClassName()</td>
+                                                <td>HTMLCollection</td>
+                                            </tr>
+                                            <tr>
+                                                <td>querySelector()</td>
+                                                <td>element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>querySelectorAll()</td>
+                                                <td>nodeList</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </p>
                         </div>
                         </div>
@@ -2751,7 +2761,7 @@
         p3.style.color = 'white';
     }
                                     </pre>
-                                    <i>perubahan atau function terakhir akan menimpa function sebelumnya</i>
+                                    <p><i>perubahan atau function terakhir akan menimpa function sebelumnya</i></p>
                                 </p>
                 
                                 <h6>addEventListener()</h6>
@@ -2766,7 +2776,7 @@
         p3.style.color = 'white';
     });
                                     </pre>
-                                    <i>semua perubahan atau function akan dikerjakan</i>
+                                    <p><i>semua perubahan atau function akan dikerjakan</i></p>
                                 </p>
                             </p>
                         </div>
@@ -3732,7 +3742,8 @@
     }
     tampilPesan('Alexander');
                                 </pre>
-                                diubah menjadi seperti ini
+                                
+                                <p>diubah menjadi seperti ini</p>
                                 <pre class="card bg-light codeB">
                 
     // arrow function
@@ -3759,14 +3770,14 @@
     console.log(tampilNama('Alexander'));
                                 </pre>
                 
-                                bisa diubah dengan arrow function
+                                <p>bisa diubah dengan arrow function</p>
                                 <pre class="card bg-light codeB">
                 
     const tampilNama = (nama) => { return 'Halo '+ nama; }
     console.log(tampilNama('Alexander'));
                                 </pre>
                 
-                                itu untuk satu parameter, jika ada lebih dari satu parameter
+                                <p>itu untuk satu parameter, jika ada lebih dari satu parameter</p>
                                 <pre class="card bg-light codeB">
                 
     const tampilNama = (nama, waktu) => { 
@@ -3775,7 +3786,7 @@
     console.log(tampilNama('Alexander', 'Malam'));
                                 </pre>
                 
-                                jika hanya ada satu parameter maka boleh menghilangkan tanda kurung menyisakan nama parameternya saja, dan jika lebih dari satu parameter maka harus ditulis tanda kurungnya.
+                                <p>jika hanya ada satu parameter maka boleh menghilangkan tanda kurung menyisakan nama parameternya saja, dan jika lebih dari satu parameter maka harus ditulis tanda kurungnya.</p>
                                 <pre class="card bg-light codeB">
                 
     // satu parameter 
@@ -3783,7 +3794,7 @@
     console.log(tampilNama('Alexander'));
                                 </pre>
                 
-                                bahkan jika return-nya hanya satu maka boleh menghilangkan return dan tanda kurung kurawal
+                                <p>bahkan jika return-nya hanya satu maka boleh menghilangkan return dan tanda kurung kurawal</p>
                                 <pre class="card bg-light codeB">
                 
     // implisit return
@@ -3791,7 +3802,7 @@
     console.log(tampilNama('Alexander'));
                                 </pre>
                 
-                                namun jika tidak ada parameter-nya maka wajib menulis tanda kurungnya saja
+                                <p>namun jika tidak ada parameter-nya maka wajib menulis tanda kurungnya saja</p>
                                 <pre class="card bg-light codeB">
                 
     const tampilNama = () => 'Hello World!';
