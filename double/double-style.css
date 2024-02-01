@@ -8,6 +8,10 @@
     --border: none;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -191,7 +195,7 @@ body {
     border: 2px solid var(--grey1);
 }
 
-p, li, dd, td, pre {
+p, li, dd, td, h6, pre {
     transition: .2s;
 }
 
@@ -200,11 +204,35 @@ pre::-webkit-scrollbar {
 }
 
 
-/* Popup supports */
+/* Hide and Show Text */
 
 .hiddenTextBtn {
+    font-weight: 500;
     cursor: pointer;
+    transition: transform .2s;
 }
+
+.hiddenTextBtn:hover {
+    transform: translateY(2px);
+}
+
+.hiddenTextBox {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.hiddenText {
+    display: block;
+    height: 0;
+    transition: height .5s;
+}
+
+.hiddenText.hide {
+    display: none;
+}
+
+
+/* Popup supports */
 
 .hiddenCode {
     position: fixed;
@@ -307,6 +335,14 @@ pre::-webkit-scrollbar {
         height: 10rem;
         z-index: -1;
         transform: rotate(45deg);
+    }
+
+    p, li, dd, td, h6 {
+        font-size: 12px;
+    }
+
+    pre {
+        font-size: 10px;
     }
 
 }

@@ -80,22 +80,28 @@ hideCode.forEach((button) => {
 // Show hidden Text
 hiddenTextBtn.forEach((button, index) => {
     button.addEventListener('click', () => {
-        if (hiddenText[index].classList.contains('hide')) {
-            hiddenText.forEach((box) => box.classList.add('hide'));
-            hiddenTextBtn.forEach((btn) => {
-                btn.classList.remove('text-secondary');
-                btn.innerHTML = 'baca selengkapnya';
-            });
-            hiddenText[index].classList.remove('hide');
+        hiddenTextBtn.forEach((btn) => btn.classList.remove('text-secondary'));
+        if(hiddenText[index].classList.contains('hide')) {
             hiddenTextBtn[index].classList.add('text-secondary');
-            hiddenTextBtn[index].innerHTML = 'sembunyikan';
+            hiddenText[index].classList.remove('hide');
+            hiddenText[index].style.height = hiddenText[index].scrollHeight + 'px';
+            hiddenText.forEach((kotak) => {
+                if(kotak !== hiddenText[index]) {
+                    kotak.style.height = '0';
+                    setTimeout(() => {
+                        kotak.classList.add('hide');
+                    }, 500);
+                }
+            });
         } else {
-            hiddenText[index].classList.add('hide');
             hiddenTextBtn[index].classList.remove('text-secondary');
-            hiddenTextBtn[index].innerHTML = 'baca selengkapnya';
+            hiddenText[index].style.height = '0';
+            setTimeout(() => {
+                hiddenText[index].classList.add('hide');
+            }, 500);
         }
-    })
-})
+    });
+});
 
 // Resize icon
 resizeIcon.addEventListener('click', () => {
@@ -112,6 +118,7 @@ function resizeFont(size) {
     document.querySelectorAll('li').forEach((text) => text.style.fontSize = size + 'px');
     document.querySelectorAll('dd').forEach((text) => text.style.fontSize = size + 'px');
     document.querySelectorAll('td').forEach((text) => text.style.fontSize = size + 'px');
+    document.querySelectorAll('h6').forEach((text) => text.style.fontSize = size + 'px');
     document.querySelectorAll('pre').forEach((text) => text.style.fontSize = (size - 2) + 'px');
 }
 
