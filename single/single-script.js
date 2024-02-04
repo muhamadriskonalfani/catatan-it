@@ -7,6 +7,7 @@ const mainLogo      = document.querySelector('.main-content .logo');
 const hiddenCodeBox = document.querySelectorAll('.hiddenCode');
 const hiddenCodeBtn = document.querySelectorAll('button[name=hiddenCode]');
 const hideCode      = document.querySelectorAll('.hide-code');
+const codeBox       = document.querySelectorAll('.code-box');
 const hiddenTextBtn = document.querySelectorAll('.hiddenTextBtn');
 const hiddenText    = document.querySelectorAll('.hiddenText');
 const resizeIcon    = document.querySelector('.resize-font');
@@ -24,7 +25,7 @@ function showPage(pageNumber) {
         asideBox.style.transform = 'translateX(-100vw)';
     }
     mainLogo.classList.add('hide');
-    asideBtn.forEach((btn) => btn.style.background = 'var(--grey3)');
+    asideBtn.forEach((btn) => btn.style.removeProperty('background'));
     asideBtn[index].style.background = 'var(--grey1)';
     materi.forEach((box) => {
         box.classList.add('hide');
@@ -32,7 +33,7 @@ function showPage(pageNumber) {
     });
     materi[index].classList.remove('hide');
     materi[index].setAttribute('id', index);
-    window.location.href = `#${index}`;
+    materi[index].scrollIntoView();
 }
 
 // Animate aside buttons, logo, and corner icons
@@ -53,8 +54,10 @@ window.addEventListener('load', () => {
 
 // Show aside box
 showAside.addEventListener('click', () => {
-    asideBox.style.transform = 'translateX(0)';
-})
+    if (window.innerWidth <= 768) {
+        asideBox.style.transform = 'translateX(0)';
+    }
+});
 
 // Show hidden code
 hiddenCodeBtn.forEach((button, index) => {
@@ -67,6 +70,13 @@ hiddenCodeBtn.forEach((button, index) => {
             hideCode[index].style.transform = 'translateX(0)';
         }, 200);
     })
+});
+
+// Fullscreen code box
+codeBox.forEach((box) => {
+    box.addEventListener('dblclick', () => {
+        box.classList.toggle('wide');
+    });
 });
 
 // Hide hidden code
@@ -84,10 +94,12 @@ hiddenTextBtn.forEach((button, index) => {
         if(hiddenText[index].classList.contains('hide')) {
             hiddenTextBtn[index].classList.add('text-secondary');
             hiddenText[index].classList.remove('hide');
-            hiddenText[index].style.height = hiddenText[index].scrollHeight + 'px';
+            hiddenText[index].style.height = hiddenText[index].scrollHeight + 16 + 'px';
+            hiddenText[index].style.padding = '.5rem 0';
             hiddenText.forEach((kotak) => {
                 if(kotak !== hiddenText[index]) {
                     kotak.style.height = '0';
+                    kotak.style.padding = '0';
                     setTimeout(() => {
                         kotak.classList.add('hide');
                     }, 500);
@@ -96,6 +108,7 @@ hiddenTextBtn.forEach((button, index) => {
         } else {
             hiddenTextBtn[index].classList.remove('text-secondary');
             hiddenText[index].style.height = '0';
+            hiddenText[index].style.padding = '0';
             setTimeout(() => {
                 hiddenText[index].classList.add('hide');
             }, 500);

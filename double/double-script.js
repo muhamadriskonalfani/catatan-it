@@ -28,7 +28,7 @@ function showPage(pageNumber) {
         asideBox.style.transform = 'translateX(-100vw)';
     }
     mainLogo.classList.add('hide');
-    asideLiBtn.forEach((btn) => btn.style.background = 'var(--grey3)');
+    asideLiBtn.forEach((btn) => btn.style.removeProperty('background'));
     asideLiBtn[index].style.background = 'var(--grey1)';
     materi.forEach((box) => {
         box.classList.add('hide');
@@ -36,7 +36,7 @@ function showPage(pageNumber) {
     });
     materi[index].classList.remove('hide');
     materi[index].setAttribute('id', index);
-    window.location.href = `#${index}`;
+    materi[index].scrollIntoView();
 }
 
 // Animate aside buttons, logo, and corner icons
@@ -59,8 +59,10 @@ window.addEventListener('load', () => {
 
 // Show aside box
 showAside.addEventListener('click', () => {
-    asideBox.style.transform = 'translateX(0)';
-})
+    if (window.innerWidth <= 768) {
+        asideBox.style.transform = 'translateX(0)';
+    }
+});
 
 // Show hidden code
 hiddenCodeBtn.forEach((button, index) => {
@@ -73,6 +75,13 @@ hiddenCodeBtn.forEach((button, index) => {
             hideCode[index].style.transform = 'translateX(0)';
         }, 200);
     })
+});
+
+// Fullscreen code box
+codeBox.forEach((box) => {
+    box.addEventListener('dblclick', () => {
+        box.classList.toggle('wide');
+    });
 });
 
 // Hide hidden code
@@ -90,10 +99,12 @@ hiddenTextBtn.forEach((button, index) => {
         if(hiddenText[index].classList.contains('hide')) {
             hiddenTextBtn[index].classList.add('text-secondary');
             hiddenText[index].classList.remove('hide');
-            hiddenText[index].style.height = hiddenText[index].scrollHeight + 'px';
+            hiddenText[index].style.height = hiddenText[index].scrollHeight + 16 + 'px';
+            hiddenText[index].style.padding = '.5rem 0';
             hiddenText.forEach((kotak) => {
                 if(kotak !== hiddenText[index]) {
                     kotak.style.height = '0';
+                    kotak.style.padding = '0';
                     setTimeout(() => {
                         kotak.classList.add('hide');
                     }, 500);
@@ -102,6 +113,7 @@ hiddenTextBtn.forEach((button, index) => {
         } else {
             hiddenTextBtn[index].classList.remove('text-secondary');
             hiddenText[index].style.height = '0';
+            hiddenText[index].style.padding = '0';
             setTimeout(() => {
                 hiddenText[index].classList.add('hide');
             }, 500);
@@ -111,16 +123,18 @@ hiddenTextBtn.forEach((button, index) => {
 
 // Pilih daftar
 function pilihDaftar(daftarKe) {
-    kotakDaftar.forEach((daftar) => {
-        daftar.classList.add('hide');
-    })
-    kotakDaftar[daftarKe-1].classList.remove('hide');
+    let index = daftarKe - 1;
+    asideSubBtn.forEach((btn) => btn.style.removeProperty('background'));
+    asideSubBtn[index].style.background = 'var(--grey1)';
+    kotakDaftar.forEach((daftar) => daftar.classList.add('hide'));
+    kotakDaftar[index].classList.remove('hide');
     kotakPilihDaftar.classList.add('hide');
 }
 
 // Tutup Daftar
 function closeDaftar() {
-    window.location.reload();
+    kotakDaftar.forEach((box) => box.classList.add('hide'));
+    kotakPilihDaftar.classList.remove('hide');
 }
 
 // Resize icon

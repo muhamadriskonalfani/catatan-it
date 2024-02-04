@@ -272,8 +272,8 @@
                                 <p><i>CREATE</i> digunakan untuk membuat database atau tabel. contoh membuat database dengan nama 'db_kampus' dan tabel dengan nama 'tb_mahasiswa'.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
-                                        <ul style="list-style: circle;">
+                                    <div class="hiddenText hide">
+                                        <ul style="list-style: circle;" class="stick-list">
                                             <li><p>Membuat database baru</p> <pre class="card bg-light codeA">CREATE DATABASE db_kampus;</pre></li>
                                             <li><p>Membuat tabel baru</p> <pre class="card bg-light codeA">CREATE TABLE tb_mahasiswa;</pre></li>
                                             <li><p>Membuat database atau tabel dengan 'IF NOT EXIST'</p> <pre class="card bg-light codeA">CREATE DATABASE IF NOT EXIST db_kampus;</pre> </li>
@@ -293,7 +293,7 @@
                                 <p><i>ALTER</i> digunakan untuk mengganti nama tabel dan memanipulasi atribut tabel. contoh merubah nama tabel, menambah field, merubah tipe data, merubah nama field, dan menghapus field.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <ul style="list-style: circle;">
                                             <li><p>Merubah nama tabel</p> <pre class="card bg-light codeA">ALTER TABLE mahasiswa RENAME tb_mahasiswa;</pre></li>
                                             <li><p>Menambah field pada tabel</p> <pre class="card bg-light codeA">ALTER TABLE mahasiswa ADD prodi VARCHAR(20);</pre></li>
@@ -315,7 +315,7 @@
                                 <p><i>DROP</i> digunakan untuk menghapus database maupun tabel. contoh database dengan nama 'db_kampus' dan tabel dengan nama 'tb_mahasiswa'.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <ul style="list-style: circle;">
                                             <li><p>Menghapus database</p> <pre class="card bg-light codeA">DROP DATABASE db_kampus;</pre></li>
                                             <li><p>Menghapus tabel</p> <pre class="card bg-light codeA">DROP TABLE tb_mahasiswa;</pre></li>
@@ -367,7 +367,7 @@
                                 <p><i>SELECT</i> digunakan untuk menampilkan data value pada tabel. bisa menampilkan satu, beberapa, atau bahkan semua data value sekaligus.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <ul style="list-style: circle;">
                                             <li><p>Menampilkan semua data value. tanda * artinya tampilkan semua</p> <pre class="card bg-light codeA">SELECT * FROM mahasiswa;</pre></li>
                                             <li><p>Menampilkan semua nama_mahasiswa</p> <pre class="card bg-light codeA">SELECT nama_mahasiswa FROM tb_mahasiswa;</pre></li>
@@ -391,7 +391,7 @@
                                 <p><i>INSERT</i> digunakan untuk memasukan record baru ke dalam tabel. bisa satu record atau bahkan banyak record sekaligus.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <ul style="list-style: circle;">
                                             <li><p>Menambah satu record</p> <pre class="card bg-light codeA">INSERT INTO mahasiswa VALUES ('20121092', 'Budi', 'Informatika');</pre></li>
                                             <li><p>Menambah dua atau lebih record</p> <pre class="card bg-light codeA">INSERT INTO mahasiswa VALUES ('20121092', 'Budi', 'Informatika'), ('20121093', 'Dita', 'Informatika'), ('20121094', 'Andi', 'Informatika');</pre></li>
@@ -411,7 +411,7 @@
                                 <p><i>UPDATE</i> digunakan untuk mengganti data lama dengan data baru menggunakan primary key. Bisa mengganti satu data atau bahkan banyak data sekaligus.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <ul style="list-style: circle;">
                                             <li><p>Merubah data value prodi dari 'DKV' dirubah menjadi 'TI'</p> <pre class="card bg-light codeA">UPDATE mahasiswa SET prodi = 'TI' WHERE nim = 20121092;</pre></li>
                                             <li><p>Merubah data value prodi dari 'DKV' dirubah menjadi 'TI', dan nama mahasiswa dari 'alexander' dirubah menjadi 'bobby'</p> <pre class="card bg-light codeA">UPDATE mahasiswa SET prodi = 'TI', nama_mahasiswa = 'booby' WHERE nim = 20121092;</pre></li>
@@ -431,7 +431,7 @@
                                 <p><i>DELETE</i> digunakan untuk menghapus data value pada tabel. bisa menghapus satu, beberapa, atau bahkan semua data value sekaligus.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <ul style="list-style: circle;">
                                             <li><p>Menghapus satu record pada tabel</p> <pre class="card bg-light codeA">DELETE FROM mahasiswa WHERE nim = 20121092;</pre></li>
                                             <li><p>Menghapus semua record mahasiswa yang jenis kelaminya laki-laki</p> <pre class="card bg-light codeA">DELETE FROM mahasiswa WHERE jenis_kelamin = 'laki-laki';</pre></li>
@@ -468,7 +468,7 @@
                                 <p>Perintah ini digunakan untuk memberikan izin akses kepada pengguna atau peran tertentu pada objek-objek dalam basis data. Izin-izin ini dapat mencakup hak untuk melakukan operasi tertentu seperti SELECT, INSERT, UPDATE, DELETE, dll.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <p>
                                             <h6>Penulisan GRANT</h6>
                                             <pre class="card bg-light codeA">GRANT tipe_izin ON nama_database.nama_tabel TO 'nama_user'@'localhost';</pre>
@@ -496,7 +496,7 @@
                                 <p>Perintah ini digunakan untuk mencabut izin akses yang telah diberikan sebelumnya kepada pengguna atau peran pada objek-objek dalam basis data.</p>
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <p>
                                             <h6>Penulisan REVOKE</h6>
                                             <pre class="card bg-light codeA">REVOKE ALL ON nama_database.nama_tabel FROM 'nama_user'@'localhost';</pre>
@@ -525,7 +525,7 @@
         
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <dl>
                                             <dd>
                                                 <h6>Contoh penggunaan perintah COMMIT</h6>
@@ -572,7 +572,7 @@
         
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <dl>
                                             <dd>
                                                 <h6>Contoh penggunaan perintah ROLLBACK</h6>
@@ -640,7 +640,7 @@
         
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <p>Berikut langkah-langkah untuk membuat user.</p>
                                         <ul style="list-style: decimal;">
                                             <li><p><h6 class="d-inline">Login ke MySQL :</h6> Pertama, buka terminal dan login ke server MySQL dengan hak akses administratif (biasanya dengan akun root).</p> <pre class="card bg-light codeA">mysql -u root -p</pre></li>
@@ -664,7 +664,7 @@
                                         <h6>Membuat user dan memberikan hak akses</h6>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dt>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: decimal;">
                                                 <li><p>Masuk ke MySQL dengan akun root</p> <pre class="card bg-light codeA">mysql -u root -p</pre></li>
@@ -679,13 +679,14 @@
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
                                         <h6>Menarik kembali hak akses dari user</h6>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dt>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: decimal;">
                                                 <li><p>Masuk sebagai root</p> <pre class="card bg-light codeA">mysql -u root -p</pre></li>
@@ -727,7 +728,7 @@
         
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <p>Berikut langkah-langkah ekspor database maupun tabel.</p>
                                         <ul style="list-style: decimal;">
                                             <li><p><h6 class="d-inline">Pilih Database :</h6> Pilih database yang ingin Anda ekspor.</p></li>
@@ -736,15 +737,13 @@
                                                 <p><h6 class="d-inline">Ekspor :</h6> Gunakan perintah 'mysqldump' untuk ekspor data.</p>
                                                 <p>Ekspor database <pre class="card bg-light codeA">mysqldump -u username -p dbname > backup.sql</pre></p>
                                                 <p>Ekspor table <pre class="card bg-light codeA">mysqldump -u username -p dbname tbname ... > backup.sql</pre></p>
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p class="d-inline">Ganti <h6 class="d-inline">'username'</h6> dengan nama user MySQL Anda.</p></li>
-                                                        <li><p class="d-inline">Ganti <h6 class="d-inline">'dbname'</h6> dengan nama database yang ingin anda ekspor (untuk ekspor database).</p></li>
-                                                        <li><p class="d-inline">Ganti <h6 class="d-inline">'tbname'</h6> dengan nama tabel yang ingin anda ekspor (untuk ekspor tabel). Bisa lebih dari satu tabel.</p></li>
-                                                        <li><p><h6 class="d-inline">'backup.sql'</h6> adalah nama file tempat anda menyimpan database maupun tabel yang di ekspor.</p></li>
-                                                        <li><p>Anda akan diminta untuk memasukkan kata sandi MySQL setelah menjalankan perintah ini.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p class="d-inline">Ganti <h6 class="d-inline">'username'</h6> dengan nama user MySQL Anda.</p></li>
+                                                    <li><p class="d-inline">Ganti <h6 class="d-inline">'dbname'</h6> dengan nama database yang ingin anda ekspor (untuk ekspor database).</p></li>
+                                                    <li><p class="d-inline">Ganti <h6 class="d-inline">'tbname'</h6> dengan nama tabel yang ingin anda ekspor (untuk ekspor tabel). Bisa lebih dari satu tabel.</p></li>
+                                                    <li><p><h6 class="d-inline">'backup.sql'</h6> adalah nama file tempat anda menyimpan database maupun tabel yang di ekspor.</p></li>
+                                                    <li><p>Anda akan diminta untuk memasukkan kata sandi MySQL setelah menjalankan perintah ini.</p></li>
+                                                </ul>
                                             </li>
                                             <li><p><h6 class="d-inline">Simpan File :</h6> File backup.sql akan berisi database atau tabel yang nantinya dapat di impor kembali ke sistem basis data yang sama atau berbeda.</p></li>
                                         </ul>
@@ -765,9 +764,9 @@
         
                                 <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                 <div class="hiddenTextBox">
-                                    <div class="hiddenText hide"><hr>
+                                    <div class="hiddenText hide">
                                         <p>Berikut langkah-langkah impor database maupun tabel.</p>
-                                        <ul style="list-style: circle;">
+                                        <ul style="list-style: decimal;">
                                             <li><p><h6 class="d-inline">Pilih Database :</h6> Pilih database yang anda inginkan jika anda ingin meng-impor tabel (database yang sudah ada sebelumnya).</p></li>
                                             <li><p><h6 class="d-inline">Buat Database :</h6> Buat database baru jika anda ingin meng-impor database.</p></li>
                                             <li><p><h6 class="d-inline">Cari file yang ingin di impor :</h6> Masuk ke direktori 'ekspor' yang sebelumnya dibuat.</p>
@@ -778,14 +777,12 @@
                                             </li>
                                             <li><p><h6 class="d-inline">Impor :</h6> Gunakan perintah SQL yang sesuai untuk mengimpor data dari file.</p>
                                                 <p><pre class="card bg-light codeA">mysql -u username -p dbname < backup.sql</pre></p>
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p class="d-inline">Ganti <h6 class="d-inline">'username'</h6> dengan nama user MySQL Anda.</p></li>
-                                                        <li><p class="d-inline">Ganti <h6 class="d-inline">'dbname'</h6> dengan nama database tempat anda akan menyimpan database maupun tabel yang di impor.</p></li>
-                                                        <li><p><h6 class="d-inline">'backup.sql'</h6> adalah nama file tempat database maupun tabel yang di ekspor sebelumnya untuk di impor.</p></li>
-                                                        <li><p>Anda akan diminta untuk memasukkan kata sandi MySQL setelah menjalankan perintah ini.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p class="d-inline">Ganti <h6 class="d-inline">'username'</h6> dengan nama user MySQL Anda.</p></li>
+                                                    <li><p class="d-inline">Ganti <h6 class="d-inline">'dbname'</h6> dengan nama database tempat anda akan menyimpan database maupun tabel yang di impor.</p></li>
+                                                    <li><p><h6 class="d-inline">'backup.sql'</h6> adalah nama file tempat database maupun tabel yang di ekspor sebelumnya untuk di impor.</p></li>
+                                                    <li><p>Anda akan diminta untuk memasukkan kata sandi MySQL setelah menjalankan perintah ini.</p></li>
+                                                </ul>
                                             </li>
                                             <li><p><h6 class="d-inline">Verifikasi :</h6> Pastikan bahwa data telah diimpor dengan benar dengan memeriksa tabel dan rekaman.</p></li>
                                         </ul>
@@ -821,7 +818,7 @@
                                         <p>Berikut adalah beberapa cara untuk membuat atribut PRIMARY KEY. Contohnya membuat atribut PRIMARY KEY dengan nama 'id_mahasiswa' pada tabel 'tb_mahasiswa'</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Membuat atribut PRIMARY KEY saat membuat tabel</p> <pre class="card bg-light codeA">CREATE TABLE tb_mahasiswa ( id_mahasiswa INT(10) NOT NULL PRIMARY KEY );</pre></li>
@@ -847,7 +844,7 @@
                                         <p>PRIMARY KEY bisa diberi INCREMENT ataupun DECREMENT. Penggunaan INCREMENT atau DECREMENT berfungsi memberikan nomor urut pada data yang baru dimasukan. Semisal 'id_mahasiswa' diberi AUTO_INCREMENT</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <h6>Contoh Query</h6>
                                             <pre class="card bg-light codeA">ALTER TABLE tb_mahasiswa CHANGE id_mahasiswa id_mahasiswa INT(10) NOT NULL AUTO_INCREMENT;</pre>
@@ -869,7 +866,7 @@
                                         <p>AUTO INCREMENT membuat suatu atribut memiliki data dengan nomor urut, namun saat ada data yang dihapus maka akan ada nomor urut yang hilang, dengan itu untuk membuat nomor manjadi urut kembali maka bisa dilakukan dengan cara berikut</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Apabila data yang dihapus adalah data terakhir dan ingin mengembalikan nomor urut untuk data baru</p>
                                             <ul style="list-style: circle;">
@@ -914,7 +911,7 @@
                                         <p>Misalkan ada dua tabel 'Pelanggan' dan 'Pesanan'. Setiap pesanan harus dikaitkan dengan seorang pelanggan. Anda dapat membuat atribut 'id_pelanggan' dalam tabel 'Pesanan' sebagai FOREIGN KEY yang merujuk pada atribut 'id_pelanggan' dalam tabel 'Pelanggan'. Jadi setiap pesanan terkait dengan pelanggan tertentu dalam database.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Berikut langkah-langkah untuk membuat FOREIGN KEY</p>
                                             <ul style="list-style: decimal;">
@@ -957,7 +954,7 @@
                                         <p>Selanjutnya adalah langkah-langkah menghapus FOREIGN KEY. Menghapus FOREIGN KEY dapat dilakukan apabila FOREIGN KEY yang dibuat salah atau tidak lagi dibutuhkan.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Berikut langkah-langkah untuk menghapus FOREIGN KEY</p>
                                             <ul style="list-style: circle;">
@@ -1000,7 +997,7 @@
                                         <p><h6 class="d-inline">1. Not [!=] :</h6> Not artinya bukan bagian, jadi data yang bukan bagian dari persyaratan maka dia akan ditampilkan</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE NOT jenis_kelamin = 'laki-laki';</pre>
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE jenis_kelamin != 'laki-laki';</pre>
@@ -1014,7 +1011,7 @@
                                         <p><h6 class="d-inline">2. And [&&] :</h6> And artinya dan, jadi data yang memenuhi dua persyaratan maka dia akan ditampilkan</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE jenis_kelamin = 'laki-laki' AND usia = 22;</pre>
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE jenis_kelamin = 'laki-laki' && usia = 22;</pre>
@@ -1028,7 +1025,7 @@
                                         <p><h6 class="d-inline">3. Or [||] :</h6> Or artinya atau, jadi jika ada data yang memenuhi salah satu dari dua persyaratan maka dia akan ditampilkan</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE jenis_kelamin = 'laki-laki' OR usia = 22;</pre>
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE jenis_kelamin = 'laki-laki' || usia = 22;</pre>
@@ -1042,7 +1039,7 @@
                                         <p><h6 class="d-inline">4. Between :</h6> Between digunakan sebagai range atau pembatas</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE usia BETWEEN 22 AND 24;</pre>
                                         </div>
@@ -1055,7 +1052,7 @@
                                         <p><h6 class="d-inline">5. Like :</h6> Like digunakan untuk mencari data lewat suatu karakteristik misalkan nama mahasiswa yang diawali dengan nama adi, atau nama mahasiswa yang diakhiri dengan nama anto</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE nama_mahasiswa LIKE "adi%";</pre>
                                             <pre class="card bg-light codeA">SELECT * FROM mahasiswa WHERE nama_mahasiswa LIKE "%anto";</pre>
@@ -1092,7 +1089,7 @@
                                         <p><h6 class="d-inline">1. COUNT :</h6> COUNT atrinya hitung, dia digunakan untuk menghitung jumlah dari record</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan jumlah semua record pada tabel</p> <pre class="card bg-light codeA">SELECT COUNT(*) FROM tb_mahasiswa;</pre></li>
@@ -1109,7 +1106,7 @@
                                         <p><h6 class="d-inline">2. SUM :</h6> SUM artinya dijumlah, dia digunakan untuk menjumlahkan total semua data, misal jumlah total harga</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan jumlah total harga</p> <pre class="card bg-light codeA">SELECT SUM(harga_barang) FROM tb_mahasiswa;</pre></li>
@@ -1125,7 +1122,7 @@
                                         <p><h6 class="d-inline">3. AVERAGE :</h6> AVERAGE artinya rata-rata, dia digunakan untuk menghitung nilai rata-rata dari semua data pada tabel.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan rata-rata nilai mahasiswa</p> <pre class="card bg-light codeA">SELECT AVG(nilai_mahasiswa) FROM tb_mahasiswa;</pre></li>
@@ -1141,7 +1138,7 @@
                                         <p><h6 class="d-inline">4. MIN :</h6> MIN atau minimum digunakan untuk menampilkan nilai terkecil dari semua data pada tabel.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan mahasiswa paling muda</p> <pre class="card bg-light codeA">SELECT MIN(usia_mhs) FROM tb_mahasiswa;</pre></li>
@@ -1154,10 +1151,10 @@
                 
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">5. MAX</h6> MAX atau maximum digunakan untuk menampilkan nilai terbesar dari semua data pada tabel.</p>
+                                        <p><h6 class="d-inline">5. MAX :</h6> MAX atau maximum digunakan untuk menampilkan nilai terbesar dari semua data pada tabel.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan mahasiswa paling tua</p> <pre class="card bg-light codeA">SELECT MAX(usia_mhs) FROM tb_mahasiswa;</pre></li>
@@ -1200,7 +1197,7 @@
                                             <li><p>Menampilkan apa saja jenis kelamin mahasiswa pada tabel</p> <pre class="card bg-light codeA">SELECT jenis_kelamin FROM tb_mahasiswa GROUP BY jenis_kelamin;</pre></li>
                                             <li><p>Menampilkan jenis kelamin dengan statement group by dan fungsi agregat</p> <pre class="card bg-light codeA">SELECT jenis_kelamin, COUNT(*) AS 'Jumlah Mahasiswa' FROM tb_mahasiswa GROUP BY jenis_kelamin;</pre></li>
                                             <li><p>Menampilkan apa saja usia mahasiswa pada tabel</p> <pre class="card bg-light codeA">SELECT usia_mahasiswa FROM tb_mahasiswa GROUP BY usia_mahasiswa;</pre></li>
-                                            <li><p>Menampilkan usia dengan statement group by dan fungsi agregat</p></li> <pre class="card bg-light codeA">SELECT usia_mahasiswa, COUNT(*) AS 'Jumlah Mahasiswa' FROM tb_mahasiswa GROUP BY usia_mahasiswa;</pre>
+                                            <li><p>Menampilkan usia dengan statement group by dan fungsi agregat</p> <pre class="card bg-light codeA">SELECT usia_mahasiswa, COUNT(*) AS 'Jumlah Mahasiswa' FROM tb_mahasiswa GROUP BY usia_mahasiswa;</pre></li>
                                         </ul>
                                     </dd>
                                 </dl>
@@ -1231,7 +1228,7 @@
                             <div>
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">1. Order By Ascending</h6></p>
+                                        <p><h6 class="h6">Order By Ascending</h6></p>
                                     </dd>
                                     <dd>
                                         <ul style="list-style: circle;">
@@ -1244,7 +1241,7 @@
         
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">2. Order By Descending</h6></p>
+                                        <p><h6 class="h6">Order By Descending</h6></p>
                                     </dd>
                                     <dd>
                                         <ul style="list-style: circle;">
@@ -1396,7 +1393,7 @@
                                         <p>Berikut adalah contoh sederhana kode SQL untuk membuat dua tabel yang memiliki hubungan referensial dengan pengaturan On DELETE CASCADE</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <pre class="card bg-light codeB">
             
@@ -1439,67 +1436,71 @@
                                         <p>Ada dua buah tabel yaitu 'tb_pesanan' dan 'tb_produk_pesanan', jika sebuah pesanan dihapus dari tabel 'tb_pesanan', maka semua data produk pesanan yang terkait akan dihapus secara otomatis dari tabel 'tb_produk_pesanan'.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <h6>Tabel 'tb_pesanan'</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pesanan</th>
-                                                                <th>nama_pelanggan</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Ucup</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Alex</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>Dudung</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>nama_pelanggan</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Ucup</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Alex</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Dudung</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
             
                                                 <div class="col-md-6">
                                                     <h6>Tabel 'tb_produk_pesanan'</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_produk</th>
-                                                                <th>id_pesanan</th>
-                                                                <th>nama_produk</th>
-                                                                <th>quantity</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>101</td>
-                                                                <td>1</td>
-                                                                <td>Produk A</td>
-                                                                <td>2</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>102</td>
-                                                                <td>1</td>
-                                                                <td>Produk B</td>
-                                                                <td>3</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>103</td>
-                                                                <td>2</td>
-                                                                <td>Produk C</td>
-                                                                <td>1</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_produk</th>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>nama_produk</th>
+                                                                    <th>quantity</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>101</td>
+                                                                    <td>1</td>
+                                                                    <td>Produk A</td>
+                                                                    <td>2</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>102</td>
+                                                                    <td>1</td>
+                                                                    <td>Produk B</td>
+                                                                    <td>3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>103</td>
+                                                                    <td>2</td>
+                                                                    <td>Produk C</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
             
@@ -1510,46 +1511,50 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <h6>Tabel 'tb_pesanan'</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pesanan</th>
-                                                                <th>nama_pelanggan</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Alex</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>Dudung</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>nama_pelanggan</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Alex</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Dudung</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
             
                                                 <div class="col-md-6">
                                                     <h6>Tabel 'tb_produk_pesanan'</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_produk</th>
-                                                                <th>id_pesanan</th>
-                                                                <th>nama_produk</th>
-                                                                <th>quantity</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>103</td>
-                                                                <td>2</td>
-                                                                <td>Produk C</td>
-                                                                <td>1</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_produk</th>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>nama_produk</th>
+                                                                    <th>quantity</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>103</td>
+                                                                    <td>2</td>
+                                                                    <td>Produk C</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1602,69 +1607,73 @@
                                         <p><h6 class="d-inline">INNER JOIN</h6> Menggabungkan baris dari dua tabel berdasarkan nilai-nilai yang cocok di kedua tabel. Hanya baris yang memiliki nilai cocok di kedua tabel yang akan muncul dalam hasilnya.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Misalnya, Saya ingin menggabungkan tabel untuk mendapatkan daftar pesanan bersama dengan informasi pelanggan yang berhubungan dengan setiap pesanan.</p>
             
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <h6>tb_pelanggan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pelanggan</th>
-                                                                <th>nama_pelanggan</th>
-                                                                <th>kota</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Ucup</td>
-                                                                <td>Jakarta</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Alex</td>
-                                                                <td>Surabaya</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>Dudung</td>
-                                                                <td>Bandung</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>nama_pelanggan</th>
+                                                                    <th>kota</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Ucup</td>
+                                                                    <td>Jakarta</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Alex</td>
+                                                                    <td>Surabaya</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Dudung</td>
+                                                                    <td>Bandung</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
             
                                                 <div class="col-md-6">
                                                     <h6>tb_pesanan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pesanan</th>
-                                                                <th>id_pelanggan</th>
-                                                                <th>total_pesanan</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>101</td>
-                                                                <td>1</td>
-                                                                <td>500000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>102</td>
-                                                                <td>3</td>
-                                                                <td>750000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>103</td>
-                                                                <td>2</td>
-                                                                <td>300000</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>total_pesanan</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>101</td>
+                                                                    <td>1</td>
+                                                                    <td>500000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>102</td>
+                                                                    <td>3</td>
+                                                                    <td>750000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>103</td>
+                                                                    <td>2</td>
+                                                                    <td>300000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
             
@@ -1677,32 +1686,34 @@
                                             </pre>
                                             
                                             <p>Hasil INNER JOIN</p>
-                                            <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                                <thead class="bg-secondary">
-                                                    <tr>
-                                                        <th>nama_pelanggan</th>
-                                                        <th>id_pesanan</th>
-                                                        <th>total_pesanan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Ucup</td>
-                                                        <td>101</td>
-                                                        <td>500000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dudung</td>
-                                                        <td>102</td>
-                                                        <td>750000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Alex</td>
-                                                        <td>103</td>
-                                                        <td>300000</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-scroll">
+                                                <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                                    <thead class="bg-secondary">
+                                                        <tr>
+                                                            <th>nama_pelanggan</th>
+                                                            <th>id_pesanan</th>
+                                                            <th>total_pesanan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ucup</td>
+                                                            <td>101</td>
+                                                            <td>500000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dudung</td>
+                                                            <td>102</td>
+                                                            <td>750000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alex</td>
+                                                            <td>103</td>
+                                                            <td>300000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </dd>
                                 </dl>
@@ -1720,64 +1731,68 @@
                                         <p><h6 class="d-inline">LEFT JOIN</h6> Menggabungkan semua baris dari tabel kiri dengan baris yang cocok dari tabel kanan. Jika tidak ada nilai yang cocok di tabel kanan, kolom-kolom dari tabel kanan akan diisi dengan nilai NULL.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Misalnya, Saya ingin menggabungkan tabel dengan menggunakan LEFT JOIN untuk mendapatkan daftar semua pelanggan beserta pesanan yang mereka buat, bahkan jika pelanggan belum pernah melakukan pesanan.</p>
             
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <h6>tb_pelanggan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pelanggan</th>
-                                                                <th>nama_pelanggan</th>
-                                                                <th>kota</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Ucup</td>
-                                                                <td>Jakarta</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Alex</td>
-                                                                <td>Surabaya</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>Dudung</td>
-                                                                <td>Bandung</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>nama_pelanggan</th>
+                                                                    <th>kota</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Ucup</td>
+                                                                    <td>Jakarta</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Alex</td>
+                                                                    <td>Surabaya</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Dudung</td>
+                                                                    <td>Bandung</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
             
                                                 <div class="col-md-6">
                                                     <h6>tb_pesanan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pesanan</th>
-                                                                <th>id_pelanggan</th>
-                                                                <th>total_pesanan</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>101</td>
-                                                                <td>1</td>
-                                                                <td>500000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>102</td>
-                                                                <td>3</td>
-                                                                <td>750000</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>total_pesanan</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>101</td>
+                                                                    <td>1</td>
+                                                                    <td>500000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>102</td>
+                                                                    <td>3</td>
+                                                                    <td>750000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                             
@@ -1790,32 +1805,34 @@
                                             </pre>
                                             
                                             <p>Hasil LEFT JOIN</p>
-                                            <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                                <thead class="bg-secondary">
-                                                    <tr>
-                                                        <th>nama_pelanggan</th>
-                                                        <th>id_pesanan</th>
-                                                        <th>total_pesanan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Ucup</td>
-                                                        <td>101</td>
-                                                        <td>500000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dudung</td>
-                                                        <td>102</td>
-                                                        <td>750000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Alex</td>
-                                                        <td>NULL</td>
-                                                        <td>NULL</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-scroll">
+                                                <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                                    <thead class="bg-secondary">
+                                                        <tr>
+                                                            <th>nama_pelanggan</th>
+                                                            <th>id_pesanan</th>
+                                                            <th>total_pesanan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ucup</td>
+                                                            <td>101</td>
+                                                            <td>500000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dudung</td>
+                                                            <td>102</td>
+                                                            <td>750000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alex</td>
+                                                            <td>NULL</td>
+                                                            <td>NULL</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </dd>
                                 </dl>
@@ -1833,64 +1850,68 @@
                                         <p><h6 class="d-inline">RIGHT JOIN</h6> Kebalikan dari LEFT JOIN. Menggabungkan semua baris dari tabel kanan dengan baris yang cocok dari tabel kiri. Jika tidak ada nilai yang cocok di tabel kiri, kolom-kolom dari tabel kiri akan diisi dengan nilai NULL.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Misalnya, Saya ingin menggabungkan tabel dengan menggunakan RIGHT JOIN untuk mendapatkan daftar semua pesanan beserta informasi pelanggan yang berhubungan, bahkan jika tidak semua pesanan memiliki pelanggan terkait.</p>
             
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <h6>tb_pelanggan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pelanggan</th>
-                                                                <th>nama_pelanggan</th>
-                                                                <th>kota</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Ucup</td>
-                                                                <td>Jakarta</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>Dudung</td>
-                                                                <td>Bandung</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>nama_pelanggan</th>
+                                                                    <th>kota</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Ucup</td>
+                                                                    <td>Jakarta</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Dudung</td>
+                                                                    <td>Bandung</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
             
                                                 <div class="col-md-6">
                                                     <h6>tb_pesanan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pesanan</th>
-                                                                <th>id_pelanggan</th>
-                                                                <th>total_pesanan</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>101</td>
-                                                                <td>1</td>
-                                                                <td>500000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>102</td>
-                                                                <td>3</td>
-                                                                <td>750000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>103</td>
-                                                                <td>2</td>
-                                                                <td>300000</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>total_pesanan</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>101</td>
+                                                                    <td>1</td>
+                                                                    <td>500000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>102</td>
+                                                                    <td>3</td>
+                                                                    <td>750000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>103</td>
+                                                                    <td>2</td>
+                                                                    <td>300000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
             
@@ -1903,32 +1924,34 @@
                                             </pre>
                                             
                                             <p>Hasil RIGHT JOIN</p>
-                                            <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                                <thead class="bg-secondary">
-                                                    <tr>
-                                                        <th>nama_pelanggan</th>
-                                                        <th>id_pesanan</th>
-                                                        <th>total_pesanan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Ucup</td>
-                                                        <td>101</td>
-                                                        <td>500000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dudung</td>
-                                                        <td>102</td>
-                                                        <td>750000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>NULL</td>
-                                                        <td>103</td>
-                                                        <td>300000</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-scroll">
+                                                <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                                    <thead class="bg-secondary">
+                                                        <tr>
+                                                            <th>nama_pelanggan</th>
+                                                            <th>id_pesanan</th>
+                                                            <th>total_pesanan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ucup</td>
+                                                            <td>101</td>
+                                                            <td>500000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dudung</td>
+                                                            <td>102</td>
+                                                            <td>750000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>NULL</td>
+                                                            <td>103</td>
+                                                            <td>300000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </dd>
                                 </dl>
@@ -1946,59 +1969,63 @@
                                         <p><h6 class="d-inline">FULL JOIN</h6> Menggabungkan semua baris dari kedua tabel, termasuk baris yang tidak cocok di kedua sisi. Jika tidak ada nilai yang cocok, kolom-kolom yang tidak cocok akan diisi dengan nilai NULL.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Misalnya, Saya ingin menggabungkan tabel dengan menggunakan FULL JOIN untuk mendapatkan daftar semua pelanggan dan semua pesanan, serta menggabungkannya bersama-sama dengan informasi yang berhubungan.</p>
             
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <h6>tb_pelanggan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pelanggan</th>
-                                                                <th>nama_pelanggan</th>
-                                                                <th>kota</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Ucup</td>
-                                                                <td>Jakarta</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Alex</td>
-                                                                <td>Surabaya</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>nama_pelanggan</th>
+                                                                    <th>kota</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Ucup</td>
+                                                                    <td>Jakarta</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Alex</td>
+                                                                    <td>Surabaya</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
             
                                                 <div class="col-md-6">
                                                     <h6>tb_pesanan</h6>
-                                                    <table class="table table-bordered table-hover">
-                                                        <thead class="bg-secondary">
-                                                            <tr>
-                                                                <th>id_pesanan</th>
-                                                                <th>id_pelanggan</th>
-                                                                <th>total_pesanan</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>101</td>
-                                                                <td>1</td>
-                                                                <td>500000</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>103</td>
-                                                                <td>2</td>
-                                                                <td>300000</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="table-scroll">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead class="bg-secondary">
+                                                                <tr>
+                                                                    <th>id_pesanan</th>
+                                                                    <th>id_pelanggan</th>
+                                                                    <th>total_pesanan</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>101</td>
+                                                                    <td>1</td>
+                                                                    <td>500000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>103</td>
+                                                                    <td>2</td>
+                                                                    <td>300000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
             
@@ -2011,32 +2038,34 @@
                                             </pre>
                                             
                                             <p>Hasil INNER JOIN</p>
-                                            <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                                <thead class="bg-secondary">
-                                                    <tr>
-                                                        <th>nama_pelanggan</th>
-                                                        <th>id_pesanan</th>
-                                                        <th>total_pesanan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Ucup</td>
-                                                        <td>101</td>
-                                                        <td>500000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>NULL</td>
-                                                        <td>NULL</td>
-                                                        <td>NULL</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Alex</td>
-                                                        <td>103</td>
-                                                        <td>300000</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-scroll">
+                                                <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                                    <thead class="bg-secondary">
+                                                        <tr>
+                                                            <th>nama_pelanggan</th>
+                                                            <th>id_pesanan</th>
+                                                            <th>total_pesanan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ucup</td>
+                                                            <td>101</td>
+                                                            <td>500000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>NULL</td>
+                                                            <td>NULL</td>
+                                                            <td>NULL</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alex</td>
+                                                            <td>103</td>
+                                                            <td>300000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </dd>
                                 </dl>
@@ -2054,37 +2083,39 @@
                                         <p><h6 class="d-inline">SELF JOIN</h6> Menggabungkan baris dari tabel yang sama. Ini sering digunakan untuk menggabungkan data hierarkis atau relasi antara entitas dalam satu tabel.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <p>Misalnya, Saya punya sebuah tabel 'tb_karyawan' yang berisi informasi tentang karyawan dan kolom 'id_atasan' yang menghubungkan setiap karyawan dengan atasan mereka (mengacu pada id_karyawan).</p>
             
                                             <h6>tb_karyawan</h6>
-                                            <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                                <thead class="bg-secondary">
-                                                    <tr>
-                                                        <th>id_karyawan</th>
-                                                        <th>nama_karyawan</th>
-                                                        <th>id_atasan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Ucup</td>
-                                                        <td>NULL</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Dudung</td>
-                                                        <td>1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Alex</td>
-                                                        <td>2</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-scroll">
+                                                <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                                    <thead class="bg-secondary">
+                                                        <tr>
+                                                            <th>id_karyawan</th>
+                                                            <th>nama_karyawan</th>
+                                                            <th>id_atasan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Ucup</td>
+                                                            <td>NULL</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Dudung</td>
+                                                            <td>1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Alex</td>
+                                                            <td>2</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
             
                                             <p>Sekarang, Saya ingin menggabungkan tabel ini dengan menggunakan SELF JOIN untuk mendapatkan daftar nama karyawan beserta nama atasan mereka.</p>
                                             <pre class="card bg-light codeB">
@@ -2095,28 +2126,30 @@
                                             </pre>
                                             
                                             <p>Hasil SELF JOIN</p>
-                                            <table class="table table-bordered table-hover" style="max-width: 500px;">
-                                                <thead class="bg-secondary">
-                                                    <tr>
-                                                        <th>Karyawan</th>
-                                                        <th>Atasan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Ucup</td>
-                                                        <td>NULL</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dudung</td>
-                                                        <td>Ucup</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Alex</td>
-                                                        <td>Dudung</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-scroll">
+                                                <table class="table table-bordered table-hover" style="max-width: 500px;">
+                                                    <thead class="bg-secondary">
+                                                        <tr>
+                                                            <th>Karyawan</th>
+                                                            <th>Atasan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ucup</td>
+                                                            <td>NULL</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dudung</td>
+                                                            <td>Ucup</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alex</td>
+                                                            <td>Dudung</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </dd>
                                 </dl>
@@ -2133,10 +2166,11 @@
         
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">1. Statement ON :</h6> digunakan untuk menghubungkan tabel dengan membandingkan atribut dengan nama yang sama ataupun berbeda.</p>
+                                        <h6 class="h6">1. Statement ON</h6>
+                                        <p>digunakan untuk menghubungkan tabel dengan membandingkan atribut dengan nama yang sama ataupun berbeda.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan semua data dari 'tb_produk' dan 'tb_brand'</p> <pre class="card bg-light codeA">SELECT * FROM tb_produk INNER JOIN tb_brand ON tb_produk.id_brand = tb_brand.id;</pre></li>
@@ -2149,10 +2183,11 @@
         
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">2. Statement USING :</h6> hanya digunakan untuk menghubungkan tabel dengan nama atribut yang sama.</p>
+                                        <h6 class="h6">2. Statement USING</h6>
+                                        <p>hanya digunakan untuk menghubungkan tabel dengan nama atribut yang sama.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: circle;">
                                                 <li><p>Menampilkan semua data dari 'tb_produk' dan 'tb_brand'</p> <pre class="card bg-light codeA">SELECT * FROM tb_produk INNER JOIN tb_brand USING(id_brand);</pre></li>
@@ -2190,10 +2225,10 @@
         
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">1. Membuat tabel view dari 2 tabel</h6> </p>
+                                        <h6 class="h6">Membuat tabel view dari 2 tabel</h6>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: decimal;">
                                                 <li><p>Siapkan 2 tabel yang sudah diberi data value</p></li>
@@ -2219,10 +2254,10 @@
                                 
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">2. Membuat tabel view dari 3 tabel</h6></p>
+                                        <h6 class="h6">Membuat tabel view dari 3 tabel</h6>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: decimal;">
                                                 <li><p>Siapkan 3 tabel yang sudah diberi data value</p></li>
@@ -2248,10 +2283,10 @@
         
                                 <dl>
                                     <dd>
-                                        <p><h6 class="d-inline">3. Menampilkan tanpa membuat tabel view</h6></p>
+                                        <h6 class="h6">Menampilkan tanpa membuat tabel view</h6>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
-                                    <dd class="hiddenTextBox"><hr>
+                                    <dd class="hiddenTextBox">
                                         <div class="hiddenText hide">
                                             <ul style="list-style: decimal;">
                                                 <li><p>Siapkan 3 tabel yang sudah diberi data value</p></li>
@@ -2297,7 +2332,7 @@
                             <h5>Penggunaan Data Trigger</h5>
                             <div>
                                 <div>
-                                    <h6>1. Validasi Data :</h6>
+                                    <h6 class="h6">1. Validasi Data :</h6>
                                     <p>Anda dapat membuat trigger yang memeriksa apakah data yang dimasukkan ke dalam tabel memenuhi persyaratan atau tidak. Misalnya, trigger untuk memastikan bahwa nilai tanggal yang dimasukkan adalah di masa depan, atau bahwa sebuah nilai tidak melebihi batas dari yang ditentukan.</p>
         
                                     <dl>
@@ -2322,24 +2357,23 @@
     DELIMITER ;                                            
                                                 </pre>
             
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p><h6 class="d-inline">'validate_future_date'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
-                                                        <li><p><h6 class="d-inline">'BEFORE INSERT ON nama_tabel'</h6>  menunjukkan bahwa trigger akan diaktifkan sebelum data dimasukkan ke dalam tabel dengan nama 'nama_tabel'.</p></li>
-                                                        <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang dimasukkan.</p></li>
-                                                        <li><p><h6 class="d-inline">'NEW.tanggal'</h6>  merujuk pada nilai yang akan dimasukkan ke dalam kolom 'tanggal'.</p></li>
-                                                        <li><p><h6 class="d-inline">'CURDATE()'</h6>  mengembalikan tanggal saat ini.</p></li>
-                                                        <li><p><h6 class="d-inline">'SIGNAL SQLSTATE '45000''</h6>  digunakan untuk memicu pengecualian dengan kode kesalahan khusus.</p></li>
-                                                        <li><p><h6 class="d-inline">'SET MESSAGE_TEXT = 'Tanggal harus di masa depan''</h6>  menetapkan pesan kesalahan yang akan ditampilkan jika kondisi tidak terpenuhi.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p><h6 class="d-inline">'validate_future_date'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
+                                                    <li><p><h6 class="d-inline">'BEFORE INSERT ON nama_tabel'</h6>  menunjukkan bahwa trigger akan diaktifkan sebelum data dimasukkan ke dalam tabel dengan nama 'nama_tabel'.</p></li>
+                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang dimasukkan.</p></li>
+                                                    <li><p><h6 class="d-inline">'NEW.tanggal'</h6>  merujuk pada nilai yang akan dimasukkan ke dalam kolom 'tanggal'.</p></li>
+                                                    <li><p><h6 class="d-inline">'CURDATE()'</h6>  mengembalikan tanggal saat ini.</p></li>
+                                                    <li><p><h6 class="d-inline">'SIGNAL SQLSTATE '45000''</h6>  digunakan untuk memicu pengecualian dengan kode kesalahan khusus.</p></li>
+                                                    <li><p><h6 class="d-inline">'SET MESSAGE_TEXT = 'Tanggal harus di masa depan''</h6>  menetapkan pesan kesalahan yang akan ditampilkan jika kondisi tidak terpenuhi.</p></li>
+                                                </ul>
                                             </div>
                                         </dd>
                                     </dl>
+                                    <hr>
                                 </div>
                                 
                                 <div>
-                                    <h6>2. Log Pembaruan :</h6>
+                                    <h6 class="h6">2. Log Pembaruan :</h6>
                                     <p>Trigger juga dapat digunakan untuk mencatat setiap kali data dalam tabel diubah. Dengan cara ini, Anda dapat melacak siapa yang melakukan perubahan, kapan perubahan itu terjadi, dan apa yang diubah.</p>
         
                                     <dl>
@@ -2362,23 +2396,22 @@
     DELIMITER ;
                                                 </pre>
             
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p><h6 class="d-inline">'log_data_changes'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
-                                                        <li><p><h6 class="d-inline">'AFTER UPDATE ON nama_tabel'</h6>  menunjukkan bahwa trigger akan diaktifkan setelah data diperbarui pada tabel dengan nama nama_tabel.</p></li>
-                                                        <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang diperbarui.</p></li>
-                                                        <li><p><h6 class="d-inline">'INSERT INTO log_pembaruan'</h6>  adalah perintah untuk memasukkan data pembaruan ke dalam tabel log_pembaruan.</p></li>
-                                                        <li><p><h6 class="d-inline">'OLD.kolom_yang_diubah' dan 'NEW.kolom_yang_diubah'</h6>  adalah nilai sebelum dan sesudah dari kolom yang diubah.</p></li>
-                                                        <li><p><h6 class="d-inline">'NOW()'</h6>  digunakan untuk mengambil waktu saat ini saat pembaruan terjadi.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p><h6 class="d-inline">'log_data_changes'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
+                                                    <li><p><h6 class="d-inline">'AFTER UPDATE ON nama_tabel'</h6>  menunjukkan bahwa trigger akan diaktifkan setelah data diperbarui pada tabel dengan nama nama_tabel.</p></li>
+                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang diperbarui.</p></li>
+                                                    <li><p><h6 class="d-inline">'INSERT INTO log_pembaruan'</h6>  adalah perintah untuk memasukkan data pembaruan ke dalam tabel log_pembaruan.</p></li>
+                                                    <li><p><h6 class="d-inline">'OLD.kolom_yang_diubah' dan 'NEW.kolom_yang_diubah'</h6>  adalah nilai sebelum dan sesudah dari kolom yang diubah.</p></li>
+                                                    <li><p><h6 class="d-inline">'NOW()'</h6>  digunakan untuk mengambil waktu saat ini saat pembaruan terjadi.</p></li>
+                                                </ul>
                                             </div>
                                         </dd>
                                     </dl>
+                                    <hr>
                                 </div>
                                 
                                 <div>
-                                    <h6>3. Penghitungan Otomatis :</h6> 
+                                    <h6 class="h6">3. Penghitungan Otomatis :</h6> 
                                     <p>Trigger dapat digunakan untuk menghitung atau mengagregasi data secara otomatis saat ada perubahan dalam tabel yang relevan. Misalnya, trigger dapat menghitung jumlah produk yang tersedia setiap kali ada transaksi penjualan.</p>
                                 
                                     <dl>
@@ -2406,25 +2439,24 @@
     DELIMITER ;
                                                 </pre>
             
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p><h6 class="d-inline">'update_stock_count'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
-                                                        <li><p><h6 class="d-inline">'AFTER INSERT ON transaksi_penjualan'</h6>  menunjukkan bahwa trigger akan diaktifkan setelah data dimasukkan ke dalam tabel transaksi_penjualan.</p></li>
-                                                        <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang dimasukkan.</p></li>
-                                                        <li><p><h6 class="d-inline">'DECLARE product_id INT;'</h6>  mendeklarasikan variabel product_id yang akan digunakan dalam trigger.</p></li>
-                                                        <li><p><h6 class="d-inline">'SET product_id = NEW.product_id;'</h6>  mengatur nilai product_id dengan nilai dari kolom product_id dalam baris yang dimasukkan.</p></li>
-                                                        <li><p><h6 class="d-inline">'UPDATE stok_produk'</h6>  adalah perintah untuk memperbarui tabel stok produk.</p></li>
-                                                        <li><p><h6 class="d-inline">'SET jumlah = jumlah - 1'</h6>  mengurangkan jumlah stok produk.</p></li>
-                                                        <li><p><h6 class="d-inline">'WHERE id = product_id;'</h6>  mengatur kondisi di mana pembaruan stok hanya dilakukan untuk produk dengan id yang sesuai dengan product_id yang baru saja dimasukkan.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p><h6 class="d-inline">'update_stock_count'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
+                                                    <li><p><h6 class="d-inline">'AFTER INSERT ON transaksi_penjualan'</h6>  menunjukkan bahwa trigger akan diaktifkan setelah data dimasukkan ke dalam tabel transaksi_penjualan.</p></li>
+                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang dimasukkan.</p></li>
+                                                    <li><p><h6 class="d-inline">'DECLARE product_id INT;'</h6>  mendeklarasikan variabel product_id yang akan digunakan dalam trigger.</p></li>
+                                                    <li><p><h6 class="d-inline">'SET product_id = NEW.product_id;'</h6>  mengatur nilai product_id dengan nilai dari kolom product_id dalam baris yang dimasukkan.</p></li>
+                                                    <li><p><h6 class="d-inline">'UPDATE stok_produk'</h6>  adalah perintah untuk memperbarui tabel stok produk.</p></li>
+                                                    <li><p><h6 class="d-inline">'SET jumlah = jumlah - 1'</h6>  mengurangkan jumlah stok produk.</p></li>
+                                                    <li><p><h6 class="d-inline">'WHERE id = product_id;'</h6>  mengatur kondisi di mana pembaruan stok hanya dilakukan untuk produk dengan id yang sesuai dengan product_id yang baru saja dimasukkan.</p></li>
+                                                </ul>
                                             </div>
                                         </dd>
                                     </dl>
+                                    <hr>
                                 </div>
                                 
                                 <div>
-                                    <h6>4. Pemberitahuan dan Notifikasi :</h6>
+                                    <h6 class="h6">4. Pemberitahuan dan Notifikasi :</h6>
                                     <p>Anda bisa menggunakan trigger untuk mengirimkan pemberitahuan atau notifikasi ke sistem lain atau pengguna ketika suatu peristiwa penting terjadi, seperti ketika stok suatu produk hampir habis.</p>
         
                                     <dl>
@@ -2449,23 +2481,22 @@
     DELIMITER ;
                                                 </pre>
             
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p><h6 class="d-inline">'low_stock_notification'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
-                                                        <li><p><h6 class="d-inline">'AFTER UPDATE ON stok_produk'</h6>  menunjukkan bahwa trigger akan diaktifkan setelah data diperbarui pada tabel stok_produk.</p></li>
-                                                        <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang diperbarui.</p></li>
-                                                        <li><p><h6 class="d-inline">'IF NEW.jumlah <= 10 THEN'</h6>  adalah kondisi di mana kita akan mengirimkan pemberitahuan jika stok produk kurang dari atau sama dengan 10.</p></li>
-                                                        <li><p><h6 class="d-inline">'INSERT INTO notifikasi'</h6>  adalah perintah untuk memasukkan data pemberitahuan ke dalam tabel notifikasi.</p></li>
-                                                        <li><p><h6 class="d-inline">'VALUES ('Stok produk dengan ID ' + NEW.id + ' hampir habis', NOW());'</h6>  mengatur pesan pemberitahuan yang akan dimasukkan ke dalam tabel, beserta waktu pemberitahuan.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p><h6 class="d-inline">'low_stock_notification'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
+                                                    <li><p><h6 class="d-inline">'AFTER UPDATE ON stok_produk'</h6>  menunjukkan bahwa trigger akan diaktifkan setelah data diperbarui pada tabel stok_produk.</p></li>
+                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang diperbarui.</p></li>
+                                                    <li><p><h6 class="d-inline">'IF NEW.jumlah <= 10 THEN'</h6>  adalah kondisi di mana kita akan mengirimkan pemberitahuan jika stok produk kurang dari atau sama dengan 10.</p></li>
+                                                    <li><p><h6 class="d-inline">'INSERT INTO notifikasi'</h6>  adalah perintah untuk memasukkan data pemberitahuan ke dalam tabel notifikasi.</p></li>
+                                                    <li><p><h6 class="d-inline">'VALUES ('Stok produk dengan ID ' + NEW.id + ' hampir habis', NOW());'</h6>  mengatur pesan pemberitahuan yang akan dimasukkan ke dalam tabel, beserta waktu pemberitahuan.</p></li>
+                                                </ul>
                                             </div>
                                         </dd>
                                     </dl>
+                                    <hr>
                                 </div>
                                 
                                 <div>
-                                    <h6>5. Enforce Aturan Bisnis :</h6>
+                                    <h6 class="h6">5. Enforce Aturan Bisnis :</h6>
                                     <p>Trigger bisa membantu Anda memastikan bahwa aturan bisnis yang penting diikuti dengan konsisten. Misalnya, Anda dapat membuat trigger yang mencegah penghapusan data pelanggan yang memiliki tagihan belum terselesaikan.</p>
         
                                     <dl>
@@ -2496,19 +2527,17 @@
     DELIMITER ;
                                                 </pre>
             
-                                                <div class="card card-body">
-                                                    <ul style="list-style: circle;">
-                                                        <li><p><h6 class="d-inline">'prevent_customer_deletion'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
-                                                        <li><p><h6 class="d-inline">'BEFORE DELETE ON pelanggan'</h6>  menunjukkan bahwa trigger akan diaktifkan sebelum data dihapus dari tabel pelanggan.</p></li>
-                                                        <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang akan dihapus.</p></li>
-                                                        <li><p><h6 class="d-inline">'DECLARE unpaid_bill INT;'</h6>  mendeklarasikan variabel unpaid_bill yang akan digunakan dalam trigger.</p></li>
-                                                        <li><p><h6 class="d-inline">'SELECT COUNT(*) INTO unpaid_bill'</h6>  menghitung jumlah tagihan yang belum lunas untuk pelanggan yang akan dihapus.</p></li>
-                                                        <li><p><h6 class="d-inline">'WHERE pelanggan_id = OLD.id AND status = 'Belum Lunas';'</h6>  adalah kondisi untuk menghitung tagihan yang belum lunas untuk pelanggan yang akan dihapus.</p></li>
-                                                        <li><p><h6 class="d-inline">'IF unpaid_bill > 0 THEN'</h6>  adalah kondisi di mana trigger akan mencegah penghapusan jika ada tagihan yang belum lunas.</p></li>
-                                                        <li><p><h6 class="d-inline">'SIGNAL SQLSTATE '45000''</h6>  digunakan untuk memicu pengecualian dengan kode kesalahan khusus.</p></li>
-                                                        <li><p><h6 class="d-inline">'SET MESSAGE_TEXT = 'Tidak dapat menghapus pelanggan dengan tagihan belum lunas';'</h6>  menetapkan pesan kesalahan yang akan ditampilkan jika kondisi tidak terpenuhi.</p></li>
-                                                    </ul>
-                                                </div>
+                                                <ul style="list-style: circle;">
+                                                    <li><p><h6 class="d-inline">'prevent_customer_deletion'</h6>  adalah nama trigger yang Anda tentukan.</p></li>
+                                                    <li><p><h6 class="d-inline">'BEFORE DELETE ON pelanggan'</h6>  menunjukkan bahwa trigger akan diaktifkan sebelum data dihapus dari tabel pelanggan.</p></li>
+                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6>  menunjukkan bahwa trigger akan dieksekusi untuk setiap baris yang akan dihapus.</p></li>
+                                                    <li><p><h6 class="d-inline">'DECLARE unpaid_bill INT;'</h6>  mendeklarasikan variabel unpaid_bill yang akan digunakan dalam trigger.</p></li>
+                                                    <li><p><h6 class="d-inline">'SELECT COUNT(*) INTO unpaid_bill'</h6>  menghitung jumlah tagihan yang belum lunas untuk pelanggan yang akan dihapus.</p></li>
+                                                    <li><p><h6 class="d-inline">'WHERE pelanggan_id = OLD.id AND status = 'Belum Lunas';'</h6>  adalah kondisi untuk menghitung tagihan yang belum lunas untuk pelanggan yang akan dihapus.</p></li>
+                                                    <li><p><h6 class="d-inline">'IF unpaid_bill > 0 THEN'</h6>  adalah kondisi di mana trigger akan mencegah penghapusan jika ada tagihan yang belum lunas.</p></li>
+                                                    <li><p><h6 class="d-inline">'SIGNAL SQLSTATE '45000''</h6>  digunakan untuk memicu pengecualian dengan kode kesalahan khusus.</p></li>
+                                                    <li><p><h6 class="d-inline">'SET MESSAGE_TEXT = 'Tidak dapat menghapus pelanggan dengan tagihan belum lunas';'</h6>  menetapkan pesan kesalahan yang akan ditampilkan jika kondisi tidak terpenuhi.</p></li>
+                                                </ul>
                                             </div>
                                         </dd>
                                     </dl>
@@ -2526,7 +2555,7 @@
         
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>1. Insert Produk</h6>
+                                        <h6 class="h6">1. Insert Produk</h6>
                                     </dt>
                                     <dd>
                                         <p>Trigger ini akan dieksekusi jika terjadi even 'insert' pada tabel 'tb_produk'</p>
@@ -2545,23 +2574,22 @@
     DELIMITER ;
                                             </pre>
                                             
-                                            <div class="card card-body">
-                                                <ul style="list-style: circle;">
-                                                    <li><p><h6 class="d-inline">'CREATE TRIGGER insert_produk'</h6> membuat trigger dengan nama 'insert_produk'</p></li>
-                                                    <li><p><h6 class="d-inline">'AFTER INSERT ON tb_produk'</h6> trigger dieksekusi setelah 'insert' pada tabel 'tb_produk'</p></li>
-                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6> trigger akan dieksekusi untuk setiap baris yang dimasukkan</p></li>
-                                                    <li><p><h6 class="d-inline">'INSERT INTO produk_log'</h6> trigger akan memasukan record baru ke dalam tabel 'produk_log'</p></li>
-                                                    <li><p><h6 class="d-inline">'NOW()'</h6> mengambil tanggal dan waktu sekarang</p></li>
-                                                    <li><p><h6 class="d-inline">'NEW.nama_atribut'</h6> mengambil value atribut yang baru dimasukan</p></li>
-                                                </ul>
-                                            </div>
+                                            <ul style="list-style: circle;">
+                                                <li><p><h6 class="d-inline">'CREATE TRIGGER insert_produk'</h6> membuat trigger dengan nama 'insert_produk'</p></li>
+                                                <li><p><h6 class="d-inline">'AFTER INSERT ON tb_produk'</h6> trigger dieksekusi setelah 'insert' pada tabel 'tb_produk'</p></li>
+                                                <li><p><h6 class="d-inline">'FOR EACH ROW'</h6> trigger akan dieksekusi untuk setiap baris yang dimasukkan</p></li>
+                                                <li><p><h6 class="d-inline">'INSERT INTO produk_log'</h6> trigger akan memasukan record baru ke dalam tabel 'produk_log'</p></li>
+                                                <li><p><h6 class="d-inline">'NOW()'</h6> mengambil tanggal dan waktu sekarang</p></li>
+                                                <li><p><h6 class="d-inline">'NEW.nama_atribut'</h6> mengambil value atribut yang baru dimasukan</p></li>
+                                            </ul>
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
         
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>2. Update Produk</h6>
+                                        <h6 class="h6">2. Update Produk</h6>
                                     </dt>
                                     <dd>
                                         <p>Trigger ini akan dieksekusi jika terjadi even 'update' pada tabel 'tb_produk'</p>
@@ -2580,23 +2608,22 @@
     DELIMITER ;
                                             </pre>
             
-                                            <div class="card card-body">
-                                                <ul style="list-style: circle;">
-                                                    <li><p><h6 class="d-inline">'CREATE TRIGGER update_produk'</h6> membuat trigger dengan nama 'update_produk'</p></li>
-                                                    <li><p><h6 class="d-inline">'AFTER UPDATE ON tb_produk'</h6> trigger dieksekusi setelah 'update' pada tabel 'tb_produk'</p></li>
-                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6> trigger akan dieksekusi untuk setiap baris yang dimasukkan</p></li>
-                                                    <li><p><h6 class="d-inline">'INSERT INTO produk_log'</h6> trigger akan memasukan record baru ke dalam tabel 'produk_log'</p></li>
-                                                    <li><p><h6 class="d-inline">'NOW()'</h6> mengambil tanggal dan waktu sekarang</p></li>
-                                                    <li><p><h6 class="d-inline">'NEW.nama_atribut'</h6> mengambil value atribut yang baru dimasukan</p></li>
-                                                </ul>
-                                            </div>
+                                            <ul style="list-style: circle;">
+                                                <li><p><h6 class="d-inline">'CREATE TRIGGER update_produk'</h6> membuat trigger dengan nama 'update_produk'</p></li>
+                                                <li><p><h6 class="d-inline">'AFTER UPDATE ON tb_produk'</h6> trigger dieksekusi setelah 'update' pada tabel 'tb_produk'</p></li>
+                                                <li><p><h6 class="d-inline">'FOR EACH ROW'</h6> trigger akan dieksekusi untuk setiap baris yang dimasukkan</p></li>
+                                                <li><p><h6 class="d-inline">'INSERT INTO produk_log'</h6> trigger akan memasukan record baru ke dalam tabel 'produk_log'</p></li>
+                                                <li><p><h6 class="d-inline">'NOW()'</h6> mengambil tanggal dan waktu sekarang</p></li>
+                                                <li><p><h6 class="d-inline">'NEW.nama_atribut'</h6> mengambil value atribut yang baru dimasukan</p></li>
+                                            </ul>
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
         
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>3. Delete Produk</h6>
+                                        <h6 class="h6">3. Delete Produk</h6>
                                     </dt>
                                     <dd>
                                         <p>Trigger ini akan dieksekusi jika terjadi even 'delete' pada tabel 'tb_produk'</p>
@@ -2615,16 +2642,14 @@
     DELIMITER ;
                                             </pre>
             
-                                            <div class="card card-body">
-                                                <ul style="list-style: circle;">
-                                                    <li><p><h6 class="d-inline">'CREATE TRIGGER delete_produk'</h6> membuat trigger dengan nama 'delete_produk'</p></li>
-                                                    <li><p><h6 class="d-inline">'AFTER DELETE ON tb_produk'</h6> trigger dieksekusi setelah 'delete' pada tabel 'tb_produk'</p></li>
-                                                    <li><p><h6 class="d-inline">'FOR EACH ROW'</h6> trigger akan dieksekusi untuk setiap baris yang dimasukkan</p></li>
-                                                    <li><p><h6 class="d-inline">'INSERT INTO produk_log'</h6> trigger akan memasukan record baru ke dalam tabel 'produk_log'</p></li>
-                                                    <li><p><h6 class="d-inline">'NOW()'</h6> mengambil tanggal dan waktu sekarang</p></li>
-                                                    <li><p><h6 class="d-inline">'OLD.nama_atribut'</h6> mengambil value atribut yang sudah ada sebelumnya</p></li>
-                                                </ul>
-                                            </div>
+                                            <ul style="list-style: circle;">
+                                                <li><p><h6 class="d-inline">'CREATE TRIGGER delete_produk'</h6> membuat trigger dengan nama 'delete_produk'</p></li>
+                                                <li><p><h6 class="d-inline">'AFTER DELETE ON tb_produk'</h6> trigger dieksekusi setelah 'delete' pada tabel 'tb_produk'</p></li>
+                                                <li><p><h6 class="d-inline">'FOR EACH ROW'</h6> trigger akan dieksekusi untuk setiap baris yang dimasukkan</p></li>
+                                                <li><p><h6 class="d-inline">'INSERT INTO produk_log'</h6> trigger akan memasukan record baru ke dalam tabel 'produk_log'</p></li>
+                                                <li><p><h6 class="d-inline">'NOW()'</h6> mengambil tanggal dan waktu sekarang</p></li>
+                                                <li><p><h6 class="d-inline">'OLD.nama_atribut'</h6> mengambil value atribut yang sudah ada sebelumnya</p></li>
+                                            </ul>
                                         </div>
                                     </dd>
                                 </dl>

@@ -3,6 +3,7 @@
     --grey1: #666;
     --grey2: #444;
     --grey3: #222;
+    --bg-light: #f8f9fa;
     
     /* --border: 1px solid black; */
     --border: none;
@@ -189,6 +190,14 @@ body {
     transform: translateX(100vw);
 }
 
+.table-scroll {
+    overflow: auto;
+}
+
+.table-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 .grid-double .main .box-size .item-size.active-size {
     background: var(--white);
     color: var(--grey1);
@@ -201,6 +210,18 @@ p, li, dd, td, h6, pre {
 
 pre::-webkit-scrollbar {
     display: none;
+}
+
+h6.h6 {
+    font-size: 16px;
+}
+
+.main li {
+    transform: translateX(-13px);
+}
+
+.main .tx-zero li {
+    transform: translateX(0);
 }
 
 
@@ -224,7 +245,8 @@ pre::-webkit-scrollbar {
 .hiddenText {
     display: block;
     height: 0;
-    transition: height .5s;
+    background: var(--bg-light);
+    transition: .5s;
 }
 
 .hiddenText.hide {
@@ -281,7 +303,14 @@ pre::-webkit-scrollbar {
     height: 80vh;
     background: var(--white);
     color: var(--grey3);
+    transition: .2s;
     z-index: 3;
+}
+
+.code-box.wide {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 0;
 }
 
 
@@ -343,6 +372,10 @@ pre::-webkit-scrollbar {
 
     pre {
         font-size: 10px;
+    }
+
+    .main li {
+        transform: translateX(-16px);
     }
 
 }

@@ -70,7 +70,7 @@
                             <p>
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>1. Class</h5>
+                                        <h6 class="h6">1. Class</h6>
                                     </dt>
                                     <dd>
                                         <p>Class adalah kumpulan variabel, method, dan konstruktor yang digunakan untuk mendefinisikan objek yang akan dibuat</p> 
@@ -106,10 +106,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>2. Object</h5>
+                                        <h6 class="h6">2. Object</h6>
                                     </dt>
                                     <dd>
                                         <p>Object, di sisi lain, adalah instansi atau realisasi dari class. Dengan menggunakan class sebagai blueprint, kita dapat membuat banyak objek dengan atribut dan metode yang sama tetapi nilai yang berbeda</p>
@@ -145,7 +146,7 @@
                             <p>
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>1. Cara Biasa</h5>
+                                        <h6 class="h6">1. Cara Biasa</h6>
                                     </dt>
                                     <dd>
                                         <p>Cara ini dilakukan dengan kita membuat object dan mendefinisikan object secara terpisah</p>
@@ -180,10 +181,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>2. Konstruktor</h5>
+                                        <h6 class="h6">2. Konstruktor</h6>
                                     </dt>
                                     <dd>
                                         <p>Konstruktor memungkinkan kita untuk mendefinisikan object saat object dibuat. Konstruktor memudahkan kita untuk mendefinisikan object yang banyak dengan singkat</p>
@@ -228,7 +230,7 @@
                             <p>
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>1. Cara Biasa</h5>
+                                        <h6 class="h6">1. Cara Biasa</h6>
                                     </dt>
                                     <dd>
                                         <p>Cara ini dilakukan dengan menuliskan perintah <i>System.out.println(...)</i> dan diisi dengan object yang ingin ditampilkan</p>
@@ -265,10 +267,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>2. Dengan Method</h5>
+                                        <h6 class="h6">2. Dengan Method</h6>
                                     </dt>
                                     <dd>
                                         <p>Cara ini memudahkan kita untuk manampilkan object, cara ini dilakukan dengan membuat method di dalam class, dan dipanggil setelah object</p>
@@ -352,7 +355,7 @@
                             <p>
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>1. Membuat konstruktor</h5>
+                                        <h6 class="h6">1. Membuat konstruktor</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -381,7 +384,7 @@
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>2. Kelas tanpa konstruktor</h5>
+                                        <h6 class="h6">2. Kelas tanpa konstruktor</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -421,7 +424,7 @@
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>3. Kelas dengan konstruktor</h5>
+                                        <h6 class="h6">3. Kelas dengan konstruktor</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -476,7 +479,7 @@
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>1. Menampilkan tulisan</h5>
+                                        <h6 class="h6">1. Menampilkan tulisan</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -511,7 +514,7 @@
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>2. Menampilkan variabel</h5>
+                                        <h6 class="h6">2. Menampilkan variabel</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -554,7 +557,7 @@
                                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>3. Operasi aritmatika</h5>
+                                        <h6 class="h6">3. Operasi aritmatika</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -619,17 +622,14 @@
                         <div class="card-body">
                             <h5>Membuat Method</h5>
                             <p>
-                                Untuk membuat metode dalam Java, Anda perlu mendeklarasikannya di dalam kelas menggunakan sintaks berikut
-        
                                 <dl>
                                     <dd>
-                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                        <p>Untuk membuat metode dalam Java, Anda perlu mendeklarasikannya di dalam kelas menggunakan sintaks berikut</p>
                                     </dd>
-                                    <dd class="hiddenCode hide">
-                                        <div class="hide-code"><i class="fas fa-times"></i></div>
-                                        <pre class="card codeB code-box">
+                                    <dd>
+                                        <pre class="card bg-light codeB">
                                                 
-    modifier return_type namaMethod(parameter) {
+    modifier return_type namaMethod(parameter) {    
         // Blok kode
     }
                                         </pre>
@@ -691,10 +691,9 @@
                         <div class="card-body">
                             <h5>Pengembalian Nilai</h5>
                             <p>
-                                Jika method mengembalikan nilai, anda perlu menggunakan kata kunci <i>return</i> di dalam blok kode untuk mengembalikan nilai tersebut 
-        
                                 <dl>
                                     <dd>
+                                        <p>Jika method mengembalikan nilai, anda perlu menggunakan kata kunci <i>return</i> di dalam blok kode untuk mengembalikan nilai tersebut</p>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dd>
                                     <dd class="hiddenCode hide">
@@ -706,9 +705,10 @@
     }
                                         </pre>
                                     </dd>
+                                    <dd>
+                                        <p>anda dapat menggunakan nilai yang dikembalikan dari method ini dalam bagian lain dari program anda. </p>
+                                    </dd>
                                 </dl>
-                                
-                                anda dapat menggunakan nilai yang dikembalikan dari method ini dalam bagian lain dari program anda. 
                             </p>
                         </div>
                         </div>
@@ -720,7 +720,7 @@
                             <p>
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>Method tanpa return dan tanpa parameter</h6>
+                                        <h6 class="h6">Method tanpa return dan tanpa parameter</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -737,7 +737,7 @@
         
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>Method tanpa return dan dengan parameter</h6>
+                                        <h6 class="h6">Method tanpa return dan dengan parameter</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -756,7 +756,7 @@
         
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>Method dengan return dan tanpa parameter</h6>
+                                        <h6 class="h6">Method dengan return dan tanpa parameter</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -775,7 +775,7 @@
         
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>Method dengan return dan dengan parameter</h6>
+                                        <h6 class="h6">Method dengan return dan dengan parameter</h6>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
                                     </dt>
                                     <dd class="hiddenCode hide">
@@ -978,7 +978,7 @@
                             <p>
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>1. private</h5>
+                                        <h6 class="h6">1. private</h6>
                                     </dt>
                                     <dd>
                                         Ketika suatu anggota (atribut atau metode) dinyatakan sebagai "private", maka anggota tersebut hanya dapat diakses atau dimodifikasi oleh kode di dalam kelas itu sendiri, dan tidak dapat diakses oleh kode di kelas lain.
@@ -1010,10 +1010,11 @@
                                         <i>variabel <i>name</i> dan <i>health</i> tidak bisa di akses class lain</i>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>2. public</h5>
+                                        <h6 class="h6">2. public</h6>
                                     </dt>
                                     <dd>
                                         Ketika suatu anggota (atribut atau metode) dinyatakan sebagai "public", maka anggota tersebut dapat diakses dan digunakan oleh kode di dalam kelas itu sendiri maupun oleh kode di kelas lain.
@@ -1052,10 +1053,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h5>3. protected</h5>
+                                        <h6 class="h6">3. protected</h6>
                                     </dt>
                                     <dd>
                                         Ketika suatu anggota dinyatakan sebagai <i>protected</i>, anggota tersebut dapat diakses oleh kode di dalam kelas itu sendiri, oleh kelas-kelas turunan (subclass), dan oleh kelas-kelas dalam paket yang sama.
@@ -1110,14 +1112,14 @@
                                 Getter dan setter adalah metode atau fungsi yang digunakan untuk mengakses (getter) dan memperbarui (setter) nilai properti (variabel) dalam suatu objek.
                 
                                 <dl>
-                                    <dt><h5>Getter</h5></dt>
+                                    <dt><h6 class="h6">Getter</h6></dt>
                                     <dd>
                                         Getter adalah metode yang digunakan untuk mengakses (membaca) nilai properti dari suatu objek. Biasanya, nama getter dimulai dengan prefiks "get" diikuti dengan nama properti yang ingin diakses. Getter tidak menerima argumen dan mengembalikan nilai dari properti yang diakses.
                                     </dd>
                                 </dl>
                 
                                 <dl>
-                                    <dt><h5>Setter</h5></dt>
+                                    <dt><h6 class="h6">Setter</h6></dt>
                                     <dd>
                                         Setter adalah metode yang digunakan untuk memperbarui (menulis) nilai properti suatu objek. Nama setter biasanya dimulai dengan prefiks "set" diikuti dengan nama properti yang ingin diubah. Setter menerima argumen yang merupakan nilai baru yang akan diberikan kepada properti.
                                     </dd>
@@ -2416,11 +2418,11 @@
                         <div class="card-body">
                             <h5>Fungsi Pada ArrayList</h5>
                             <p>
-                                Dengan menggunakan ArrayList dalam Java, Anda dapat melakukan berbagai operasi dan manipulasi data, termasuk 
+                                <p>Dengan menggunakan ArrayList dalam Java, Anda dapat melakukan berbagai operasi dan manipulasi data, termasuk</p>
                                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>1. Menambahkan elemen</h6>
+                                        <h6 class="h6">1. Menambahkan elemen</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat menambahkan elemen baru ke ArrayList menggunakan metode <u>add()</u> atau <u>addAll()</u>.</p>
@@ -2447,10 +2449,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>2. Mengakses elemen</h6>
+                                        <h6 class="h6">2. Mengakses elemen</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat mengakses elemen dalam ArrayList menggunakan indeks dengan menggunakan metode <u>get()</u>.</p>
@@ -2477,10 +2480,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>3. Mengubah elemen</h6>
+                                        <h6 class="h6">3. Mengubah elemen</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat mengubah nilai elemen yang ada dalam ArrayList dengan menggunakan metode <u>set()</u>.</p>
@@ -2508,10 +2512,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>4. Menghapus elemen</h6>
+                                        <h6 class="h6">4. Menghapus elemen</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat menghapus elemen dari ArrayList menggunakan metode <u>remove()</u> dengan indeks atau nilai tertentu.</p>
@@ -2539,10 +2544,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>5. Mencari elemen</h6>
+                                        <h6 class="h6">5. Mencari elemen</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat mencari elemen dalam ArrayList menggunakan metode <u>indexOf()</u> atau <u>contains()</u>.</p>
@@ -2573,10 +2579,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>6. Menghitung ukuran ArrayList</h6>
+                                        <h6 class="h6">6. Menghitung ukuran ArrayList</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat mengetahui jumlah elemen dalam ArrayList menggunakan metode <u>size()</u>.</p>
@@ -2602,10 +2609,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>7. Menggabungkan ArrayList</h6>
+                                        <h6 class="h6">7. Menggabungkan ArrayList</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat menggabungkan dua ArrayList menggunakan metode <u>addAll()</u>.</p>
@@ -2633,10 +2641,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>8. Mengurutkan ArrayList</h6>
+                                        <h6 class="h6">8. Mengurutkan ArrayList</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat mengurutkan elemen dalam ArrayList menggunakan metode <u>sort()</u>.</p>
@@ -2670,10 +2679,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>9. Mengecek apakah ArrayList kosong</h6>
+                                        <h6 class="h6">9. Mengecek apakah ArrayList kosong</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat memeriksa apakah ArrayList kosong menggunakan metode <u>isEmpty()</u>.</p>
@@ -2697,10 +2707,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>10. Menghapus semua elemen dalam ArrayList</h6>
+                                        <h6 class="h6">10. Menghapus semua elemen dalam ArrayList</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat menghapus semua elemen dari ArrayList menggunakan metode <u>clear()</u>.</p>
@@ -2732,10 +2743,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>11. Iterasi melalui elemen</h6>
+                                        <h6 class="h6">11. Iterasi melalui elemen</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat menggunakan loop for-each untuk melakukan iterasi melalui elemen-elemen dalam ArrayList.</p>
@@ -2763,10 +2775,11 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                 
                                 <dl>
                                     <dt class="mb-2">
-                                        <h6>12. Mengkonversi ArrayList menjadi array</h6>
+                                        <h6 class="h6">12. Mengkonversi ArrayList menjadi array</h6>
                                     </dt>
                                     <dd>
                                         <p>Anda dapat mengonversi ArrayList menjadi array menggunakan metode <u>toArray()</u>.</p>
@@ -2797,6 +2810,7 @@
                                         </pre>
                                     </dd>
                                 </dl>
+                                <hr>
                                 
                                 <p>Selain itu, Anda juga dapat menggunakan metode dan fitur lain yang disediakan oleh antarmuka List yang diimplementasikan oleh ArrayList, seperti menggeser elemen, mengganti elemen, mendapatkan sub daftar, dll.</p>
                             </p>
