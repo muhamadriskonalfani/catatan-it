@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Gradasi</title>
+    <title>Tubelight Animation</title>
 
     <!-- bootstrap 5 link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,48 +15,53 @@
     <link rel="stylesheet" href="assets-project/style-project.css">
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins&Display=swap');
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins',sans-serif;
+            font-family: arial;
         }
 
-        html, body, .container-fluid {
+        body, .container-fluid {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
-            background: #fff;
+            min-height: 100vh;
+            background: linear-gradient(#2b1055,#7597de);
         }
-        
-        .container-fluid .text {
-            font-size: 150px;
-            font-weight: 770;
-            outline: none;
-            text-align: center;
+
+        .container-fluid h2 {
+            position: relative;
+            font-size: 6em;
+            letter-spacing: 15px;
+            color: #41348d;
             text-transform: uppercase;
-            background: linear-gradient(135deg, red 0%, orange 15%, yellow 30%, green 45%, blue 60%, indigo 75%, purple 90%, red 100%);
-            background-size: 400%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            width: 100%;
+            text-align: center;
             -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-            line-height: 0.80em;
+            line-height: 0.70em;
+            outline: none;
             animation: animate 5s linear infinite;
         }
 
         @keyframes animate {
-            to {
-                background-position: 400%;
+            0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+                color: #41348d;
+                text-shadow: none;
+            }
+            18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+                color: white;
+                text-shadow:  0 0 10px #7597de,
+                             0 0 20px #7597de,
+                             0 0 40px #7597de,
+                             0 0 80px #7597de,
+                             0 0 160px #7597de;
             }
         }
-        
+
         @media (max-width:768px) {
 
-            .container-fluid .text {
+            .container-fluid h2 {
                 transform: scale(.5);
             }
 
@@ -66,7 +71,7 @@
 <body>
     <!-- main content -->
     <div class="container-fluid">
-        <div spellcheck="false" class="text" contenteditable="true">Gradasi</div>
+        <h2 contenteditable="true">Text</h2>
     </div>
 
     <!-- support content -->
@@ -83,7 +88,7 @@
                 <pre class="code-box">
 
     &lt;div class="container-fluid">
-        &lt;div spellcheck="false" class="text" contenteditable="true">Gradasi&lt;/div>
+        &lt;h2 contenteditable="true">Text&lt;/h2>
     &lt;/div>
                 </pre>
             </div>
@@ -92,48 +97,53 @@
             <div class="hiddenCode hide">
                 <pre class="code-box">
 
-    @import url('https://fonts.googleapis.com/css?family=Poppins&Display=swap');
-
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins',sans-serif;
+        font-family: arial;
     }
 
-    html, body, .container-fluid {
+    body, .container-fluid {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        height: 100vh;
-        background: #fff;
+        min-height: 100vh;
+        background: linear-gradient(#2b1055,#7597de);
     }
-    
-    .container-fluid .text {
-        font-size: 150px;
-        font-weight: 770;
-        outline: none;
-        text-align: center;
+
+    .container-fluid h2 {
+        position: relative;
+        font-size: 6em;
+        letter-spacing: 15px;
+        color: #41348d;
         text-transform: uppercase;
-        background: linear-gradient(135deg, red 0%, orange 15%, yellow 30%, green 45%, blue 60%, indigo 75%, purple 90%, red 100%);
-        background-size: 400%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        width: 100%;
+        text-align: center;
         -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-        line-height: 0.80em;
+        line-height: 0.70em;
+        outline: none;
         animation: animate 5s linear infinite;
     }
 
     @keyframes animate {
-        to {
-            background-position: 400%;
+        0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+            color: #41348d;
+            text-shadow: none;
+        }
+        18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+            color: white;
+            text-shadow:  0 0 10px #7597de,
+                            0 0 20px #7597de,
+                            0 0 40px #7597de,
+                            0 0 80px #7597de,
+                            0 0 160px #7597de;
         }
     }
-    
+
     @media (max-width:768px) {
 
-        .container-fluid .text {
+        .container-fluid h2 {
             transform: scale(.5);
         }
 

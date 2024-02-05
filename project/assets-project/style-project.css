@@ -19,7 +19,6 @@
     right: -1px;
     width: 1px;
     height: 100vh;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .html-support .hide-code {
@@ -92,7 +91,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    padding: .5rem;
+    padding: 0 .5rem;
     height: 2.2rem;
     cursor: pointer;
     background: var(--grey1);
@@ -142,9 +141,7 @@
 }
 
 .html-support .hiddenCodeBox .hiddenCode .code-box {
-    font-family: 'Consolas', monospace;
     letter-spacing: .7px;
-    font-size: 15px;
 }
 
 
@@ -168,7 +165,7 @@
 @media (max-width:768px) {
 
     .html-support .hiddenCodeBox .hiddenCode .code-box {
-        font-size: 10.2px;
+        font-size: 10px;
     }
 
 }
