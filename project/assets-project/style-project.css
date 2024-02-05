@@ -1,0 +1,177 @@
+:root {
+    --white: #fff;
+    --grey1: #666;
+    --grey2: #444;
+    --grey3: #222;
+    --bg-light: #f8f9fa;
+    
+    /* --border: 1px solid black; */
+    --border: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.html-support {
+    position: fixed;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.html-support .hide-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: .4rem;
+    right: .5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    z-index: 4;
+    transform: translateX(100vw);
+    transition: .6s;
+}
+
+.html-support .hide-code::before {
+    content: '';
+    position: absolute;
+    background: var(--grey1);
+    top: -6.7rem;
+    right: -6.7rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.html-support .option-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: .4rem;
+    right: .5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    z-index: 5;
+    transform: translateX(100vw);
+    transition: .2s;
+}
+
+.html-support .option-icon::before {
+    content: '';
+    position: absolute;
+    background: var(--grey1);
+    bottom: -6.7rem;
+    right: -6.7rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.html-support .option-icon .fa-plus {
+    transition: .2s;
+}
+
+.html-support .option-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 5rem;
+    display: flex;
+    gap: .5rem;
+    z-index: 4;
+}
+
+.html-support .option-container .option-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: .5rem;
+    height: 2.2rem;
+    cursor: pointer;
+    background: var(--grey1);
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.html-support .option-container .option-item.active {
+    background: var(--white);
+    color: var(--grey1);
+    border: 2px solid var(--grey1);
+}
+
+.html-support .hiddenCodeBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    transition: .6s;
+    z-index: 2;
+}
+
+.html-support .hiddenCodeBox .hiddenCode {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    background: transparent;
+    color: transparent;
+    transition: .6s;
+    overflow: auto;
+    z-index: 3;
+}
+
+.html-support .hiddenCodeBox .hiddenCode.wide {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+.html-support .hiddenCodeBox .hiddenCode .code-box {
+    font-family: 'Consolas', monospace;
+    letter-spacing: .7px;
+    font-size: 15px;
+}
+
+
+/* Support Class */
+
+.hide {
+    display: none;
+}
+
+.tx-plus {
+    transform: translateX(100vw);
+}
+
+.rotate {
+    transform: rotate(-45deg);
+}
+
+
+/* Responsive */
+
+@media (max-width:768px) {
+
+    .html-support .hiddenCodeBox .hiddenCode .code-box {
+        font-size: 10.2px;
+    }
+
+}
+
+
+

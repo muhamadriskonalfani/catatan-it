@@ -67,8 +67,14 @@ hiddenCodeBtn.forEach((button, index) => {
         hiddenCodeBox.forEach((box) => box.classList.add('hide'));
         hiddenCodeBox[index].classList.remove('hide');
         setTimeout(() => {
-            hideCode[index].style.transform = 'translateX(0)';
+            hiddenCodeBox[index].style.background = 'rgba(0, 0, 0, .5)';
         }, 200);
+        setTimeout(() => {
+            codeBox[index].style.transform = 'translate(-50%, -50%)';
+        }, 400);
+        setTimeout(() => {
+            hideCode[index].style.transform = 'translateX(0)';
+        }, 600);
     })
 });
 
@@ -80,10 +86,19 @@ codeBox.forEach((box) => {
 });
 
 // Hide hidden code
-hideCode.forEach((button) => {
+hideCode.forEach((button, index) => {
     button.addEventListener('click', () => {
-        hideCode.forEach((icon) => icon.style.transform = 'translateX(100vw)');
-        hiddenCodeBox.forEach((box) => box.classList.add('hide'));
+        hideCode[index].style.transform = 'translateX(100vw)';
+        setTimeout(() => {
+            codeBox[index].style.transform = 'translate(-200%, -50%)';
+        }, 200);
+        setTimeout(() => {
+            hiddenCodeBox[index].style.background = 'transparent';
+        }, 400);
+        setTimeout(() => {
+            hiddenCodeBox.forEach((box) => box.classList.add('hide'));
+            codeBox.forEach((box) => box.classList.remove('wide'));
+        }, 600);
     })
 });
 

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRICKS - ALMANAC</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        *::-webkit-scrollbar {
+            display: none;
+        }
+        body{
+            background: white;
+        }
+
+        /* header */
+
+        .header{
+            font-family: sans-serif;
+            position: relative;
+            background: rgb(36, 35, 35);
+            color: white;
+            padding: 15px 0px 15px 30px;
+            border-bottom: 1px solid grey;
+
+        }
+        .header h1,h3{
+            display: inline;
+            letter-spacing: 2px;
+        }
+        .header .submenu{
+            position: relative;
+            padding: 10px 0px 0px 20px;
+        }
+        .header .submenu ul li{
+            list-style: circle;
+        }
+        .header .submenu ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* body */
+
+        .body{
+            position: relative;
+            padding: 5% 0% 5% 0%;
+            background: linear-gradient(to right, rgb(36, 35, 35), rgb(61, 58, 58), rgb(61, 58, 58), rgb(36, 35, 35));
+        }
+        .body h1{
+            color: white;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+            margin-left: 5%;
+        }
+
+        /* body scrollbar */
+
+        .body .scrollbar{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0px 25px;
+            overflow-x: hidden;
+            background: transparent;
+        }
+        .body .scrollbar ul{
+            max-width: 100%;
+            overflow-x: auto;
+            padding: 0px 20px;
+            background: #333;
+            border-radius: 10px;
+        }
+        .body .scrollbar a{
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .body .scrollbar ul,
+        .body .scrollbar li{
+            display: inline-block;
+            white-space: nowrap;
+        }
+        @media screen and (max-width: 600px){
+            .footer a{
+                padding: 0px 5px;
+            }
+        }
+
+        /* body container */
+
+        .body .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .body .container .kotak{
+            float: left;
+            width: 40%;
+            margin: 30px 0px 30px 0px;
+            padding: 20px;
+            background: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom: 10px solid var(--i);
+        }
+        .body .container .kotak h1{
+            font-size: 20px;
+            color: black;
+            margin: -7px 0px 10px 0px;
+        }
+        .body .container .clear{
+            clear: both;
+        }
+
+        /* body bodyBox */
+
+        .body .bodyBox{
+            position: relative;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        .body .bodyBox .box{
+            display: inline-block;
+            display: flex;
+            padding-right: 15px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .body .bodyBox .box .kotak{
+            float: left;
+            width: 50%;
+            overflow: hidden;
+            padding: 2%;
+            background: transparent;
+        }
+        .body .bodyBox .box .kotak h1{
+            margin-left: -10px;
+            float: left;
+            position: absolute;
+        }
+        .body .bodyBox .box .kotak ul{
+            float: left;
+            margin-left: 5%;
+        }
+        .body .bodyBox .box .kotak ul li{
+            color: white;
+            width: 500px;
+            list-style: none;
+            line-height: 40px;
+            border-bottom: 1px solid grey;
+        }
+        .body .bodyBox .box .kotak ul li big{
+            margin-left: 10px;
+        }
+        .body .bodyBox .box .kotak a{
+            font-size: 15px;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        .body .bodyBox .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CSS-TRICKS |<h3> DigitalOcean</h3></h1>
+        <div class="submenu">
+            <ul>
+                <li><a href="">ALMANAC</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <h1>ALMANAC</h1>
+        
+        <div class="scrollbar">
+            <ul>
+                <li><a href="#A">A</a></li>
+                <li><a href="#B">B</a></li>
+                <li><a href="#C">C</a></li>
+                <li><a href="#D">D</a></li>
+                <li><a href="#E">E</a></li>
+                <li><a href="#F">F</a></li>
+                <li><a href="#G">G</a></li>
+                <li><a href="#H">H</a></li>
+                <li><a href="#I">I</a></li>
+                <li><a href="#J">J</a></li>
+                <li><a href="#K">K</a></li>
+                <li><a href="#L">L</a></li>
+                <li><a href="#M">M</a></li>
+                <li><a href="#N">N</a></li>
+                <li><a href="#O">O</a></li>
+                <li><a href="#P">P</a></li>
+                <li><a href="#Q">Q</a></li>
+                <li><a href="#R">R</a></li>
+                <li><a href="#S">S</a></li>
+                <li><a href="#T">T</a></li>
+                <li><a href="#U">U</a></li>
+                <li><a href="#V">V</a></li>
+                <li><a href="#W">W</a></li>
+                <li><a href="#X">X</a></li>
+                <li><a href="#Y">Y</a></li>
+                <li><a href="#Z">Z</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="kotak" style="--i:red;">
+                <h1>Selector</h1>
+                <p>CSS selectors are patterns used to select elements in the DOM.</p>
+            </div>
+            <div class="kotak" style="--i:indigo; margin-left: 5%;">
+                <h1>Properties</h1>
+                <p>CSS properties style element through their value.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="bodyBox">
+            <div class="box" id="A">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">A</h1>
+                    <ul>
+                        <li><a href=""> ::before / ::after </a></li>
+                        <li><a href=""> :active </a></li>
+                        <li><a href=""> :any-link </a></li>
+                        <li><a href=""> Adjacent sibling</a></li>
+                        <li><a href=""> [attribute]</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">A</h1>
+                    <ul>
+                        <li><a href=""> accent-color</a></li>
+                        <li><a href=""> align-content</a></li>
+                        <li><a href=""> align-items</a></li>
+                        <li><a href=""> align-self</a></li>
+                        <li><a href=""> all</a></li>
+                        <li><a href=""> animation</a></li>
+                        <li><a href=""> appearance</a></li>
+                        <li><a href=""> aspect-ratio</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- B -->
+
+            <div class="box" id="B">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">B</h1>
+                    <ul>
+                        <li><a href=""> ::backdrop </a></li>
+                        <li><a href=""> :blank </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">B</h1>
+                    <ul>
+                        <li><a href=""> backdrop-filter</a></li>
+                        <li><a href=""> backface-vicibility</a></li>
+                        <li><a href=""> background</a></li>
+                        <li><a href=""> background-attachment</a></li>
+                        <li><a href=""> background-blend-mode</a></li>
+                        <li><a href=""> background-clip</a></li>
+                        <li><a href=""> background-color</a></li>
+                        <li><a href=""> background-image</a></li>
+                        <li><a href=""> background-origin</a></li>
+                        <li><a href=""> background-position</a></li>
+                        <li><a href=""> background-repeat</a></li>
+                        <li><a href=""> background-size</a></li>
+                        <li><a href=""> bleed</a></li>
+                        <li><a href=""> block-overflow</a></li>
+                        <li><a href=""> block-size</a></li>
+                        <li><a href=""> border</a></li>
+                        <li><a href=""> border-block</a></li>
+                        <li><a href=""> border-boundary</a></li>
+                        <li><a href=""> border-collapse</a></li>
+                        <li><a href=""> border-image</a></li>
+                        <li><a href=""> border-inline</a></li>
+                        <li><a href=""> border-radius</a></li>
+                        <li><a href=""> border-spacing</a></li>
+                        <li><a href=""> bottom</a></li>
+                        <li><a href=""> box-decoration-break</a></li>
+                        <li><a href=""> box-shadow</a></li>
+                        <li><a href=""> box-sizing</a></li>
+                        <li><a href=""> break-inside</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <!-- C -->
+
+            <div class="box" id="C">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">C</h1>
+                    <ul>
+                        <li><a href=""> :checked </a></li>
+                        <li><a href=""> :current </a></li>
+                        <li><a href=""> Child </a></li>
+                        <li><a href=""> Class </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">C</h1>
+                    <ul>
+                        <li><a href=""> caption-side </a></li>
+                        <li><a href=""> caret </a></li>
+                        <li><a href=""> caret-color </a></li>
+                        <li><a href=""> caret-shape </a></li>
+                        <li><a href=""> clear </a></li>
+                        <li><a href=""> clip-path </a></li>
+                        <li><a href=""> color  </a></li>
+                        <li><a href=""> color-adjust </a></li>
+                        <li><a href=""> coloumn-count </a></li>
+                        <li><a href=""> coloumn-fill </a></li>
+                        <li><a href=""> coloumn-gap </a></li>
+                        <li><a href=""> coloumn-rule </a></li>
+                        <li><a href=""> coloumn-rule-color </a></li>
+                        <li><a href=""> coloumn-rule-style </a></li>
+                        <li><a href=""> coloumn-rule-width </a></li>
+                        <li><a href=""> coloumn-span </a></li>
+                        <li><a href=""> coloumn-width </a></li>
+                        <li><a href=""> coloumns </a></li>
+                        <li><a href=""> contain </a></li>
+                        <li><a href=""> content </a></li>
+                        <li><a href=""> content-visibility </a></li>
+                        <li><a href=""> counter-increment </a></li>
+                        <li><a href=""> counter-reset </a></li>
+                        <li><a href=""> counter-set </a></li>
+                        <li><a href=""> cursor </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- D -->
+
+            <div class="box" id="D">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">D</h1>
+                    <ul>
+                        <li><a href=""> :default </a></li>
+                        <li><a href=""> :dir() </a></li>
+                        <li><a href=""> :disabled </a></li>
+                        <li><a href=""> Descendant </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">D</h1>
+                    <ul>
+                        <li><a href=""> direction </a></li>
+                        <li><a href=""> display </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- E -->
+
+            <div class="box" id="E">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">E</h1>
+                    <ul>
+                        <li><a href=""> :empty </a></li>
+                        <li><a href=""> :enabled </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">E</h1>
+                    <ul>
+                        <li><a href=""> empty-cells </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- F -->
+
+            <div class="box" id="F">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">F</h1>
+                    <ul>
+                        <li><a href=""> ::first-letter </a></li>
+                        <li><a href=""> ::first-line </a></li>
+                        <li><a href=""> :first-child </a></li>
+                        <li><a href=""> :first-of-type </a></li>
+                        <li><a href=""> :focus </a></li>
+                        <li><a href=""> :focus-visible </a></li>
+                        <li><a href=""> :focus-within </a></li>
+                        <li><a href=""> :fullscreen </a></li>
+                        <li><a href=""> :future </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">F</h1>
+                    <ul>
+                        <li><a href=""> fill </a></li>
+                        <li><a href=""> filter </a></li>
+                        <li><a href=""> flex </a></li>
+                        <li><a href=""> flex-basis </a></li>
+                        <li><a href=""> flex-direction </a></li>
+                        <li><a href=""> flex-flow </a></li>
+                        <li><a href=""> flex-grow </a></li>
+                        <li><a href=""> flex-shrink </a></li>
+                        <li><a href=""> flex-wrap </a></li>
+                        <li><a href=""> float </a></li>
+                        <li><a href=""> font </a></li>
+                        <li><a href=""> font-display </a></li>
+                        <li><a href=""> font-family </a></li>
+                        <li><a href=""> font-feature-settings </a></li>
+                        <li><a href=""> font-kerning </a></li>
+                        <li><a href=""> font-optical-sizing </a></li>
+                        <li><a href=""> font-size </a></li>
+                        <li><a href=""> font-size-adjust </a></li>
+                        <li><a href=""> font-stretch </a></li>
+                        <li><a href=""> font-style </a></li>
+                        <li><a href=""> font-synthesis </a></li>
+                        <li><a href=""> font-variant </a></li>
+                        <li><a href=""> font-variant-numeric </a></li>
+                        <li><a href=""> font-weight </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- G -->
+
+            <div class="box" id="G">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">G</h1>
+                    <ul>
+                        <li><a href=""> General sibling </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">G</h1>
+                    <ul>
+                        <li><a href=""> gap </a></li>
+                        <li><a href=""> grid-row / grid-coloumn </a></li>
+                        <li><a href=""> grid-template-coloumns </a></li>
+                        <li><a href=""> grid-template-rows </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- H -->
+
+            <div class="box" id="H">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">H</h1>
+                    <ul>
+                        <li><a href=""> :hover </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">H</h1>
+                    <ul>
+                        <li><a href=""> hanging-punctuation </a></li>
+                        <li><a href=""> height </a></li>
+                        <li><a href=""> hyphenate-limit-chars </a></li>
+                        <li><a href=""> hyphens </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- I -->
+
+            <div class="box" id="I">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">I</h1>
+                    <ul>
+                        <li><a href=""> :in-range </a></li>
+                        <li><a href=""> :indeterminate </a></li>
+                        <li><a href=""> :invalid </a></li>
+                        <li><a href=""> :is </a></li>
+                        <li><a href=""> ID </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">I</h1>
+                    <ul>
+                        <li><a href=""> image-rendering </a></li>
+                        <li><a href=""> initial-letter </a></li>
+                        <li><a href=""> inline-size </a></li>
+                        <li><a href=""> inset </a></li>
+                        <li><a href=""> inset-block </a></li>
+                        <li><a href=""> inset-block-end </a></li>
+                        <li><a href=""> inset-block-start </a></li>
+                        <li><a href=""> inset-inline </a></li>
+                        <li><a href=""> inset-inline-end </a></li>
+                        <li><a href=""> inset-inline-start </a></li>
+                        <li><a href=""> isolation </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- J -->
+
+            <div class="box" id="J">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">J</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">J</h1>
+                    <ul>
+                        <li><a href=""> justify-content </a></li>
+                        <li><a href=""> justify-items </a></li>
+                        <li><a href=""> justify-self </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- K -->
+
+            <div class="box" id="K">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">K</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">K</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- L -->
+
+            <div class="box" id="L">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">L</h1>
+                    <ul>
+                        <li><a href=""> :lang() </a></li>
+                        <li><a href=""> :last-child </a></li>
+                        <li><a href=""> :last-of-type </a></li>
+                        <li><a href=""> :link </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">L</h1>
+                    <ul>
+                        <li><a href=""> left </a></li>
+                        <li><a href=""> letter-spacing </a></li>
+                        <li><a href=""> line-break </a></li>
+                        <li><a href=""> line-clamp </a></li>
+                        <li><a href=""> line-height </a></li>
+                        <li><a href=""> list-style </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- M -->
+
+            <div class="box" id="M">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">M</h1>
+                    <ul>
+                        <li><a href=""> ::marker </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">M</h1>
+                    <ul>
+                        <li><a href=""> margin </a></li>
+                        <li><a href=""> margin-block </a></li>
+                        <li><a href=""> margin-block-end </a></li>
+                        <li><a href=""> margin-block-start </a></li>
+                        <li><a href=""> margin-inline </a></li>
+                        <li><a href=""> margin-inline-end </a></li>
+                        <li><a href=""> margin-inline-start </a></li>
+                        <li><a href=""> mask </a></li>
+                        <li><a href=""> mask-border </a></li>
+                        <li><a href=""> mask-clip </a></li>
+                        <li><a href=""> mask-composite </a></li>
+                        <li><a href=""> mask-image </a></li>
+                        <li><a href=""> mask-mode </a></li>
+                        <li><a href=""> mask-origin </a></li>
+                        <li><a href=""> mask-position </a></li>
+                        <li><a href=""> mask-repeat </a></li>
+                        <li><a href=""> mask-size </a></li>
+                        <li><a href=""> mask-type </a></li>
+                        <li><a href=""> max-height </a></li>
+                        <li><a href=""> max-inline-size </a></li>
+                        <li><a href=""> max-width </a></li>
+                        <li><a href=""> min-height </a></li>
+                        <li><a href=""> min-width </a></li>
+                        <li><a href=""> mix-blend-mode </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- N -->
+
+            <div class="box" id="N">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">N</h1>
+                    <ul>
+                        <li><a href=""> :not </a></li>
+                        <li><a href=""> :nth-child </a></li>
+                        <li><a href=""> :nth-last-child </a></li>
+                        <li><a href=""> :nth-last-of-type </a></li>
+                        <li><a href=""> :nth-of-type </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">N</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- O -->
+
+            <div class="box" id="O">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">O</h1>
+                    <ul>
+                        <li><a href=""> :only-child </a></li>
+                        <li><a href=""> :only-of-type </a></li>
+                        <li><a href=""> :optional </a></li>
+                        <li><a href=""> :out-of-range </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">O</h1>
+                    <ul>
+                        <li><a href=""> object-fit </a></li>
+                        <li><a href=""> object-position </a></li>
+                        <li><a href=""> offset-anchor </a></li>
+                        <li><a href=""> offset-distance </a></li>
+                        <li><a href=""> offset-path </a></li>
+                        <li><a href=""> offset-rotate </a></li>
+                        <li><a href=""> opacity </a></li>
+                        <li><a href=""> order </a></li>
+                        <li><a href=""> orphans </a></li>
+                        <li><a href=""> outline </a></li>
+                        <li><a href=""> outline-color </a></li>
+                        <li><a href=""> outline-offset </a></li>
+                        <li><a href=""> outline-style </a></li>
+                        <li><a href=""> outline-width </a></li>
+                        <li><a href=""> overflow </a></li>
+                        <li><a href=""> overflow-anchor </a></li>
+                        <li><a href=""> overflow-clip-margin </a></li>
+                        <li><a href=""> overflow-wrap </a></li>
+                        <li><a href=""> overscroll-behavior </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- P -->
+
+            <div class="box" id="P">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">P</h1>
+                    <ul>
+                        <li><a href=""> ::placeholder </a></li>
+                        <li><a href=""> :past </a></li>
+                        <li><a href=""> :placeholder-shown </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">P</h1>
+                    <ul>
+                        <li><a href=""> padding </a></li>
+                        <li><a href=""> padding-block </a></li>
+                        <li><a href=""> padding-inline </a></li>
+                        <li><a href=""> page-break </a></li>
+                        <li><a href=""> paint-order </a></li>
+                        <li><a href=""> perspective </a></li>
+                        <li><a href=""> perspective-origin </a></li>
+                        <li><a href=""> place-content </a></li>
+                        <li><a href=""> place-items </a></li>
+                        <li><a href=""> place-self </a></li>
+                        <li><a href=""> pointer-events </a></li>
+                        <li><a href=""> position </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- Q -->
+
+            <div class="box" id="Q">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">Q</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">Q</h1>
+                    <ul>
+                        <li><a href=""> quotes </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- R -->
+
+            <div class="box" id="R">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">R</h1>
+                    <ul>
+                        <li><a href=""> :read-write </a></li>
+                        <li><a href=""> :read-only </a></li>
+                        <li><a href=""> :required </a></li>
+                        <li><a href=""> :root </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">R</h1>
+                    <ul>
+                        <li><a href=""> resize </a></li>
+                        <li><a href=""> right </a></li>
+                        <li><a href=""> rotate </a></li>
+                        <li><a href=""> row-gap </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- S -->
+
+            <div class="box" id="S">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">S</h1>
+                    <ul>
+                        <li><a href=""> ::selection </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">S</h1>
+                    <ul>
+                        <li><a href=""> scale </a></li>
+                        <li><a href=""> scroll-behavior </a></li>
+                        <li><a href=""> scroll-margin </a></li>
+                        <li><a href=""> scroll-padding </a></li>
+                        <li><a href=""> scroll-snap-align </a></li>
+                        <li><a href=""> scroll-snap-stop </a></li>
+                        <li><a href=""> scroll-snap-type </a></li>
+                        <li><a href=""> scrollbar </a></li>
+                        <li><a href=""> scrollbar-color </a></li>
+                        <li><a href=""> scrollbar-gutter </a></li>
+                        <li><a href=""> scrollbar-width </a></li>
+                        <li><a href=""> shape-image-treshold </a></li>
+                        <li><a href=""> shape-margin </a></li>
+                        <li><a href=""> shape-outside </a></li>
+                        <li><a href=""> speak </a></li>
+                        <li><a href=""> stroke </a></li>
+                        <li><a href=""> stroke-dasharray </a></li>
+                        <li><a href=""> stroke-dashoffset </a></li>
+                        <li><a href=""> stroke-linecap </a></li>
+                        <li><a href=""> stroke-linejoin </a></li>
+                        <li><a href=""> stroke-width </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- T -->
+
+            <div class="box" id="T">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">T</h1>
+                    <ul>
+                        <li><a href=""> :target </a></li>
+                        <li><a href=""> Type </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">T</h1>
+                    <ul>
+                        <li><a href=""> tab-size </a></li>
+                        <li><a href=""> table-layout </a></li>
+                        <li><a href=""> text-align </a></li>
+                        <li><a href=""> text-align-last </a></li>
+                        <li><a href=""> text-combine-upright </a></li>
+                        <li><a href=""> text-decoration </a></li>
+                        <li><a href=""> text-decoration-color </a></li>
+                        <li><a href=""> text-decoration-line </a></li>
+                        <li><a href=""> text-decoration-skip </a></li>
+                        <li><a href=""> text-decoration-skip-ink </a></li>
+                        <li><a href=""> text-decoration-style </a></li>
+                        <li><a href=""> text-decoration-thickness </a></li>
+                        <li><a href=""> text-emphasis </a></li>
+                        <li><a href=""> text-indent </a></li>
+                        <li><a href=""> text-justify </a></li>
+                        <li><a href=""> text-orientation </a></li>
+                        <li><a href=""> text-overflow </a></li>
+                        <li><a href=""> text-rendering </a></li>
+                        <li><a href=""> text-shadow </a></li>
+                        <li><a href=""> text-stroke </a></li>
+                        <li><a href=""> text-transform </a></li>
+                        <li><a href=""> text-underline-offset </a></li>
+                        <li><a href=""> text-underline-position </a></li>
+                        <li><a href=""> top / bottom / left / right </a></li>
+                        <li><a href=""> touch-action </a></li>
+                        <li><a href=""> transform </a></li>
+                        <li><a href=""> transform-origin </a></li>
+                        <li><a href=""> transform-style </a></li>
+                        <li><a href=""> transition </a></li>
+                        <li><a href=""> transition-delay </a></li>
+                        <li><a href=""> transition-duration </a></li>
+                        <li><a href=""> transition-property </a></li>
+                        <li><a href=""> transition-timing-function </a></li>
+                        <li><a href=""> translate </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- U -->
+
+            <div class="box" id="U">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">U</h1>
+                    <ul>
+                        <li><a href=""> :user-invalid </a></li>
+                        <li><a href=""> Universal </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">U</h1>
+                    <ul>
+                        <li><a href=""> unicode-bidi </a></li>
+                        <li><a href=""> unicode-range </a></li>
+                        <li><a href=""> user-select </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- V -->
+
+            <div class="box" id="V">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">V</h1>
+                    <ul>
+                        <li><a href=""> :valid </a></li>
+                        <li><a href=""> :visited </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">V</h1>
+                    <ul>
+                        <li><a href=""> vertical-align </a></li>
+                        <li><a href=""> visibility </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- W -->
+
+            <div class="box" id="W">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">W</h1>
+                    <ul>
+                        <li><a href=""> :where </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">W</h1>
+                    <ul>
+                        <li><a href=""> white-space </a></li>
+                        <li><a href=""> widows </a></li>
+                        <li><a href=""> width </a></li>
+                        <li><a href=""> will-change </a></li>
+                        <li><a href=""> word-break </a></li>
+                        <li><a href=""> word-spacing </a></li>
+                        <li><a href=""> writing-mode </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- X -->
+
+            <div class="box" id="X">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">X</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">X</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- Y -->
+
+            <div class="box" id="Y">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">Y</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">Y</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <!-- Z -->
+
+            <div class="box" id="Z">
+                <div class="kotak" style="padding-left: 8%;">
+                    <h1 style="color: red;">Z</h1>
+                    <ul>
+                        <li><big> - </big></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="kotak" style="margin-left: 5px; width: 49%;">
+                    <h1 style="color: indigo;">Z</h1>
+                    <ul>
+                        <li><a href=""> z-index </a></li>
+                        <li><a href=""> zoom </a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

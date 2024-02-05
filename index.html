@@ -21,6 +21,10 @@
             /* --border: 1px solid black; */
             --border: none;
         }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
         
         body {
             display: flex;
@@ -56,10 +60,11 @@
             border: var(--border);
         }
         
-        .container-fluid .title {
+        .container-fluid .page-title {
             font-size: 2rem;
             font-weight: 500;
             color: var(--white);
+            cursor: pointer;
         
             border: var(--border);
         }
@@ -101,6 +106,13 @@
             background: var(--grey1);
         }
 
+        
+        /* Support Class */
+
+        .hide {
+            display: none;
+        }
+
 
         /* Responsive */
 
@@ -122,8 +134,10 @@
     </video>
 
     <div class="container-fluid">
-        <div class="title">Catatan Koding</div>
+        <!-- Judul Halaman -->
+        <div class="page-title" id="catatan">Catatan Koding</div>
 
+        <!-- Catatan Koding -->
         <div class="grid-box-links">
             <div class="box-links">
                 <div class="link">
@@ -155,13 +169,27 @@
                 </div>
             </div>
         </div>
+
+        <!-- Latihan Koding -->
+        <div class="grid-box-links hide">
+            <div class="box-links">
+                <div class="link">
+                    <a class="btn btn-secondary" href="project/css-tricks.html">CSS-TRICKS ALMANAC</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="project/text-gradasi.html">Text Gradasi</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
+        const pageTitle     = document.querySelector('.page-title');
+        const gridBoxLinks  = document.querySelectorAll('.grid-box-links');
+        const boxLinks      = document.querySelectorAll('.box-links');
+        const links         = document.querySelectorAll('.link');
+        
         // Fast load animation
-        const boxLinks = document.querySelectorAll('.box-links');
-        const links = document.querySelectorAll('.link');
-
         window.addEventListener('load', () => {
             setTimeout(() => {
                 boxLinks.forEach((item) => {
@@ -174,6 +202,38 @@
                 });
             }, 400);
         });
+
+        // Open Latihan Koding
+        pageTitle.addEventListener('dblclick', () => {
+            const pageID = pageTitle.getAttribute('id');
+            if (pageID == 'catatan') {
+                window.location.href = '?id=latihan';
+            }
+            if (pageID == 'latihan') {
+                window.location.href = '?id=catatan';
+            }
+        });
+
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const savedId = urlParams.get('id');
+            
+            if (savedId == 'latihan') {
+                pageTitle.setAttribute('id', 'latihan');
+                pageTitle.innerHTML = 'Latihan Koding';
+                gridBoxLinks[0].classList.add('hide');
+                gridBoxLinks[1].classList.remove('hide');
+            }
+            if (savedId == 'catatan') {
+                pageTitle.setAttribute('id', 'catatan');
+                pageTitle.innerHTML = 'Catatan Koding';
+                gridBoxLinks[1].classList.add('hide');
+                gridBoxLinks[0].classList.remove('hide');
+            }
+        });
+        
+
+
 
     </script>
 </body>

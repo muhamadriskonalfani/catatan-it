@@ -9,7 +9,7 @@
     --border: none;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
 }
 
@@ -262,9 +262,10 @@ h6.h6 {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, .5);
+    background: transparent;
     width: 100vw;
     height: 100vh;
+    transition: .6s;
     z-index: 2;
 }
 
@@ -279,7 +280,7 @@ h6.h6 {
     color: var(--white);
     z-index: 4;
     transform: translateX(100vw);
-    transition: .2s;
+    transition: .6s;
 }
 
 .hiddenCode .hide-code::before {
@@ -298,12 +299,12 @@ h6.h6 {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-200%, -50%);
     width: 80vw;
     height: 80vh;
     background: var(--white);
     color: var(--grey3);
-    transition: .2s;
+    transition: .6s;
     z-index: 3;
 }
 
