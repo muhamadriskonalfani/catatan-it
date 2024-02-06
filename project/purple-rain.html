@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Rain</title>
+
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- style project css link -->
+    <link rel="stylesheet" href="assets-project/style-project.css">
+
+    <style>
+        .container-fluid {
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container-fluid canvas {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- main content -->
+    <div class="container-fluid">
+        <canvas id="canvas" width="1200" height="600"></canvas>
+    </div>
+
+    <!-- support content -->
+    <div class="html-support">
+        <div class="hide-code"><i class="fas fa-times"></i></div>
+        <div class="option-icon"><i class="fas fa-plus"></i></div>
+        <div class="option-container">
+            <div class="option-item tx-plus">HTML</div>
+            <div class="option-item tx-plus">CSS</div>
+            <div class="option-item tx-plus">JavaScript</div>
+        </div>
+        <div class="hiddenCodeBox hide">
+            <!-- html code -->
+            <div class="hiddenCode hide">
+                <pre class="code-box">
+
+    &lt;div class="container-fluid">
+        &lt;canvas id="canvas" width="1200" height="600">&lt;/canvas>
+    &lt;/div>
+                </pre>
+            </div>
+
+            <!-- css code -->
+            <div class="hiddenCode hide">
+                <pre class="code-box">
+
+    .container-fluid {
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container-fluid canvas {
+        width: 100vw;
+        height: 100vh;
+    }
+                </pre>
+            </div>
+            
+            <!-- javascript code -->
+            <div class="hiddenCode hide">
+                <pre class="code-box">
+
+    class Rain {
+        constructor(width, height, direction, posX, posY, speed, color){
+            this.width = width;
+            this.height = height;
+            this.direction = direction;
+            this.posX = posX;
+            this.posY = posY;
+            this.speed = speed;
+            this.color = color;
+        }
+    
+        move(){
+            this.posX += Math.sin(this.direction * Math.PI/2)  * this.speed;
+            this.posY += Math.cos(this.direction * Math.PI/2)  * this.speed;
+        }
+    
+        draw(){
+            canvasContext.rotate(-this.direction)
+            canvasContext.fillStyle = this.color
+            canvasContext.fillRect(this.posX, this.posY, this.width, this.height)
+            canvasContext.rotate(+this.direction)
+        }
+    }
+    
+    
+    let canvas = document.getElementById("canvas")
+    let canvasContext = canvas.getContext('2d');
+    
+    let createRect = (x,y,width, height,color) => {
+        canvasContext.fillStyle = color
+        canvasContext.fillRect(x,y,width,height)
+    }
+    
+    let allRains = []
+    let defaultRainWidth = 2
+    let defaultRainHeight = 15
+    let maximumRainCount = 500
+    
+    let maximumRainInitializationInOneFrame = 5
+    
+    let fps = 60
+    let intervalId;
+    let gameLoop = () => {
+        intervalId = setInterval(show, 1000/fps)
+    }
+    
+    let show = () => {
+        update();
+        draw();
+    }
+    
+    let update = () => {
+        canvasContext.clearRect(0,0, canvas.width, canvas.height)
+        let rainInitCountInThisFrame = 0
+        while(allRains.length < maximumRainCount && maximumRainInitializationInOneFrame > rainInitCountInThisFrame) {
+            let distanceFromCam = Math.random()
+            let rain = new Rain( defaultRainWidth * (2-distanceFromCam)
+                                    ,defaultRainHeight* (2-distanceFromCam),
+                                    (Math.random()/20),
+                                        Math.random() * canvas.width,
+                                        -100, (2-distanceFromCam) * 8, 
+                                        "rgba(197, 55, 230," + ((1-distanceFromCam ))+ ")")
+            allRains.push(rain);
+            rainInitCountInThisFrame++
+        }
+    
+        for(let i = 0; i < allRains.length; i++){
+            allRains[i].move()
+            if(allRains[i].posY > canvas.height || allRains[i].posX > canvas.width ) {
+                console.log(allRains[i].posY)
+                allRains.splice(i, 1)
+            }
+        }
+    }
+    
+    let draw = () => {  
+        allRains.forEach(rain=>{ 
+            rain.draw()
+        })
+    }
+    
+    
+    gameLoop()
+    
+    
+    let pause = document.querySelector('.container-fluid');
+    pause.addEventListener('click', () => {
+        pause.classList.toggle('stop');
+        if (pause.classList.contains('stop')) {
+            clearInterval(intervalId);
+        } else {
+            gameLoop()
+        }
+    });
+                        
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- script project javascript -->
+    <script src="assets-project/script-project.js"></script>
+
+    <script>
+        class Rain {
+            constructor(width, height, direction, posX, posY, speed, color){
+                this.width = width;
+                this.height = height;
+                this.direction = direction;
+                this.posX = posX;
+                this.posY = posY;
+                this.speed = speed;
+                this.color = color;
+            }
+        
+            move(){
+                this.posX += Math.sin(this.direction * Math.PI/2)  * this.speed;
+                this.posY += Math.cos(this.direction * Math.PI/2)  * this.speed;
+            }
+        
+            draw(){
+                canvasContext.rotate(-this.direction)
+                canvasContext.fillStyle = this.color
+                canvasContext.fillRect(this.posX, this.posY, this.width, this.height)
+                canvasContext.rotate(+this.direction)
+            }
+        }
+        
+        
+        let canvas = document.getElementById("canvas")
+        let canvasContext = canvas.getContext('2d');
+        
+        let createRect = (x,y,width, height,color) => {
+            canvasContext.fillStyle = color
+            canvasContext.fillRect(x,y,width,height)
+        }
+        
+        let allRains = []
+        let defaultRainWidth = 2
+        let defaultRainHeight = 15
+        let maximumRainCount = 500
+        
+        let maximumRainInitializationInOneFrame = 5
+        
+        let fps = 60
+        let intervalId;
+        let gameLoop = () => {
+            intervalId = setInterval(show, 1000/fps)
+        }
+        
+        let show = () => {
+            update();
+            draw();
+        }
+        
+        let update = () => {
+            canvasContext.clearRect(0,0, canvas.width, canvas.height)
+            let rainInitCountInThisFrame = 0
+            while(allRains.length < maximumRainCount && maximumRainInitializationInOneFrame > rainInitCountInThisFrame) {
+                let distanceFromCam = Math.random()
+                let rain = new Rain( defaultRainWidth * (2-distanceFromCam)
+                                        ,defaultRainHeight* (2-distanceFromCam),
+                                        (Math.random()/20),
+                                         Math.random() * canvas.width,
+                                          -100, (2-distanceFromCam) * 8, 
+                                          "rgba(197, 55, 230," + ((1-distanceFromCam ))+ ")")
+                allRains.push(rain);
+                rainInitCountInThisFrame++
+            }
+        
+            for(let i = 0; i < allRains.length; i++){
+                allRains[i].move()
+                if(allRains[i].posY > canvas.height || allRains[i].posX > canvas.width ) {
+                    console.log(allRains[i].posY)
+                    allRains.splice(i, 1)
+                }
+            }
+        }
+        
+        let draw = () => {  
+            allRains.forEach(rain=>{ 
+                rain.draw()
+            })
+        }
+        
+        
+        gameLoop()
+        
+        
+        let pause = document.querySelector('.container-fluid');
+        pause.addEventListener('click', () => {
+            pause.classList.toggle('stop');
+            if (pause.classList.contains('stop')) {
+                clearInterval(intervalId);
+            } else {
+                gameLoop()
+            }
+        });
+                
+    </script>
+</body>
+</html>
