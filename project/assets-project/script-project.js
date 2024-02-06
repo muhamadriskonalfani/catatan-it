@@ -49,6 +49,7 @@ hsHideCode.addEventListener('click', () => {
             code.style.color = 'transparent';
         });
         hsHiddenCodeBox.style.background = 'transparent';
+        hsOptionIcon.click();
     }, 200);
     setTimeout(() => {
         hsHiddenCode.forEach((code) => {
