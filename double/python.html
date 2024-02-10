@@ -1,0 +1,3656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css custom link -->
+    <link rel="stylesheet" href="double-style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-double">
+            <!-- Aside box -->
+            <div class="aside">
+                <div class="aside-content">
+                    <!-- Sub Materi -->
+                    <div class="pilih-daftar">
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(1)">Bagian 1</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(2)">Bagian 2</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(3)">Bagian 3</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(4)">Bagian 4</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa Itu Python</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">Instalasi Python</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">Alur dan Cara Kerja</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">Mengenal Variabel</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">Tipe Data</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">Casting Tipe Data</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(7)">Input Data Dari User</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(8)">Operasi Aritmatika</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(9)">Latihan Perhitungan</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(10)">Operasi Komparasi</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(11)">Operasi Logika atau Boolean</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(12)">Latihan Komparasi dan Logika</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(13)">Operator Bitwise</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(14)">Operator Assignment</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(15)">Pengenalan String</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(16)">Operasi dan Manipulasi String Part-1</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(17)">Operasi dan Manipulasi String Part-2</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(18)">Format String</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(19)">String Width and Alignment</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(20)">Latihan Date and Time</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 2 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(21)">IF dan ELSE Statement</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(22)">ELIF Statement</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(23)">Latihan Percabangan</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(24)">For Loop (Perulangan)</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(25)">While Loop (Perulangan)</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(26)">Continue dan Pass</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(27)">Latihan Perulangan</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(28)">List pada Python</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(29)">Manipulasi List</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(30)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(31)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(32)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(33)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(34)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(35)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(36)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(37)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(38)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(39)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(40)">b</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 3 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(41)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(42)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(43)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(44)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(45)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(46)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(47)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(48)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(49)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(50)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(51)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(52)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(53)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(54)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(55)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(56)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(57)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(58)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(59)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(60)">b</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 4 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(61)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(62)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(63)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(64)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(65)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(66)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(67)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(68)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(69)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(70)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(71)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(72)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(73)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(74)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(75)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(76)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(77)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(78)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(79)">b</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(80)">b</button> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main box -->
+            <div class="main">
+                <!-- Show aside box -->
+                <div class="show-aside"><i class="fas fa-bars"></i></div>
+
+                <!-- Resize font -->
+                <div class="resize-font"><i class="fas fa-font"></i></div>
+                <div class="box-size">
+                    <div class="item-size translateX" onclick="resizeFont(18)">lg</div>
+                    <div class="item-size translateX" onclick="resizeFont(16)">md</div>
+                    <div class="item-size translateX" onclick="resizeFont(14)">sm</div>
+                    <div class="item-size translateX" onclick="resizeFont(12)">xm</div>
+                </div>
+                
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="../assets/img/python.jpg" style="max-width: 400px;" alt="">
+                    </div>
+
+                    <!-- Bagian 1 -->
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu Python</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Python adalah bahasa pemrograman yang diciptakan oleh programmer bernama Guido Van Rossum pada tahun 1989.</p>
+                                <p>Kenapa mempelajari Python</p>
+                                <ul>
+                                    <li><h6>Mudah dimengerti</h6></li>
+                                    <li><h6>Gratis</h6></li>
+                                    <li><h6>Dinamic</h6></li>
+                                    <li><h6>Multi platform</h6>
+                                        <ul>
+                                            <li>Web development</li>
+                                            <li>Mobile apps</li>
+                                            <li>Dekstop apps</li>
+                                        </ul>
+                                    </li>
+                                    <li><h6>Lagi hype</h6>
+                                        <ul>
+                                            <li>Data science</li>
+                                            <li>Robotics</li>
+                                            <li>Machine learning</li>
+                                            <li>Data analysis</li>
+                                            <li>Artificial intelegent</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Kenapa Python Populer -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Kenapa Python Populer</h5>
+                            <div>
+                                <p>Kok bisa python populer?, mari kita lihat beberapa cara bahasa pemrograman populer saat ini untuk menampilkan kata "Hello World".</p>
+
+                                <dl>
+                                    <dt>
+                                        <h6 class="h6">C++</h6>
+                                    </dt>
+                                    <dd>
+                                        <pre class="card bg-light codeB">
+
+    #include &lt;iostream>
+
+    int main(int args, char const *argv[]) {
+        std::cout &lt;&lt; "Hello World" &lt;&lt; std::endl;
+        return 0;
+    }
+                                        </pre>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt>
+                                        <h6 class="h6">Java</h6>
+                                    </dt>
+                                    <dd>
+                                        <pre class="card bg-light codeB">
+
+    class Main{
+        public static void main(String[] args) {
+            System.out.println("Hello World");
+        }
+    }
+                                        </pre>
+                                    </dd>
+                                </dl>
+                                
+                                <dl>
+                                    <dt>
+                                        <h6 class="h6">Python</h6>
+                                    </dt>
+                                    <dd>
+                                        <pre class="card bg-light codeB">
+
+    print("Hello World")
+                                        </pre>
+                                    </dd>
+                                </dl>
+
+                                <p>Python hanya butuh satu baris perintah untuk menampilkan kata "Hello World".</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Kebutuhan untuk belajar Python -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Kebutuhan untuk belajar Python</h5>
+                            <div>
+                                <p>Apa yang dibutuhkan untuk belajar Python, yang pertama adalah Python, lalu ada IDE (Integreted Development Environment) seperti paycharm, Interactive Python Shell, dan Text Editor.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Instalasi Python</h2>
+                        
+                        <!-- Instalasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Instalasi</h5>
+                            <div>
+                                <p>Berikut langkah-langkah untuk menginstal python:</p>
+                                <ul>
+                                    <li><h6>Download python di browser</h6>
+                                        <ul>
+                                            <li>Ketikan python dibilah pencarian</li>
+                                            <li>Masuk ke website resminya www.python.org</li>
+                                            <li>Masuk ke tab Download</li>
+                                            <li>Klik Download python</li>
+                                            <li>Buka folder yang sudah di Download</li>
+                                            <li>Checklist bagian Add python to PATH untuk bisa dicek di environment komputer kita</li>
+                                            <li>Pilih Instal Now</li>
+                                            <li>Tunggu proses Instalasi selesai</li>
+                                            <li>Setelah selesai, klik Disable path length limit untuk nonaktifkan batas karakter koding python</li>
+                                        </ul>
+                                    </li>
+                                    <li><h6>Selanjutnya buka terminal atau command prompt</h6>
+                                        <ul>
+                                            <li>Cek apakah python sudah terinstall, gunakan perintah <pre class="card bg-light codeA">python --version</pre></li>
+                                        </ul>
+                                    </li>
+                                    <li><h6>Buka Text Editor, saya pakai visual studio code</h6>
+                                        <ul>
+                                            <li>Pilih open folder</li>
+                                            <li>Buat folder projek baru</li>
+                                            <li>Buat file main.py</li>
+                                            <li>Buka Extension dan instal python extension for visual studio code dari Microsoft</li>
+                                            <li>Ketikan perintah print("Hello World") klik tab run diatas</li>
+                                            <li>Akan muncul kata Hello World di terminal visual studio code</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Alur dan Cara Kerja</h2>
+                        
+                        <!-- Alur Kerja -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Alur Kerja</h5>
+                            <div>
+                                <p>Pada dasarnya secara keseluruhan alur program akan dieksekusi berdasarkan urutan, baris kosong dan komentar tidak akan dieksekusi</p>
+                                <p>Berikut adalah penulisan komentar pada python</p>
+                                <pre class="card bg-light codeB">
+
+    # ini adalah komentar
+
+    """ ini adalah
+        multiline comment """
+                                </pre>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Mengenal Variabel</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Variabel adalah sebuah wadah yang bisa menyimpan nilai.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Membuat Variabel -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Membuat Variabel</h5>
+                            <div>
+                                <p>Variabel pada python dituliskan sebagai berikut</p>
+                                <pre class="card bg-light codeA">x = 10</pre>
+                                <h6>Penjelasan</h6>
+                                <ul style="list-style: circle;">
+                                    <li>x adalah nama variabel</li>
+                                    <li>= adalah assignment atau penugasan</li>
+                                    <li>10 adalah nilai yang akan disimpan kedalam variabel x</li>
+                                </ul>
+
+                                <p>Pada dasarnya nama variabel pada python dituliskan dengan huruf, tidak boleh menggunakan spasi (bisa gunakan underscore), dan tidak boleh diawali dengan angka.</p>
+                                <pre class="card bg-light codeB">
+
+    nilai_y = 15
+    juta10 = 10000000
+    nilaiZ = 17.5
+                                </pre>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Memanggil Variabel -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Memanggil Variabel</h5>
+                            <div>
+                                <p>Setelah variabel dibuat kita bisa memanggil variabel tersebut, misalnya kita ingin menampilkan variabel tersebut, cara pemanggilannya adalah sebagai berikut</p>
+                                <pre class="card bg-light codeA">print(x)</pre>
+                                <p>Selanjutnya kita bisa menambahkan teks untuk ditampilkan bersama variabel</p>
+                                <pre class="card bg-light codeA">print("Nilai x = ", x)</pre>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Source Code -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Source Code</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Variabel adalah tempat menyimpan data
+
+    # 1. menyimpan / assignment nilai
+    a = 10
+    x = 5
+    panjang = 1000
+
+    # 2. pemanggilan pertama
+    print(a)
+    print("Nilai x = ", x)
+    print("Nilai panjang = ", panjang)
+
+    # 3. penamaan
+    # -> tidak boleh pakai spasi, bisa gunakan underscore
+    # -> tidak boleh diawali dengan angka
+    nilai_y = 15
+    juta10 = 10000000
+    nilaiZ = 17.5
+
+
+    # 4. pemanggilan kedua
+    print("Nilai a = ", a) # awalnya a adalah 10
+    a = 7
+    print("Nilai a = ", a) # a berganti jadi 7
+
+    # 5. assignment indirect
+    b = a # nilai b diberi nilai sama dengan nilai a
+    print("Nilai b = ", b) # hasilnya adalah Nilai b = 7
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Tipe Data</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Tipe data adalah jenis - jenis data yang digunakan untuk variabel pada sebuah bahasa pemrograman.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis Tipe Data Python -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis Tipe Data Python</h5>
+                            <div>
+                                <p>Berikut beberapa tipe data dan cara penulisannya pada python</p>
+                                <ul>
+                                    <li><h6>Integer</h6> <p>berisi bilangan bulat (tanpa koma)</p> <pre class="card bg-light codeA">data_integer = 1</pre></li>
+                                    <li><h6>Float</h6> <p>berisi bilangan pecahan</p> <pre class="card bg-light codeA">data_float = 1.5</pre></li>
+                                    <li><h6>String</h6> <p>berisi kumpulan karakter</p> <pre class="card bg-light codeA">data_string = "ucup"</pre></li>
+                                    <li><h6>Boolean</h6> <p>berisi dua nilai yaitu true/false</p> <pre class="card bg-light codeA">data_bool = True</pre></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+
+    # tipe data: Bilangan bulat (integer)
+    data_integer = 1
+    print("data : ", data_integer)
+    print("- bertipe : ", type(data_integer))
+
+    # tipe data: Bilangan pecahan (float)
+    data_float = 1.5
+    print("data : ", data_float)
+    print("- bertipe : ", type(data_float))
+
+    # tipe data: String / Kumpulan karakter (string)
+    data_string = "ucup"
+    print("data : ", data_string)
+    print("- bertipe : ", type(data_string))
+
+    # tipe data: biner true/false (boolean)
+    data_bool = True
+    print("data : ", data_bool)
+    print("- bertipe : ", type(data_bool))
+
+
+    ## tipe data khusus
+
+    # bilangan kompleks
+    data_complex = complex(5,6)
+    print("data : ", data_complex)
+    print("- bertipe : ", type(data_complex))
+
+    # tipe data dari bahasa C
+
+    from ctypes import c_double, c_char
+
+    data_c_double = c_double(10.5)
+    print("data : ", data_c_double)
+    print("- bertipe : ", type(data_c_double))
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Casting Tipe Data</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Casting tipe data adalah mengkonversi atau merubah tipe data dari satu tipe ke tipe yang lain</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Casting Tipe Data -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Casting Tipe Data</h5>
+                            <div>
+                                <dl>
+                                    <dt><h6 class="h6">1. Casting Integer</h6></dt>
+                                    <dd>
+                                        <p>Berikut proses merubah tipe data integer ke float, string, boolean.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    ## INTEGER
+    data_int = 9
+    print("data = ", data_int, ",type = ", type(data_int))
+
+    data_float  = float(data_int)   # merubah integer ke float
+    data_string = str(data_int)     # merubah integer ke string
+    data_bool   = bool(data_int)    # merubah integer ke boolean, jika data_int diatas adalah 0 maka boolean nya akan false, jika selain 0 maka true
+
+    print("data = ", data_float, ",type = ", type(data_float))
+    print("data = ", data_string, ",type = ", type(data_string))
+    print("data = ", data_bool, ",type = ", type(data_bool))
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6 class="h6">2. Casting Float</h6></dt>
+                                    <dd>
+                                        <p>Berikut proses merubah tipe data float ke integer, string, boolean.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    ## FLOAT
+    data_float = 9.9
+    print("data = ", data_float, ",type = ", type(data_float))
+
+    data_int    = int(data_float)     # akan dibulatkan ke bawah, hasilnya 9
+    data_string = str(data_float)
+    data_bool   = bool(data_float)    # akan false jika nilai float = 0
+
+    print("data = ", data_int, ",type = ", type(data_int))
+    print("data = ", data_string, ",type = ", type(data_string))
+    print("data = ", data_bool, ",type = ", type(data_bool))
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6 class="h6">3. Casting Boolean</h6></dt>
+                                    <dd>
+                                        <p>Berikut proses merubah tipe data boolean ke integer, string, float.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    ## BOOLEAN
+    data_bool = True
+    print("data = ", data_bool, ",type = ", type(data_bool))
+
+    data_int    = int(data_bool)     # true akan jadi 1, false akan jadi 0
+    data_string = str(data_bool)     # akan jadi teks True
+    data_float  = float(data_bool)   # akan jadi 1.0
+
+    print("data = ", data_int, ",type = ", type(data_int))
+    print("data = ", data_string, ",type = ", type(data_string))
+    print("data = ", data_float, ",type = ", type(data_float))
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6 class="h6">4. Casting String</h6></dt>
+                                    <dd>
+                                        <p>Berikut proses merubah tipe data string ke integer, float, boolean.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    ## STRING
+    data_string = "10"
+    print("data = ", data_string, ",type = ", type(data_string))
+
+    data_int    = int(data_string)     # akan jadi bilangan bulat 10
+    data_float  = float(data_string)   # akan jadi bilangan pecahan 10.0
+    data_bool   = bool(data_string)    # akan jadi True jika ada nilanya, akan jadi false jika string kosong ("")
+
+    print("data = ", data_int, ",type = ", type(data_int))
+    print("data = ", data_float, ",type = ", type(data_float))
+    print("data = ", data_bool, ",type = ", type(data_bool))
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Belajar Casting
+    # merubah dari satu tipe ke tipe lain
+    # tipe data = int, float, string, bool
+
+    ## INTEGER
+    data_int = 9
+    print("data = ", data_int, ",type = ", type(data_int))
+
+    data_float  = float(data_int)   # merubah integer ke float
+    data_string = str(data_int)     # merubah integer ke string
+    data_bool   = bool(data_int)    # merubah integer ke boolean, jika data_int diatas adalah 0 maka boolean nya akan false, jika selain 0 maka true
+
+    print("data = ", data_float, ",type = ", type(data_float))
+    print("data = ", data_string, ",type = ", type(data_string))
+    print("data = ", data_bool, ",type = ", type(data_bool))
+
+
+    ## FLOAT
+    data_float = 9.9
+    print("data = ", data_float, ",type = ", type(data_float))
+
+    data_int    = int(data_float)     # akan dibulatkan ke bawah, hasilnya 9
+    data_string = str(data_float)
+    data_bool   = bool(data_float)    # akan false jika nilai float = 0
+
+    print("data = ", data_int, ",type = ", type(data_int))
+    print("data = ", data_string, ",type = ", type(data_string))
+    print("data = ", data_bool, ",type = ", type(data_bool))
+
+
+    ## BOOLEAN
+    data_bool = True
+    print("data = ", data_bool, ",type = ", type(data_bool))
+
+    data_int    = int(data_bool)     # true akan jadi 1, false akan jadi 0
+    data_string = str(data_bool)     # akan jadi teks True
+    data_float  = float(data_bool)   # akan jadi 1.0
+
+    print("data = ", data_int, ",type = ", type(data_int))
+    print("data = ", data_string, ",type = ", type(data_string))
+    print("data = ", data_float, ",type = ", type(data_float))
+
+
+    ## STRING
+    data_string = "10"
+    print("data = ", data_string, ",type = ", type(data_string))
+
+    data_int    = int(data_string)     # akan jadi bilangan bulat 10
+    data_float  = float(data_string)   # akan jadi bilangan pecahan 10.0
+    data_bool   = bool(data_string)    # akan jadi True jika ada nilanya, akan jadi false jika string kosong ("")
+
+    print("data = ", data_int, ",type = ", type(data_int))
+    print("data = ", data_float, ",type = ", type(data_float))
+    print("data = ", data_bool, ",type = ", type(data_bool))
+    
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Input Data Dari User</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Input pengguna digunakan untuk membuat program dapat meminta pengguna untuk memasukkan teks atau nilai, dan kemudian menggunakan input tersebut dalam eksekusi program. Data yang diinput akan mengembalikan nilai string.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Input User pada Python -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Input User pada Python</h5>
+                            <div>
+                                <p>Untuk mendapatkan input dari pengguna dalam bahasa pemrograman Python, Anda dapat menggunakan fungsi input(). Berikut adalah contoh sederhana:</p>
+                                <pre class="card bg-light codeB">
+
+    # Meminta input dari pengguna
+    nama_pengguna = input("Masukkan nama Anda: ")
+
+    # Menampilkan hasil input
+    print("Halo, " + nama_pengguna + "! Selamat datang.")
+                                </pre>
+                                <p>Perlu diingat bahwa fungsi input() selalu mengembalikan data dalam bentuk string. Jika Anda perlu melakukan operasi matematika atau pemrosesan data numerik lainnya, pastikan untuk mengonversi input ke tipe data yang sesuai. Misalnya, menggunakan int() untuk mengonversi input menjadi bilangan bulat.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Mengambil input dari user
+
+    # data yang dimasukan pasti string
+    data = input("Masukan data: ")
+    print("data = ", data, ", tipe = ", type(data))
+    
+    # jika kita ingin mengambil int, maka
+    angka = int(input("Masukan angka: "))
+    print("data = ", angka, ", tipe = ", type(angka))
+    
+    # bagaimana dengan boolean
+    biner = bool(int(input("Masukan nilai boolean: ")))
+    print("data = ", biner, ", tipe = ", type(biner))
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operasi Aritmatika</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operasi aritmatika adalah operasi matematika dasar yang dapat dilakukan pada bilangan untuk melakukan perhitungan. Dalam Python, Anda dapat melakukan operasi aritmatika seperti penambahan, pengurangan, perkalian, pembagian, dan lainnya.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Operasi Aritmatika -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Operasi Aritmatika</h5>
+                            <div>
+                                <p>Berikut adalah contoh operasi aritmatika dalam Python:</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <pre class="card bg-light codeB">
+
+    # Operasi aritmatika
+
+    a = 10
+    b = 3
+
+    # operasi tambah + 
+    hasil = a + b
+    print(a, '+', b, '=', hasil)
+
+    # operasi pengurangan - 
+    hasil = a - b
+    print(a, '-', b, '=', hasil)
+
+    # operasi perkalian * 
+    hasil = a * b
+    print(a, '*', b, '=', hasil)
+
+    # operasi pembagian / 
+    hasil = a / b
+    print(a, '/', b, '=', hasil)
+
+    # operasi eksponen (pangkat) ** 
+    hasil = a ** b
+    print(a, '**', b, '=', hasil)
+
+    # operasi modulus (sisa bagi) % 
+    hasil = a % b
+    print(a, '%', b, '=', hasil)
+
+    # operasi floor division (lawan dari modulus, sama dengan pembagian namun dibulatkan kebawah) // 
+    hasil = a // b
+    print(a, '//', b, '=', hasil)
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Prioritas Operasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Prioritas Operasi</h5>
+                            <div>
+                                <p>Berikut adalah contoh operasi aritmatika dalam Python:</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <pre class="card bg-light codeB">
+
+    # Prioritas operasi, operational precedence
+    # 1. ()
+    # 2. eksponen **
+    # 3. perkalian dan teman-teman * / ** % //
+    # 4. pertambahan dan pengurangan - +
+
+    x = 3
+    y = 2
+    z = 4
+
+    hasil = x ** y * (z + x) / y - y % z // x
+    print("hasil = ", hasil) # 31.5
+
+    hasil = x + y * z
+    print("hasil = ", hasil) # 11
+
+    hasil = (x + y) * z
+    print("hasil = ", hasil) # 20
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Operasi aritmatika
+
+    a = 10
+    b = 3
+
+    # operasi tambah + 
+    hasil = a + b
+    print(a, '+', b, '=', hasil)
+
+    # operasi pengurangan - 
+    hasil = a - b
+    print(a, '-', b, '=', hasil)
+
+    # operasi perkalian * 
+    hasil = a * b
+    print(a, '*', b, '=', hasil)
+
+    # operasi pembagian / 
+    hasil = a / b
+    print(a, '/', b, '=', hasil)
+
+    # operasi eksponen (pangkat) ** 
+    hasil = a ** b
+    print(a, '**', b, '=', hasil)
+
+    # operasi modulus (sisa bagi) % 
+    hasil = a % b
+    print(a, '%', b, '=', hasil)
+
+    # operasi floor division (lawan dari modulus, sama dengan pembagian namun dibulatkan kebawah) // 
+    hasil = a // b
+    print(a, '//', b, '=', hasil)
+
+
+    # Prioritas operasi, operational precedence
+    # 1. ()
+    # 2. eksponen **
+    # 3. perkalian dan teman-teman * / ** % //
+    # 4. pertambahan dan pengurangan - +
+
+    x = 3
+    y = 2
+    z = 4
+
+    hasil = x ** y * (z + x) / y - y % z // x
+    print("hasil = ", hasil) # 31.5
+
+    hasil = x + y * z
+    print("hasil = ", hasil) # 11
+
+    hasil = (x + y) * z
+    print("hasil = ", hasil) # 20
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Latihan Perhitungan</h2>
+                        
+                        <!-- Latihan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Latihan</h5>
+                            <div>
+                                <p>Buatlah program sederhana untuk konversi suhu, dari celcius ke reamur, fahrenheit, dan kelvin.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Latihan konversi satuan temprature
+
+    # Program konversi celcius ke satuan lain
+    
+    print("\nPROGRAM KONVERSI TEMPRATUR\n")
+    
+    celcius = float(input("Masukan suhu dalam celcius : "))
+    print("suhu adalah ", celcius, "Celcius")
+    
+    # reamur
+    reamur = (4 / 5) * celcius
+    print("suhu dalam reamur adalah ", reamur, "Reamur")
+    
+    # fahrenheit
+    fahrenheit = ((9 / 5) * celcius) + 32
+    print("suhu dalam fahrenheit adalah ", fahrenheit, "Fahrenheit")
+    
+    # kelvin
+    kelvin = celcius + 273
+    print("suhu dalam kelvin adalah ", kelvin, "Kelvin")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operasi Komparasi</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operasi komparasi adalah operasi yang membandingkan dua nilai atau ekspresi untuk menentukan hubungan antara keduanya. Hasil dari operasi komparasi adalah nilai kebenaran, yaitu True (benar) atau False (salah).</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Operasi Komparasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Operasi Komparasi</h5>
+                            <div>
+                                <p>Dalam Python, terdapat beberapa operator komparasi yang umum digunakan:</p>
+
+                                <dl>
+                                    <dt><h6>1. Sama dengan (==)</h6></dt>
+                                    <dd>
+                                        <p>Membandingkan apakah nilai x sama dengan nilai y</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    x = 5
+    y = 5
+    hasil = x == y
+    print(hasil)  # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Tidak sama dengan (!=)</h6></dt>
+                                    <dd>
+                                        <p>Membandingkan apakah nilai a tidak sama dengan nilai b</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    a = 10
+    b = 7
+    hasil = a != b
+    print(hasil)  # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Kurang dari (<)</h6></dt>
+                                    <dd>
+                                        <p>Membandingkan apakah nilai m kurang dari n</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    m = 8
+    n = 12
+    hasil = m < n
+    print(hasil)  # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. kurang dari sama dengan (<=)</h6></dt>
+                                    <dd>
+                                        <p>Membandingkan apakah nilai p kurang dari sama dengan nilai q</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    p = 10
+    q = 10
+    hasil = p <= q
+    print(hasil)  # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>5. Lebih dari (>)</h6></dt>
+                                    <dd>
+                                        <p>Membandingkan apakah nilai i lebih dari nilai j</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    i = 15
+    j = 10
+    hasil = i > j
+    print(hasil)  # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>6. Lebih dari sama dengan (>=)</h6></dt>
+                                    <dd>
+                                        <p>Membandingkan apakah nilai c lebih dari sama dengan nilai d</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+
+    c = 7
+    d = 7
+    hasil = c >= d
+    print(hasil)  # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Operasi komparasi
+
+    # setiap hasil dari operasi komparasi adalah eksponen
+    
+    # >, <, >=, <=, ==, !=, is, is not
+    
+    a = 4
+    b = 2
+    
+    # lebih besar dari >
+    print("-------------------")
+    hasil = a > 3
+    print(a, '>', 3, '=', hasil)
+    
+    hasil = b > 3
+    print(b, '>', 3, '=', hasil)
+    
+    hasil = b > 2
+    print(b, '>', 2, '=', hasil)
+    
+    
+    # lebih kecil dari <
+    print("-------------------")
+    hasil = a < 3
+    print(a, '<', 3, '=', hasil)
+    
+    hasil = b < 3
+    print(b, '<', 3, '=', hasil)
+    
+    hasil = b < 2
+    print(b, '<', 2, '=', hasil)
+    
+    
+    # lebih besar dari sama dengan >=
+    print("-------------------")
+    hasil = a >= 3
+    print(a, '>=', 3, '=', hasil)
+    
+    hasil = b >= 3
+    print(b, '>=', 3, '=', hasil)
+    
+    hasil = b >= 2
+    print(b, '>=', 2, '=', hasil)
+    
+    
+    # lebih kecil dari sama dengan <=
+    print("-------------------")
+    hasil = a <= 3
+    print(a, '<=', 3, '=', hasil)
+    
+    hasil = b <= 3
+    print(b, '<=', 3, '=', hasil)
+    
+    hasil = b <= 2
+    print(b, '<=', 2, '=', hasil)
+    
+    
+    # sebanding ==
+    print("-------------------")
+    hasil = a == 3
+    print(a, '==', 3, '=', hasil)
+    
+    hasil = b == 3
+    print(b, '==', 3, '=', hasil)
+    
+    hasil = b == 2
+    print(b, '==', 2, '=', hasil)
+    
+    
+    # tidak sebanding !=
+    print("-------------------")
+    hasil = a != 3
+    print(a, '!=', 3, '=', hasil)
+    
+    hasil = b != 3
+    print(b, '!=', 3, '=', hasil)
+    
+    hasil = b != 2
+    print(b, '!=', 2, '=', hasil)
+    
+    
+    # is dan is not hanya membandingkan objek atau variabel, bukan nilai atau value
+    # a is 4 -> tidak bisa
+    # a = 4
+    # b = 4
+    # a is b -> bisa, hasilnya true
+    
+    # 'is' sebagai komparasi object identity
+    print("-------------------")
+    x = 5 # ini adalah assignment membuat object
+    y = 5
+    print("nilai x = ", x, ", id = ", hex(id(x)))
+    print("nilai y = ", y, ", id = ", hex(id(y)))
+    hasil = x is y
+    print("x is y ", hasil)
+    
+    print("-------------------")
+    x = 5 # ini adalah assignment membuat object
+    y = 5
+    print("nilai x = ", x, ", id = ", hex(id(x)))
+    print("nilai y = ", y, ", id = ", hex(id(y)))
+    hasil = x is not y
+    print("x is not y ", hasil)                                            
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operasi Logika atau Boolean</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operasi logika atau Boolean adalah operasi matematika yang bekerja pada nilai True atau False. Dalam pemrograman, operasi logika sering digunakan untuk membuat keputusan berdasarkan kondisi yang diberikan.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Operator Logika -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Operator Logika</h5>
+                            <div>
+                                <p>Beberapa operator logika utama yang digunakan dalam Python adalah:</p>
+
+                                <dl>
+                                    <dt><h6>1. Operator `and`</h6></dt>
+                                    <dd>
+                                        <p>Menghasilkan `true` jika kedua kondisi bernilai `true`.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    x = True
+    y = False
+    hasil = x and y
+    print(hasil)  # Output: False
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Operator `or`</h6></dt>
+                                    <dd>
+                                        <p>Menghasilkan `true` jika salah satu kondisi atau semua kondisi bernilai `true`.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    a = True
+    b = False
+    hasil = a or b
+    print(hasil)  # Output: True                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Operator `not`</h6></dt>
+                                    <dd>
+                                        <p>Menghasilkan kebalikan dari nilai kondisi atau ekspresi.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    m = True
+    hasil = not m
+    print(hasil)  # Output: False                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. Operator `xor` (exclusive or)</h6></dt>
+                                    <dd>
+                                        <p>Menghasilkan `True` jika tepat satu dari dua kondisi atau ekspresi bernilai `True`.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    p = True
+    q = False
+    hasil = p ^ q
+    print(hasil)  # Output: True                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Operasi logika atau boolean
+
+    # not, or, and, xor
+
+    # NOT
+    print("------------")
+    a = True
+    c = not a
+    print("data a = ", a)
+    print("data c = ", c)
+
+
+    # OR (jika salah satu true, maka hasilnya adalah true)
+    print("------------")
+    a = False
+    b = False
+    c = a or b
+    print(a, 'or', b, '=', c)
+    a = False
+    b = True
+    c = a or b
+    print(a, 'or', b, '=', c)
+    a = True
+    b = False
+    c = a or b
+    print(a, 'or', b, '=', c)
+    a = True
+    b = True
+    c = a or b
+    print(a, 'or', b, '=', c)
+
+
+    # AND (jika salah satu false, maka hasilnya adalah false)
+    print("------------")
+    a = False
+    b = False
+    c = a and b
+    print(a, 'and', b, '=', c)
+    a = False
+    b = True
+    c = a and b
+    print(a, 'and', b, '=', c)
+    a = True
+    b = False
+    c = a and b
+    print(a, 'and', b, '=', c)
+    a = True
+    b = True
+    c = a and b
+    print(a, 'and', b, '=', c)
+
+
+    # XOR (jika sama akan false, jika beda maka akan true)
+    print("------------")
+    a = False
+    b = False
+    c = a ^ b
+    print(a, 'xor', b, '=', c)
+    a = False
+    b = True
+    c = a ^ b
+    print(a, 'xor', b, '=', c)
+    a = True
+    b = False
+    c = a ^ b
+    print(a, 'xor', b, '=', c)
+    a = True
+    b = True
+    c = a ^ b
+    print(a, 'xor', b, '=', c)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Latihan Komparasi dan Logika</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Buatlah aplikasi sederhana dengan menggunakan komparasi dan logika.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Latihan komparasi dan logika
+
+    # membuat gabungan area rentang dari angka
+    
+    # ++++++3-----------10+++++++++++
+    
+    inputUser = float(input("Masukan angka yang bernilai\nkurang dari 3 \natau \nlebih besar dari 10\n:"))
+    
+    # ++++++3------------------------
+    #memeriksa angka kurang dari 3
+    isKurangDari = (inputUser < 3)
+    print("Kurang dari 3 = ", isKurangDari)
+    
+    # ----------------------10+++++++
+    #memeriksa angka lebih dari 10
+    isLebihDari = (inputUser > 10)
+    print("Lebih dari 10 = ", isLebihDari)
+    
+    # ++++++3------------10++++++++++
+    isCorrect = isKurangDari or isLebihDari
+    print("angka yang anda masukan: ", isCorrect)
+    
+    # -------3+++++++++++10----------
+    # kasus irisan
+    print("\n",10*"=","\n")
+    inputUser = float(input("Masukan angka yang bernilai\nlebih dari 3 \ndan \nkurang dari 10\n:"))
+    
+    # -------3+++++++++++++++++++++++
+    # lebih dari 3
+    isLebihDari = inputUser > 3
+    print("Lebih dari 3 = ", isLebihDari)
+    
+    #+++++++++++++++++++10-----------
+    isKurangDari = inputUser < 10
+    print("Kurang dari 10 = ", isKurangDari)
+    
+    # -------3+++++++++++10----------
+    isCorrect = isKurangDari and isLebihDari
+    print("angka yang anda masukan: ", isCorrect)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operator Bitwise</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operator bitwise adalah operator yang bekerja pada level bit dari representasi biner dari nilai-nilai dalam suatu operasi.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Operator Bitwise -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Operator Bitwise</h5>
+                            <div>
+                                <p>Dalam Python, terdapat beberapa operator bitwise yang digunakan untuk melakukan operasi pada bit:</p>
+                                
+                                <dl>
+                                    <dt><h6>1. AND Bitwise (&)</h6></dt>
+                                    <dd>
+                                        <p>Menetapkan bit ke-i menjadi 1 jika kedua bit pada posisi ke-i dari operand adalah 1.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    a = 5  # Binernya: 0b0101
+    b = 3  # Binernya: 0b0011
+    hasil_and = a & b
+    print(hasil_and)  # Output: 1 (Binernya: 0b0001)                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. OR Bitwise (|)</h6></dt>
+                                    <dd>
+                                        <p>Menetapkan bit ke-i menjadi 1 jika salah satu atau kedua bit pada posisi ke-i dari operand adalah 1.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    x = 5  # Binernya: 0b0101
+    y = 3  # Binernya: 0b0011
+    hasil_or = x | y
+    print(hasil_or)  # Output: 7 (Binernya: 0b0111)                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. XOR Bitwise (^)</h6></dt>
+                                    <dd>
+                                        <p>Menetapkan bit ke-i menjadi 1 jika hanya satu dari dua bit pada posisi ke-i dari operand adalah 1.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    p = 5  # Binernya: 0b0101
+    q = 3  # Binernya: 0b0011
+    hasil_xor = p ^ q
+    print(hasil_xor)  # Output: 6 (Binernya: 0b0110)                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. NOT Bitwise (~)</h6></dt>
+                                    <dd>
+                                        <p>Menyandi ulang setiap bit, mengubah 0 menjadi 1 dan 1 menjadi 0.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    m = 5  # Binernya: 0b0101
+    hasil_not = ~m
+    print(hasil_not)  # Output: -6 (Binernya: -0b0110)
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>5. Shift Left (<<)</h6></dt>
+                                    <dd>
+                                        <p>Memindahkan semua bit operand ke kiri sejumlah langkah tertentu.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    c = 4  # Binernya: 0b0100
+    hasil_shift_left = c << 1
+    print(hasil_shift_left)  # Output: 8 (Binernya: 0b1000)                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>6. Shift Right (>>)</h6></dt>
+                                    <dd>
+                                        <p>Memindahkan semua bit operand ke kanan sejumlah langkah tertentu.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    d = 8  # Binernya: 0b1000
+    hasil_shift_right = d >> 1
+    print(hasil_shift_right)  # Output: 4 (Binernya: 0b0100)                                                    
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Operasi bitwise / operasi biner / binary
+
+    a = 9
+    b = 5
+
+    # bitwise or (|)
+    c = a | b
+    print('\n================= OR')
+    print('nilai :', a, ', binary :', format(a, '08b'))
+    print('nilai :', b, ', binary :', format(b, '08b'))
+    print('---------------------------- (|)')
+    print('nilai :', c, ', binary :', format(c, '08b'))
+
+    # bitwise AND (&)
+    c = a & b
+    print('\n================= AND')
+    print('nilai :', a, ', binary :', format(a, '08b'))
+    print('nilai :', b, ', binary :', format(b, '08b'))
+    print('---------------------------- (&)')
+    print('nilai :', c, ', binary :', format(c, '08b'))
+
+    # bitwise XOR (^)
+    c = a ^ b
+    print('\n================= XOR')
+    print('nilai :', a, ', binary :', format(a, '08b'))
+    print('nilai :', b, ', binary :', format(b, '08b'))
+    print('---------------------------- (^)')
+    print('nilai :', c, ', binary :', format(c, '08b'))
+
+    # bitwise NOT (~)
+    c = ~ a
+    print('\n================= NOT')
+    print('nilai :', a, ', binary :', format(a, '08b'))
+    print('---------------------------- (~)')
+    print('nilai :', c, ', binary :', format(c, '08b'))
+    print('---------------------------- (^)')
+    d = 0b0000001001
+    e = 0b1111111111
+    print('nilai :', e^d, ', binary', format(e^d, '08b'))
+
+
+    # shifting
+
+    # shift right (>>)
+    c = a >> 2
+    print('\n================= >>')
+    print('nilai :', a, ', binary :', format(a, '08b'))
+    print('---------------------------- (>>)')
+    print('nilai :', c, ', binary :', format(c, '08b'))
+
+    # shift left (<<)
+    c = a << 2
+    print('\n================= <<')
+    print('nilai :', a, ', binary :', format(a, '08b'))
+    print('---------------------------- (<<)')
+    print('nilai :', c, ', binary :', format(c, '08b'))
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operator Assignment</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operator assignment adalah operator yang digunakan untuk menetapkan nilai ke suatu variabel. Dalam Python, operator assignment paling umum adalah operator =. Operator ini memberikan nilai ke variabel di sebelah kiri dengan nilai yang ada di sebelah kanan.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Operator Assignment -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Operator Assignment</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <p>Berikut adalah contoh penggunaan operator assignment:</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    x = 10  # Menetapkan nilai 10 ke variabel x
+    y = 5   # Menetapkan nilai 5 ke variabel y
+    hasil = x + y  # Menyimpan hasil penjumlahan x dan y ke variabel hasil
+    print(hasil)  # Output: 15              
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Opertaor assignment
+    # operasi yang dapat dilakukan dengan penyingkatan
+    # operasi ditambah dengan assignment
+
+    a = 5 # adalah assignment
+    print('nilai a =', a)
+
+    a += 1 # sama dengan a = a + 1
+    print('nilai a =', a)
+
+    a -= 2 # sama dengan a = a - 2
+    print('nilai a =', a)
+
+    a *= 2 # sama dengan a = a * 2
+    print('nilai a =', a)
+
+    a /= 2 # sama dengan a = a / 2
+    print('nilai a =', a)
+
+
+    # modulus dan floor devision
+    b = 10
+    print('\nnilai b =', b)
+
+    b %= 3
+    print('nilai b %= 3 adalah', b)
+
+
+    b = 10
+    print('\nnilai b =', b)
+
+    b //= 3
+    print('nilai b //= 3 adalah', b)
+
+
+    # eksponen
+    a = 5
+    print('\nnilai a =', a)
+    a **= 3
+    print('nilai a **= 3 adalah', a)
+
+
+    # operasi bitwise
+    # OR
+    c = True
+    print('\nnilai c =', c)
+    c |= False
+    print('nilai c |= False, nilai c menjadi', c)
+    c = False
+    print('\nnilai c =', c)
+    c |= False
+    print('nilai c |= False, nilai c menjadi', c)
+
+    # AND
+    c = True
+    print('\nnilai c =', c)
+    c &= False
+    print('nilai c &= False, nilai c menjadi', c)
+    c = True
+    print('\nnilai c =', c)
+    c &= True
+    print('nilai c &= True, nilai c menjadi', c)
+
+    # XOR
+    c = True
+    print('\nnilai c =', c)
+    c ^= False
+    print('nilai c ^= False, nilai c menjadi', c)
+    c = True
+    print('\nnilai c =', c)
+    c ^= True
+    print('nilai c ^= True, nilai c menjadi', c)
+
+    # geser geser
+    d = 0b0100
+    print('\nnilai d =', format(d, '04b'))
+    d >>= 2
+    print('nilai d >>= 2, nilai d menjadi', format(d, '04b'))
+    d <<= 1
+    print('nilai d <<= 1, nilai d menjadi', format(d, '04b'))
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Pengenalan String</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>String adalah tipe data dalam pemrograman yang digunakan untuk merepresentasikan teks atau urutan karakter.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Cara Menggunakan String -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Cara Menggunakan String</h5>
+                            <div>
+                                <p>String pada python dapat dibuat dengan 3 cara, bisa menggunakan single quote ('...') atau double quote ("..."), bisa juga menggunakan tanda \, dan bisa juga menggunakan string literal atau raw. kita lihat implementasinya.</p>
+
+                                <dl>
+                                    <dt><h6>1. Single quote atau Double quote</h6></dt>
+                                    <dd>
+                                        <p>Kita bisa menggunakan single quote ('...') atau double quote ("...") atau bahkan keduanya ("..'..'..")</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    # 1. cara membuat string
+    '''
+        1. dengan menggunakan single quote '...'
+        2. dengan menggunakan double quote "..."
+    '''
+    data = 'menggunakan single quote'
+    print(data)
+
+    data = "menggunakan double quote"
+    print(data)
+
+    print('"halo, apa kabar"')
+    print("'halo, apa kabar'")
+    print("ini adalah hari jum'at")                                                  
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Escape character (\)</h6></dt>
+                                    <dd>
+                                        <p>Beberapa karakter memerlukan tanda escape (\) untuk diinterpretasikan dengan benar, seperti \n untuk baris baru dsb.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    # 2. menggunakan tanda \
+    print('mari sholat jum\'at')
+    print('g\'day, isn\'t it?')
+
+    # backslash
+    print("C:\\user\\ucup")
+
+    # tab
+    print("Ucup\tOtong")
+
+    # backspace
+    print("Ucup \bOtong")
+
+    # new line
+    print("baris pertama.\nbaris kedua.") # LF -> line feed -> unix, macos, linux
+    print("baris pertama.\rbaris kedua.") # CR -> carriage return -> commodore, acorn, lisp
+    print("baris pertama.\r\nbaris kedua.") # CRLF -> line feed carriage return -> windows                                                 
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. String literal atau raw</h6></dt>
+                                    <dd>
+                                        <p>Menggunakan srting literal dan string raw</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    # 3. String literal atau raw
+
+    # sintax yang salah
+    print('C:\new folder')
+
+    # menggunakan raw string
+    print(r'C:\new folder\t\r\b') # semua dianggap string
+
+
+    # multiline literal string
+    print('''
+    nama: ucup
+    kelas: 3 SD      
+    ''')
+
+    # multiline literal string dan raw
+    print('''
+    nama: ucup
+    kelas: 3 SD \n\t\r\b    
+    website: www.ucup.com/newID
+    ''')
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    data = "ini adalah string"
+    print(data)
+    print(type(data))
+
+    # 1. cara membuat string
+    '''
+        1. dengan menggunakan single quote '...'
+        2. dengan menggunakan double quote "..."
+    '''
+    data = 'menggunakan single quote'
+    print(data)
+
+    data = "menggunakan double quote"
+    print(data)
+
+    print('"halo, apa kabar"')
+    print("'halo, apa kabar'")
+    print("ini adalah hari jum'at")
+
+    # 2. menggunakan tanda \
+    print('mari sholat jum\'at')
+    print('g\'day, isn\'t it?')
+
+    # backslash
+    print("C:\\user\\ucup")
+
+    # tab
+    print("Ucup\tOtong")
+
+    # backspace
+    print("Ucup \bOtong")
+
+    # new line
+    print("baris pertama.\nbaris kedua.") # LF -> line feed -> unix, macos, linux
+    print("baris pertama.\rbaris kedua.") # CR -> carriage return -> commodore, acorn, lisp
+    print("baris pertama.\r\nbaris kedua.") # CRLF -> line feed carriage return -> windows
+
+    # 3. String literal atau raw
+
+    # sintax yang salah
+    print('C:\new folder')
+
+    # menggunakan raw string
+    print(r'C:\new folder\t\r\b') # semua dianggap string
+
+
+    # multiline literal string
+    print('''
+    nama: ucup
+    kelas: 3 SD      
+    ''')
+
+    # multiline literal string dan raw
+    print('''
+    nama: ucup
+    kelas: 3 SD \n\t\r\b    
+    website: www.ucup.com/newID
+    ''')
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operasi dan Manipulasi String Part-1</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operasi dan manipulasi string mencakup berbagai tindakan yang dapat dilakukan pada string untuk mengubah, menggabungkan, memotong, atau memeriksa isinya.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Operasi dan Manipulasi String -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Operasi dan Manipulasi String</h5>
+                            <div>
+                                <p>Berikut adalah beberapa operasi dan manipulasi string umum dalam bahasa pemrograman, khususnya Python:</p>
+
+                                <dl>
+                                    <dt><h6>1. Konkatenasi (Penggabungan) String</h6></dt>
+                                    <dd>
+                                        <p>Menggabungkan dua atau lebih string menjadi satu string.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    kata1 = "Halo"
+    kata2 = "Dunia"
+    gabungan = kata1 + " " + kata2
+    print(gabungan)  # Output: 'Halo Dunia'
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Panjang String</h6></dt>
+                                    <dd>
+                                        <p>Menghitung jumlah karakter dalam suatu string.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    teks = "Python"
+    panjang = len(teks)
+    print(panjang)  # Output: 6
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Indeks dan Slicing</h6></dt>
+                                    <dd>
+                                        <p>Mengakses karakter individual atau membuat potongan (substring) dari string.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    kata = "Python"
+    print(kata[0])      # Output: 'P'
+    print(kata[1:4])    # Output: 'yth'
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. Mengubah Huruf Besar atau Kecil:</h6></dt>
+                                    <dd>
+                                        <p>Mengubah semua karakter dalam string menjadi huruf besar (upper()) atau huruf kecil (lower()).</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    teks = "Python"
+    besar = teks.upper()
+    kecil = teks.lower()
+    print(besar)  # Output: 'PYTHON'
+    print(kecil)  # Output: 'python'
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>5. Pencarian dan Penggantian:</h6></dt>
+                                    <dd>
+                                        <p>Mencari dan mengganti teks dalam string menggunakan metode find() dan replace().</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    kalimat = "Hari ini adalah hari yang cerah."
+    posisi = kalimat.find("cerah")
+    hasil_replace = kalimat.replace("cerah", "hujan")
+    print(posisi)        # Output: 27 (posisi awal "cerah")
+    print(hasil_replace)  # Output: 'Hari ini adalah hari yang hujan.'  
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>6. Pemisahan dan Penggabungan</h6></dt>
+                                    <dd>
+                                        <p>Memisahkan string menjadi list atau tuple (split()) dan menggabungkan elemen-elemen tersebut menjadi string (join()).</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    kalimat = "Hari ini adalah hari yang cerah."
+    kata_kalimat = kalimat.split(" ")
+    hasil_join = " ".join(kata_kalimat)
+    print(kata_kalimat)  # Output: ['Hari', 'ini', 'adalah', 'hari', 'yang', 'cerah.']
+    print(hasil_join)    # Output: 'Hari ini adalah hari yang cerah.'
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>7. Pengecekan Isi String</h6></dt>
+                                    <dd>
+                                        <p>Memeriksa apakah suatu string dimulai atau diakhiri oleh suatu substring menggunakan metode startswith() dan endswith().</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    teks = "Halo Dunia"
+    awal = teks.startswith("Halo")
+    akhir = teks.endswith("Dunia")
+    print(awal)  # Output: True
+    print(akhir) # Output: True
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Operasi dan manipulasi string
+
+    # 1. menyambung string (concatenate)
+    nama_pertama = "Ucup"
+    nama_tengah = "D"
+    nama_akhir = "Fame"
+
+    nama_lengkap = nama_pertama + " " + nama_tengah + "'" + nama_akhir
+    print(nama_lengkap)
+
+    # 2. menghitung panjang string
+    panjang = len(nama_lengkap) # menghasilkan integer
+    print("panjang dari kata " + nama_lengkap + " = " + str(panjang)) # ubah menjadi string
+
+    # 3. operator untuk string
+
+    # mengecek apakah ada komponen char atau string di string
+
+    d = "d"
+    status = d in nama_lengkap
+    print("apakah " + d + " ada di " + nama_lengkap  + " = " + str(status))
+
+    status = d not in nama_lengkap
+    print("apakah " + d + " tidak ada di " + nama_lengkap  + " = " + str(status))
+
+    # mengulang string
+    print("wk" * 10)
+    print(10 * "wk")
+
+    # indexing
+    print("index ke-0 : " + nama_lengkap[0]) # U
+    print("index ke-7 : " + nama_lengkap[7]) # F
+    print("index ke-(-1) : " + nama_lengkap[-1]) # e -> diambil dari belakang
+    print("index ke-(-2) : " + nama_lengkap[-2]) # m -> diambil dari belakang
+    print("index ke-[0 s/d 3] : " + nama_lengkap[0:4]) # Ucup -> [0:4] artinya index 0 sampai dengan sebelum 4
+    print("index ke-[3 s/d 7] : " + nama_lengkap[3:8]) # p D'F -> [3:8] artinya index 3 sampai dengan sebelum 8
+    print("index ke-[0,2,4,6,8] : " + nama_lengkap[0:10:2]) # Uu 'a -> [0:10:2] artinya index 0 sampai 10 kelipatan 2
+
+    # item paling kecil
+    print("paling kecil : " + min(nama_lengkap))
+
+    # item paling besar
+    print("paling besar : " + max(nama_lengkap))
+
+    ascii_code = ord(" ")
+    print("ASCII code untuk spasi adalah " + str(ascii_code))
+    data = 117
+    print("char untuk ASCII 117 adalah " + chr(data))
+
+    # operator dalam method
+    data = "otong"
+    print("data: " + data)
+    jumlah = data.count("o")
+    print("Jumlah o pada " + data + " = " + str(jumlah))
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Operasi dan Manipulasi String Part-2</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Operasi dan manipulasi string merujuk pada berbagai tindakan yang dapat dilakukan pada string untuk memanipulasi, mengubah, atau menganalisis isinya.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Operator dalam bentuk methods
+
+    # merubah case dari string
+
+    # merubah semua ke uppercase
+
+    salam = "Bro!"
+    print("normal = " + salam)
+    salam = salam.upper() # method uppercase
+    print("uppercase = " + salam)
+
+    # merubah semua ke lowercase
+
+    sapa = "Hallo"
+    print("normal = " + sapa)
+    sapa = sapa.lower() # method lowercase
+    print("lowercase = " + sapa)
+
+
+    ## pengecekan denagn isX method
+
+    # contoh pengecekan lowercase
+    salam = "sist"
+    apakah_lower = salam.islower() # hasilnya boolean
+    print(salam + " is lower = " + str(apakah_lower))
+    apakah_upper = salam.isupper() # hasilnya boolean
+    print(salam + " is upper = " + str(apakah_upper))
+
+    # isalpha()   <-- untuk mengecek semuanya huruf
+    # isalnum()   <-- huruf dan angka
+    # isdecimal() <-- angka saja
+    # isspace()   <-- spasi, tab, newLine \n
+    # istitle()   <-- semua kata dimulai dengan huruf besar
+
+    judul = "It Is Okay Not To Be Orkay" # semua kata harus besar
+    cek_judul = judul.istitle() # hasilnya boolean
+    print(judul + " is title = " + str(cek_judul))
+
+
+    # mengecek komponen dengan startswith() atau endswith()
+    cek_start = "Alexander Kurniawan".startswith("Alexander")
+    print("start = " + str(cek_start))
+
+    cek_end = "Alexander Kurniawan".endswith("Kurniawan")
+    print("end = " + str(cek_end))
+
+
+    # penggabungan komponen join() split()
+    pisah = ['aku', 'dan', 'kau']
+    gabungan = ', '.join(pisah)
+    print(pisah)
+    print(gabungan)
+
+    gabungan = "aku,dan,kamu"
+    pisahan = gabungan.split(',')
+    print(gabungan)
+    print(pisahan)
+
+
+    ## alokasi karakter rjust(), ljust(), center()
+
+    kanan = "kanan".rjust(10)
+    print("'" + kanan + "'")
+
+    kiri = "kiri".ljust(10)
+    print("'" + kiri + "'")
+
+    tengah = "tengah".center(20, "-")
+    print("'" + tengah + "'")
+
+
+    # kebalikannya -> strip()
+
+    tengah = tengah.strip("-") # menghilangkan tanda -
+    print("'" + tengah + "'")
+
+    kanan = kanan.strip() # menghilangkan spasi
+    print("'" + kanan + "'")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Format String</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Format string adalah cara untuk memformat atau menyusun string dengan menambahkan nilai variabel atau ekspresi lain ke dalam string.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Format String -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Format String</h5>
+                            <div>
+                                <p>Dalam Python, terdapat beberapa metode untuk melakukan format string, dan salah satunya adalah menggunakan metode format() atau dengan menggunakan f-string (formatted string literal) yang diperkenalkan dalam Python 3.6 ke atas.</p>
+
+                                <dl>
+                                    <dd>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    nama = "John"
+    umur = 25
+    
+    kalimat = f"Nama: {nama}, Umur: {umur}"
+    print(kalimat)
+                                                </pre>
+                                                
+                                                <p>Dalam contoh di atas, {} adalah placeholder yang akan digantikan oleh nilai dari variabel yang disebutkan dalam metode format() atau f-string. Anda dapat menentukan urutan variabel atau memberikan nama pada placeholder untuk mencocokkan variabel dengan nilai yang sesuai.</p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Format string
+
+    # contoh generic
+    # string
+    nama = "ucup"
+    format_str = f"hello {nama}"
+    print(format_str)
+    
+    # boolean
+    boolean = True
+    format_str = f"boolean = {boolean}"
+    print(format_str)
+    
+    # angka
+    angka = 2005.5
+    format_str = f"angka = {angka}"
+    print(format_str)
+    
+    # bilangan bulat
+    angka = 15
+    format_str = f"bilangan bulat = {angka:d}"
+    print(format_str)
+    
+    # bilangan dengan ordo ribuan
+    angka = 2000000
+    format_str = f"ribuan = {angka:,}"
+    print(format_str)
+    
+    # bilangan decimal
+    angka = 2005.54321
+    format_str = f"decimal = {angka:.2f}"
+    print(format_str)
+    
+    # menampilkan leading zero
+    angka = 2005.54321
+    format_str = f"decimal = {angka:09.2f}" # 9 adalah total karakter pada angka
+    print(format_str)
+    
+    # menampilkan tanda + atau -
+    angka_minus = -10
+    angka_plus = 10
+    format_minus = f"minus = {angka_minus:+d}"
+    format_plus = f"plus = {angka_plus:+.2f}"
+    print(format_minus)
+    print(format_plus)
+    
+    # memformat persen
+    persentase = 0.045
+    format_persen = f"persen = {persentase:.2%}"
+    print(format_persen)
+    
+    # melakukan operasi aritmatika di dalam kurung kurawal (placeholder)
+    harga = 10000
+    jumlah = 5
+    
+    format_string = f"harga total = Rp.{harga * jumlah:,}"
+    print(format_string)
+    
+    # format angka lain (binary, octal, hexadecimal)
+    angka = 255
+    format_binary = f"binary = {bin(angka)}"
+    format_octal = f"octal = {oct(angka)}"
+    format_hex = f"hex = {hex(angka)}"
+    print(format_binary)
+    print(format_octal)
+    print(format_hex)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>String Width and Alignment</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Width and Multiline
+
+    # Data
+
+    data_nama = "ucup"
+    data_umur = 17
+    data_tinggi = 150.1
+    data_nomor_sepatu = 44
+
+    # string standar
+    print('----------------')
+    data_string = f"nama = {data_nama}, umur = {data_umur}, tinggi = {data_tinggi}, sepatu = {data_nomor_sepatu}"
+    print(data_string)
+
+    # string multiline
+    print('----------------')
+    data_string = f"nama = {data_nama}, \numur = {data_umur}, \ntinggi = {data_tinggi}, \nsepatu = {data_nomor_sepatu}"
+    print(data_string)
+
+    # string multiline (kutip triplets)
+    data_string = f"""
+    nama = {data_nama}, tinggi = {data_tinggi},
+    umur = {data_umur}, sepatu = {data_nomor_sepatu}
+    """
+    print(data_string)
+
+    # mengatur lebar
+    data_string = f"""
+    nama   = {data_nama:>5}
+    umur   = {data_umur:>5}
+    tinggi = {data_tinggi:>5}
+    sepatu = {data_nomor_sepatu:>5}
+    """
+    print(data_string)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Latihan Date and Time</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Dalam pemrograman Python, modul datetime menyediakan kelas-kelas yang mendukung manipulasi tanggal dan waktu. Modul ini memberikan fungsionalitas yang kaya untuk bekerja dengan tanggal, waktu, dan selang waktu (timedelta).</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Latihan Date and Time -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Latihan Date and Time</h5>
+                            <div>
+                                <p>Berikut adalah contoh penggunaan modul datetime:</p>
+
+                                <dl>
+                                    <dt><h6>1. Manipulasi Tanggal dan Waktu</h6></dt>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    from datetime import datetime
+
+    # Mendapatkan tanggal dan waktu saat ini
+    sekarang = datetime.now()
+    print("Tanggal dan Waktu Sekarang:", sekarang)
+    
+    # Membuat objek datetime dengan tanggal dan waktu tertentu
+    tanggal_dan_waktu = datetime(2023, 5, 15, 12, 30, 0)
+    print("Tanggal dan Waktu Tertentu:", tanggal_dan_waktu)
+    
+    # Menampilkan komponen tanggal dan waktu
+    print("Tahun:", tanggal_dan_waktu.year)
+    print("Bulan:", tanggal_dan_waktu.month)
+    print("Hari:", tanggal_dan_waktu.day)
+    print("Jam:", tanggal_dan_waktu.hour)
+    print("Menit:", tanggal_dan_waktu.minute)
+    print("Detik:", tanggal_dan_waktu.second)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Format Tanggal dan Waktu sebagai String</h6></dt>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    from datetime import datetime
+
+    sekarang = datetime.now()
+
+    # Menggunakan metode strftime untuk memformat tanggal dan waktu sebagai string
+    format_tanggal_waktu = sekarang.strftime("%Y-%m-%d %H:%M:%S")
+    print("Format Tanggal dan Waktu:", format_tanggal_waktu)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Menghitung Selang Waktu (Timedelta)</h6></dt>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    from datetime import datetime, timedelta
+
+    sekarang = datetime.now()
+    
+    # Membuat objek timedelta dengan selang waktu tertentu
+    selang_waktu = timedelta(days=5, hours=3, minutes=30)
+    waktu_setelah_selang = sekarang + selang_waktu
+    
+    print("Tanggal dan Waktu Sekarang:", sekarang)
+    print("Tanggal dan Waktu Setelah Selang Waktu:", waktu_setelah_selang)
+                                        </pre>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. Parsel Tanggal dari String</h6></dt>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    from datetime import datetime
+
+    # Membuat objek datetime dari string
+    string_tanggal = "2023-05-15"
+    tanggal = datetime.strptime(string_tanggal, "%Y-%m-%d")
+    
+    print("Tanggal yang Diparse:", tanggal)                                            
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Date and time (latihan)
+
+    # import datetime
+
+    # hari_ini = datetime.date.today()
+    # print(hari_ini)
+
+    import datetime as dt
+
+    print("Silahkan masukan tanggal, bulan, dan tahun")
+    tanggal = int(input("Tanggal \t: "))
+    bulan   = int(input("Bulan \t\t: "))
+    tahun   = int(input("Tahun \t\t: "))
+
+    tanggal_lahir = dt.date(tahun,bulan,tanggal)
+    print(f"Tanggal lahir anda adalah : {tanggal_lahir}")
+
+    hari_ini = dt.date.today()
+    print(f"Hari ini tanggal : {hari_ini}")
+    umur_hari = hari_ini - tanggal_lahir
+    umur_tahun = umur_hari.days // 365
+    umur_bulan_sisa = (umur_hari.days % 365) // 30
+
+    print(f"Harinya adalah : {tanggal_lahir:%A}")
+    print(f"Umur anda adalah: {umur_tahun} tahun, {umur_bulan_sisa} bulan")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Bagian 2 -->
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>IF dan ELSE Statement</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # IF dan ELSE Statement
+
+    # 1. if
+    # 2. kondisi
+    # 3. aksinya
+
+    nama = input("Siapa nama anda: ")
+
+    # program sebelumnya
+    # if kondisi: aksi
+    # program selanjutnya
+
+    # 1. program if inline
+    if nama=="ucup" : print(f"Kamu adalah ucup")
+    print(f"Program berakhir")
+
+    # 2. program if indentation
+    # program yang ditulis dengan jarak di kiri (indentasi) adalah milik atasnya
+    if nama=="ucup": 
+        print(f"Kamu adalah ucup") # kode ini milik if diatas
+    print(f"Program berakhir") # kode ini diluar dari if
+
+    # 3. else statement
+    if nama=="ucup":
+        print(f"Hello ucup")
+    else:
+        print(f"Kamu bukan ucup")
+    print(f"Akhir dari program")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>ELIF Statement</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # ELIF Statement
+    # ELIF = ELSE IF Statement
+
+    angka = input(f"Masukan angka 1-3: ")
+
+    if angka=="1": # kondisi 1
+        print(f"Anda memasukan angka 1") # aksi true 1
+    elif angka=="2": # kondisi 2
+        print(f"Anda memasukan angka 2") # aksi true 2
+    elif angka=="3": # kondisi 3
+        print(f"Anda memasukan angka 3") # aksi true 3
+    else:
+        print(f"Bukan angka 1-3") # aksi false
+
+    print(f"Program berakhir\n")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Latihan Percabangan</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Latihan
+
+    # Kalkulator Sederhana
+    print(20*"=")
+    print("Kalkulator Sederhana")
+    print(20*"=")
+
+    angka1 = float(input("masukan bilangan ke 1 \t: "))
+    operator = input("operator (+,-,x,/) \t: ")
+    angka2 = float(input("masukan bilangan ke 2 \t: "))
+
+    # percabangannya
+    if operator == "+":
+        hasil = angka1 + angka2
+        print(f"Hasil dari {angka1} + {angka2} = {hasil}")
+    elif operator == "-":
+        hasil = angka1 - angka2
+        print(f"Hasil dari {angka1} - {angka2} = {hasil}")
+    elif operator == "x":
+        hasil = angka1 * angka2
+        print(f"Hasil dari {angka1} x {angka2} = {hasil}")
+    elif operator == "/":
+        hasil = angka1 / angka2
+        print(f"Hasil dari {angka1} / {angka2} = {hasil}")
+    else:
+        print("Operator tidak tersedia")
+        
+    print("Program berakhir\n")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>For Loop (Perulangan)</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Perulangan (Loop)
+
+    # for kondisi:
+    #     aksi
+
+    # loop dengan list
+    angka = [0, 2, 4, 6, 8] # ini adalah list
+    print(angka)
+
+    for i in angka:
+        print(f"i sekarang adalah {i}")
+
+    print(f"Akhir dari program 1\n")
+
+    # loop dengan range
+    angka_range = range(5)
+
+    for i in angka_range:
+        print(f"i sekarang adalah {i}")
+
+    print(f"Akhir dari program 2\n")
+
+    # loop dengan range yang ditentukan awalnya
+    angka_range = range(1,5)
+
+    for i in angka_range:
+        print(f"i sekarang adalah {i}")
+
+    print(f"Akhir dari program 3\n")
+
+
+    ## menggunakan string
+
+    data_str = "Hello world"
+
+    for huruf in data_str:
+        print(huruf) # Outputnya adalah setiap huruf dari nilai data_str
+        
+    print(f"Akhir dari program 4\n")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>While Loop (Perulangan)</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # While Loop
+
+    # while kondisi:
+    #       aksi 1
+    #       aksi 2
+    #
+    # akhir dari program
+
+    angka = 0
+    print(f"angka sekarang adalah {angka}")
+
+    while angka < 5:
+        angka += 1
+        print(f"angka sekarang adalah {angka}")
+        print("hello world")
+        
+    print("Akhir dari program")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Continue dan Pass</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # continue, pass, break
+
+    # continue -> menuju ke loop selanjutnya dan mengabaikan perintah dibawahnya
+    # pass -> dia berfungsi sebagai dummy, tidak akan dieksekusi
+    # break -> menghentikan loop jika kondisi tertentu
+
+    angka = 0
+
+    while angka < 5:
+        angka += 1
+        
+        if angka==3:
+            pass # ini tidak akan dieksekusi
+        
+        print(angka)
+
+
+    # 1. continue
+
+    angka = 0
+
+    print(f"angka sekarang adalah {angka}")
+
+    while angka < 5:
+        angka += 1
+        print(f"angka sekarang adalah {angka}") # aksi 1
+        
+        if angka == 3:
+            print("whats up") # aksi jika angka == 3
+            continue # akan langsung menuju ke loop selanjutnya, mengabaikan perintah dibawahnya
+            
+        print("hello") # aksi 2
+        
+    print("Akhir dari program")
+
+
+    # 2. break
+
+    angka = 0
+
+    while angka < 5:
+        angka += 1
+        print(f"angka sekarang adalah {angka}")
+        
+        if angka == 3:
+            print("Finish")
+            break # menghentikan loop walaupun kondisi pada loop belum terpenuhi
+        
+        print("hello")
+        
+    print("Akhir dari while")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Latihan Perulangan</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Latihan perulangan membuat segitiga
+
+    sisi = 10
+
+    # 1. Menggunakan For
+
+    # dummy variable
+    print("awal for")
+    count = 1
+    for i in range(sisi):
+        print("* " * count)
+        count += 1
+        
+    print("akhir dari for")
+
+
+    # 2. Menggunakan While
+
+    print("awal while")
+    count = 1
+    while True:
+        print("* " * count)
+        count += 1
+        
+        if count > sisi:
+            break
+
+    print("akhir dari while")
+
+
+    # 3. hanya ganjil saja
+
+    print("awal while")
+    count = 1
+    while True:
+        if (count % 2):
+            # akan print jika ganjil
+            print("* " * count)
+            count += 1
+        else:
+            # akan kembali ke atas jika genap
+            count += 1
+            continue
+        
+        # akan berhenti jika count melebihi sisi
+        if count > sisi:
+            break
+
+    print("akhir dari while")
+
+
+    # 4. segitiga sama kaki
+
+    print("awal while")
+    count = 1
+    spasi = int(sisi/2)
+    while True:
+        if (count % 2):
+            # akan print jika ganjil
+            print("  "*spasi,"* " * count)
+            count += 1
+            spasi -= 1
+        else:
+            # akan kembali ke atas jika genap
+            count += 1
+            continue
+        
+        # akan berhenti jika count melebihi sisi
+        if count > sisi:
+            break
+
+    print("akhir dari while")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>List pada Python</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    #  List
+
+    # Kumpulan data numbers
+    data_angka = [1, 2, 3, 4]
+    print(data_angka)
+
+    # Kumpulan data string
+    data_string = ["ucup", "otong", "budi"]
+    print(data_string)
+
+    # Kumpulan data boolean
+    data_boolean = [True, False, True, True]
+    print(data_boolean)
+
+    # Kumpulan data campuran
+    data_campuran = [1, "ucup", 2, True]
+    print(data_campuran)
+
+    # cara alternatif membuat list
+    # data_range = range(0, 10, 2) # 0 sampai 10 kelipatan 2
+    data_range = range(0, 10) # 0 sampai 10
+    data_list = list(data_range)
+    print(data_list) # akan membuat list dari angka 0 sampai 10
+
+    # membuat list dengan for loop, List comprehension
+    list_pake_for = [i for i in range(0, 10)]
+    print(list_pake_for)
+
+    # membuat list pakai for dan if
+    list_pake_for_if = [i for i in range(0, 10) if i != 5]
+    print(list_pake_for_if) # list dari 0 sampai 10 tanpa 5
+
+    list_pake_for_if = [i for i in range(0, 10) if i % 2 == 0]
+    print(list_pake_for_if) # list dari 0 sampai 10 angka genap
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Manipulasi List</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+    # Manipulasi List
+
+    # index  0(-3)    1(-2)     2(-3)
+    data = ["ucup", "otong", "dudung"]
+
+    # mengambil data dari list ini
+    data0 = data[0]
+    print(f"data pertama adalah {data0}")
+
+    data_terakhir = data[-1]
+    print(f"data terakhir adalah {data_terakhir}")
+
+    # mengambil info jumlah data dalam list
+    panjang_data = len(data)
+    print(f"panjang data = {panjang_data}")
+
+    ## Manipulasi data list
+
+    # menambah item pada list sesuai posisi
+    data = ["ucup", "otong", "dudung"]
+    print(f"data sebelum ditambah = \n{data}")
+
+    # data.insert(posisi, item)
+    data.insert(1, "Asep")
+    print(f"data sesudah ditambah = \n{data}")
+
+    # menambah di akhir list
+    data.append("budi")
+    print(f"data ditambah lagi = \n{data}")
+
+    # menambah list dengan list
+    data_baru = ["ujang", "usep", "dadang"]
+    data.extend(data_baru)
+    print(f"data gabungan = \n{data}")
+
+    # merubah data dari list
+    # kita ubah data 2 menjadi michael
+    data[2] = "michael"
+    print(f"data rubah = \n{data}")
+
+    # menghapus data
+    data.remove("ujang")
+    print(f"data remove = \n{data}")
+
+    # menghapus data paling belakang
+    data.pop()
+    print(f"data pop akhir = \n{data}")
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>b</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+                                            
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Latihan Komparasi dan Logika</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Koding -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Koding</h5>
+                            <div>
+                                <dl>
+                                    <dd>
+                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
+                                    </dd>
+                                    <dd class="hiddenCode hide">
+                                        <div class="hide-code"><i class="fas fa-times"></i></div>
+                                        <pre class="card codeB code-box">
+                                        
+                                        </pre>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="double-script.js"></script>
+</body>
+</html>

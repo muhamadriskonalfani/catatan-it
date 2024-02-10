@@ -145,10 +145,17 @@ function pilihDaftar(daftarKe) {
     kotakDaftar.forEach((daftar) => daftar.classList.add('hide'));
     kotakDaftar[index].classList.remove('hide');
     kotakPilihDaftar.classList.add('hide');
+    window.location.href = `?id=${daftarKe}`;
 }
 
 // Tutup Daftar
 function closeDaftar() {
+    let url = window.location.href;
+    let urlObj = new URL(url);
+
+    urlObj.searchParams.delete("id");
+    window.history.replaceState({}, document.title, urlObj.href);
+    
     kotakDaftar.forEach((box) => box.classList.add('hide'));
     kotakPilihDaftar.classList.remove('hide');
 }
@@ -187,6 +194,19 @@ mainBox.addEventListener('scroll', () => {
         showAside.style.transform = 'translateX(0)';
         resizeIcon.style.transform = 'translateX(0)';
     }, 1000);
+});
+
+// Keep materi on window load
+window.addEventListener('load', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const savedId = urlParams.get('id');
+
+    if (savedId) {
+        let index = savedId - 1;
+        kotakDaftar.forEach((daftar) => daftar.classList.add('hide'));
+        kotakDaftar[index].classList.remove('hide');
+        kotakPilihDaftar.classList.add('hide');
+    }
 });
 
 
