@@ -49,7 +49,11 @@ hsHideCode.addEventListener('click', () => {
             code.style.color = 'transparent';
         });
         hsHiddenCodeBox.style.background = 'transparent';
-        hsOptionIcon.click();
+        hsOptionItem.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add('tx-plus');
+            }, 200 * index);
+        });
     }, 200);
     setTimeout(() => {
         hsHiddenCode.forEach((code) => {

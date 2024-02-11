@@ -206,6 +206,9 @@ window.addEventListener('load', () => {
         kotakDaftar.forEach((daftar) => daftar.classList.add('hide'));
         kotakDaftar[index].classList.remove('hide');
         kotakPilihDaftar.classList.add('hide');
+        if (window.innerWidth <= 768) {
+            showAside.click();
+        }
     }
 });
 
