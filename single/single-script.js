@@ -167,5 +167,47 @@ mainBox.addEventListener('scroll', () => {
     }, 1000);
 });
 
+// Window dark mode
+mainBox.addEventListener('dblclick', () => {
+    mainBox.classList.toggle('dark');
+    if(mainBox.classList.contains('dark')) {
+        mainBox.style.background = 'var(--grey3)';
+        document.querySelectorAll('.card').forEach((box) => {
+            box.style.background = 'var(--grey3)';
+            box.style.color = 'var(--white)';
+            box.style.border = '1px solid var(--grey1)';
+        });
+        document.querySelectorAll('pre').forEach((box) => {
+            box.classList.remove('bg-light');
+            box.style.background = 'var(--grey2)';
+            box.style.color = 'var(--white)';
+            box.style.border = '1px solid var(--grey1)';
+        });
+        document.querySelectorAll('.hiddenText').forEach((box) => {
+            box.style.background = 'var(--grey3)';
+            box.style.color = 'var(--white)';
+        });
+        
+    } else {
+        mainBox.style.background = 'unset';
+        document.querySelectorAll('.card').forEach((box) => {
+            box.style.background = 'unset';
+            box.style.color = 'unset';
+            box.style.border = '1px solid #ddd';
+        });
+        document.querySelectorAll('pre').forEach((box) => {
+            box.classList.add('bg-light');
+            box.style.background = 'unset';
+            box.style.color = 'unset';
+            box.style.border = '1px solid #ddd';
+        });
+        document.querySelectorAll('.hiddenText').forEach((box) => {
+            box.style.background = 'var(--bg-light)';
+            box.style.color = 'unset';
+        });
+    }
+    
+});
+
 
 
