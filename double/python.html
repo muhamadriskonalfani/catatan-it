@@ -4782,10 +4782,10 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p><h6 class="h6">Looping List:</h6> Looping list adalah proses iterasi atau perulangan melalui setiap elemen dalam list untuk melakukan operasi tertentu pada setiap elemen tersebut. Dalam Python, pernyataan for umumnya digunakan untuk melakukan looping melalui list. Berikut adalah contoh penggunaan loop for untuk mengakses setiap elemen dalam list:</p>
-
                                 <dl>
+                                    <dt><h6>Looping List:</h6></dt>
                                     <dd>
+                                        <p>Looping list adalah proses iterasi atau perulangan melalui setiap elemen dalam list untuk melakukan operasi tertentu pada setiap elemen tersebut. Dalam Python, pernyataan for umumnya digunakan untuk melakukan looping melalui list. Berikut adalah contoh penggunaan loop for untuk mengakses setiap elemen dalam list:</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
@@ -4815,11 +4815,10 @@
                                 </dl>
                                 <hr>
 
-
-                                <p><h6 class="h6">Enumerate:</h6> Fungsi enumerate() adalah cara yang berguna untuk mendapatkan indeks dan nilai dari setiap elemen dalam list saat melakukan loop. Ini mengembalikan tupel berisi indeks dan nilai pada setiap iterasi. Berikut adalah contoh penggunaan enumerate():</p>
-
                                 <dl>
+                                    <dt><h6>Enumerate:</h6></dt>
                                     <dd>
+                                        <p>Fungsi enumerate() adalah cara yang berguna untuk mendapatkan indeks dan nilai dari setiap elemen dalam list saat melakukan loop. Ini mengembalikan tupel berisi indeks dan nilai pada setiap iterasi. Berikut adalah contoh penggunaan enumerate():</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
@@ -5836,9 +5835,9 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <ul>
-                                    <li><h6 class="h6">Multi Key Dictionary</h6> <p>Dictionary dapat memiliki beberapa kunci yang menunjuk pada nilai yang sama. Ini memungkinkan Anda untuk mengakses nilai dengan menggunakan salah satu dari beberapa kunci yang valid.</p></li>
-                                    <li><h6 class="h6">Nesting Dictionary</h6> <p>Nesting dictionary mengacu pada praktik menyimpan dictionary di dalam dictionary. Ini memungkinkan Anda untuk membuat struktur data yang lebih kompleks dan terstruktur.</p></li>
+                                <ul class="list-unstyled tx-zero">
+                                    <li><h6>Multi Key Dictionary</h6> <p>Dictionary dapat memiliki beberapa kunci yang menunjuk pada nilai yang sama. Ini memungkinkan Anda untuk mengakses nilai dengan menggunakan salah satu dari beberapa kunci yang valid.</p></li>
+                                    <li><h6>Nesting Dictionary</h6> <p>Nesting dictionary mengacu pada praktik menyimpan dictionary di dalam dictionary. Ini memungkinkan Anda untuk membuat struktur data yang lebih kompleks dan terstruktur.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -5929,7 +5928,17 @@
         BEASISWA = data_mahasiswa[KEY]['beasiswa']
         LAHIR = data_mahasiswa[KEY]['lahir'].strftime("%x")
 
-        print(f"{KEY:&lt;6} {NAMA:&lt;17} {SKS:&lt;3} {BEASISWA:&lt;8} {LAHIR:&lt;10}")
+        print(f"{KEY:&lt;6} {NAMA:&lt;17} {SKS:&lt;3} {BEASISWA:^8} {LAHIR:&lt;10}")
+
+
+
+    # Output:
+
+    # KEY    Nama              SKS Beasiswa Lahir     
+    # --------------------------------------------------
+    # MAH001 Ucup Surucup      130    0     04/10/01  
+    # MAH002 Otong Surotong    140    1     10/10/02  
+    # MAH003 Asep Si Kasyep    100    0     02/29/00  
                                         </pre>
                                     </dd>
                                 </dl>
@@ -5943,40 +5952,12 @@
                     <div class="card-body">
                         <h2>Latihan Dictionary</h2>
                         
-                        <!-- Definisi -->
+                        <!-- Latihan -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Latihan</h5>
                             <div>
-                                <p></p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-                                <p></p>
-
-                                <dl>
-                                    <dt><h6></h6></dt>
-                                    <dd>
-                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                    </dd>
-                                    <dd>
-                                        <div class="hiddenTextBox">
-                                            <div class="hiddenText hide">
-                                                <pre class="card bg-light codeB">
-                                                    
-                                                </pre>
-                                                
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
+                                <p>Berikut adalah latihan dictionary yaitu membuat program sederhana tabel data mahasiswa.</p>
                             </div>
                         </div>
                         </div>
@@ -6011,7 +5992,7 @@
     data_mahasiswa = {}
 
     while True:
-        os.system("clear")  # Menggunakan "clear" untuk membersihkan layar pada Linux/Mac
+        os.system("cls")  # Menggunakan "clear" untuk membersihkan layar pada Linux/Mac
         print(f"{'SELAMAT DATANG':^20}")
         print(f"{'DATA MAHASISWA':^20}")
         print("-" * 20)
@@ -6045,6 +6026,31 @@
             break
 
     print("\nAkhir dari program, terima kasih")
+
+
+
+    # Output
+
+    #    SELAMAT DATANG
+    #    DATA MAHASISWA
+    # --------------------
+    # Nama Mahasiswa: Asep si Kasyep
+    # NIM Mahasiswa: 20121093
+    # SKS Lulus: 90
+    # Tahun lahir (YYYY): 2000
+    # Bulan lahir (1-12): 12
+    # Tanggal lahir (1-31): 30
+
+    # KEY    Nama              NIM      SKS Lulus  Tanggal Lahir
+    # ------------------------------------------------------------
+    # TLYUCI Ucup Surucup      20121092     80      01/01/01 
+    # NVLSXO Otong Surotong    20121091     70      04/20/02 
+    # JAPDIQ Asep si Kasyep    20121093     90      12/30/00 
+
+
+    # Mau tambah lagi bro (y/n)? n
+
+    # Akhir dari program, terima kasih
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6063,21 +6069,22 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Fungsi adalah blok (kumpulan) kode yang dirancang untuk menjalankan tugas tertentu (spesifik) dan dapat dipanggil dari bagian lain dalam program setelah fungsi tersebut dibuat.</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Pengenalan Fungsi -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Pengenalan Fungsi</h5>
                             <div>
-                                <p></p>
+                                <p>Berikut adalah beberapa hal penting yang harus diketahui dalam fungsi Python:</p>
 
                                 <dl>
-                                    <dt><h6></h6></dt>
+                                    <dt><h6>1. Deklarasi Fungsi:</h6></dt>
                                     <dd>
+                                        <p>Fungsi dideklarasikan menggunakan kata kunci def, diikuti oleh nama fungsi dan parameter dalam tanda kurung. Blok kode fungsi diidentasi di bawah deklarasi.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
@@ -6085,13 +6092,200 @@
                                             <div class="hiddenText hide">
                                                 <pre class="card bg-light codeB">
                                                     
+    def contoh_fungsi(parameter1, parameter2):
+        # Blok kode fungsi
+        hasil = parameter1 + parameter2
+        return hasil
                                                 </pre>
-                                                
-                                                <p></p>
                                             </div>
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Memanggil Fungsi</h6></dt>
+                                    <dd>
+                                        <p>Fungsi dipanggil dengan menyebutkan nama fungsi dan memberikan nilai argumen sesuai dengan parameter yang dideklarasikan.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    hasil = contoh_fungsi(10, 20)
+    print(hasil)  # Output: 30
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Parameter dan Argumen</h6></dt>
+                                    <dd>
+                                        <p>Parameter adalah Variabel yang digunakan dalam deklarasi fungsi. Sedangkan Argumen adalah Nilai yang diberikan saat memanggil fungsi.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def tambah(a, b):
+        return a + b
+    
+    hasil = tambah(3, 4)
+    print(hasil)  # Output: 7
+                                                </pre>
+
+                                                <p><i>Dari kode diatas, (a, b) adalah parameter, dan (3, 4) adalah argumen.</i></p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. Nilai Kembalian</h6></dt>
+                                    <dd>
+                                        <p>Fungsi dapat mengembalikan nilai menggunakan kata kunci return. Nilai ini dapat digunakan atau disimpan saat memanggil fungsi.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def kuadrat(x):
+        return x ** 2
+    
+    hasil_kuadrat = kuadrat(5)
+    print(hasil_kuadrat)  # Output: 25
+                                                </pre>
+
+                                                <p><i>Jika tidak ada pernyataan return, fungsi secara implisit mengembalikan None.</i></p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>5. Nilai Default Parameter</h6></dt>
+                                    <dd>
+                                        <p>Parameter dalam fungsi dapat memiliki nilai default yang digunakan jika nilai tidak diberikan saat memanggil fungsi.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def pangkat(base, eksponen=2):
+        return base ** eksponen
+    
+    hasil_default = pangkat(3)
+    hasil_khusus = pangkat(3, 4)
+    
+    print(hasil_default)  # Output: 9
+    print(hasil_khusus)   # Output: 81
+                                                </pre>
+                                                
+                                                <p><i>Dengan menggunakan default parameter, saat pemanggilan fungsi, jika argumen 'eksponen' tidak diisi, maka fungsi akan menggunakan nilai default parameter yang sudah didefinisikan saat deklarasi fungsi.</i></p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>6. Fungsi Lambda</h6></dt>
+                                    <dd>
+                                        <p>Fungsi lambda adalah fungsi kecil yang didefinisikan tanpa menggunakan kata kunci def. Mereka sering digunakan untuk fungsi sederhana.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    kali_dua = lambda x: x * 2
+    hasil = kali_dua(4)
+    print(hasil)  # Output: 8
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>7. Fungsi Rekursif</h6></dt>
+                                    <dd>
+                                        <p>Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def faktorial(n):
+        if n == 0 or n == 1:
+            return 1
+        else:
+            return n * faktorial(n-1)
+    
+    hasil_faktorial = faktorial(5)
+    print(hasil_faktorial)  # Output: 120
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>8. Dokumentasi Fungsi</h6></dt>
+                                    <dd>
+                                        <p>Dokumentasi fungsi dapat ditambahkan menggunakan docstring (string dokumentasi) untuk memberikan penjelasan tentang fungsi tersebut.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def fungsi_dengan_dokumentasi(x, y):
+        """
+        Fungsi ini menambahkan dua bilangan.
+    
+        :param x: Bilangan pertama.
+        :param y: Bilangan kedua.
+        :return: Hasil penambahan x dan y.
+        """
+        return x + y
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>9. Variabel Scope</h6></dt>
+                                    <dd>
+                                        <ul style="list-style: circle;">
+                                            <li>Variabel yang didefinisikan di dalam fungsi bersifat lokal ke fungsi tersebut (kecuali variabel global).</li>
+                                            <li>Variabel luar fungsi tidak dapat diakses di dalam fungsi, kecuali jika dideklarasikan sebagai global.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                
+                                <p>Ini adalah beberapa konsep dasar tentang fungsi dalam Python. Fungsi sangat penting dalam pengembangan perangkat lunak karena membantu dalam organisasi dan pengelolaan kode.</p>
                             </div>
                         </div>
                         </div>
@@ -6103,81 +6297,7 @@
                             <div>
                                 <dl>
                                     <dt>
-                                        <h6 class="h6">1. latihan_fungsi.py</h6>
-                                    </dt>
-                                    <dd>
-                                        <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
-                                    </dd>
-                                    <dd class="hiddenCode hide">
-                                        <div class="hide-code"><i class="fas fa-times"></i></div>
-                                        <pre class="card codeB code-box">
-                                        
-    '''Program data mahasiswa menggunakan dictionary'''
-    import datetime
-    import os
-    import string
-    import random
-
-    # fungsi Header
-    def header():
-        # os.system("cls") # untuk windows
-        os.system("clear")
-        print(f"{'SELAMAT DATANG':^20}")
-        print(f"{'DATA MAHASISWA':^20}")
-        print(f"{'TAHUN 2045':^20}")
-        print("-"*20)
-
-    # template dict mahasiswa
-    mahasiswa_template = {
-        'nama':'nama',
-        'nim':'00000000',
-        'sks_lulus':0,
-        'lahir':datetime.datetime(1111,1,11)
-    }
-
-    data_mahasiswa = {}
-
-    while True:
-        
-        header()
-        mahasiswa = dict.fromkeys(mahasiswa_template.keys())
-        mahasiswa['nama'] = input("Nama Mahasiswa: ")
-        mahasiswa['nim'] = input("NIM Mahasiswa: ")
-        mahasiswa['sks_lulus'] = int(input("SKS Lulus: "))
-        TAHUN_LAHIR = int(input("Tahun lahir (YYYY): "))
-        BULAN_LAHIR = int(input("Bulan lahir (1-12): "))
-        TANGGAL_LAHIR = int(input("Tanggal lahir (1-31): "))
-        mahasiswa['lahir'] = datetime.datetime(TAHUN_LAHIR,BULAN_LAHIR,TANGGAL_LAHIR)
-
-        KEY = ''.join((random.choice(string.ascii_uppercase) for i in range(6)))
-        data_mahasiswa.update({KEY:mahasiswa})
-
-        # dari tutorial sebelumnya, hilangkan beasiswa
-        # print(f"\n{'KEY':&lt;6} {'Nama':&lt;17} {'NIM':&lt;8} {'SKS Lulus':&lt;10} {'Tanggal Lahir':&lt;10}")
-        # print('-'*60)
-
-        for mahasiswa in data_mahasiswa:
-            KEY = mahasiswa
-            NAMA = data_mahasiswa[KEY]['nama']
-            NIM = data_mahasiswa[KEY]['nim']
-            SKS = data_mahasiswa[KEY]['sks_lulus']
-            LAHIR = data_mahasiswa[KEY]['lahir'].strftime("%x")
-            
-            print(f"{KEY:&lt;6} {NAMA:&lt;17} {NIM:&lt;8} {SKS:^10} {LAHIR:^10}")
-
-        print("\n")
-        is_done = input("Mau tambah lagi bro (y/n)? ")
-        if is_done == "n":
-            break
-
-    print("\nAkhir dari program, terima kasih")
-                                        </pre>
-                                    </dd>
-                                </dl>
-
-                                <dl>
-                                    <dt>
-                                        <h6 class="h6">2. main_app.py</h6>
+                                        <h6 class="h6">main_app.py</h6>
                                     </dt>
                                     <dd>
                                         <button class="btn btn-outline-primary btn-sm" name="hiddenCode">tampilkan kode</button>
@@ -6204,6 +6324,18 @@
         print("Ini adalah fungsi")
 
     fungsi()
+
+
+
+    # Output
+
+    # hello world
+    # Kepada Ucup Surucup
+    # Dan juga kepada Otong Surotong
+    # hello world
+    # Kepada Ucup Surucup
+    # Dan juga kepada Otong Surotong
+    # Ini adalah fungsi
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6222,7 +6354,7 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Argumen adalah nilai atau variabel yang diberikan ke fungsi saat dipanggil, dan mereka memungkinkan kita untuk memberikan informasi atau data ke dalam fungsi.</p>
                             </div>
                         </div>
                         </div>
@@ -6232,11 +6364,12 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p> Fungsi dapat menerima argumen sebagai input, melakukan operasi, dan mengembalikan nilai sebagai output. Fungsi dapat memiliki beberapa jenis argumen, yaitu:</p>
 
                                 <dl>
-                                    <dt><h6></h6></dt>
+                                    <dt><h6>1. Argumen Posisional:</h6></dt>
                                     <dd>
+                                        <p>Argumen-posisional adalah argumen yang disediakan berdasarkan posisi mereka dalam daftar argumen saat pemanggilan fungsi.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
@@ -6244,13 +6377,110 @@
                                             <div class="hiddenText hide">
                                                 <pre class="card bg-light codeB">
                                                     
+    def tambah(a, b):
+        hasil = a + b
+        return hasil
+    
+    print(tambah(2, 3))  # Output: 5
                                                 </pre>
-                                                
-                                                <p></p>
                                             </div>
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
+                                
+                                <dl>
+                                    <dt><h6>2. Argumen Kata Kunci (Keyword Arguments):</h6></dt>
+                                    <dd>
+                                        <p>Argumen kata kunci disediakan dengan menyertakan nama variabel saat pemanggilan fungsi.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def biodata(nama, usia):
+        print(f"Nama: {nama}, Usia: {usia} tahun")
+    
+    biodata(nama="John", usia=25)
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Argumen Default:</h6></dt>
+                                    <dd>
+                                        <p>Fungsi dapat memiliki nilai default untuk argumen. Jika nilai tidak diberikan saat pemanggilan fungsi, nilai default akan digunakan.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def sapa(nama="Pengguna"):
+        print(f"Halo, {nama}!")
+    
+    sapa()           # Output: Halo, Pengguna!
+    sapa("John")     # Output: Halo, John!
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. Argumen Varargs:</h6></dt>
+                                    <dd>
+                                        <p>Fungsi dapat menerima jumlah argumen yang tidak terbatas dengan menggunakan *args untuk argumen posisional atau **kwargs untuk argumen kata kunci.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def jumlahkan(*angka):
+        total = sum(angka)
+        return total
+    
+    print(jumlahkan(1, 2, 3, 4))  # Output: 10
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>5. Argumen Pengembalian (Return Value):</h6></dt>
+                                    <dd>
+                                        <p>Fungsi dapat mengembalikan nilai menggunakan pernyataan return. Nilai ini dapat digunakan oleh pemanggil fungsi.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def kuadrat(angka):
+        return angka ** 2
+    
+    hasil = kuadrat(5)
+    print(hasil)  # Output: 25
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <p>Menggunakan argumen memungkinkan fleksibilitas dan modularitas dalam desain kode Python.</p>
                             </div>
                         </div>
                         </div>
@@ -6302,6 +6532,18 @@
     anggota_boyband = ["Ucup","Otong","Dudung"]
 
     say_hi(anggota_boyband)
+
+
+
+    # Output
+
+    # Selamat datang dunia wahai ucup
+    # Selamat datang dunia wahai Asyep
+    # 1 + 5 = 6
+    # 100000 + 1 = 100001
+    # Yang terhormat Ucup
+    # Yang terhormat Otong
+    # Yang terhormat Dudung
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6320,21 +6562,22 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>fungsi dengan return digunakan untuk mengembalikan nilai dari fungsi tersebut kepada pemanggil. Ini memungkinkan nilai yang dihasilkan di dalam fungsi untuk digunakan di tempat di mana fungsi itu dipanggil.</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Fungsi Dengan Return -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Fungsi Dengan Return</h5>
                             <div>
-                                <p></p>
+                                <p>Berikut adalah beberapa hal yang perlu dipahami tentang fungsi dengan return di Python:</p>
 
                                 <dl>
-                                    <dt><h6></h6></dt>
+                                    <dt><h6>1. Penggunaan return</h6></dt>
                                     <dd>
+                                        <p>return digunakan untuk mengembalikan nilai dari fungsi ke pemanggilnya. Nilai yang dikembalikan dapat berupa tipe data apa pun, seperti angka, string, list, tuple, atau objek kustom.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
@@ -6342,13 +6585,95 @@
                                             <div class="hiddenText hide">
                                                 <pre class="card bg-light codeB">
                                                     
+    def tambah(a, b):
+        hasil = a + b
+        return hasil
+
+    # Memanggil fungsi
+    hasil_penambahan = tambah(3, 5)
+
+    print("Hasil penambahan:", hasil_penambahan)
                                                 </pre>
-                                                
-                                                <p></p>
                                             </div>
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Menggunakan Nilai Kembalian:</h6></dt>
+                                    <dd>
+                                        <p>Nilai yang dikembalikan oleh fungsi dapat disimpan dalam variabel atau digunakan langsung dalam ekspresi atau pernyataan lainnya.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def kuadrat(angka):
+        return angka ** 2
+
+    nilai = 4
+    hasil_kuadrat = kuadrat(nilai)
+
+    print("Kuadrat dari", nilai, "adalah", hasil_kuadrat)
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Fungsi Tanpa Return:</h6></dt>
+                                    <dd>
+                                        <p>Fungsi juga dapat tidak memiliki pernyataan return. Dalam hal ini, fungsi dianggap mengembalikan nilai khusus bernama None.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def contoh_tanpa_return():
+        print("Fungsi tanpa return")
+
+    hasil = contoh_tanpa_return()
+    print("Hasil:", hasil)  # Output: Hasil: None
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>4. Menggunakan Multiple Return Values:</h6></dt>
+                                    <dd>
+                                        <p>Fungsi juga dapat mengembalikan lebih dari satu nilai dengan menggunakan tuple atau tipe data lainnya.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def bagi_dan_sisa(a, b):
+        hasil_bagi = a // b
+        sisa = a % b
+        return hasil_bagi, sisa
+
+    hasil, sisa = bagi_dan_sisa(10, 3)
+    print("Hasil Bagi:", hasil)
+    print("Sisa:", sisa)
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <p>Penggunaan return sangat penting karena memungkinkan nilai yang dihasilkan dari suatu fungsi untuk digunakan di tempat lain dalam program, meningkatkan modularitas dan fleksibilitas kode.</p>
                             </div>
                         </div>
                         </div>
@@ -6381,12 +6706,12 @@
         return output_kuadrat
 
     y = kuadrat(5)
-    print(y)
+    print(y) # Output: 25
 
-    print(kuadrat(6))
+    print(kuadrat(6)) # Output: 36
 
     z = 10 + kuadrat(7)
-    print(z)
+    print(z) # Output: 59
 
     # fungsi tambah
 
@@ -6395,7 +6720,7 @@
         return angka_1 + angka_2
 
     a = fungsi_tambah(10,8)
-    print(a)
+    print(a) # Output: 18
 
     # fungsi dengan return banyak
 
@@ -6409,10 +6734,10 @@
 
     k,l,m,n = operasi_matematika(9,5)
 
-    print(f"Hasil tambah = {k}")
-    print(f"Hasil kurang = {l}")
-    print(f"Hasil kali = {m}")
-    print(f"Hasil bagi = {n}")
+    print(f"Hasil tambah = {k}") # Output: 14
+    print(f"Hasil kurang = {l}") # Output: 4
+    print(f"Hasil kali = {m}") # Output: 45
+    print(f"Hasil bagi = {n}") # Output: 1.8
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6431,20 +6756,19 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Fungsi pada Python memungkinkan pengguna untuk mendefinisikan parameter dengan nilai default. Parameter dengan nilai default memungkinkan pengguna untuk memanggil fungsi tanpa menyediakan nilai untuk parameter tersebut, sehingga nilai default akan digunakan sebagai gantinya.</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Default Argument Fungsi -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Default Argument Fungsi</h5>
                             <div>
-                                <p></p>
+                                <p>Berikut adalah contoh penggunaan default argument dalam fungsi Python:</p>
 
                                 <dl>
-                                    <dt><h6></h6></dt>
                                     <dd>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
@@ -6453,9 +6777,17 @@
                                             <div class="hiddenText hide">
                                                 <pre class="card bg-light codeB">
                                                     
+    def hitung_pangkat(angka, pangkat=2):
+        hasil = angka**pangkat
+        return hasil
+
+    print(hitung_pangkat(2,4)) # Output: 16
+
+    hasil = hitung_pangkat(pangkat=3, angka=5)
+    print(hasil) # Output: 125
                                                 </pre>
-                                                
-                                                <p></p>
+
+                                                <p><i>Dari kode diatas parameter pangkat didefinisikan bernilai 2, ketika pemanggilan fungsi jika argumen hanya ada satu maka fungsi akan mengganti nilai argumen kedua dengan nilai yang sudah didefinisikan.</i></p>
                                             </div>
                                         </div>
                                     </dd>
@@ -6488,16 +6820,16 @@
         print(f"Hallo {nama}")
 
 
-    say_hello("Ucup")
-    say_hello()
+    say_hello("Ucup") # Output: Hallo Ucup
+    say_hello() # Output: Hallo Ganteng
 
     #contoh 2
     def sapa_dia(nama, pesan = "Apa kabar?"):
         '''fungsi dengan satu input biasa, dan satu default argument'''
         print(f"hai {nama}, {pesan}")
 
-    sapa_dia("Dudung","Hai Ganteeeng")
-    sapa_dia("Otong")
+    sapa_dia("Dudung","Hai Ganteeeng") # Output: hai Dudung, Hai Ganteeeng
+    sapa_dia("Otong") # Output: hai Otong, Apa kabar?
 
     #contoh 3
 
@@ -6505,10 +6837,10 @@
         hasil = angka**pangkat
         return hasil
 
-    print(hitung_pangkat(2,4))
+    print(hitung_pangkat(2,4)) # Output: 16
 
     hasil = hitung_pangkat(pangkat=3, angka=5)
-    print(hasil)
+    print(hasil) # Output: 125
 
     # contoh 4
 
@@ -6517,8 +6849,8 @@
         hasil = input1 + input2 + input3 + input4
         return hasil
 
-    print(fungsi())
-    print(fungsi(input3=10))
+    print(fungsi()) # Output: 10
+    print(fungsi(input3=10)) # Output: 17
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6532,40 +6864,12 @@
                     <div class="card-body">
                         <h2>Latihan Fungsi</h2>
                         
-                        <!-- Definisi -->
+                        <!-- Latihan -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Latihan</h5>
                             <div>
-                                <p></p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-                                <p></p>
-
-                                <dl>
-                                    <dt><h6></h6></dt>
-                                    <dd>
-                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                    </dd>
-                                    <dd>
-                                        <div class="hiddenTextBox">
-                                            <div class="hiddenText hide">
-                                                <pre class="card bg-light codeB">
-                                                    
-                                                </pre>
-                                                
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
+                                <p>Berikut adalah latihan fungsi untuk membuat program sederhana menghitung luas dan keliling persegi panjang.</p>
                             </div>
                         </div>
                         </div>
@@ -6590,8 +6894,8 @@
     # program menghitung luas dan keliling persegi panjang
     
     # # Membuat header program
-    # os.system("clear")
-    # # os.system("cls")
+    # # os.system("clear")
+    # os.system("cls")
     # print(f"{'PROGRAM MENGHITUNG LUAS':^40}")
     # print(f"{'DAN KELILING PERSEGI PANJANG':^40}")
     # print(f"{'-'*40:^40}")
@@ -6610,8 +6914,8 @@
     
     def header():
         '''fungsi Header'''
-        os.system("clear")
-        # os.system("cls")
+        # os.system("clear")
+        os.system("cls")
         print(f"{'PROGRAM MENGHITUNG LUAS':^40}")
         print(f"{'DAN KELILING PERSEGI PANJANG':^40}")
         print(f"{'-'*40:^40}")
@@ -6652,6 +6956,17 @@
             break
     
     print("Program selesai, terima kasih")
+
+
+
+    # Output
+
+    # Masukan nilai lebar: 124
+    # Masukan nilai panjang: 125
+    # hasil perhitungan luas = 15500
+    # hasil perhitungan keliling = 498
+    # apakah lanjut (y/n)? n
+    # Program selesai, terima kasih
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6670,35 +6985,75 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Type hints adalah cara untuk menyertakan informasi tentang tipe data yang diharapkan atau diinginkan oleh suatu fungsi, metode, atau variabel dalam Python. Ini memungkinkan pengembang untuk memberikan petunjuk kepada pembaca kode tentang tipe data yang seharusnya digunakan atau dihasilkan oleh suatu fungsi atau metode.</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Type Hints pada Fungsi -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Type Hints pada Fungsi</h5>
                             <div>
-                                <p></p>
+                                <p>Pada Python, type hints tidak mempengaruhi pelaksanaan kode, artinya interpreter Python tidak memeriksa atau menerapkan tipe data secara ketat. Namun, mereka memberikan manfaat dalam pengembangan dan pemeliharaan kode karena dapat membantu:</p>
 
-                                <dl>
-                                    <dt><h6></h6></dt>
-                                    <dd>
-                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                    </dd>
-                                    <dd>
-                                        <div class="hiddenTextBox">
-                                            <div class="hiddenText hide">
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <dl>
+                                            <dt><h6>1. Dokumentasi Kode:</h6></dt>
+                                            <dd>
+                                                <p>Type hints dapat berfungsi sebagai dokumentasi tambahan untuk fungsi atau metode, membantu pembaca untuk memahami tipe data yang diharapkan.</p>
+                                            </dd>
+                                        </dl>
+
+                                        <dl>
+                                            <dt><h6>2. Alat Analisis Statis:</h6></dt>
+                                            <dd>
+                                                <p>Beberapa alat seperti MyPy dapat menggunakan type hints untuk melakukan analisis statis terhadap kode, menangkap potensi kesalahan tipe data pada tahap pengembangan.</p>
+                                            </dd>
+                                            <dd>
+                                                <p>Contoh penggunaan type hints pada fungsi:</p>
                                                 <pre class="card bg-light codeB">
                                                     
+    def greet(name: str) -> str:
+        return "Hello, " + name
                                                 </pre>
-                                                
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
+                                                <p>Penjelasan</p>
+                                                <ul>
+                                                    <li>name: str: Ini mengindikasikan bahwa parameter name seharusnya bertipe data string.</li>
+                                                    <li>-> str: Ini mengindikasikan bahwa fungsi ini seharusnya mengembalikan nilai bertipe data string.</li>
+                                                </ul>
+
+                                                <p>Contoh penggunaan pada variabel:</p>
+                                                <pre class="card bg-light codeB">
+
+    age: int = 25
+                                                </pre>
+                                                <p>Penjelasan</p>
+                                                <ul>
+                                                    <li>age: int: Ini mengindikasikan bahwa variabel age seharusnya bertipe data integer.</li>
+                                                </ul>
+
+                                                <p>Type hints dapat digunakan untuk berbagai tipe data, termasuk tipe data bawaan seperti int, float, str, serta tipe data kustom yang didefinisikan oleh pengguna dengan menggunakan modul typing. Berikut adalah contoh penggunaan type hints dengan tipe data kustom:</p>
+                                                <pre class="card bg-light codeB">
+
+    from typing import List
+
+    def square_all(numbers: List[int]) -> List[int]:
+        return [num ** 2 for num in numbers]
+                                                </pre>
+                                                <p>Penjelasan</p>
+                                                <ul>
+                                                    <li>numbers: List[int]: Ini mengindikasikan bahwa parameter numbers seharusnya bertipe data List yang berisi elemen-elemen bertipe data integer.</li>
+                                                    <li>-> List[int]: Ini mengindikasikan bahwa fungsi ini seharusnya mengembalikan nilai bertipe data List yang berisi elemen-elemen bertipe data integer.</li>
+                                                </ul>
+
+                                                <p>Selain itu, type hints juga dapat digunakan untuk mendukung konsep generics dan anotasi tipe data yang lebih kompleks.</p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -6741,12 +7096,12 @@
         return output
     
     HASIL = sepuluh_pangkat(4)
-    print(HASIL)
+    print(HASIL) # Output: 10000
     
     def display(argument:string):
         print(argument)
     
-    display("Ucup")
+    display("Ucup") # Output: Ucup
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6765,20 +7120,19 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Fungsi dengan args adalah jenis fungsi yang memungkinkan untuk menangani jumlah argumen yang tidak diketahui sebelumnya. Dengan menggunakan *args, kita dapat menyatakan bahwa fungsi tersebut dapat menerima sejumlah argumen positional yang tidak terbatas.</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Fungsi Dengan args -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Fungsi Dengan args</h5>
                             <div>
-                                <p></p>
+                                <p>Berikut adalah contoh penggunaan fungsi dengan args dalam Python:</p>
 
                                 <dl>
-                                    <dt><h6></h6></dt>
                                     <dd>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
@@ -6787,9 +7141,28 @@
                                             <div class="hiddenText hide">
                                                 <pre class="card bg-light codeB">
                                                     
+    def contoh_fungsi(*args):
+        for arg in args:
+            print(arg)
+
+    # Memanggil fungsi dengan beberapa argumen
+    contoh_fungsi(1, 2, 3, "empat", 5.5)
                                                 </pre>
-                                                
-                                                <p></p>
+                                                <p><i>Kode diatas akan menghasilkan output berupa semua nilai yang dimasukan sebagai argumen saat pemanggilan fungsi.</i></p>
+
+                                                <p>Contoh lain penggunaan *args dalam fungsi:</p>
+                                                <pre class="card bg-light codeB">
+
+    def jumlahkan(*args):
+        total = 0
+        for angka in args:
+            total += angka
+        return total
+
+    hasil = jumlahkan(1, 2, 3, 4, 5)
+    print("Total:", hasil)
+                                                </pre>
+                                                <p><i>Dalam contoh ini, jumlahkan dapat menerima sejumlah argumen yang berbeda, dan hasilnya adalah penjumlahan dari semua angka yang diberikan saat pemanggilan fungsi.</i></p>
                                             </div>
                                         </div>
                                     </dd>
@@ -6854,6 +7227,16 @@
 
     hasil = tambah(10,5,15)
     print(f"hasil = {hasil}")
+
+
+
+    # Output
+
+    # ucup punya tinggi 170 dan berat 40
+    # otong punya tinggi 100 dan berat 120
+    # dudung punya tinggi 120 dan berat 120
+    # hasil = 45
+    # hasil = 30
                                         </pre>
                                     </dd>
                                 </dl>
@@ -6872,21 +7255,22 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Fungsi dengan kwargs (singkatan dari "keyword arguments") adalah salah satu fitur yang memungkinkan Anda untuk mengirimkan argumen ke dalam fungsi Python menggunakan nama parameter dan nilai yang sesuai. kwargs memungkinkan Anda untuk menangani argumen fungsi dengan cara yang lebih fleksibel, karena Anda dapat mengirimkannya dalam bentuk pasangan kunci-nilai, dan fungsi akan menerimanya sebagai kamus (dictionary).</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Fungsi Dengan kwargs -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Fungsi Dengan kwargs</h5>
                             <div>
-                                <p></p>
+                                <p>Berikut adalah beberapa langkah untuk menjelaskan cara menggunakan kwargs dalam fungsi Python:</p>
 
                                 <dl>
-                                    <dt><h6></h6></dt>
+                                    <dt><h6>1. Mendefinisikan Fungsi:</h6></dt>
                                     <dd>
+                                        <p>Gunakan dua tanda bintang (**) diikuti oleh nama parameter yang ingin Anda gunakan (biasanya menggunakan kwargs, atau sesuai keinginan).</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
@@ -6894,13 +7278,69 @@
                                             <div class="hiddenText hide">
                                                 <pre class="card bg-light codeB">
                                                     
+    def contoh_fungsi(**kwargs):
+        # Isi fungsi akan menggunakan kwargs
+        for k, v in kwargs.items():
+            print(f"{k}: {v}")
                                                 </pre>
-                                                
-                                                <p></p>
                                             </div>
                                         </div>
                                     </dd>
                                 </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>2. Memanggil Fungsi dengan kwargs:</h6></dt>
+                                    <dd>
+                                        <p>Saat memanggil fungsi, Anda dapat menuliskan argumen dalam bentuk pasangan kunci-nilai. Ini akan dikumpulkan oleh parameter kwargs dalam bentuk dictionary.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    contoh_fungsi(nama="John", umur=25, pekerjaan="Programmer")
+                                                </pre>
+                                                
+                                                <p>Dalam contoh ini, kita memanggil fungsi contoh_fungsi dengan tiga pasangan kunci-nilai yang berbeda.</p>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt><h6>3. Mengakses Nilai di Dalam Fungsi:</h6></dt>
+                                    <dd>
+                                        <p>Dalam tubuh fungsi, kwargs akan dianggap sebagai dictionary. Oleh karena itu, Anda dapat mengakses nilai-nilai tersebut menggunakan kunci.</p>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                    </dd>
+                                    <dd>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <pre class="card bg-light codeB">
+                                                    
+    def contoh_fungsi(**kwargs):
+        for k, v in kwargs.items():
+            print(f"{k}: {v}")
+
+    contoh_fungsi(nama="John", umur=25, pekerjaan="Programmer")
+                                                </pre>
+
+                                                <p>Output yang dihasilkan dari contoh ini akan mencetak:</p>
+                                                <pre class="card bg-light codeB">
+                                                    
+    nama: John
+    umur: 25
+    pekerjaan: Programmer
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                                
+                                <p>Dengan menggunakan kwargs, Anda dapat memproses jumlah argumen yang tidak diketahui sebelumnya dan memberikan fleksibilitas yang lebih besar dalam pemrograman Python.</p>
                             </div>
                         </div>
                         </div>
@@ -6976,31 +7416,69 @@
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p></p>
+                                <p>Di Python, fungsi anonymous adalah fungsi yang didefinisikan tanpa nama. Kata kunci lambda digunakan untuk membuat fungsi anonymous. Fungsi lambda berguna ketika Anda membutuhkan fungsi kecil yang hanya digunakan sekali untuk periode singkat, dan Anda tidak ingin mendefinisikannya secara resmi menggunakan kata kunci def.</p>
                             </div>
                         </div>
                         </div>
 
-                        <!-- Definisi -->
+                        <!-- Anonymous & Lambda Function -->
                         <div class="card mb-4">
                         <div class="card-body">
-                            <h5>Definisi</h5>
+                            <h5>Anonymous & Lambda Function</h5>
                             <div>
-                                <p></p>
+                                <p>Berikut adalah Sintaks dari fungsi lambda:</p>
+                                <pre class="card bg-light codeB">
 
+    lambda argumen: ekspresi
+                                </pre>
+                                <p>Contoh:</p>
+                                <pre class="card bg-light codeB">
+
+    tambah = lambda x, y: x + y
+    print(tambah(3, 5))  # Output: 8
+                                </pre>
+                                <p>Di sini, lambda x, y: x + y adalah fungsi lambda yang mengambil dua argumen (x dan y) dan mengembalikan hasil penjumlahan mereka.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Fungsi Anonymous (Lambda Functions): -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Fungsi Anonymous (Lambda Functions):</h5>
+                            <div>
                                 <dl>
-                                    <dt><h6></h6></dt>
                                     <dd>
+                                        <p>Berikut adalah beberapa penjelasan tentang penggunaan, keuntungan, dan kerugian menggunakan fungsi lambda.</p>
                                         <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
                                     </dd>
                                     <dd>
                                         <div class="hiddenTextBox">
                                             <div class="hiddenText hide">
-                                                <pre class="card bg-light codeB">
-                                                    
-                                                </pre>
-                                                
-                                                <p></p>
+                                                <ul>
+                                                    <li>Penggunaan:
+                                                        <ul>
+                                                            <li>Praktis untuk operasi pendek dan sederhana.</li>
+                                                            <li>Sering digunakan sebagai argumen untuk fungsi-fungsi berorde tinggi.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Keuntungan:
+                                                        <ul>
+                                                            <li>Ringkas dan tidak memerlukan definisi terpisah.</li>
+                                                            <li>Berguna untuk fungsi yang hanya digunakan sekali.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Kerugian:
+                                                        <ul>
+                                                            <li>Terbatas pada satu ekspresi.</li>
+                                                            <li>Mungkin kurang mudah dibaca untuk operasi yang kompleks.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </dd>
