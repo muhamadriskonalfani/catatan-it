@@ -167,17 +167,5 @@ mainBox.addEventListener('scroll', () => {
     }, 1000);
 });
 
-// Italic font style
-document.querySelectorAll('h2').forEach((title) => {
-    title.addEventListener('dblclick', () => {
-        mainBox.classList.toggle('italic');
-        if (mainBox.classList.contains('italic')) {
-            document.querySelector('*').style.fontStyle = 'italic';
-        } else {
-            document.querySelector('*').style.fontStyle = 'normal';
-        }
-    });
-});
-
 
 
