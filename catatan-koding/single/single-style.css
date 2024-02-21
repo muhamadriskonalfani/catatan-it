@@ -78,6 +78,13 @@ body {
     background: var(--grey1);
 }
 
+.grid-single .aside .aside-content button.exit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .6rem;
+}
+
 
 /* Main */
 
