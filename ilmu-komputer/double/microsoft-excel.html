@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Office</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .table-formula {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            width: 100%;
+            min-height: 100vh;
+            background: white;
+        }
+
+        .table-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            width: 808px;
+        }
+
+        .table-container .table-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: 500;
+            border: 1px solid black;
+            padding: 1rem 0;
+            cursor: pointer;
+            width: 200px;
+            transition: .2s;
+        }
+
+        .table-container .table-item:hover {
+            background: #ddd;
+            letter-spacing: 1px;
+        }
+
+
+        .formula {
+            position: relative;
+        }
+
+        .formula .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .formula .title .close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+
+        .hide {
+            display: none;
+        }
+
+        
+        @media (max-width:768px) {
+
+            .table-container {
+                width: unset;
+            }
+
+            .table-container .table-item {
+                width: 145px;
+            }
+
+            .table-container .table-item:hover {
+                letter-spacing: unset;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+
+            <!-- tabel formula -->
+
+            <div class="table-formula">
+                <div class="table-container">
+                    <div class="table-item">SUM</div>
+                    <div class="table-item">SUMIF</div>
+                    <div class="table-item">SUMIFS</div>
+                    <div class="table-item">VLOOKUP</div>
+                    <div class="table-item">AVERAGE</div>
+                    <div class="table-item">AVERAGEIF</div>
+                    <div class="table-item">AVERAGEIFS</div>
+                    <div class="table-item">HLOOKUP</div>
+                    <div class="table-item">MAX</div>
+                    <div class="table-item">MIN</div>
+                    <div class="table-item">LARGE</div>
+                    <div class="table-item">XLOOKUP</div>
+                    <div class="table-item">SMALL</div>
+                    <div class="table-item">IF</div>
+                    <div class="table-item">COUNT</div>
+                    <div class="table-item">CONCECATENATE</div>
+                    <div class="table-item">COUNTBLANK</div>
+                    <div class="table-item">COUNTA</div>
+                    <div class="table-item">COUNTIF</div>
+                    <div class="table-item">COUNTIFS</div>
+                    <div class="table-item">PROPER</div>
+                    <div class="table-item">UPPER</div>
+                    <div class="table-item">LOWER</div>
+                    <div class="table-item">LEN</div>
+                    <div class="table-item">LEFT</div>
+                    <div class="table-item">MID</div>
+                    <div class="table-item">RIGHT</div>
+                    <div class="table-item">TRIM</div>
+                </div>
+            </div>
+            
+            <!-- deskripsi formula -->
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>SUM</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUM adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>SUMIF</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>SUMIFS</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIFS adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>VLOOKUP</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>AVERAGE</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>AVERAGEIF</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>AVERAGEIFS</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>HLOOKUP</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>MAX</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>MIN</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>LARGE</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>XLOOKUP</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>SMALL</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>IF</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>COUNT</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>CONCECATENATE</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>COUNTBLANK</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>COUNTA</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>COUNTIF</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>COUNTIFS</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>PROPER</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>UPPER</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>LOWER</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>LEN</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>LEFT</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>MID</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>RIGHT</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body formula hide">
+                <div class="title">
+                    <h2>TRIM</h2>
+                    <div class="close"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Definisi -->
+                <div class="card card-body">
+                    <h5>Definisi</h5>
+                    <div>
+                        <p>SUMIF adalah </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const tableFormula = document.querySelector('.table-formula');
+        const formula = document.querySelectorAll('.table-formula .table-item');
+        const descFormula = document.querySelectorAll('.formula');
+        const closeDesc = document.querySelectorAll('.formula .close');
+        
+        formula.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                tableFormula.classList.add('hide');
+                descFormula[index].classList.remove('hide');
+            })
+        })
+
+        closeDesc.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                descFormula.forEach((box) => box.classList.add('hide'));
+                tableFormula.classList.remove('hide');
+            })
+        })
+
+
+
+    </script>
+</body>
+</html>
