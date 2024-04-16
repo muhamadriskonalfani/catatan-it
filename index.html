@@ -33,17 +33,7 @@
             width: 100vw;
             height: 100vh;
             overflow: hidden;
-            background: var(--grey3);
-        }
-        
-        video {
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            overflow: hidden;
-            z-index: -1;
+            background: var(--white);
         }
         
         .container-fluid {
@@ -63,7 +53,7 @@
         .container-fluid .page-title {
             font-size: 2rem;
             font-weight: 500;
-            color: var(--white);
+            color: var(--grey3);
             cursor: pointer;
             padding: 0 .2rem;
             padding-top: .2rem;
@@ -123,11 +113,6 @@
         /* Responsive */
 
         @media (max-width:768px) {
-            
-            video {
-                width: unset;
-                height: 100vh;
-            }
 
         }
         
@@ -135,10 +120,6 @@
     </style>
 </head>
 <body>
-    <video autoplay muted loop>
-        <source src="assets/video/background.mp4" type="video/mp4">
-    </video>
-
     <div class="container-fluid">
         <!-- Judul Halaman -->
         <div class="page-title" id="catatan">Catatan IT</div>
@@ -151,6 +132,9 @@
                 </div>
                 <div class="link">
                     <a class="btn btn-secondary" href="ilmu-komputer/index.html">Ilmu Komputer</a>
+                </div>
+                <div class="link">
+                    <a class="btn btn-secondary" href="rekap-perkuliahan/index.html">Rekap Perkuliahan</a>
                 </div>
             </div>
         </div>
