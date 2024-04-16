@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 :root {
     --white: #fff;
     --grey1: #666;
@@ -7,6 +9,10 @@
     
     /* --border: 1px solid black; */
     --border: none;
+}
+
+* {
+    font-family: "Comfortaa", sans-serif;
 }
 
 *::-webkit-scrollbar {
@@ -19,7 +25,11 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: var(--white);
+    background: var(--bg-light);
+}
+
+.card {
+    background: var(--bg-light);
 }
 
 .container-fluid {
@@ -90,7 +100,7 @@ body {
 
 .grid-single .main {
     grid-area: main;
-    background: var(--white);
+    background: var(--bg-light);
     padding: 1rem;
     height: 100vh;
     overflow: auto;
@@ -309,7 +319,7 @@ h6.h6 {
     transform: translate(-200%, -50%);
     width: 80vw;
     height: 80vh;
-    background: var(--white);
+    background: var(--bg-light);
     color: var(--grey3);
     transition: .6s;
     z-index: 3;
