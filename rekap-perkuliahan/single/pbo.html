@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBO</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css custom link -->
+    <link rel="stylesheet" href="single-style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-single">
+            <!-- Aside box -->
+            <div class="aside">
+                <div class="aside-content">
+                    <ul class="list-unstyled">
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa Itu PBO</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">Paradigma Pemrograman</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">Pemrograman Prosedural</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">-</button> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main box -->
+            <div class="main">
+                <!-- Show aside box -->
+                <div class="show-aside"><i class="fas fa-bars"></i></div>
+
+                <!-- Resize font -->
+                <div class="resize-font"><i class="fas fa-font"></i></div>
+                <div class="box-size">
+                    <div class="item-size translateX" onclick="resizeFont(18)">lg</div>
+                    <div class="item-size translateX" onclick="resizeFont(16)">md</div>
+                    <div class="item-size translateX" onclick="resizeFont(14)">sm</div>
+                    <div class="item-size translateX" onclick="resizeFont(12)">xm</div>
+                </div>
+    
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="../assets/img/html.png" style="max-width: 500px;" alt="">
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu PBO</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Pemrograman berbasis objek (Object-Oriented Programming atau disingkat OOP) adalah paradigma pemrograman yang berfokus pada konsep objek. Dalam paradigma ini, program dibangun dengan memodelkan objek yang memiliki atribut (data) dan metode (fungsi atau perilaku). Objek-objek ini dapat saling berinteraksi untuk mencapai tujuan tertentu.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Konsep Pemrograman Berbasis Objek -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Konsep Pemrograman Berbasis Objek</h5>
+                            <div>
+                                <p>Ada beberapa konsep utama dalam pemrograman berbasis objek:</p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Kelas (Class):</h6> <p>Kelas merupakan blueprint atau cetak biru untuk menciptakan objek. Kelas mendefinisikan atribut-atribut dan metode-metode yang dimiliki oleh objek-objek yang akan dibuat berdasarkan kelas tersebut.</p></li>
+                                    <li><h6>Objek (Object):</h6> <p>Objek adalah instance atau perwujudan konkret dari suatu kelas. Setiap objek memiliki atribut yang menyimpan data dan metode yang digunakan untuk memanipulasi data tersebut.</p></li>
+                                    <li><h6>Atribut (Attributes):</h6> <p>Atribut adalah data yang terkait dengan suatu objek. Mereka merepresentasikan karakteristik atau properti dari objek tersebut. Contohnya, jika kita memiliki kelas "Mobil", atributnya bisa saja adalah "warna", "kecepatan", dan "tahun pembuatan".</p></li>
+                                    <li><h6>Metode (Methods):</h6> <p>Metode adalah fungsi-fungsi yang terkait dengan suatu kelas. Mereka digunakan untuk memanipulasi data yang dimiliki oleh objek, atau untuk melakukan tindakan tertentu terhadap objek. Misalnya, dalam kelas "Mobil", kita bisa memiliki metode "berjalan", "berhenti", atau "mengubahWarna".</p></li>
+                                    <li><h6>Inheritance (Pewarisan):</h6> <p>Inheritance memungkinkan suatu kelas (yang disebut kelas turunan atau subclass) untuk mewarisi atribut dan metode dari kelas lain (kelas induk atau superclass). Ini memungkinkan untuk penggunaan kembali kode, dan juga memfasilitasi konsep hierarki dalam desain program.</p></li>
+                                    <li><h6>Polimorfisme (Polymorphism):</h6> <p>Polimorfisme memungkinkan objek untuk berperilaku dengan cara yang berbeda tergantung pada konteks di mana mereka digunakan. Dalam konteks OOP, ini bisa berarti bahwa metode dengan nama yang sama dapat berperilaku berbeda pada kelas yang berbeda.</p></li>
+                                    <li><h6>Enkapsulasi (Encapsulation):</h6> <p>Enkapsulasi melibatkan penyembunyian detail implementasi dari luar dunia. Ini berarti bahwa atribut dan metode yang tidak perlu diekspos ke dunia luar kelas, disembunyikan atau dilindungi dengan cara yang memungkinkan akses terkendali.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Keuntungan Pemrograman Berbasis Objek -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Keuntungan Pemrograman Berbasis Objek</h5>
+                            <div>
+                                <p>Keuntungan dari pemrograman berbasis objek termasuk:</p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Modularitas:</h6> <p>Kode dapat dibagi menjadi modul-modul kecil yang lebih mudah dikelola.</p></li>
+                                    <li><h6>Reusable:</h6> <p>Kode dapat digunakan kembali dalam aplikasi lain atau di bagian lain dari aplikasi yang sama.</p></li>
+                                    <li><h6>Maintainability:</h6> <p>Kode yang didasarkan pada konsep objek dapat lebih mudah dimengerti dan dipelihara.</p></li>
+                                    <li><h6>Scalability:</h6> <p>Program yang dibangun menggunakan OOP dapat diperluas dengan lebih mudah karena strukturnya yang modular.</p></li>
+                                    <li><h6>Peningkatan produktivitas:</h6> <p>OOP memungkinkan pengembang untuk fokus pada solusi masalah dengan mengelompokkan fungsi-fungsi dan data ke dalam objek-objek yang relevan.</p></li>
+                                </ul>
+
+                                <p>Pemrograman berbasis objek banyak digunakan dalam pengembangan perangkat lunak karena fleksibilitas dan efisiensinya dalam memodelkan dunia nyata dan menangani kompleksitas yang terlibat dalam pengembangan perangkat lunak.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Paradigma Pemrograman</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Paradigma adalah kerangka pemikiran atau pandangan dunia yang mendasari cara kita memahami dan memecahkan masalah. Dalam konteks pemrograman komputer, paradigma mengacu pada pola-pola atau pendekatan-pendekatan dasar yang digunakan untuk merancang dan mengembangkan perangkat lunak. Setiap paradigma memiliki aturan, konsep, dan metodologi yang berbeda untuk memecahkan masalah.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Paradigma Pemrograman -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Paradigma Pemrograman</h5>
+                            <div>
+                                <p>Ada beberapa paradigma pemrograman yang umum digunakan, di antaranya:</p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Pemrograman Berbasis Prosedur (Procedural Programming):</h6> <p>Paradigma ini berfokus pada pemecahan masalah dengan membagi program menjadi serangkaian tugas yang dijalankan secara berurutan. Program dalam paradigma ini terdiri dari fungsi-fungsi yang memproses data.</p></li>
+                                    <li><h6>Pemrograman Berbasis Objek (Object-Oriented Programming/OOP):</h6> <p>Paradigma ini telah dijelaskan sebelumnya. Ini berfokus pada pemodelan dunia nyata dengan menggambarkan entitas sebagai objek yang memiliki atribut dan metode.</p></li>
+                                    <li><h6>Pemrograman Fungsional (Functional Programming):</h6> <p>Paradigma ini berfokus pada penggunaan fungsi-fungsi sebagai unit utama komputasi. Fungsi-fungsi dalam paradigma ini dianggap sebagai objek yang tidak berubah, dan pendekatan ini menghindari perubahan status dan data yang dapat berubah.</p></li>
+                                    <li><h6>Pemrograman Deklaratif (Declarative Programming):</h6> <p>Paradigma ini menekankan pada mendeskripsikan apa yang ingin dicapai daripada bagaimana cara untuk mencapainya. Contoh pemrograman deklaratif termasuk SQL untuk basis data dan HTML untuk membuat tampilan web.</p></li>
+                                    <li><h6>Pemrograman Berorientasi Tugas (Task-Oriented Programming):</h6> <p>Paradigma ini berfokus pada pemecahan masalah dengan mendefinisikan tugas-tugas yang harus diselesaikan oleh program, tanpa perhatian pada entitas atau objek yang mungkin ada.</p></li>
+                                    <li><h6>Pemrograman Logika (Logic Programming):</h6> <p>Paradigma ini menggunakan logika formal untuk mendefinisikan aturan dan hubungan antara fakta-fakta dalam bentuk aturan logika, dan sistem kemudian mencoba untuk menemukan solusi yang memenuhi aturan-aturan tersebut.</p></li>
+                                </ul>
+
+                                <p>Setiap paradigma memiliki kelebihan dan kelemahan masing-masing, dan pemilihan paradigma tergantung pada jenis masalah yang dihadapi, kebutuhan aplikasi, preferensi pengembang, dan faktor-faktor lainnya. Sebagian besar proyek perangkat lunak modern menggunakan campuran paradigma, tergantung pada kompleksitas dan kebutuhan aplikasi yang ada.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Pemrograman Prosedural</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Pemrograman prosedural adalah paradigma pemrograman yang berfokus pada urutan eksekusi instruksi-instruksi atau prosedur-prosedur. Dalam pemrograman prosedural, program terstruktur dalam urutan langkah-langkah yang dieksekusi satu per satu, mirip dengan bagaimana kita mengikuti alur cerita atau resep masakan.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Konsep Pemrograman Prosedural -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Konsep Pemrograman Prosedural</h5>
+                            <div>
+                                <p>Berikut adalah beberapa konsep utama dalam pemrograman prosedural:</p>
+                                <ul>
+                                    <li><h6>Prosedur (Procedure):</h6> <p>Prosedur adalah serangkaian instruksi yang dieksekusi secara berurutan untuk menyelesaikan tugas tertentu. Prosedur dapat menerima input, memproses data, dan menghasilkan output.</p></li>
+                                    <li><h6>Variabel (Variable):</h6> <p>Variabel adalah simbol yang digunakan untuk menyimpan dan merepresentasikan nilai-nilai data dalam program. Dalam pemrograman prosedural, variabel digunakan untuk menyimpan informasi yang diperlukan selama eksekusi program.</p></li>
+                                    <li><h6>Struktur Kontrol (Control Structures):</h6> <p>Struktur kontrol digunakan untuk mengatur alur eksekusi program. Ini termasuk struktur-seperti percabangan (if-else, switch-case) untuk pengambilan keputusan, serta struktur pengulangan (for, while, do-while) untuk mengulangi blok instruksi tertentu.</p></li>
+                                    <li><h6>Fungsi (Function):</h6> <p>Fungsi adalah blok kode yang terpisah yang dapat dipanggil dari bagian lain dalam program. Mereka digunakan untuk mengelompokkan logika terkait menjadi satu unit yang dapat digunakan kembali.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Keuntungan dan Kelemahan Pemrograman Prosedural -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Keuntungan dan Kelemahan Pemrograman Prosedural</h5>
+                            <div>
+                                <p>Keuntungan dari pemrograman prosedural termasuk:</p>
+                                <ul>
+                                    <li><h6></h6> <p>Keterbacaan kode: Dikarenakan program terstruktur dalam urutan langkah-langkah yang jelas, kode program dapat dengan mudah dimengerti oleh pengembang lain.</p></li>
+                                    <li><h6></h6> <p>Kemudahan pemeliharaan: Dengan struktur yang jelas, pemeliharaan dan debug kode dapat dilakukan dengan lebih mudah.</p></li>
+                                    <li><h6></h6> <p>Kinerja: Dalam beberapa kasus, pemrograman prosedural dapat lebih efisien dalam penggunaan sumber daya komputer karena kurangnya overhead yang terkait dengan manajemen objek.</p></li>
+                                </ul>
+
+                                <p>Namun, ada beberapa kelemahan dalam pendekatan ini:</p>
+                                <ul>
+                                    <li><h6>Kesulitan dalam penanganan kompleksitas:</h6> <p>Ketika program menjadi besar dan kompleks, pemrograman prosedural dapat sulit untuk dikelola karena kurangnya mekanisme untuk memisahkan logika dan data.</p></li>
+                                    <li><h6>Kurangnya reusable code:</h6> <p>Kode yang ditulis dalam pendekatan prosedural mungkin tidak mudah digunakan kembali dalam konteks lain karena ketergantungan yang kuat pada urutan instruksi.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Paradigma Pemrograman</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Paradigma Pemrograman -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Paradigma Pemrograman</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Paradigma Pemrograman</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Paradigma Pemrograman -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Paradigma Pemrograman</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Paradigma Pemrograman</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Paradigma Pemrograman -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Paradigma Pemrograman</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="single-script.js"></script>
+</body>
+</html>
