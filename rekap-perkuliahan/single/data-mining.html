@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDLC</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css custom link -->
+    <link rel="stylesheet" href="single-style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-single">
+            <!-- Aside box -->
+            <div class="aside">
+                <div class="aside-content">
+                    <ul class="list-unstyled">
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa Itu Data Mining</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">Tahapan Data Mining</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">Asosiasi</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">Klasifikasi</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">Prediksi</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">Clustering</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(7)">Metode RAD</button> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main box -->
+            <div class="main">
+                <!-- Show aside box -->
+                <div class="show-aside"><i class="fas fa-bars"></i></div>
+
+                <!-- Resize font -->
+                <div class="resize-font"><i class="fas fa-font"></i></div>
+                <div class="box-size">
+                    <div class="item-size translateX" onclick="resizeFont(18)">lg</div>
+                    <div class="item-size translateX" onclick="resizeFont(16)">md</div>
+                    <div class="item-size translateX" onclick="resizeFont(14)">sm</div>
+                    <div class="item-size translateX" onclick="resizeFont(12)">xm</div>
+                </div>
+    
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="../assets/img/html.png" style="max-width: 500px;" alt="">
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu Data Mining</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Data mining adalah proses analisis data yang digunakan untuk menemukan pola yang bermanfaat atau pengetahuan yang berguna dari data besar yang tidak terstruktur atau semi-terstruktur. Ini melibatkan penggunaan berbagai teknik statistik, matematika, dan kecerdasan buatan untuk mengidentifikasi pola tersembunyi, tren, dan hubungan yang dapat digunakan untuk pengambilan keputusan.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Tujuan utama dari data mining adalah untuk mengungkap informasi berharga yang terkandung dalam data, yang mungkin tidak dapat ditemukan melalui metode analisis tradisional. Ini dapat membantu organisasi untuk memahami perilaku pelanggan, memprediksi tren pasar, mengoptimalkan proses bisnis, mendeteksi anomali, dan banyak lagi.</p>
+                                        <p>Proses data mining meliputi beberapa tahap, seperti pemahaman terhadap tujuan bisnis, pemilihan data yang relevan, preprocessing data untuk membersihkan dan menormalkan data, pemodelan untuk menemukan pola, evaluasi model, dan implementasi hasil temuan ke dalam keputusan bisnis.</p>
+                                        <p>Teknik-teknik data mining termasuk asosiasi, klasifikasi, clustering, prediksi, analisis regresi, dan lain-lain. Berbagai algoritma dan teknik digunakan dalam setiap tahap proses data mining, tergantung pada jenis data dan tujuan analisisnya.</p>
+                                        <p>Data mining memiliki aplikasi luas di berbagai bidang, termasuk pemasaran, keuangan, ilmu kedokteran, penelitian ilmiah, penegakan hukum, dan lain-lain. Dengan menggali pengetahuan berharga dari data, data mining membantu organisasi membuat keputusan yang lebih baik dan meningkatkan efisiensi operasional mereka.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Tahapan Data Mining -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Tahapan Data Mining</h5>
+                            <div>
+                                <p>Tahap-tahap dalam proses data mining dapat diuraikan sebagai berikut:</p>
+                                <ul style="list-style: decimal;">
+                                    <li>Pemahaman Terhadap Tujuan Bisnis</li>
+                                    <li>Pemahaman Terhadap Data</li>
+                                    <li>Pemilihan Data</li>
+                                    <li>Preprocessing Data</li>
+                                    <li>Modeling</li>
+                                    <li>Evaluasi Model</li>
+                                    <li>Interpretasi dan Penyajian Hasil</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Teknik-Teknik Data Mining -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Teknik-Teknik Data Mining</h5>
+                            <div>
+                                <p>Terdapat beberapa teknik data mining yang digunakan untuk mengekstraksi pola atau pengetahuan yang berguna dari data. Berikut adalah beberapa teknik data mining yang umum digunakan:</p>
+                                <ul style="list-style: decimal;">
+                                    <li>Asosiasi</li>
+                                    <li>Klasifikasi</li>
+                                    <li>Prediksi</li>
+                                    <li>Clustering</li>
+                                    <li>Regresi</li>
+                                    <li>Text Mining</li>
+                                    <li>Web Mining</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Tahapan Data Mining</h2>
+                        
+                        <!--  -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5></h5>
+                            <div>
+                                <p>Tahap-tahap dalam proses data mining dapat diuraikan sebagai berikut:</p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Pemahaman Terhadap Tujuan Bisnis</h6> <p>Tahap pertama dalam proses data mining adalah pemahaman terhadap tujuan bisnis atau permasalahan yang ingin diselesaikan. Ini melibatkan identifikasi tujuan analisis, pertanyaan yang ingin dijawab, dan kebutuhan informasi bisnis yang spesifik.</p></li>
+                                    <li><h6>Pemahaman Terhadap Data</h6> <p>Setelah tujuan bisnis ditetapkan, langkah berikutnya adalah memahami data yang tersedia. Ini mencakup memahami sumber data, jenis data yang tersedia, struktur data, dan kualitas data. Analisis awal data membantu dalam mempersiapkan langkah-langkah selanjutnya dalam proses data mining.</p></li>
+                                    <li><h6>Pemilihan Data</h6> <p>Tahap ini melibatkan pemilihan subset data yang relevan untuk analisis lebih lanjut. Pemilihan data ini didasarkan pada tujuan bisnis dan pertanyaan analisis yang ingin dijawab. Penting untuk memilih data yang relevan dan representatif untuk memastikan hasil analisis yang akurat.</p></li>
+                                    <li><h6>Preprocessing Data</h6> <p>Preprocessing data adalah tahap persiapan data sebelum analisis dimulai. Ini mencakup pembersihan data dari noise atau outlier, penanganan nilai yang hilang, transformasi data jika diperlukan, dan normalisasi data. Preprocessing data memastikan bahwa data siap untuk dianalisis dan membantu menghasilkan hasil yang lebih baik.</p></li>
+                                    <li><h6>Modeling</h6> <p>Tahap modeling melibatkan penerapan teknik data mining untuk menemukan pola atau hubungan dalam data. Ini mencakup penggunaan algoritma spesifik, seperti asosiasi, klasifikasi, clustering, atau analisis prediktif, tergantung pada tujuan analisis dan jenis data yang tersedia.</p></li>
+                                    <li><h6>Evaluasi Model</h6> <p>Setelah model data mining dibangun, tahap berikutnya adalah evaluasi model untuk mengukur kinerja dan keefektifannya. Ini melibatkan pengujian model menggunakan data yang belum terlihat sebelumnya atau validasi silang untuk memastikan bahwa model dapat digeneralisasikan dengan baik ke data baru.</p></li>
+                                    <li><h6>Interpretasi dan Penyajian Hasil</h6> <p>Tahap terakhir adalah interpretasi dan penyajian hasil data mining kepada pemangku kepentingan. Ini melibatkan interpretasi pola atau temuan yang ditemukan, mengaitkannya dengan tujuan bisnis awal, dan menyajikannya dalam format yang mudah dipahami, seperti laporan, grafik, atau visualisasi data.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Asosiasi</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Teknik asosiasi dalam data mining digunakan untuk menemukan hubungan antara item dalam kumpulan data transaksi atau itemset. Tujuannya adalah untuk menemukan aturan asosiasi yang mengungkap pola pembelian yang sering terjadi atau hubungan antara item dalam transaksi.</p>
+
+                                <h6>Contoh:</h6> <p>Misalkan kita memiliki kumpulan data transaksi dari sebuah toko dan kita ingin menemukan hubungan antara item yang sering dibeli bersama. Contoh aturan asosiasi yang ditemukan bisa seperti ini: "Jika seseorang membeli susu dan roti, kemungkinan besar mereka juga akan membeli mentega."</p>
+
+                                <h6>Metode Algoritma:</h6> <p>Salah satu algoritma yang umum digunakan untuk menemukan aturan asosiasi adalah algoritma Apriori. Algoritma ini bekerja dengan cara melakukan pencarian berulang pada kumpulan item untuk menemukan itemset yang sering muncul bersama dalam transaksi. Aturan asosiasi yang relevan kemudian diekstraksi dari itemset yang ditemukan berdasarkan tingkat kepercayaan dan dukungan tertentu.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Konsep Penting -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Konsep Penting</h5>
+                            <div>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Support (Dukungan):</h6> <p>Support dari sebuah aturan asosiasi adalah proporsi dari transaksi dalam kumpulan data yang mengandung semua item dalam aturan tersebut. Semakin tinggi nilai support, semakin sering aturan tersebut terjadi dalam data. Aturan dengan support yang tinggi dianggap lebih signifikan.</p></li>
+                                    <li><h6>Confidence (Kepercayaan):</h6> <p>Confidence dari sebuah aturan asosiasi adalah proporsi dari transaksi yang mengandung semua item dalam aturan tersebut dibandingkan dengan transaksi yang hanya mengandung item di sisi kiri aturan. Ini mengukur seberapa sering aturan tersebut terbukti benar dalam data. Aturan dengan confidence yang tinggi dianggap lebih dapat diandalkan.</p></li>
+                                    <li><h6>Lift:</h6> <p>Lift adalah ukuran dari seberapa besar ketergantungan antara dua item dalam aturan asosiasi dibandingkan dengan kemungkinan mereka muncul bersama secara acak. Lift > 1 menunjukkan ketergantungan yang positif, yang berarti item pada sisi kanan cenderung dibeli bersama dengan item pada sisi kiri dengan lebih sering daripada yang diharapkan secara acak.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Proses Penerapan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Proses Penerapan</h5>
+                            <div>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Preprocessing Data:</h6> <p>Langkah awal melibatkan persiapan data transaksi, termasuk membersihkan data, menghilangkan noise, dan mengonversi data ke dalam format yang cocok untuk analisis.</p></li>
+                                    <li><h6>Pencarian Itemset Frequent:</h6> <p>Algoritma seperti Apriori digunakan untuk mencari itemset yang sering muncul bersama dalam transaksi. Itemset dengan support di atas ambang batas yang ditentukan dianggap sebagai itemset yang sering terjadi.</p></li>
+                                    <li><h6>Generasi Aturan Asosiasi:</h6> <p>Aturan asosiasi diekstraksi dari itemset yang sering muncul dengan menggunakan tingkat kepercayaan yang ditentukan. Aturan yang memenuhi ambang batas kepercayaan dianggap sebagai aturan asosiasi yang signifikan.</p></li>
+                                    <li><h6>Evaluasi dan Interpretasi:</h6> <p>Aturan asosiasi yang dihasilkan dievaluasi berdasarkan support, confidence, dan lift. Aturan yang dianggap bermakna kemudian diinterpretasikan untuk mendapatkan wawasan bisnis yang berguna.</p></li>
+                                </ul>
+
+                                <p>Teknik asosiasi banyak digunakan dalam berbagai bidang seperti pemasaran ritel, analisis keranjang belanja, analisis penggunaan website, dan lain-lain. Ini membantu dalam mengidentifikasi pola pembelian konsumen, meningkatkan strategi penjualan lintas, dan membuat rekomendasi produk yang lebih baik.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Klasifikasi</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Teknik Klasifikasi adalah salah satu teknik penting dalam data mining yang digunakan untuk memprediksi kategori atau kelas dari data baru berdasarkan pola yang telah dipelajari dari data yang sudah ada. Ini sering digunakan dalam berbagai aplikasi, termasuk pemasaran, ilmu kedokteran, keuangan, dan lainnya.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Langkah-langkah dalam Teknik Klasifikasi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Langkah-langkah dalam Teknik Klasifikasi</h5>
+                            <div>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Pemilihan Model Klasifikasi:</h6> <p>Langkah pertama dalam teknik klasifikasi adalah memilih model klasifikasi yang sesuai dengan data dan tujuan analisis. Beberapa model klasifikasi yang umum digunakan termasuk Naive Bayes, Decision Trees, k-Nearest Neighbors (k-NN), Support Vector Machines (SVM), dan Neural Networks. Pemilihan model yang tepat tergantung pada sifat data, kompleksitas masalah, dan kebutuhan bisnis.</p></li>
+                                    <li><h6>Pemilihan Fitur:</h6> <p>Fitur atau atribut dari data yang dipilih untuk digunakan dalam model klasifikasi memiliki dampak besar terhadap kinerja model. Pemilihan fitur yang tepat dapat meningkatkan akurasi klasifikasi dan mengurangi overfitting. Ini melibatkan analisis fitur, pengurangan dimensi, dan pemilihan fitur yang relevan dengan tujuan analisis.</p></li>
+                                    <li><h6>Pemisahan Data:</h6> <p>Data dibagi menjadi set pelatihan (training set) dan set pengujian (testing set). Set pelatihan digunakan untuk melatih model klasifikasi, sedangkan set pengujian digunakan untuk mengevaluasi kinerja model. Biasanya, sebagian besar data digunakan untuk pelatihan (misalnya, 70-80% dari data), sementara sisa data digunakan untuk pengujian.</p></li>
+                                    <li><h6>Pelatihan Model:</h6> <p>Model klasifikasi dilatih menggunakan set pelatihan dengan menggunakan algoritma pembelajaran mesin yang sesuai. Tujuan dari pelatihan model adalah untuk menemukan pola yang mewakili hubungan antara fitur dan label kelas dengan sebaik mungkin. Proses pelatihan melibatkan optimisasi parameter model dan penyesuaian model terhadap data pelatihan.</p></li>
+                                    <li><h6>Evaluasi Model:</h6> <p>Setelah model dilatih, langkah selanjutnya adalah mengevaluasi kinerjanya menggunakan set pengujian. Berbagai metrik evaluasi dapat digunakan, termasuk akurasi, presisi, recall, F1-score, dan area di bawah kurva ROC (AUC-ROC). Evaluasi model membantu dalam memahami seberapa baik model dapat melakukan klasifikasi dan mengidentifikasi kelemahan atau perbaikan yang mungkin diperlukan.</p></li>
+                                    <li><h6>Tuning Model:</h6> <p>Proses tuning model melibatkan penyesuaian parameter model untuk meningkatkan kinerjanya. Ini bisa melibatkan teknik seperti validasi silang untuk memilih parameter terbaik, atau optimisasi parameter menggunakan algoritma seperti Grid Search atau Random Search.</p></li>
+                                    <li><h6>Penggunaan Model:</h6> <p>Setelah model klasifikasi dianggap memadai berdasarkan evaluasi, model tersebut dapat digunakan untuk melakukan klasifikasi pada data baru atau data yang belum terlihat sebelumnya. Hasil klasifikasi dapat digunakan untuk pengambilan keputusan bisnis atau tindakan lebih lanjut sesuai dengan tujuan analisis.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Penyesuaian Tambahan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Penyesuaian Tambahan</h5>
+                            <div>
+                                <ul>
+                                    <li><h6>Penanganan Ketidakseimbangan Kelas:</h6> <p>Dalam kasus di mana kelas yang akan diprediksi memiliki distribusi yang tidak seimbang, teknik penanganan ketidakseimbangan kelas seperti oversampling, undersampling, atau penggunaan bobot kelas dapat diterapkan untuk meningkatkan kinerja model.</p></li>
+                                    <li><h6>Ekstraksi Fitur:</h6> <p>Jika data memiliki fitur yang tidak terstruktur atau semi-terstruktur, teknik ekstraksi fitur seperti word embedding atau teknik pemrosesan bahasa alami (NLP) dapat digunakan untuk mengubah data menjadi representasi yang dapat digunakan oleh model klasifikasi.</p></li>
+                                    <li><h6>Ensemble Learning</h6> <p>Ensemble learning melibatkan penggunaan beberapa model klasifikasi untuk meningkatkan kinerja klasifikasi. Teknik seperti Random Forest, Gradient Boosting, dan Bagging dapat digunakan untuk menggabungkan prediksi dari beberapa model dan menghasilkan prediksi yang lebih akurat.</p></li>
+                                </ul>
+
+                                <p>Dengan memahami dan menerapkan langkah-langkah dan teknik ini, teknik klasifikasi dapat menjadi alat yang kuat untuk memprediksi kategori atau kelas dari data baru dan mendukung pengambilan keputusan yang lebih baik dalam berbagai domain aplikasi.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Prediksi</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Teknik prediksi dalam data mining bertujuan untuk memprediksi nilai atau perilaku di masa depan berdasarkan pola yang ditemukan dalam data historis. Ini merupakan salah satu aplikasi paling umum dari data mining, digunakan dalam berbagai industri dan bidang, seperti keuangan, pemasaran, ilmu kedokteran, dan lainnya.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Tahapan Prediksi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Tahapan Prediksi</h5>
+                            <div>
+                                <p>Berikut adalah beberapa langkah dalam penerapan teknik prediksi:</p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Pemilihan Variabel:</h6> <p>Tahap pertama dalam teknik prediksi adalah pemilihan variabel atau fitur yang akan digunakan dalam proses prediksi. Variabel ini dapat mencakup berbagai aspek yang relevan dengan masalah yang ingin diprediksi, seperti data demografis, perilaku konsumen, atau variabel lingkungan.</p></li>
+                                    <li><h6>Pemrosesan Data:</h6> <p>Data harus diproses untuk memastikan kualitas dan kecocokan sebelum digunakan dalam model prediksi. Ini termasuk membersihkan data dari noise atau outlier, menangani nilai yang hilang, dan melakukan normalisasi atau transformasi jika diperlukan.</p></li>
+                                    <li><h6>Pembagian Data:</h6> <p>Data biasanya dibagi menjadi dua subset: data pelatihan (training data) dan data pengujian (testing data). Data pelatihan digunakan untuk melatih model prediksi, sedangkan data pengujian digunakan untuk menguji kinerja model dan mengukur akurasi prediksi.</p></li>
+                                    <li><h6>Pemilihan Model:</h6> <p>Ada berbagai jenis model prediksi yang dapat digunakan, seperti regresi linier, regresi logistik, pohon keputusan, dan jaringan saraf tiruan. Pemilihan model tergantung pada jenis data, karakteristik masalah, dan kebutuhan bisnis.</p></li>
+                                    <li><h6>Pelatihan Model:</h6> <p>Model prediksi dilatih menggunakan data pelatihan untuk menemukan pola atau hubungan antara variabel input dan output. Proses pelatihan melibatkan mengatur parameter model sehingga dapat menghasilkan prediksi yang akurat.</p></li>
+                                    <li><h6>Validasi Model:</h6> <p>Setelah model dilatih, langkah selanjutnya adalah melakukan validasi untuk memastikan bahwa model dapat digeneralisasikan dengan baik ke data baru. Ini melibatkan pengujian model menggunakan data pengujian yang tidak digunakan selama pelatihan.</p></li>
+                                    <li><h6>Evaluasi Model:</h6> <p>Model dievaluasi berdasarkan metrik evaluasi yang relevan, seperti akurasi, presisi, recall, atau area di bawah kurva receiver operating characteristic (ROC AUC). Evaluasi model membantu dalam memahami kinerja model dan mengidentifikasi area yang perlu diperbaiki.</p></li>
+                                    <li><h6>Penerapan Model:</h6> <p>Setelah model dinilai dan divalidasi, langkah terakhir adalah menerapkannya dalam situasi nyata untuk membuat prediksi di masa depan. Model dapat digunakan untuk memprediksi nilai kontinu (seperti harga saham) atau kategori (seperti apakah pelanggan akan membeli produk tertentu).</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Teknik-Teknik Prediksi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Teknik-Teknik Prediksi</h5>
+                            <div>
+                                <p></p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Regresi</h6> <p>Regresi adalah salah satu teknik prediksi yang umum digunakan untuk memodelkan hubungan antara variabel dependen (variabel yang ingin diprediksi) dan variabel independen (variabel yang digunakan untuk memprediksi). Regresi linier adalah jenis regresi yang paling sederhana, di mana hubungan antara variabel dependen dan independen diasumsikan linear.</p></li>
+                                    <li><h6>Jaringan Saraf Tiruan (Neural Networks)</h6> <p>Jaringan saraf tiruan (JST) adalah model matematis yang terinspirasi dari struktur jaringan saraf biologis manusia. JST dapat belajar dari data dan menemukan pola yang kompleks, sehingga cocok untuk tugas prediksi yang kompleks dan non-linear.</p></li>
+                                    <li><h6>Pohon Keputusan (Decision Tree)</h6> <p>Pohon keputusan adalah model prediktif yang menggambarkan serangkaian keputusan dan konsekuensinya. Pohon keputusan memecah data menjadi subset yang lebih kecil berdasarkan aturan pemisahan yang dipelajari dari data.</p></li>
+                                    <li><h6>Analida Deret Waktu (Time Series Analysis)</h6> <p>Analisis deret waktu adalah teknik prediksi yang digunakan untuk memodelkan dan memprediksi pola perubahan dalam data sepanjang waktu. Ini berguna untuk memprediksi nilai di masa depan berdasarkan data historis yang berurutan.</p></li>
+                                    <li><h6>Metode Ensemble</h6> <p>Metode ensemble menggabungkan prediksi dari beberapa model prediktif untuk meningkatkan kinerja prediksi secara keseluruhan. Contoh teknik ensemble termasuk Random Forest dan Gradient Boosting.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Clustering</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Clustering adalah teknik data mining yang digunakan untuk mengelompokkan data ke dalam kelompok-kelompok yang serupa berdasarkan kesamaan karakteristik tertentu. Tujuan utamanya adalah untuk menemukan struktur tersembunyi dalam data tanpa memerlukan label kelas.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Teknik-Teknik Clustering -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Teknik-Teknik Clustering</h5>
+                            <div>
+                                <p></p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>K-Means Clustering:</h6> <p>K-Means adalah salah satu algoritma clustering yang paling populer. Ini mengelompokkan data ke dalam K kelompok yang telah ditentukan (di mana K adalah parameter yang harus ditentukan sebelumnya) dengan meminimalkan jarak antara titik data dengan pusat kelompoknya. Prosesnya melibatkan inisialisasi centroid acak, pembaruan centroid, dan pengelompokan ulang titik data hingga konvergensi.</p></li>
+                                    <li><h6>Hierarchical Clustering</h6> <p>Hierarchical clustering membangun hierarki kelompok berdasarkan kesamaan antara titik data. Ada dua jenis hierarchical clustering: agglomerative (bottom-up) dan divisive (top-down). Pada agglomerative clustering, setiap titik data dimulai sebagai kelompok terpisah, kemudian secara bertahap digabungkan menjadi kelompok yang lebih besar hingga semua titik data menjadi satu kelompok. Pada divisive clustering, semua titik data dimulai dalam satu kelompok, kemudian dibagi menjadi kelompok yang lebih kecil secara bertahap.</p></li>
+                                    <li><h6>DBSCAN (Density-Based Spatial Clustering of Applications with Noise)</h6> <p>DBSCAN adalah algoritma clustering yang berbasis kepadatan. Ini mengelompokkan titik data yang memiliki kepadatan yang cukup tinggi menjadi kelompok, sementara titik data yang berada di daerah yang jarang dianggap sebagai noise atau outlier. DBSCAN memiliki dua parameter utama: epsilon (jarak maksimum antara dua titik yang dianggap tetangga) dan minimum points (jumlah minimum titik yang diperlukan untuk membentuk sebuah cluster).</p></li>
+                                    <li><h6>Mean Shift Clustering</h6> <p>Mean Shift adalah algoritma clustering non-parametrik yang berusaha untuk menemukan pusat-pusat kelompok dalam data dengan menggerakkan iteratif titik pusat menuju daerah dengan kepadatan tertinggi dalam ruang fitur. Ini bekerja dengan cara menggeser setiap titik data ke pusat kelompok terdekat di sekitarnya dalam iterasi, hingga konvergensi.</p></li>
+                                    <li><h6>Gaussian Mixture Models (GMM)</h6> <p>GMM adalah model probabilistik yang mengasumsikan bahwa data dalam setiap cluster mengikuti distribusi Gaussian. Ini mengidentifikasi kelompok dengan memperkirakan parameter distribusi Gaussian untuk setiap cluster dan memaksimalkan likelihood data. GMM sering digunakan ketika data memiliki distribusi yang berbentuk tidak jelas atau campuran dari beberapa distribusi Gaussian.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- SDLC yang umum digunakan oleh industri -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>SDLC yang umum digunakan oleh industri</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- SDLC yang umum digunakan oleh industri -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>SDLC yang umum digunakan oleh industri</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- SDLC yang umum digunakan oleh industri -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>SDLC yang umum digunakan oleh industri</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- SDLC yang umum digunakan oleh industri -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>SDLC yang umum digunakan oleh industri</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- SDLC yang umum digunakan oleh industri -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>SDLC yang umum digunakan oleh industri</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- SDLC yang umum digunakan oleh industri -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>SDLC yang umum digunakan oleh industri</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="single-script.js"></script>
+</body>
+</html>
