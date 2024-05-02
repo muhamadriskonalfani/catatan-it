@@ -21,13 +21,12 @@
             <div class="aside">
                 <div class="aside-content">
                     <ul class="list-unstyled">
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa Itu SDLC</button> </li>
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">Tahapan-Tahapan SDLC</button> </li>
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">Metodologi SDLC</button> </li>
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">Metode Waterfall</button> </li>
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">Metode Agile</button> </li>
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">Metode Prototype</button> </li>
-                        <li> <button type="button" class="btn btn-dark" onclick="showPage(7)">Metode RAD</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa Itu Kriptografi</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">Kriptografi Klasik</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">Metode Caesar Cipher</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">Metode ROT 13</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">Metode Polyalphabeth</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">-</button> </li>
                     </ul>
                 </div>
             </div>
@@ -53,14 +52,1152 @@
 
                     <div class="card materi hide">
                     <div class="card-body">
-                        <h2>Apa Itu SDLC</h2>
+                        <h2>Apa Itu Kriptografi</h2>
                         
                         <!-- Definisi -->
                         <div class="card mb-4">
                         <div class="card-body">
                             <h5>Definisi</h5>
                             <div>
-                                <p>Singkatnya SDLC itu adalah Proses untuk membuat Software yang baik dan berkualitas. Software yang baik adalah Software yang baik bagi User, Pelaku bisnis, dan juga Developer. Software yang berkualitas artinya berkualitas dari segi UI/UX Design, bisa dirawat atau maintenance, dan juga bisa diimprove.</p>
+                                <p>Kriptografi adalah ilmu dan seni mengamankan komunikasi dan data dengan mengubah teks biasa menjadi bentuk yang tidak terbaca atau sulit dipahami, yang disebut teks sandi, menggunakan berbagai teknik dan algoritma. Tujuannya adalah untuk menjaga kerahasiaan, integritas, dan otentikasi data dalam komunikasi dan penyimpanan informasi.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Sejarah Kriptografi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Sejarah Kriptografi</h5>
+                            <div>
+                                <p>Sejarah kriptografi dapat ditelusuri kembali ke ribuan tahun yang lalu, ketika manusia pertama kali menyadari kebutuhan untuk menyembunyikan pesan dari mata-mata dan musuh. Teknik-teknik awal kriptografi sering kali sederhana, seperti penggantian huruf atau simbol dengan simbol-simbol lainnya. Salah satu contoh terkenal adalah Caesar Cipher, yang digunakan oleh Julius Caesar untuk mengamankan komunikasi militer pada zaman Kekaisaran Romawi.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Selama berabad-abad, kriptografi berkembang bersama dengan kemajuan dalam matematika, teknologi, dan kebutuhan akan keamanan informasi. Pada abad ke-20, revolusi komputasi membawa kriptografi ke era baru, dengan pengembangan algoritma dan sistem kriptografi yang jauh lebih kompleks dan kuat.</p>
+                                        <p>Pada zaman modern, kriptografi menjadi sangat penting dalam berbagai aspek kehidupan kita, termasuk keamanan komunikasi di internet, perlindungan data pribadi, transaksi keuangan elektronik, dan banyak lagi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Tujuan Kriptografi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Tujuan Kriptografi</h5>
+                            <div>
+                                <p>Adapun beberapa tujuan utama Kriptografi, antara lain:</p>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Kerahasiaan (Confidentiality):</h6> <p>Melindungi pesan dari akses oleh pihak yang tidak sah, sehingga hanya penerima yang ditentukan yang dapat membaca atau mendapatkan akses ke pesan.</p></li>
+                                    <li><h6>Integritas (Integrity):</h6> <p>Memastikan bahwa pesan tidak diubah atau dimanipulasi selama transit atau penyimpanan, sehingga penerima dapat memverifikasi bahwa pesan tidak mengalami perubahan yang tidak sah.</p></li>
+                                    <li><h6>Otentikasi (Authentication):</h6> <p>Memverifikasi identitas pihak yang terlibat dalam komunikasi atau transaksi, sehingga penerima dapat memastikan bahwa pesan berasal dari sumber yang sah.</p></li>
+                                    <li><h6>Tidak Penyangkalan (Non-repudiation):</h6> <p>Mencegah pihak yang terlibat dalam komunikasi atau transaksi untuk menyangkal keterlibatan mereka di kemudian hari, sehingga ada bukti otentikasi yang tidak dapat disangkal.</p></li>
+                                    <li><h6>Keragaman (Diversity):</h6> <p>Menyediakan berbagai macam algoritma dan teknik enkripsi untuk menghadapi berbagai jenis ancaman keamanan.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Kriptografi Klasik</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Kriptografi klasik mengacu pada metode-metode kriptografi yang dikembangkan dan digunakan sebelum munculnya komputasi modern dan teknologi informasi. Ini mencakup berbagai teknik enkripsi yang sederhana dan konvensional yang telah digunakan sejak zaman kuno hingga sebelum abad ke-20.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Contoh Kriptografi Klasik -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Contoh Kriptografi Klasik</h5>
+                            <div>
+                                <ul>
+                                    <li>Caesar Cipher</li>
+                                    <li>ROT 13</li>
+                                    <li>Polyalphabeth Cipher</li>
+                                    <li>dll</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Metode Caesar Cipher</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Caesar Cipher adalah salah satu teknik kriptografi klasik yang menggunakan metode substitusi sederhana untuk mengenkripsi pesan. Metode ini dinamai dari Julius Caesar, yang diketahui menggunakan metode ini untuk mengamankan komunikasi militer pada zaman Kekaisaran Romawi.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Cara kerja Caesar Cipher sangat sederhana. Setiap huruf dalam pesan yang akan dienkripsi digantikan dengan huruf lain dalam alfabet, dengan pergeseran tetap tertentu. Misalnya, jika pergeseran adalah 3, huruf A akan diganti dengan huruf D, huruf B dengan huruf E, dan seterusnya. Jika kita mencapai huruf Z, kita kembali lagi ke awal alfabet, sehingga Z akan diganti dengan huruf C.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Cara Penggunaan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Cara Penggunaan</h5>
+                            <style>
+                                #caesar-cipher td {
+                                    padding: 5px 10px;
+                                }
+                            </style>
+                            <div id="caesar-cipher">
+                                <p>Berikut cara melakukan enkripsi menggunakan Caesar Cipher. Misalkan kita melakukan enkripsi dengan Caesar Cipher dengan pergeseran sebanyak 3, maka bisa digambarkan seperti dibawah ini.</p>
+                                <div class="table-scroll">
+                                    <table class="table table-bordered" style="max-width: 500px;">
+                                        <tbody>
+                                            <tr>
+                                                <td>A</td>
+                                                <td>B</td>
+                                                <td>C</td>
+                                                <td>D</td>
+                                                <td>E</td>
+                                                <td>F</td>
+                                                <td>G</td>
+                                                <td>H</td>
+                                                <td>I</td>
+                                                <td>J</td>
+                                                <td>K</td>
+                                                <td>L</td>
+                                                <td>M</td>
+                                                <td>N</td>
+                                                <td>O</td>
+                                                <td>P</td>
+                                                <td>Q</td>
+                                                <td>R</td>
+                                                <td>S</td>
+                                                <td>T</td>
+                                                <td>U</td>
+                                                <td>V</td>
+                                                <td>W</td>
+                                                <td>X</td>
+                                                <td>Y</td>
+                                                <td>Z</td>
+                                            </tr>
+                                            <tr>
+                                                <td>D</td>
+                                                <td>E</td>
+                                                <td>F</td>
+                                                <td>G</td>
+                                                <td>H</td>
+                                                <td>I</td>
+                                                <td>J</td>
+                                                <td>K</td>
+                                                <td>L</td>
+                                                <td>M</td>
+                                                <td>N</td>
+                                                <td>O</td>
+                                                <td>P</td>
+                                                <td>Q</td>
+                                                <td>R</td>
+                                                <td>S</td>
+                                                <td>T</td>
+                                                <td>U</td>
+                                                <td>V</td>
+                                                <td>W</td>
+                                                <td>X</td>
+                                                <td>Y</td>
+                                                <td>Z</td>
+                                                <td>A</td>
+                                                <td>B</td>
+                                                <td>C</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>Baris pertama dimulai dari A sampai Z, dan baris kedua karena digeser sebanyak 3 maka dimulai dari D, setelah sampai pada Z maka kembali lagi ke A sampai C menyesuaikan jumlah huruf alfabet.</p>
+                                <p>Selanjutnya, untuk melakukan enkripsi, setiap huruf dari teks dilihat pada baris pertama kemudian digantikan dengan huruf urutannya dibaris kedua. Contoh seperti dibawah.</p>
+                                <div class="table-scroll">
+                                    <table class="table table-borderless" style="max-width: 300px;">
+                                        <tbody>
+                                            <tr>
+                                                <td>Plaintext</td>
+                                                <td>=</td>
+                                                <td>A</td>
+                                                <td>L</td>
+                                                <td>F</td>
+                                                <td>A</td>
+                                                <td>N</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Encryption</td>
+                                                <td>=</td>
+                                                <td>D</td>
+                                                <td>O</td>
+                                                <td>I</td>
+                                                <td>D</td>
+                                                <td>Q</td>
+                                                <td>L</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Metode ROT 13</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>ROT13 adalah jenis cipher substitusi sederhana yang sering digunakan untuk mengenkripsi teks. Istilah "ROT" dalam "ROT13" adalah singkatan dari "Rotate by", yang diikuti oleh jumlah pergeseran huruf dalam alfabet.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Dalam ROT13, setiap huruf dalam pesan asli digantikan dengan huruf yang berada 13 posisi di depan atau di belakang dalam alfabet. Misalnya, huruf A akan diganti dengan huruf N, huruf B dengan huruf O, dan seterusnya. Jika kita mencapai huruf Z, kita kembali lagi ke awal alfabet dan terus menghitung dari sana.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Cara Penggunaan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Cara Penggunaan</h5>
+                            <style>
+                                #rot-13 td {
+                                    padding: 5px 10px;
+                                }
+                            </style>
+                            <div id="rot-13">
+                                <p>Berikut adalah cara melakukan enkripsi menggunakan ROT 13. Buat tabel yang berisi huruf dari A sampai Z, kemudian dibagi menjadi 2 baris.</p>
+                                <div class="table-scroll">
+                                    <table class="table table-bordered" style="max-width: 500px;">
+                                        <tbody>
+                                            <tr>
+                                                <td>A</td>
+                                                <td>B</td>
+                                                <td>C</td>
+                                                <td>D</td>
+                                                <td>E</td>
+                                                <td>F</td>
+                                                <td>G</td>
+                                                <td>H</td>
+                                                <td>I</td>
+                                                <td>J</td>
+                                                <td>K</td>
+                                                <td>L</td>
+                                                <td>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>N</td>
+                                                <td>O</td>
+                                                <td>P</td>
+                                                <td>Q</td>
+                                                <td>R</td>
+                                                <td>S</td>
+                                                <td>T</td>
+                                                <td>U</td>
+                                                <td>V</td>
+                                                <td>W</td>
+                                                <td>X</td>
+                                                <td>Y</td>
+                                                <td>Z</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>Jumlah huruf alfabet adalah 26, jika dibagi 2 maka menjadi 13, itulah mengapa dinamakan ROT 13.</p>
+                                <p>Selanjutnya, untuk melakukan enkripsi, setiap huruf dari teks dilihat dari baris manapun, jika huruf ada di baris pertama maka digantikan pada urutanya dibaris kedua, jika huruf ada dibaris kedua maka digantikan pada urutanya pada baris pertama. Contoh seperti dibawah.</p>
+                                <div class="table-scroll">
+                                    <table class="table table-borderless" style="max-width: 300px;">
+                                        <tbody>
+                                            <tr>
+                                                <td>Plaintext</td>
+                                                <td>=</td>
+                                                <td>A</td>
+                                                <td>L</td>
+                                                <td>F</td>
+                                                <td>A</td>
+                                                <td>N</td>
+                                                <td>I</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Encryption</td>
+                                                <td>=</td>
+                                                <td>N</td>
+                                                <td>Y</td>
+                                                <td>S</td>
+                                                <td>N</td>
+                                                <td>A</td>
+                                                <td>V</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Metode Polyalphabeth</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Polyalphabetic adalah teknik kriptografi di mana huruf-huruf dalam pesan dienkripsi menggunakan beberapa alfabet yang berbeda, bukan hanya satu alfabet tunggal seperti dalam Caesar Cipher.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Cara kerja Polyalphabetic Cipher adalah dengan menggunakan serangkaian alfabet pengganti yang berbeda untuk mengenkripsi pesan. Cara yang paling umum digunakan dalam Polyalphabetic Cipher adalah menggunakan kata kunci atau frase rahasia untuk menentukan bagaimana alfabet pengganti berubah dari satu huruf ke huruf berikutnya.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis Polyalphabeth -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis Polyalphabeth</h5>
+                            <div>
+                                <p>Ada beberapa jenis Polyalphabeth Cipher, antara lain:</p>
+                                <ul style="list-style: decimal;">
+                                    <li>Vigenere Cipher</li>
+                                    <li>Beaufort Cipher</li>
+                                    <li>Autokey Cipher</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Cara Penggunaan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Cara Penggunaan</h5>
+                            <style>
+                                #polyalpha td {
+                                    padding: 5px 10px;
+                                }
+                            </style>
+                            <div id="polyalpha">
+                                <p>Berikut langkah-langkah melakukan enkripsi menggunakan Polyalphabeth Cipher.</p>
+                                <ul style="list-style: decimal;">
+                                    <li><p>Buat tabel dengan 2 baris, baris pertama berisi huruf A - Z, dan baris kedua berisi indexnya (0 - 25).</p>
+                                        <div class="table-scroll">
+                                            <table class="table table-bordered" style="max-width: 500px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>A</td>
+                                                        <td>B</td>
+                                                        <td>C</td>
+                                                        <td>D</td>
+                                                        <td>E</td>
+                                                        <td>F</td>
+                                                        <td>G</td>
+                                                        <td>H</td>
+                                                        <td>I</td>
+                                                        <td>J</td>
+                                                        <td>K</td>
+                                                        <td>L</td>
+                                                        <td>M</td>
+                                                        <td>N</td>
+                                                        <td>O</td>
+                                                        <td>P</td>
+                                                        <td>Q</td>
+                                                        <td>R</td>
+                                                        <td>S</td>
+                                                        <td>T</td>
+                                                        <td>U</td>
+                                                        <td>V</td>
+                                                        <td>W</td>
+                                                        <td>X</td>
+                                                        <td>Y</td>
+                                                        <td>Z</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>0</td>
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                        <td>10</td>
+                                                        <td>11</td>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                        <td>25</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li><p>Tentukan teks kunci untuk mengenkripsi pesan, jumlah hurufnya harus pas atau kurang dari teks pesan.</p></li>
+                                    <li><p>Lakukan repetisi pada teks kunci sampai jumlah digit sama dengan jumlah digit teks pesan.</p></li>
+                                    <li><p>Lakukan perhitungan pada setiap huruf dengan huruf kuncinya sesuai urutanya dengan rumus yang sudah ditentukan.</p></li>
+                                    <li><p>Konversikan hasil perhitungan dengan indexnya (ada pada poin pertama).</p></li>
+                                    <li><p>Rangkai huruf menjadi satu kata atau kalimat.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Contoh Penggunaan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Contoh Penggunaan</h5>
+                            <style>
+                                #polyalphabeth td {
+                                    padding: 5px;
+                                }
+                            </style>
+                            <div id="polyalphabeth">
+                                <p>Berikut contoh penggunaan pada setiap metode.</p>
+                                <dl>
+                                    <dt class="mb-3">
+                                        <h6><strong>1. Vigenere Cipher</strong></h6>
+                                    </dt>
+                                    <dd>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <div class="table-scroll">
+                                                    <table class="table table-borderless" style="max-width: 300px;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Plaintext</td>
+                                                                <td>=</td>
+                                                                <td>A</td>
+                                                                <td>L</td>
+                                                                <td>F</td>
+                                                                <td>A</td>
+                                                                <td>N</td>
+                                                                <td>I</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Key</td>
+                                                                <td>=</td>
+                                                                <td>N</td>
+                                                                <td>A</td>
+                                                                <td>M</td>
+                                                                <td>A</td>
+                                                                <td>N</td>
+                                                                <td>A</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="card-group">
+                                                    <div class="card me-2" style="border: none;">
+                                                        <p><strong>- Rumus Enkripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tr>
+                                                                    <td colspan="3" style="border: 1px solid grey;"><strong style="font-size: 20px;">C = (P + K) mod 26</strong></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf ciphertext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>P</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf plaintext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>K</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf kunci ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>mod 26</td>
+                                                                    <td>=</td>
+                                                                    <td>Sisa bagi 26</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Melakukan perhitungan</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 400px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="min-width: 65px;">A + N</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 68px;">0 + 13</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 105px;">13 mod 26</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">13</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">N</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>L + A</td>
+                                                                        <td>=</td>
+                                                                        <td>11 + 0</td>
+                                                                        <td>=</td>
+                                                                        <td>11 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>11</td>
+                                                                        <td>=</td>
+                                                                        <td>L</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>F + M</td>
+                                                                        <td>=</td>
+                                                                        <td>5 + 12</td>
+                                                                        <td>=</td>
+                                                                        <td>17 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>17</td>
+                                                                        <td>=</td>
+                                                                        <td>R</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A + A</td>
+                                                                        <td>=</td>
+                                                                        <td>0 + 0</td>
+                                                                        <td>=</td>
+                                                                        <td>0 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>0</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>N + N</td>
+                                                                        <td>=</td>
+                                                                        <td>13 + 13</td>
+                                                                        <td>=</td>
+                                                                        <td>26 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>0</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>I + A</td>
+                                                                        <td>=</td>
+                                                                        <td>8 + 0</td>
+                                                                        <td>=</td>
+                                                                        <td>8 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>8</td>
+                                                                        <td>=</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Hasil enkripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Plaintext</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                        <td>L</td>
+                                                                        <td>F</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Key</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                        <td>M</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr class="bg-secondary">
+                                                                        <td>Ciphertext</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>L</td>
+                                                                        <td>R</td>
+                                                                        <td>A</td>
+                                                                        <td>A</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card me-2" style="border: none;">
+                                                        <p><strong>- Rumus Dekripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tr>
+                                                                    <td colspan="3" style="border: 1px solid grey;"><strong style="font-size: 20px;">P = (C - K) mod 26</strong></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>P</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf plaintext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf ciphertext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>K</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf kunci ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>mod 26</td>
+                                                                    <td>=</td>
+                                                                    <td>Sisa bagi 26</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Melakukan perhitungan</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 400px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="min-width: 65px;">N - N</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 68px;">13 - 13</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 105px;">0 mod 26</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">0</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>L - A</td>
+                                                                        <td>=</td>
+                                                                        <td>11 - 0</td>
+                                                                        <td>=</td>
+                                                                        <td>11 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>11</td>
+                                                                        <td>=</td>
+                                                                        <td>L</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>R - M</td>
+                                                                        <td>=</td>
+                                                                        <td>17 - 12</td>
+                                                                        <td>=</td>
+                                                                        <td>5 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>5</td>
+                                                                        <td>=</td>
+                                                                        <td>F</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - A</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 0</td>
+                                                                        <td>=</td>
+                                                                        <td>0 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>0</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - N</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 13</td>
+                                                                        <td>=</td>
+                                                                        <td>-13 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>13</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>I - A</td>
+                                                                        <td>=</td>
+                                                                        <td>8 - 0</td>
+                                                                        <td>=</td>
+                                                                        <td>8 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>8</td>
+                                                                        <td>=</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Hasil enkripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Ciphertext</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>L</td>
+                                                                        <td>R</td>
+                                                                        <td>A</td>
+                                                                        <td>A</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Key</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                        <td>M</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr class="bg-secondary">
+                                                                        <td>Plaintext</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                        <td>L</td>
+                                                                        <td>F</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt class="mb-3">
+                                        <h6><strong>2. Beaufort Cipher</strong></h6>
+                                    </dt>
+                                    <dd>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <div class="table-scroll">
+                                                    <table class="table table-borderless" style="max-width: 300px;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Plaintext</td>
+                                                                <td>=</td>
+                                                                <td>A</td>
+                                                                <td>L</td>
+                                                                <td>F</td>
+                                                                <td>A</td>
+                                                                <td>N</td>
+                                                                <td>I</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Key</td>
+                                                                <td>=</td>
+                                                                <td>N</td>
+                                                                <td>A</td>
+                                                                <td>M</td>
+                                                                <td>A</td>
+                                                                <td>N</td>
+                                                                <td>A</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="card-group">
+                                                    <div class="card me-2" style="border: none;">
+                                                        <p><strong>- Rumus Enkripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tr>
+                                                                    <td colspan="3" style="border: 1px solid grey;"><strong style="font-size: 20px;">C = (K - P) mod 26</strong></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf ciphertext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>K</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf kunci ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>P</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf plaintext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>mod 26</td>
+                                                                    <td>=</td>
+                                                                    <td>Sisa bagi 26</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Melakukan perhitungan</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 400px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="min-width: 65px;">N - A</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 68px;">13 - 0</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 105px;">13 mod 26</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">13</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">N</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - L</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 11</td>
+                                                                        <td>=</td>
+                                                                        <td>-11 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>15</td>
+                                                                        <td>=</td>
+                                                                        <td>P</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>M - F</td>
+                                                                        <td>=</td>
+                                                                        <td>12 - 5</td>
+                                                                        <td>=</td>
+                                                                        <td>7 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>7</td>
+                                                                        <td>=</td>
+                                                                        <td>H</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - A</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 0</td>
+                                                                        <td>=</td>
+                                                                        <td>0 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>0</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>N - N</td>
+                                                                        <td>=</td>
+                                                                        <td>13 - 13</td>
+                                                                        <td>=</td>
+                                                                        <td>0 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>0</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - I</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 8</td>
+                                                                        <td>=</td>
+                                                                        <td>-8 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>18</td>
+                                                                        <td>=</td>
+                                                                        <td>S</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Hasil enkripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Plaintext</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                        <td>L</td>
+                                                                        <td>F</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Key</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                        <td>M</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr class="bg-secondary">
+                                                                        <td>Ciphertext</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>P</td>
+                                                                        <td>H</td>
+                                                                        <td>A</td>
+                                                                        <td>A</td>
+                                                                        <td>S</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card me-2" style="border: none;">
+                                                        <p><strong>- Rumus Dekripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tr>
+                                                                    <td colspan="3" style="border: 1px solid grey;"><strong style="font-size: 20px;">P = (K - C) mod 26</strong></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>P</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf plaintext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>K</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf kunci ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>C</td>
+                                                                    <td>=</td>
+                                                                    <td>Huruf ciphertext ke i</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>mod 26</td>
+                                                                    <td>=</td>
+                                                                    <td>Sisa bagi 26</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Melakukan perhitungan</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 400px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="min-width: 65px;">N - N</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 68px;">13 - 13</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 105px;">0 mod 26</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">0</td>
+                                                                        <td style="min-width: 20px;">=</td>
+                                                                        <td style="min-width: 20px;">A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - P</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 15</td>
+                                                                        <td>=</td>
+                                                                        <td>-15 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>11</td>
+                                                                        <td>=</td>
+                                                                        <td>L</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>M - H</td>
+                                                                        <td>=</td>
+                                                                        <td>12 - 7</td>
+                                                                        <td>=</td>
+                                                                        <td>5 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>5</td>
+                                                                        <td>=</td>
+                                                                        <td>F</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - A</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 0</td>
+                                                                        <td>=</td>
+                                                                        <td>0 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>0</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>N - A</td>
+                                                                        <td>=</td>
+                                                                        <td>13 - 0</td>
+                                                                        <td>=</td>
+                                                                        <td>13 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>13</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>A - S</td>
+                                                                        <td>=</td>
+                                                                        <td>0 - 18</td>
+                                                                        <td>=</td>
+                                                                        <td>-18 mod 26</td>
+                                                                        <td>=</td>
+                                                                        <td>8</td>
+                                                                        <td>=</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <p><strong>- Hasil enkripsi</strong></p>
+                                                        <div class="table-scroll">
+                                                            <table class="table table-borderless" style="max-width: 300px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Ciphertext</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>P</td>
+                                                                        <td>H</td>
+                                                                        <td>A</td>
+                                                                        <td>A</td>
+                                                                        <td>S</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Key</td>
+                                                                        <td>=</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                        <td>M</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>A</td>
+                                                                    </tr>
+                                                                    <tr class="bg-secondary">
+                                                                        <td>Plaintext</td>
+                                                                        <td>=</td>
+                                                                        <td>A</td>
+                                                                        <td>L</td>
+                                                                        <td>F</td>
+                                                                        <td>A</td>
+                                                                        <td>N</td>
+                                                                        <td>I</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <hr>
+
+                                <dl>
+                                    <dt class="mb-3">
+                                        <h6>3. Autokey Cipher</h6>
+                                    </dt>
+                                    <dd>
+                                        <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                        <div class="hiddenTextBox">
+                                            <div class="hiddenText hide">
+                                                <p>Autokey Cipher adalah jenis cipher yang menggunakan teks plaintext sebagai bagian dari kuncinya. Teks kunci tidak direpstisi namun ditambahi dengan plainteks itu sendiri sampai sejumlah dengan jumlah digit plaintext.</p>
+                                                <p><strong>Contoh</strong></p>
+                                                <div class="table-scroll">
+                                                    <table class="table table-borderless" style="max-width: 300px;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Plaintext</td>
+                                                                <td>=</td>
+                                                                <td>A</td>
+                                                                <td>L</td>
+                                                                <td>F</td>
+                                                                <td>A</td>
+                                                                <td>N</td>
+                                                                <td>I</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Key</td>
+                                                                <td>=</td>
+                                                                <td>N</td>
+                                                                <td>A</td>
+                                                                <td>M</td>
+                                                                <td>A</td>
+                                                                <td>A</td>
+                                                                <td>L</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu Kriptografi</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>
+
+                                </p>
                             </div>
                         </div>
                         </div>
@@ -76,279 +1213,6 @@
                                     <li>Prototype</li>
                                     <li>...</li>
                                 </ul>
-                            </div>
-                        </div>
-                        </div>
-                        
-                        <!-- SDLC yang umum digunakan oleh industri -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>SDLC yang umum digunakan oleh industri</h5>
-                            <div>
-                                <p>Ada banyak jenis SDLC, ada beberapa industri yang pakai salah satu SDLC ada juga beberapa industri yang mengkombinasikan beberapa jenis SDLC sehingga lahirlah yang namanya Customized SDLC. SDLC harus bisa dikustom menyesuaikan lingkungannya atau perusahaan.</p>
-
-                                <p>Customized SDLC ini biasanya memiliki tahapan-tahapan sebagai berikut:</p>
-                                <ul>
-                                    <li>Bussiness Requirement Analyst</li>
-                                    <li>Design (UI/UX)</li>
-                                    <li>Technical Design and Architecture</li>
-                                    <li>API Spesification</li>
-                                    <li>Development</li>
-                                    <li>Testing</li>
-                                    <li>Deployment</li>
-                                    <li>Manitenance and Improvement</li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Tahapan-Tahapan SDLC</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Metodologi SDLC</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Metode Waterfall</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-                                <p>Metode Waterfall dalam SDLC adalah cara pengembangan perangkat lunak yang tahapannya dilakukan satu per satu secara berurutan, tidak bisa kembali ketahap sebelumnya. Berikut ada sedikit penjelasan atau analogi dari metode Waterfall.</p>
-                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                <div class="hiddenTextBox">
-                                    <div class="hiddenText hide">
-                                        <p>Bayangkan Anda ingin membangun sebuah rumah menggunakan metode Waterfall. Anda mulai dengan merencanakan secara rinci setiap aspek dari rumah, dari tata letak ruangan hingga jenis bahan yang akan digunakan. Kemudian, Anda memilih kontraktor dan mulai membangun rumah berdasarkan rencana tersebut.</p>
-                                        <p>Pada tahap pertama, kontraktor fokus pada pekerjaan pondasi. Mereka menggali lubang, menuangkan beton, dan membiarkan pondasi mengeras sepenuhnya sebelum melanjutkan ke langkah berikutnya. Setelah pondasi selesai, barulah mereka melanjutkan ke struktur atap, dinding, dan lantai.</p>
-                                        <p>Setelah struktur dasar selesai, kontraktor melanjutkan ke tahap berikutnya, yaitu instalasi listrik, pipa air, dan sistem pemanas. Setiap tahap dilakukan secara berurutan dan tidak ada langkah yang dimulai sebelum langkah sebelumnya selesai sepenuhnya.</p>
-                                        <p>Setelah semua konstruksi selesai, rumah diuji secara menyeluruh untuk memastikan bahwa semua sistem berfungsi dengan baik. Jika ada masalah yang ditemukan, mereka harus kembali dan memperbaikinya sebelum melanjutkan ke tahap berikutnya.</p>
-                                        <p>Akhirnya, setelah semua pekerjaan selesai dan rumah dianggap siap, Anda dapat pindah dan mulai menikmati rumah baru Anda.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Tahapan Waterfall -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Tahapan Waterfall</h5>
-                            <div>
-                                <div style="max-width: 600px; margin: auto; padding: 1rem;">
-                                    <img style="width: 100%;" src="../assets/img/waterfall.png" alt="">
-                                </div>
-                                <br>
-                                
-                                <ul style="list-style: decimal;">
-                                    <li><p><h6 class="d-inline">Reqirement Analysis:</h6> adalah tahap menganalisis kebutuhan, seperti apa saja fiturnya, bagaimana cara menyelesaikan masalah, apa ekspektasi user terhadap software ini. biasanya dilakukan oleh sistem analis.</p></li>
-                                    <li><p><h6 class="d-inline">Design:</h6> adalah tahap membuat desain dari segi UI/UX, arsitektur, database, dan lainya. Output dari tahap ini adalah mockup atau prototype dari UI/UX, UML atau ERD, dan lainya.</p></li>
-                                    <li><p><h6 class="d-inline">Deployment:</h6> adalah tahap yang dikerjakan oleh programmer, dia mengimplementasi atau mengkonversi dari desain ke kode sampai dengan dipublish atau dideploy (pasang) di Appstore ataupun Playstore.</p></li>
-                                    <li><p><h6 class="d-inline">Testing:</h6> adalah tahap mengecek apakah software ada bug, apakah sudah bekerja selayaknya, apakah servernya kuat menghandle banyak request, dan lain sebagainya. disini juga biasanya diterima masukan-masukan dari user.</p></li>
-                                    <li><p><h6 class="d-inline">Manitenance:</h6> adalah tahap merawat, jadi software yang sudah jadi ini harus bisa dirawat dan juga bisa diimprove menjadi lebih baik.</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Kelebihan dan Kekurangan -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Kelebihan dan Kekurangan</h5>
-                            <div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <h5>Kelebihan</h5>
-                                        <ul>
-                                            <li>Tiap tahap tidak tumpang tindih</li>
-                                            <li>Cocok untuk projek kecil</li>
-                                            <li>Terjadwal dan mudah dikontrol</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <h5>Kekurangan</h5>
-                                        <ul>
-                                            <li>Waktu pengembangan lama</li>
-                                            <li>Biaya mahal</li>
-                                            <li>Tidak cocok untuk proyek besar</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Metode Agile</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-                                <p>Model pengembangan Agile merupakan suatu model pengembangan dengan jangka waktu pendek yang dapat beradaptasi dengan cepat. Pengembangan model ini bersifat dinamis terhadap perubahan dalam bentuk apa pun. Berikut ada sedikit penjelasan atau analogi dari metode Agile ini.</p>
-                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                <div class="hiddenTextBox">
-                                    <div class="hiddenText hide">
-                                        <p>Bayangkan Anda ingin membangun sebuah rumah. Dalam pendekatan tradisional, Anda akan membuat rencana yang sangat rinci sebelum memulai konstruksi. Rencana ini mencakup semua detail, mulai dari jenis bahan yang akan digunakan, tata letak ruangan, hingga cat dan hiasan. Setelah rencana selesai, Anda mulai membangun rumah sesuai dengan rencana tersebut, dan perubahan signifikan jarang terjadi.</p>
-                                        <p>Sekarang, bandingkan dengan pendekatan Agile. Dalam pendekatan ini, Anda memulai dengan visi umum tentang rumah yang ingin Anda bangun, tetapi Anda tidak membuat rencana rinci sejak awal. Sebaliknya, Anda memulai dengan menetapkan tujuan yang jelas dan mendefinisikan kebutuhan utama, misalnya jumlah kamar, ukuran, dan lokasi. Kemudian, Anda mulai membangun rumah dalam iterasi pendek atau "sprint".</p>
-                                        <p>Dalam setiap sprint, Anda membangun bagian-bagian kecil dari rumah, mungkin hanya satu ruangan atau bagian atap, dan Anda melibatkan pemangku kepentingan, seperti keluarga Anda, untuk memberikan umpan balik tentang bagaimana rumah itu berkembang. Berdasarkan umpan balik ini, Anda dapat melakukan perubahan pada desain atau fitur rumah yang sedang dibangun.</p>
-                                        <p>Anda melanjutkan proses ini dalam serangkaian iterasi, menyesuaikan dan memperbaiki rumah berdasarkan umpan balik yang terus berlanjut. Pada akhirnya, Anda memiliki rumah yang dibangun dengan baik, sesuai dengan kebutuhan dan preferensi Anda, dan Anda dapat memastikan bahwa itu memenuhi harapan Anda karena Anda terlibat dalam setiap langkah dalam proses pembangunan. Analogi ini mencerminkan prinsip-prinsip kolaborasi, fleksibilitas, dan adaptasi yang mendasari pendekatan Agile dalam pengembangan perangkat lunak.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Tahapan Agile -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Tahapan Agile</h5>
-                            <div>
-                                <div style="max-width: 600px; margin: auto; padding: 1rem;">
-                                    <img style="width: 100%;" src="../assets/img/agile.jpeg" alt="">
-                                </div>
-                                <br>
-                                
-                                <ul style="list-style: decimal;">
-
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Metode Prototype</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-                                <p>Metode Prototype dalam SDLC adalah pendekatan di mana pengembang menciptakan prototipe atau model awal dari produk yang akan dikembangkan sebelum memulai implementasi penuh produk tersebut. Prototipe ini biasanya dibuat untuk mendapatkan umpan balik dari pengguna akhir atau pemangku kepentingan lainnya, sehingga memungkinkan tim pengembangan untuk memahami kebutuhan pengguna dengan lebih baik, menguji ide-ide, dan membuat perubahan desain sebelum menghabiskan waktu dan sumber daya untuk mengembangkan produk akhir secara lengkap.</p>
-                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                <div class="hiddenTextBox">
-                                    <div class="hiddenText hide">
-                                        <p>Bayangkan Anda adalah seorang desainer interior yang diberi tugas untuk merancang ruang tamu yang sempurna untuk klien Anda. Sebelum Anda mulai membeli furnitur dan mengubah ruang fisik, Anda memutuskan untuk menggunakan metode prototipe.</p>
-                                        <p>Pertama-tama, Anda menghabiskan waktu dengan klien Anda untuk memahami preferensi mereka, gaya hidup, dan kebutuhan ruang tamu. Berdasarkan percakapan ini, Anda mulai merancang prototipe ruang tamu menggunakan perangkat lunak desain 3D atau bahkan hanya membuat sketsa sederhana.</p>
-                                        <p>Setelah selesai, Anda membawa klien Anda untuk melihat prototipe ruang tamu. Mereka dapat melihat bagaimana furnitur ditempatkan, arah pencahayaan, warna dinding, dan elemen dekorasi lainnya. Klien memberikan umpan balik tentang apa yang mereka sukai dan tidak sukai tentang desain tersebut.</p>
-                                        <p>Berdasarkan umpan balik mereka, Anda membuat perubahan pada prototipe, mungkin mengubah pencahayaan, mengganti furnitur, atau menyesuaikan warna dinding. Setelah beberapa iterasi prototyping dan perubahan, Anda akhirnya memiliki desain ruang tamu yang sesuai dengan keinginan klien.</p>
-                                        <p>Setelah desain disetujui, Anda dapat melanjutkan dengan membeli furnitur, mengecat dinding, dan mengatur ruang tamu sesuai dengan prototipe yang telah disetujui. Karena Anda sudah mendapatkan persetujuan klien sejak awal, risiko untuk menghabiskan banyak waktu dan uang untuk perubahan besar setelah implementasi berkurang.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Tahapan Prototype -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Tahapan Prototype</h5>
-                            <div>
-                                <div style="max-width: 600px; margin: auto; padding: 1rem;">
-                                    <img style="width: 100%;" src="../assets/img/agile.jpeg" alt="">
-                                </div>
-                                <br>
-
-                                <ul style="list-style: decimal;">
-                                    <li><p><h6 class="d-inline">Identifikasi Kebutuhan:</h6> Tim pengembangan bekerja sama dengan pemangku kepentingan untuk memahami kebutuhan bisnis dan kebutuhan pengguna akhir yang ingin dipenuhi oleh produk.</p></li>
-                                    <li><p><h6 class="d-inline">Desain Prototipe:</h6> Berdasarkan pemahaman awal tentang kebutuhan, tim pengembangan menciptakan prototipe yang mewakili fitur-fitur atau fungsionalitas utama produk. Prototipe ini mungkin berupa mockup, wireframe, atau model interaktif yang sederhana.</p></li>
-                                    <li><p><h6 class="d-inline">Pengembangan Prototipe:</h6> Setelah desain prototipe disepakati, tim pengembangan mulai menerapkan prototipe menggunakan teknologi yang sesuai. Fokus utamanya adalah untuk membuat prototipe yang dapat memberikan gambaran yang akurat tentang bagaimana produk akan berfungsi, meskipun belum sepenuhnya lengkap.</p></li>
-                                    <li><p><h6 class="d-inline">Pengujian Prototipe:</h6> Setelah prototipe selesai dikembangkan, tim menguji fungsionalitasnya untuk memastikan bahwa itu memenuhi kebutuhan dan harapan pengguna. Ini melibatkan tes pengguna, di mana pengguna akhir menguji prototipe dan memberikan umpan balik tentang desain, fungsionalitas, dan pengalaman pengguna.</p></li>
-                                    <li><p><h6 class="d-inline">Evaluasi dan Iterasi:</h6> Berdasarkan umpan balik yang diterima dari pengujian prototipe, tim melakukan evaluasi untuk mengidentifikasi area yang perlu diperbaiki atau diperbaiki. Mereka kemudian membuat perubahan pada prototipe dan mengulang proses pengujian dan evaluasi hingga prototipe memenuhi kebutuhan pengguna secara memadai.</p></li>
-                                    <li><p><h6 class="d-inline">Implementasi Produk Akhir:</h6> Setelah prototipe telah diverifikasi dan disetujui, tim pengembangan dapat melanjutkan dengan mengembangkan produk akhir menggunakan prinsip-prinsip dan hasil pembelajaran dari proses prototyping.</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Metode RAD</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-                                <p>Metode RAD (Rapid Application Development) adalah pendekatan dalam Siklus Hidup Pengembangan Perangkat Lunak (SDLC) yang menekankan pada pengembangan cepat dan iteratif dari sistem perangkat lunak. Tujuan utama dari metode RAD adalah untuk menghasilkan aplikasi dengan cepat, dengan mengurangi waktu siklus pengembangan dan mempercepat waktu ke pasar. Berbeda dengan metode Waterfall yang bersifat linear, RAD menggunakan pendekatan yang lebih adaptif dan fleksibel.</p>
-                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
-                                <div class="hiddenTextBox">
-                                    <div class="hiddenText hide">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Tahapan RAD -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Tahapan RAD</h5>
-                            <div>
-                                <ul style="list-style: decimal;">
-                                    <li><p><h6 class="d-inline">Kolaborasi Intensif:</h6> Tim pengembangan bekerja sama secara intensif dengan pemangku kepentingan dan pengguna akhir untuk memahami kebutuhan bisnis secara mendalam dan mendefinisikan kebutuhan sistem secara spesifik.</p></li>
-                                    <li><p><h6 class="d-inline">Iterasi Cepat:</h6> Pengembangan dilakukan dalam serangkaian iterasi pendek yang disebut "siklus RAD". Setiap siklus RAD biasanya berlangsung beberapa minggu hingga beberapa bulan, tergantung pada kompleksitas proyek.</p></li>
-                                    <li><p><h6 class="d-inline">Pengembangan Prototipe:</h6> Prototipe atau model awal sistem dikembangkan dengan cepat dalam setiap siklus RAD untuk memberikan gambaran nyata tentang fungsionalitas dan desain sistem kepada pemangku kepentingan. Prototipe ini sering digunakan untuk mendapatkan umpan balik awal dan menguji konsep.</p></li>
-                                    <li><p><h6 class="d-inline">Rekayasa Kembali:</h6> RAD memungkinkan untuk menggunakan komponen perangkat lunak yang ada atau platform pengembangan yang ada untuk mempercepat proses pengembangan. Ini memungkinkan pengembangan sistem yang lebih cepat dengan memanfaatkan teknologi yang sudah ada.</p></li>
-                                    <li><p><h6 class="d-inline">Pengujian Terus Menerus:</h6> Pengujian dilakukan sepanjang siklus RAD, bukan hanya di akhir proyek. Ini memastikan bahwa masalah dapat diidentifikasi dan diperbaiki segera, sehingga meminimalkan risiko kesalahan pada tahap akhir pengembangan.</p></li>
-                                    <li><p><h6 class="d-inline">Iterasi dan Perbaikan:</h6> Setelah setiap siklus RAD selesai, tim melakukan evaluasi menyeluruh tentang apa yang telah dicapai, memperbaiki kelemahan, dan merencanakan langkah-langkah untuk siklus RAD berikutnya.</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="card materi hide">
-                    <div class="card-body">
-                        <h2>Metodologi SDLC</h2>
-                        
-                        <!-- Definisi -->
-                        <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Definisi</h5>
-                            <div>
-
                             </div>
                         </div>
                         </div>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keamanan Sistem Komputer</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css custom link -->
+    <link rel="stylesheet" href="double-style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-double">
+            <!-- Aside box -->
+            <div class="aside">
+                <div class="aside-content">
+                    <!-- Sub Materi -->
+                    <div class="pilih-daftar">
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(1)">Exploitation</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(2)">Bagian 2</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(3)">Bagian 3</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="pilihDaftar(4)">Bagian 4</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Apa itu Exploitation</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">Metasploit Framework</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">MSF Venom</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">Telnet Exploitation</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">Samba Exploitation</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">Brute Force Attack</button> </li>
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(7)">-</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 2 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(20)">-</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 3 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(37)">-</button> </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bagian 4 -->
+                    <div class="daftar hide">
+                        <button type="button" class="btn btn-dark exit" onclick="closeDaftar()"><i class="fa fa-arrow-left"></i> Kembali</button>
+                        <ul class="list-unstyled">
+                            <li> <button type="button" class="btn btn-dark" onclick="showPage(52)">-</button> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main box -->
+            <div class="main">
+                <!-- Show aside box -->
+                <div class="show-aside"><i class="fas fa-bars"></i></div>
+
+                <!-- Resize font -->
+                <div class="resize-font"><i class="fas fa-font"></i></div>
+                <div class="box-size">
+                    <div class="item-size translateX" onclick="resizeFont(18)">lg</div>
+                    <div class="item-size translateX" onclick="resizeFont(16)">md</div>
+                    <div class="item-size translateX" onclick="resizeFont(14)">sm</div>
+                    <div class="item-size translateX" onclick="resizeFont(12)">xm</div>
+                </div>
+                
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="../assets/img/python.jpg" style="max-width: 400px;" alt="">
+                    </div>
+
+                    <!-- Bagian 1 -->
+                    
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa itu Exploitation</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Exploitation atau eksploitasi merujuk pada tindakan memanfaatkan sesuatu, terutama kelemahan atau situasi yang menguntungkan, demi kepentingan ataupun keuntungan pribadi. Istilah ini bisa digunakan dalam berbagai konteks, seperti eksploitasi sumber daya alam, eksploitasi buruh, atau eksploitasi kerentanan dalam sistem komputer.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Dalam konteks keamanan sistem komputer, exploitation merujuk pada pemanfaatan celah atau kelemahan dalam sistem komputer atau perangkat lunaknya untuk mendapatkan akses yang tidak sah atau melakukan tindakan yang tidak diizinkan. Ini bisa mencakup eksploitasi terhadap kerentanan dalam kode program, konfigurasi sistem yang buruk, atau bahkan kesalahan manusia dalam penggunaan sistem.</p>
+                                        <p>Pada umumnya, exploitation bisa digunakan oleh para penyerang untuk mencuri data sensitif, merusak atau mengganggu operasi sistem, atau bahkan untuk menyebar malware. Namun, exploitation juga dapat digunakan oleh peneliti keamanan atau profesional keamanan sistem untuk mengidentifikasi, memahami, dan memperbaiki kerentanan sebelum penyerang dapat memanfaatkannya.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Metasploit Framework</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Metasploit Framework adalah sebuah platform penetrasi yang sangat populer dalam dunia keamanan informasi. Platform ini dikembangkan oleh Rapid7 dan digunakan oleh para profesional keamanan informasi untuk menguji keamanan sistem mereka sendiri atau sistem klien dengan cara simulasi serangan.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Metasploit Framework menyediakan berbagai alat dan modul yang memungkinkan pengguna untuk melakukan serangan jaringan dan penetrasi sistem. Ini mencakup eksploitasi kerentanan, pengujian penetrasi, pemantauan keamanan, dan pengujian keamanan jaringan.</p>
+                                        <p>Platform ini memiliki kemampuan untuk mengotomatisasi proses serangan dengan menyediakan berbagai skrip, alat, dan modul yang dapat digunakan untuk mengeksploitasi kelemahan sistem yang ditemukan. Hal ini memungkinkan pengguna untuk dengan cepat mengevaluasi keamanan sistem mereka dan mengambil langkah-langkah untuk memperbaikinya.</p>
+                                        <p>Metasploit Framework juga memiliki komunitas yang besar dan aktif di seluruh dunia yang terus mengembangkan modul dan alat baru serta berbagi informasi tentang kelemahan yang baru ditemukan. Ini menjadikannya salah satu platform yang paling populer digunakan oleh para profesional keamanan informasi dalam upaya mereka untuk meningkatkan keamanan sistem mereka.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Fitur Metasploit -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Fitur Metasploit</h5>
+                            <div>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Exploit Database:</h6> <p>Berisi berbagai macam eksploitasi yang dapat digunakan untuk mengeksploitasi kerentanan dalam berbagai sistem dan perangkat lunak.</p></li>
+                                    <li><h6>Payloads:</h6> <p>Sejumlah payload tersedia untuk digunakan setelah berhasil mengeksploitasi suatu sistem, seperti shellcode yang memungkinkan akses ke sistem target.</p></li>
+                                    <li><h6>Post-Exploitation Modules:</h6> <p>Modul-modul ini memungkinkan untuk melakukan berbagai tindakan setelah berhasil mengeksploitasi sistem, seperti pemindaian lanjutan, pengumpulan informasi, dan eskalasi hak akses.</p></li>
+                                    <li><h6>Scanning dan Sniffing:</h6> <p>Metasploit juga dapat digunakan untuk melakukan pemindaian jaringan (network scanning) dan pemantauan lalu lintas jaringan (network sniffing).</p></li>
+                                    <li><h6>Pengelolaan Eksploitasi:</h6> <p>Metasploit menyediakan alat-alat untuk mengelola eksploitasi, memonitor kemajuan serangan, dan menganalisis hasil.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>MSF Venom</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>MSF Venom adalah bagian dari Metasploit Framework yang digunakan untuk membuat payload khusus yang dirancang untuk mengeksploitasi kerentanan dalam sistem target. Payload ini dapat berupa kode yang disisipkan ke dalam file atau perangkat lunak yang memanfaatkan kelemahan tertentu dalam sistem untuk mencapai tujuan tertentu, seperti mendapatkan akses ke sistem atau mengendalikannya secara remote.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Dengan MSF Venom, pengguna dapat membuat payload yang disesuaikan dengan kebutuhan mereka dan mengirimkannya ke target yang rentan. Payload yang dibuat dapat berbentuk berbagai jenis, termasuk shellcode, backdoor, atau bahkan file eksekusi. Setelah payload dibuat, pengguna dapat menggunakan alat-alat Metasploit lainnya untuk mengirim dan mengeksploitasi target dengan menggunakan payload tersebut.</p>
+                                        <p>MSF Venom memberikan fleksibilitas yang besar kepada peneliti keamanan dan penyerang untuk mengembangkan payload yang sesuai dengan skenario serangan tertentu. Ini merupakan salah satu alat yang sangat berguna dalam uji penetrasi dan penelitian keamanan sistem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Fitur MSF Venom -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Fitur MSF Venom</h5>
+                            <div>
+                                <ul style="list-style: decimal;">
+                                    <li><h6>Pembuatan Payload:</h6> <p>MSFVenom memungkinkan pengguna untuk membuat payload yang disesuaikan dengan kebutuhan spesifik serangan, termasuk memilih jenis payload (misalnya, shell reverse, shell bind, meterpreter), arsitektur target (seperti x86 atau x64), dan sistem operasi target.</p></li>
+                                    <li><h6>Encoding:</h6> <p>MSFVenom juga dapat melakukan encoding pada payload untuk menghindari deteksi oleh perangkat lunak antivirus atau firewall yang ada pada sistem target.</p></li>
+                                    <li><h6>Multiple Output Formats:</h6> <p>MSFVenom mendukung berbagai format output, termasuk executable files, shellcode, script, dan lain-lain, yang dapat disesuaikan dengan kebutuhan serangan.</p></li>
+                                    <li><h6>Integration with Metasploit Framework:</h6> <p>Payload yang dibuat menggunakan MSFVenom dapat diintegrasikan langsung dengan Metasploit Framework untuk digunakan dalam serangan penetrasi.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Telnet Exploitation</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Telnet adalah sebuah protokol jaringan yang digunakan untuk mengakses dan mengontrol perangkat jarak jauh melalui jaringan komputer. Secara khusus, Telnet memungkinkan pengguna untuk melakukan sesi remote pada komputer atau perangkat yang menjalankan layanan Telnet server.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Dalam praktiknya, ketika Anda menggunakan Telnet, Anda membuat koneksi jaringan ke server Telnet menggunakan perangkat lunak klien Telnet. Setelah koneksi terbentuk, Anda dapat mengakses shell atau antarmuka command-line dari server yang diakses, dan Anda dapat menjalankan perintah atau program pada server tersebut seolah-olah Anda sedang duduk di depannya secara langsung.</p>
+                                        <p>Telnet exploitation merujuk pada pemanfaatan kelemahan dalam protokol Telnet untuk mengakses sistem komputer secara tidak sah atau melakukan serangan terhadap sistem yang menjalankan layanan Telnet.</p>
+                                        <p>Telnet exploitation sering terjadi karena kelemahan dalam implementasi protokol Telnet, seperti pengiriman informasi login dan password dalam teks terbuka, yang dapat dengan mudah disadap oleh penyerang. Penyerang juga dapat mengeksploitasi kelemahan dalam perangkat lunak Telnet server yang menjalankan layanan tersebut, seperti bug atau kerentanan keamanan yang tidak diperbaiki.</p>
+                                        <p>Dengan memanfaatkan kelemahan ini, penyerang dapat masuk ke sistem tanpa otorisasi dan melakukan berbagai tindakan merugikan, termasuk mencuri data sensitif, menginstal perangkat lunak berbahaya, atau merusak sistem secara keseluruhan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Bagaimana Cara Kerja -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Bagaimana Cara Kerja</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Bagaimana Cara Mencegah -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Bagaimana Cara Mencegah</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Samba Exploitation</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Samba adalah perangkat lunak open source yang menyediakan implementasi protokol jaringan Server Message Block (SMB). Protokol SMB digunakan untuk berbagi file, printer, dan sumber daya jaringan lainnya di lingkungan jaringan, terutama dalam lingkungan berbasis Windows.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Dengan menggunakan Samba, pengguna non-Windows seperti Linux, Unix, macOS, dan sebagainya dapat berinteraksi dengan sumber daya jaringan yang dibagi oleh sistem Windows. Ini memungkinkan pengguna untuk mengakses dan berbagi file antarplatform dengan mudah dalam sebuah jaringan.</p>
+                                        <p>Samba Exploit merujuk pada serangan yang menargetkan kelemahan dalam perangkat lunak Samba. Kelemahan ini bisa mencakup kerentanan dalam implementasi protokol file sharing, kesalahan konfigurasi, atau cacat dalam kode sumber Samba itu sendiri. Penyerang dapat memanfaatkan kelemahan ini untuk mendapatkan akses tidak sah ke sistem yang menggunakan Samba, dengan tujuan mencuri data, memodifikasi atau menghapus file, atau bahkan mengambil alih kontrol sistem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Bagaimana Cara Kerja -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Bagaimana Cara Kerja</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Bagaimana Cara Mencegah -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Bagaimana Cara Mencegah</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Brute Force Attack</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p>Brute force adalah metode serangan yang digunakan untuk mencoba semua kemungkinan kombinasi kata sandi atau kunci enkripsi sampai satu yang benar ditemukan. Ini adalah pendekatan yang cukup sederhana tetapi cukup efektif untuk mengakses sistem atau data yang terproteksi dengan kata sandi atau enkripsi yang lemah.</p>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <p>Dalam konteks keamanan komputer, brute force biasanya digunakan untuk mencoba memecahkan kata sandi yang kuat dengan mengulang semua kemungkinan karakter hingga kata sandi yang benar ditemukan. Ini dapat dilakukan dengan menggunakan perangkat lunak khusus yang dirancang untuk melakukan serangan brute force dengan cepat dan efisien.</p>
+                                        <p>Metode brute force sering digunakan dalam serangan keamanan terhadap berbagai sistem, termasuk login ke akun online, akses ke file yang dienkripsi, atau pengujian kata sandi untuk memvalidasi kekuatan kata sandi dalam pengaturan keamanan tertentu.</p>
+                                        <p>Meskipun metode ini bisa berhasil jika kata sandi atau kunci enkripsi lemah dan jumlah kemungkinan yang harus dicoba terbatas, namun sering kali tidak praktis untuk kata sandi yang kuat atau enkripsi yang kompleks karena jumlah kemungkinan kombinasi yang sangat besar, yang bisa memakan waktu berjam-jam, bulan, atau bahkan bertahun-tahun untuk berhasil.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Bagaimana Cara Kerja -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Bagaimana Cara Kerja</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Bagaimana Cara Mencegah -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Bagaimana Cara Mencegah</h5>
+                            <div>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Kelebihan dan Kekurangan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Kelebihan</h5>
+                            <div>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <ul style="list-style: decimal;">
+                                            <li><h6>Potensial Tinggi untuk Sukses:</h6> <p>Metode brute force memiliki potensi tinggi untuk berhasil, terutama jika kata sandi atau kunci enkripsi yang digunakan lemah atau terlalu pendek.</p></li>
+                                            <li><h6>Kebutuhan Minimum akan Pengetahuan:</h6> <p>Brute force adalah pendekatan yang relatif sederhana dan tidak memerlukan pengetahuan teknis yang mendalam. Ini membuatnya dapat diimplementasikan oleh pemula dengan cepat.</p></li>
+                                            <li><h6>Fleksibilitas:</h6> <p>Brute force dapat diterapkan pada berbagai jenis serangan, termasuk login akun, enkripsi file, protokol jaringan, dan lain-lain. Ini membuatnya menjadi alat yang serbaguna untuk serangan keamanan.</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h5>Kekurangan</h5>
+                            <div>
+                                <h6 class="hiddenTextBtn text-primary">baca selengkapnya</h6>
+                                <div class="hiddenTextBox">
+                                    <div class="hiddenText hide">
+                                        <ul style="list-style: decimal;">
+                                            <li><h6>Waktu yang Diperlukan:</h6> <p>Salah satu kelemahan utama dari brute force adalah waktu yang diperlukan untuk menyelesaikan serangan. Pada kata sandi atau kunci enkripsi yang kuat, serangan brute force dapat memakan waktu berjam-jam, bulan, atau bahkan bertahun-tahun untuk berhasil.</p></li>
+                                            <li><h6>Kemungkinan Terdeteksinya:</h6> <p>Aktivitas brute force dapat meninggalkan jejak yang dapat dideteksi oleh sistem keamanan, seperti peningkatan lalu lintas jaringan atau serangkaian percobaan login yang gagal. Ini dapat menyebabkan sistem mengambil tindakan pencegahan atau memicu peringatan keamanan.</p></li>
+                                            <li><h6>Keberhasilan Tidak Terjamin:</h6> <p>Meskipun brute force memiliki potensi tinggi untuk berhasil, tidak ada jaminan bahwa serangan akan berhasil, terutama jika kata sandi atau kunci enkripsi yang digunakan kuat atau kompleks.</p></li>
+                                            <li><h6>Kemungkinan Penguncian Akun:</h6> <p>Beberapa sistem akan mengambil tindakan pencegahan terhadap serangan brute force dengan mengunci akun setelah sejumlah percobaan login yang gagal. Hal ini dapat menyulitkan atau bahkan menghentikan serangan brute force.</p></li>
+                                            <li><h6>Tidak Etis:</h6> <p>Penggunaan brute force untuk mendapatkan akses yang tidak sah ke sistem atau akun tanpa izin yang sah adalah tindakan ilegal dan tidak etis. Ini dapat mengakibatkan konsekuensi hukum serius jika dilakukan tanpa persetujuan yang tepat.</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu Python</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu Python</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="double-script.js"></script>
+</body>
+</html>
