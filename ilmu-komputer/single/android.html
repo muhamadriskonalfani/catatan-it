@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android</title>
+    
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css custom link -->
+    <link rel="stylesheet" href="single-style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="grid-single">
+            <!-- Aside box -->
+            <div class="aside">
+                <div class="aside-content">
+                    <ul class="list-unstyled">
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(1)">Menghapus Aplikasi Bawaan</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(2)">-</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(3)">-</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(4)">-</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(5)">-</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(6)">-</button> </li>
+                        <li> <button type="button" class="btn btn-dark" onclick="showPage(7)">-</button> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main box -->
+            <div class="main">
+                <!-- Show aside box -->
+                <div class="show-aside"><i class="fas fa-bars"></i></div>
+
+                <!-- Resize font -->
+                <div class="resize-font"><i class="fas fa-font"></i></div>
+                <div class="box-size">
+                    <div class="item-size translateX" onclick="resizeFont(18)">lg</div>
+                    <div class="item-size translateX" onclick="resizeFont(16)">md</div>
+                    <div class="item-size translateX" onclick="resizeFont(14)">sm</div>
+                    <div class="item-size translateX" onclick="resizeFont(12)">xm</div>
+                </div>
+    
+                <div class="main-content">
+                    <div class="logo">
+                        <img src="../assets/img/html.png" style="max-width: 500px;" alt="">
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Menghapus Aplikasi Bawaan</h2>
+                        
+                        <!-- Persiapan -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Persiapan</h5>
+                            <div>
+                                <p>Berikut ada beberapa yang dibutuhkan untuk menghapus aplikasi bawaan, contoh kasus pada HP Xiaomi Redmi5A.</p>
+                                <ul style="list-style: decimal;">
+                                    <li>PC atau Laptop</li>
+                                    <li>Kabel data (USB)</li>
+                                    <li>Aplikasi ADB, jika belum install bisa <a href="https://drive.google.com/drive/folders/1Opnx0y03lze7jHw7E-ELoqe8yhwL_gb2">klik disini</a></li>
+                                </ul>
+                                <strong>Catatan</strong>
+                                <p>Hati-hati untuk menghapus aplikasi bawaan jika Anda tidak tahu konsekuensinya, carilah informasi tentang aplikasi yang akan Anda hapus terlebih dahulu.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Langkah-Langkah -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Langkah-Langkah</h5>
+                            <div>
+                                <p>Setelah persiapan selesai, berikut adalah langkah-langkah untuk menghapus aplikasi bawaan.</p>
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h6><strong>Pada HP</strong></h6>
+                                    </dt>
+                                    <dd>
+                                        <ul style="list-style: decimal;">
+                                            <li>Buka 'Pengaturan' dan masuk ke 'Tentang Ponsel'</li>
+                                            <li>Lakukan Tap pada 'Versi MIUI' sampai muncul alert 'anda telah jadi pengembang'</li>
+                                            <li>Masuk ke 'Setelan Tambahan'</li>
+                                            <li>Aktifkan 'Opsi Pengembang' dan aktifkan 'Debugging USB'</li>
+                                            <li>Hubungkan HP dengan PC menggunakan Kabel USB</li>
+                                            <li>Akan muncul notifikasi 'Mengisi Daya', ganti menjadi 'Transfer File'</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt class="mb-2">
+                                        <h6><strong>Pada PC</strong></h6>
+                                    </dt>
+                                    <dd>
+                                        <ul style="list-style: decimal;">
+                                            <li>Install ADB</li>
+                                            <li>Masuk dan Install Device Driver-nya</li>
+                                            <li>Masuk ke Command Prompt sebagai Administrator</li>
+                                            <li>Ketikan kode 'adb shell'</li>
+                                            <li>Pada HP, akan muncul konfirmasi, pilih ok/hubungkan</li>
+                                            <li>Setelah terhubung Anda bisa menulis perintah yang diinginkan</li>
+                                        </ul>
+
+                                        <div class="table-scroll">
+                                            <table class="table table-bordered" style="max-width: 800px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Kode</th>
+                                                        <th>Fungsi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>adb shell</td>
+                                                        <td>untuk menjalankan ADB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>pm list packages</td>
+                                                        <td>untuk melihat semua aplikasi yang terpasang di HP</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>pm uninstall -k --user 0 &lt;nama aplikasi></td>
+                                                        <td>untuk menghapus aplikasi yang diinginkan</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                <ul>
+                                    <li>Waterfall</li>
+                                    <li>Agile</li>
+                                    <li>Prototype</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                <ul>
+                                    <li>Waterfall</li>
+                                    <li>Agile</li>
+                                    <li>Prototype</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                <ul>
+                                    <li>Waterfall</li>
+                                    <li>Agile</li>
+                                    <li>Prototype</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                <ul>
+                                    <li>Waterfall</li>
+                                    <li>Agile</li>
+                                    <li>Prototype</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card materi hide">
+                    <div class="card-body">
+                        <h2>Apa Itu SDLC</h2>
+                        
+                        <!-- Definisi -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Definisi</h5>
+                            <div>
+                                
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Jenis SDLC -->
+                        <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Jenis SDLC</h5>
+                            <div>
+                                <ul>
+                                    <li>Waterfall</li>
+                                    <li>Agile</li>
+                                    <li>Prototype</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="single-script.js"></script>
+</body>
+</html>
