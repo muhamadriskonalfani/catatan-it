@@ -14,9 +14,9 @@ const resizeIcon    = document.querySelector('.resize-font');
 const sizeOption    = document.querySelectorAll('.item-size');
 
 // Window reload
-window.addEventListener('resize', function() {
-    this.window.location.reload();
-});
+// window.addEventListener('resize', function() {
+//     this.window.location.reload();
+// });
 
 // Show selected page
 function showPage(pageNumber) {
@@ -164,7 +164,7 @@ mainBox.addEventListener('scroll', () => {
     setTimeout(() => {
         showAside.style.transform = 'translateX(0)';
         resizeIcon.style.transform = 'translateX(0)';
-    }, 1000);
+    }, 2000);
 });
 
 

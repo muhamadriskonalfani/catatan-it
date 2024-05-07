@@ -164,7 +164,7 @@ mainBox.addEventListener('scroll', () => {
     setTimeout(() => {
         showAside.style.transform = 'translateX(0)';
         resizeIcon.style.transform = 'translateX(0)';
-    }, 1000);
+    }, 2000);
 });
 
 
